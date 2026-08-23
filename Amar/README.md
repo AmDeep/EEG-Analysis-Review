@@ -4,7 +4,7 @@
 
 ---
 
-## ✅ Real Results (all 26 subjects, executed August 2026)
+## Real Results (all 26 subjects, executed August 2026)
 
 ### Classification Performance — LOSO Cross-Validation
 
@@ -21,7 +21,7 @@
 
 ---
 
-## 🔍 Key Insights from Results
+## Key Insights from Results
 
 ### 1. Nonlinear Complexity Is the Primary Pain Biomarker
 
