@@ -1,1 +1,43 @@
+name: Generate PPTX from Markdown
 
+on:
+  workflow_dispatch: {}
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install python-pptx
+
+      - name: Generate PPTX from markdown
+        run: |
+          python scripts/generate_pptx_from_md.py docs/pipeline_slides.md docs/pipeline_slides.pptx
+
+      - name: Commit generated PPTX
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/pipeline_slides.pptx || true
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Add pipeline slide deck PPTX"
+            git push
+          fi
