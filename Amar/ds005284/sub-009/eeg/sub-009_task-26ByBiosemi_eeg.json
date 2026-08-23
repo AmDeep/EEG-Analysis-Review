@@ -1,0 +1,18 @@
+{
+  "InstitutionAddress": "16 Lincui Road, Chaoyang District, Beijing, China",
+  "InstitutionName": "Institute of Psychology",
+  "InstitutionalDepartmentName": "CAS Key Laboratory of Mental Health",
+  "PowerLineFrequency": 50,
+  "ManufacturersModelName": "Biosemi,62 Ag/AgCl scalp electrodes",
+  "EEGReference": "CMS/DRL",
+  "TaskName": "26ByBiosemi",
+  "Manufacturer": "BIOSEMI",
+  "EEGChannelCount": 64,
+  "RecordingType": "continuous",
+  "RecordingDuration": 332,
+  "SamplingFrequency": 1024,
+  "EOGChannelCount": 0,
+  "ECGChannelCount": 0,
+  "EMGChannelCount": 0,
+  "SoftwareFilters": "n/a"
+}
