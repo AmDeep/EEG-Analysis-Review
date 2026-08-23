@@ -1,0 +1,56 @@
+# Pain EEG Classification -- Zhao et al. 2025 (OpenNeuro ds005284)
+# Python >= 3.10
+
+# Core scientific stack
+numpy>=1.24
+scipy>=1.11
+pandas>=2.0
+matplotlib>=3.7
+seaborn>=0.13
+
+# EEG processing (primary)
+mne>=1.6
+mne-bids>=0.14
+mne-connectivity>=0.6
+
+# Feature extraction: entropy / fractal / Hjorth
+antropy>=0.1.6
+
+# Source imaging (optional -- requires forward model)
+invertmeeg>=0.2
+
+# Neurophysiology data format I/O
+neo>=0.13
+
+# EEG preprocessing utilities (eegpipe -- git-only)
+# pip install git+https://github.com/mattpontifex/eegpipe-python.git
+
+# EEGExtract (no PyPI release -- download manually)
+# wget https://raw.githubusercontent.com/sari-saba-sadiya/EEGExtract/master/EEGExtract.py
+PyWavelets>=1.4       # EEGExtract dependency
+spectrum>=0.8         # EEGExtract dependency (AR/ARMA fitting)
+
+# EEG experiment delivery (optional, limited added value for this task)
+eegnb>=0.2            # eeg-expy
+
+# BEhavioral STate analysis
+best-toolbox>=0.1
+
+# OpenNeuro dataset download
+openneuro-py>=2023.1
+
+# Machine learning
+scikit-learn>=1.4
+xgboost>=2.0          # optional -- can substitute for GradientBoostingClassifier
+
+# Optional: MFCC extraction (faster than NumPy fallback)
+librosa>=0.10
+
+# Optional: quantities (for python-neo)
+quantities>=0.14
+
+# Jupyter
+notebook>=7.0
+jupyterlab>=4.0
+ipykernel>=6.0
+tqdm>=4.66
