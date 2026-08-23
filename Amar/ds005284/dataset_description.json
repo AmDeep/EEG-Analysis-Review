@@ -1,0 +1,18 @@
+{
+    "Name": "26 By Biosemi",
+    "License": "CC0",
+    "Authors": [
+        "Zhao Xiangyue",
+        "Zhou Jingyao",
+        "Zhang Libo",
+        "Duan Haoqing",
+        "Wei Shiyu",
+        "Bi Yanzhi",
+        "Hu Li"
+    ],
+    "ReferencesAndLinks": [
+        "Lu X, Thompson WF, Zhang L, Hu L. Music Reduces Pain Unpleasantness: Evidence from an EEG Study. J Pain Res. 2019 Dec 13;12:3331-3342. doi: 10.2147/JPR.S212080. PMID: 31853196; PMCID: PMC6916681."
+    ],
+    "BIDSVersion": "1.1.1",
+    "DatasetDOI": "doi:10.18112/openneuro.ds005284.v1.0.0"
+}
