@@ -161,7 +161,7 @@ Phase Locking Value (PLV) between CZ and C4 in the alpha band appears at rank 17
 
 ---
 
-## 🧪 Expanded Biomarker Exploration (Notebook 05)
+## Expanded Biomarker Exploration (Notebook 05)
 
 Notebook `05_biomarker_feature_exploration.ipynb` was executed against all 26 downloaded BDF recordings. It extends the original 135-feature set with feature families chosen to refine pain biomarkers and transfer to other EEG sources:
 
