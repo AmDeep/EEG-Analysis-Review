@@ -1,14 +1,17 @@
 #!/usr/bin/env python3
 """
 Generate a professional PDF slide deck from EEG Analysis Pipeline markdown documentation.
-Requires: reportlab, pypdf
+Requires: reportlab
+Install: pip install reportlab
 """
 
 import os
+import sys
+from io import BytesIO
 from reportlab.lib.pagesizes import letter, landscape
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib.units import inch
-from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, PageBreak, Table, TableStyle, Image
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, PageBreak, Table, TableStyle
 from reportlab.lib import colors
 from reportlab.lib.enums import TA_CENTER, TA_LEFT, TA_JUSTIFY
 from datetime import datetime
@@ -78,7 +81,6 @@ class SlideGenerator:
 
     def add_title_slide(self, title, subtitle, date_str=None):
         """Add a title slide with large formatted text."""
-        # Create a table for the title slide background
         title_style = self.styles['SlideTitle']
         subtitle_style = ParagraphStyle(
             name='SubtitleText',
@@ -154,11 +156,15 @@ class SlideGenerator:
     def build(self):
         """Build and save the PDF."""
         self.doc.build(self.elements)
-        print(f"PDF generated: {self.output_path}")
-        print(f"Total slides: {self.slide_count}")
+        print(f"✓ PDF generated: {self.output_path}")
+        print(f"✓ Total slides: {self.slide_count}")
+        return self.output_path
 
 
 def main():
+    # Create docs directory if it doesn't exist
+    os.makedirs("docs", exist_ok=True)
+    
     generator = SlideGenerator("docs/EEG_Pipeline_Slides.pdf")
     
     # Title Slide
@@ -180,7 +186,7 @@ def main():
     
     # Slide 2: Dataset Overview
     generator.add_content_slide(
-        "Dataset & Key Facts",
+        "Dataset &amp; Key Facts",
         bullets=[
             "<b>Source:</b> OpenNeuro ds005284 (Zhao et al.)",
             "<b>Acquisition:</b> Biosemi 64-channel, 1024 Hz sampled, resampled to 256 Hz",
@@ -195,11 +201,11 @@ def main():
         bullets=[
             "Channel mapping: raw device labels → 10–20 standard (channels.tsv)",
             "Resample: 1024 → 256 Hz",
-            "Notch filter: 50 Hz & 100 Hz (adjust to 60 Hz mains if needed)",
+            "Notch filter: 50 Hz &amp; 100 Hz (adjust to 60 Hz mains if needed)",
             "Bandpass filter: 0.5 – 80 Hz",
             "Reference: average reference across all channels",
             "Epoching: Pain (0 → +2s), No-pain baseline (−5 → −3s) relative to stimulus",
-            "Artifact rejection: amplitude threshold (|µV| > 200)",
+            "Artifact rejection: amplitude threshold (|µV| &gt; 200)",
             "QC logging: per-epoch and per-subject summary CSVs",
         ]
     )
@@ -209,18 +215,18 @@ def main():
         "Feature Extraction: Seven Families",
         bullets=[
             "<b>Spectral:</b> absolute/relative band power (δ,θ,α,β,γ), band ratios, spectral centroid, 1/f slope",
-            "<b>Nonlinear:</b> Higuchi FD, Petrosian FD, DFA, entropy (sample & permutation), Lempel-Ziv, Hjorth",
+            "<b>Nonlinear:</b> Higuchi FD, Petrosian FD, DFA, entropy (sample &amp; permutation), Lempel-Ziv, Hjorth",
             "<b>Time-domain:</b> RMS, std, peak-to-peak, line length, zero-crossing rate, skew, kurtosis",
             "<b>Wavelet:</b> db4 multiscale energy ratios, wavelet entropy",
             "<b>MFCC:</b> first 5 Mel-frequency cepstral coefficients per channel",
             "<b>AR dynamics:</b> Burg AR coefficients + innovation variance",
-            "<b>Connectivity:</b> coherence & phase-locking value (PLV) for C3-CZ, C3-C4, CZ-C4 across bands",
+            "<b>Connectivity:</b> coherence &amp; phase-locking value (PLV) for C3-CZ, C3-C4, CZ-C4 across bands",
         ]
     )
     
-    # Slide 5: Feature Storage & Naming
+    # Slide 5: Feature Storage &amp; Naming
     generator.add_content_slide(
-        "Feature Storage & Naming Conventions",
+        "Feature Storage &amp; Naming Conventions",
         bullets=[
             "<b>Naming scheme:</b> descriptive labels (e.g., CZ_higuchi, C3_alpha_power, CZ_C4_lowgamma_plv)",
             "<b>Primary outputs:</b>",
@@ -248,9 +254,9 @@ def main():
     
     # Slide 7: Recommended Classifiers
     generator.add_content_slide(
-        "Classifier Selection & Deployment",
+        "Classifier Selection &amp; Deployment",
         bullets=[
-            "<b>Research / Exploration:</b> Random Forest, Gradient Boosting — check feature importance & overfitting",
+            "<b>Research / Exploration:</b> Random Forest, Gradient Boosting — check feature importance &amp; overfitting",
             "<b>Deployment / Interpretability:</b> LDA with shrinkage on parsimonious feature set",
             "<b>Recommended:</b> Top nonlinear features from CZ channel",
             "<b>QC gating:</b> Implement per-subject QC thresholds before decision-making",
@@ -269,13 +275,13 @@ def main():
         ]
     )
     
-    # Slide 9: Output Files & Artifacts
+    # Slide 9: Output Files &amp; Artifacts
     generator.add_content_slide(
         "Typical Pipeline Outputs",
         bullets=[
             "<b>Feature matrices:</b> all_subjects_features.csv, features_xy.npz",
             "<b>Results tables:</b> classification_results.csv, per_subject_accuracy.csv, subject_summary.csv",
-            "<b>Exploration & ablation:</b> biomarker_exploration_screening.csv, biomarker_loso_ablation_results.csv",
+            "<b>Exploration &amp; ablation:</b> biomarker_exploration_screening.csv, biomarker_loso_ablation_results.csv",
             "<b>Visualizations:</b> ROC curves, feature heatmaps, per-subject violin plots, confusion matrices",
         ]
     )
@@ -284,19 +290,19 @@ def main():
     generator.add_content_slide(
         "Action Items for New Datasets",
         bullets=[
-            "Prepare channels.tsv mapping and verify event structure & stimulus timing",
+            "Prepare channels.tsv mapping and verify event structure &amp; stimulus timing",
             "Run preprocessing pipeline and save QC summaries",
             "Extract baseline 135 features from preprocessed epochs",
-            "Run LOSO cross-validation with training-only scaling & feature selection",
+            "Run LOSO cross-validation with training-only scaling &amp; feature selection",
             "Execute family ablations to identify complementary feature groups",
             "If stable biomarkers emerge, retrain compact model for deployment",
             "Validate on external dataset if available (gold-standard validation)",
         ]
     )
     
-    # Slide 11: Repository & Reproducibility
+    # Slide 11: Repository &amp; Reproducibility
     generator.add_content_slide(
-        "Reproducibility & Best Practices",
+        "Reproducibility &amp; Best Practices",
         bullets=[
             "<b>Version control:</b> Commit all run outputs and config JSON to repo for every experiment",
             "<b>QC automation:</b> Add subject-level QC thresholds and automated gating",
@@ -307,7 +313,7 @@ def main():
     
     # Slide 12: Next Steps
     generator.add_content_slide(
-        "Next Steps & Contact",
+        "Next Steps &amp; Contact",
         bullets=[
             "Repository: <b>AmDeep/EEG-Analysis-Review</b>",
             "Finalize feature definitions and standardize gamma band (30–80 Hz or 40–80 Hz)",
@@ -329,12 +335,23 @@ def main():
             "aggregated across 26 subjects.",
             "<br/><br/>"
             "<b>Interpretability:</b> LDA coefficients rank features by discriminative power. "
-            "Connectivity & entropy measures reveal neural mechanisms. Audit CSV files document all QC decisions.",
+            "Connectivity &amp; entropy measures reveal neural mechanisms. Audit CSV files document all QC decisions.",
         ]
     )
     
-    generator.build()
+    output_file = generator.build()
+    return output_file
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        result = main()
+        sys.exit(0)
+    except ImportError as e:
+        print(f"✗ Error: {e}")
+        print("Please install required dependencies:")
+        print("  pip install reportlab")
+        sys.exit(1)
+    except Exception as e:
+        print(f"✗ Error generating PDF: {e}")
+        sys.exit(1)
