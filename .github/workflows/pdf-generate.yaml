@@ -1,0 +1,40 @@
+name: Convert PPTX to PDF
+
+on:
+  push:
+    paths:
+      - 'docs/pipeline_slides.pptx'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install LibreOffice
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libreoffice
+
+      - name: Convert PPTX to PDF
+        run: |
+          if [ -f "docs/pipeline_slides.pptx" ]; then
+            libreoffice --headless --convert-to pdf "docs/pipeline_slides.pptx" --outdir docs
+          else
+            echo "docs/pipeline_slides.pptx not found"
+            exit 1
+          fi
+
+      - name: Commit converted PDF
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: github-actions[bot]
+          author_email: 41898282+github-actions[bot]@users.noreply.github.com
+          message: "Add converted PDF (pipeline_slides.pdf)"
+          add: "docs/pipeline_slides.pdf"
+          push: true
