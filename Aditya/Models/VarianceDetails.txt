@@ -1,0 +1,70 @@
+================================================================================
+PER-DATASET laser_power STATS
+================================================================================
+          count      mean       std
+dataset                            
+ds005280   6275  3.500398  0.353215
+ds005284    348  3.771552  0.449025
+ds005285   4618  3.525173  0.647885
+ds005286    880  3.609943  0.582305
+ds005289    372  3.516129  0.427423
+ds005291   1885  3.948939  0.384753
+ds005292   4153  3.271490  0.272868
+ds005293   7291  3.197058  0.752915
+ds005473   3693  2.490658  0.940494
+
+Total variance (SS):   15100.68
+Between-dataset SS:    3957.84  (26.2% of total)
+Within-dataset SS:     11142.84  (73.8% of total)
+
+-> A large between-dataset share means a chunk of pooled R2 could come
+   from the model implicitly identifying which protocol/hardware a trial
+   belongs to, rather than decoding real intensity variation from EEG.
+
+================================================================================
+RANDOM FOREST ON DATASET-CENTERED laser_power (within-dataset signal only)
+================================================================================
+Overall Test R2: 0.1772
+(Compare this to the pooled 0.276 from the main script. If this number
+ is much lower or near zero, most of that 0.276 was the between-dataset
+ confound, not real EEG-based intensity decoding.)
+
+Per-dataset R2 on centered target:
+   ds005280: n=1256, R2=-0.2532
+   ds005284: n=60, R2=-0.1151
+   ds005285: n=791, R2=-1.5709
+   ds005286: n=145, R2=-0.4188
+   ds005289: n=58, R2=0.3245
+   ds005291: n=264, R2=-0.5368
+   ds005292: n=789, R2=0.1889
+   ds005293: n=1312, R2=0.3098
+   ds005473: n=617, R2=0.3043
+
+================================================================================
+RANDOM FOREST ON SUBJECT-CENTERED laser_power (within-subject signal only)
+================================================================================
+Overall Test R2: 0.3090
+
+Per-dataset R2 on subject-centered target:
+   ds005280: n=1256, R2=-0.4814
+   ds005284: n=60, R2=-0.5232
+   ds005285: n=791, R2=-2.7174
+   ds005286: n=145, R2=-0.5030
+   ds005289: n=58, R2=0.1538
+   ds005291: n=264, R2=-1.4449
+   ds005292: n=789, R2=-0.4103
+   ds005293: n=1312, R2=0.3533
+   ds005473: n=617, R2=-0.2894
+
+================================================================================
+MACRO-AVERAGED (UNWEIGHTED) R2 ACROSS DATASETS
+================================================================================
+  Dataset-centered:  -0.1964
+  Subject-centered:  -0.6514
+(This treats every dataset equally instead of letting the largest
+ dataset dominate the summary number - a fairer view given how much
+ decodability varies by protocol/hardware.)
+
+================================================================================
+DONE
+================================================================================
