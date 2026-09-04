@@ -17,6 +17,16 @@ computes a feature table, one row per epoch/trial, with:
   - Antropy time-series features   (permutation/spectral/sample entropy,
                                      Higuchi FD, DFA, Hjorth mobility/complexity)
 
+FIX (this version): label extraction previously re-parsed the .set file from
+scratch via its own loadmat() call that only checked for a top-level "EEG"
+key. Per lep_eda.py's Stage 0.5 diagnostics, most of these 9 datasets load
+via a FLATTENED top-level struct (no "EEG" key at all), which load_set_scipy
+already handles correctly for signal data -- but the old label extractor
+didn't, so it silently returned all-NaN labels for every flattened-struct
+dataset. Labels are now pulled from the SAME already-normalized `eeg` object
+that load_set_scipy produces, so both loaders agree on struct shape, and each
+subject file is now only loadmat()'d once instead of twice.
+
 IMPORTANT CAVEATS (read before trusting the output):
   - N2/P2 windows below (150-350 ms / 300-550 ms) are reasonable literature
     defaults for laser-evoked potentials at the vertex, but you should sanity
@@ -29,11 +39,12 @@ IMPORTANT CAVEATS (read before trusting the output):
     dataset the effective gamma band will silently narrow -- check the
     printed "effective gamma band" line per subject if that matters to you).
   - The h5py (MATLAB v7.3/HDF5) fallback path is best-effort, same as in
-    lep_eda.py. It has NOT been validated against every dataset in DATASETS
-    -- if a dataset's derivative .set files are v7.3 format, inspect its
-    printed chanlocs/data shape carefully before trusting output rows from
-    it. If something looks off, the safest move is to open that one file in
-    EEGLAB and confirm dimensions by hand.
+    lep_eda.py. It has NOT been validated against every dataset in DATASETS,
+    and it does NOT currently extract labels (no eeg struct is available in
+    that branch) -- if any subject anywhere ends up going through this path,
+    its rows will have signal features but NaN rating/laser_power. Per
+    Stage 0.5 diagnostics none of the 9 datasets currently need this path,
+    so this is a latent gap, not an active one.
   - Single-trial PLV (see plv_single_trial below) measures phase-locking
     ACROSS TIME WITHIN one trial between two electrodes, not the more common
     across-TRIALS PLV at one electrode pair/timepoint. This is a legitimate
@@ -46,7 +57,6 @@ Run:
   python lep_feature_extraction.py
 """
 
-import io
 import re
 import traceback
 import warnings
@@ -145,8 +155,8 @@ def find_latest_version_prefix(accession):
 
 
 # --------------------------------------------------------------------------
-# .set loading -- pulls the actual epoched signal (EEG.data), not just
-# EEG.event metadata like lep_eda.py's label extraction does.
+# .set loading -- pulls the actual epoched signal (EEG.data) AND returns the
+# normalized eeg struct so label extraction can reuse it (see fix note above).
 # --------------------------------------------------------------------------
 
 def _mat_str(val):
@@ -217,9 +227,11 @@ def _read_fdt_binary(fdt_path, nbchan, pnts, trials):
 
 def load_set_scipy(local_set):
     """Load a .set file via scipy.io.loadmat and return
-    (data[n_epochs, n_channels, n_times], ch_names, times_sec, srate) or
-    raises NotImplementedError for v7.3/HDF5 files (caller should fall back
-    to load_set_h5py)."""
+    (data[n_epochs, n_channels, n_times], ch_names, times_sec, srate, eeg)
+    where eeg is the normalized struct (works whether the file stored a
+    top-level "EEG" key or a flattened struct) -- callers should reuse eeg
+    for label extraction instead of re-loading the file. Raises for v7.3/
+    HDF5 files (caller should fall back to load_set_h5py)."""
     from scipy.io import loadmat
 
     mat = loadmat(str(local_set), struct_as_record=False, squeeze_me=True)
@@ -296,13 +308,16 @@ def load_set_scipy(local_set):
             f"vector length={len(times)} -- inspect this file manually."
         )
 
-    return data, ch_names, times, srate
+    return data, ch_names, times, srate, eeg
 
 
 def load_set_h5py(local_set):
     """Best-effort MATLAB v7.3/HDF5 fallback. NOT validated against every
-    dataset -- see the module docstring caveat. If this raises or produces
-    an obviously wrong shape, open the file in EEGLAB instead of trusting it."""
+    dataset -- see the module docstring caveat. Does NOT return an eeg
+    struct usable for label extraction (h5py groups don't map cleanly onto
+    the same attribute-access pattern) -- rows from this path will have
+    signal features but NaN rating/laser_power. If output looks wrong, open
+    the file in EEGLAB instead of trusting it."""
     import h5py
 
     with h5py.File(local_set, "r") as f:
@@ -311,11 +326,6 @@ def load_set_h5py(local_set):
         g = f["EEG"]
 
         data = np.asarray(g["data"])
-        # MATLAB HDF5 stores arrays transposed relative to loadmat's convention
-        if data.ndim == 3:
-            # h5py gives (n_epochs, n_times, n_channels) for what MATLAB sees
-            # as (n_channels, n_times, n_epochs) -- transpose back
-            data = np.transpose(data, (0, 1, 2))  # placeholder order, verified below
         srate = float(np.asarray(g["srate"]).ravel()[0])
 
         ch_names = []
@@ -338,8 +348,8 @@ def load_set_h5py(local_set):
             xmin = float(np.asarray(g["xmin"]).ravel()[0]) if "xmin" in g else 0.0
             times = xmin + np.arange(pnts) / srate
 
-        # Reorder data to (n_epochs, n_channels, n_times) -- try to infer axis
-        # order from which dimension matches len(ch_names) and len(times).
+        # Reorder data to (n_epochs, n_channels, n_times) -- infer axis order
+        # from which dimension matches len(ch_names) and len(times).
         if data.ndim == 3 and ch_names and len(times):
             shape = data.shape
             ch_axis = next((i for i, s in enumerate(shape) if s == len(ch_names)), None)
@@ -348,7 +358,7 @@ def load_set_h5py(local_set):
                 ep_axis = [i for i in range(3) if i not in (ch_axis, t_axis)][0]
                 data = np.transpose(data, (ep_axis, ch_axis, t_axis))
 
-        return data, ch_names, times, srate
+        return data, ch_names, times, srate, None  # no eeg struct -> no labels from this path
 
 
 def load_epoched_set(local_set):
@@ -363,14 +373,43 @@ def load_epoched_set(local_set):
     return load_set_h5py(local_set)
 
 
-def extract_epoch_labels_scipy(local_set, n_epochs):
-    """Pull rating/laser_power per epoch the same way lep_eda.py's Stage 1.5
-    does (from EEG.event, grouped by the 'epoch' field), so feature rows can
-    be joined to behavioral labels. Returns a DataFrame indexed 0..n_epochs-1."""
+def dump_event_fields_sample(local_set, accession):
+    """Diagnostic: print the actual field names present on EEG.event for one
+    file, so label extraction can be matched to what's really there instead
+    of guessed. Run once per dataset when labels aren't showing up."""
     from scipy.io import loadmat
 
     mat = loadmat(str(local_set), struct_as_record=False, squeeze_me=True)
     eeg = mat.get("EEG", None)
+    if eeg is None:
+        print(f"    [diag] {accession}: no EEG struct found")
+        return
+    event = getattr(eeg, "event", None)
+    if event is None:
+        print(f"    [diag] {accession}: EEG.event is None")
+        return
+    has_len = hasattr(event, "__len__") and not np.isscalar(event)
+    ev0 = event[0] if has_len else event
+    fields = [f for f in dir(ev0) if not f.startswith("_")]
+    print(f"    [diag] {accession}: EEG.event[0] fields = {fields}")
+    for f in fields:
+        try:
+            print(f"        {f} = {getattr(ev0, f)!r}")
+        except Exception:
+            pass
+
+
+def extract_epoch_labels_from_eeg(eeg, n_epochs):
+    """Pull rating/laser_power per epoch from an already-loaded, normalized
+    eeg struct (the object load_set_scipy returns -- works for both the
+    nested-EEG and flattened-struct cases, since eeg is already resolved by
+    the time this is called; this is the fix for the label-loss bug: the old
+    version re-parsed the file with its own loadmat() call that only checked
+    for a top-level "EEG" key and silently produced all-NaN labels for every
+    flattened-struct dataset). Returns a DataFrame indexed 0..n_epochs-1.
+
+    If more than one event in an epoch carries values, prefers the one that
+    actually has a non-None laser_power over the one encountered first."""
     if eeg is None:
         return pd.DataFrame(index=range(n_epochs))
 
@@ -387,12 +426,12 @@ def extract_epoch_labels_scipy(local_set, n_epochs):
         if epoch_idx is None:
             continue
         epoch_idx = int(np.asarray(epoch_idx).ravel()[0]) - 1  # MATLAB 1-indexed
-        if epoch_idx in rows:
-            continue  # keep first event per epoch, matches lep_eda.py behavior closely enough
-        rows[epoch_idx] = {
-            "rating": getattr(ev, "rating", None),
-            "laser_power": getattr(ev, "laser_power", None),
-        }
+        rating = getattr(ev, "rating", None)
+        laser_power = getattr(ev, "laser_power", None)
+        existing = rows.get(epoch_idx)
+        if existing is None or (existing.get("laser_power") is None and laser_power is not None):
+            rows[epoch_idx] = {"rating": rating, "laser_power": laser_power}
+
     df = pd.DataFrame.from_dict(rows, orient="index")
     return df.reindex(range(n_epochs))
 
@@ -437,11 +476,29 @@ def bandpass(sig, sfreq, band, order=4):
 
 
 def bandpower_welch(sig, sfreq, band, nperseg=None):
-    nperseg = nperseg or min(len(sig), 256)
+    """Welch PSD band power. Uses the full available segment as one window
+    by default (rather than capping nperseg low) since these epochs are
+    short (a few hundred to ~1000 samples) and narrow low-frequency bands
+    (delta 1-4 Hz, theta 4-8 Hz, alpha 8-13 Hz) need fine frequency
+    resolution to land more than one FFT bin inside the band -- a coarse
+    nperseg was previously causing delta/theta/alpha to silently compute as
+    exactly 0.0 (a single-point "area" is 0 under the trapezoidal rule) and
+    causing alpha ERD to come out NaN every time. This trades PSD estimate
+    smoothness (single window, no Welch averaging) for actually having
+    enough bins to integrate over -- reasonable for per-trial exploratory
+    features, but worth knowing if you later want publication-grade PSDs
+    (those would want longer segments / lower minimum band width)."""
+    nperseg = min(nperseg or len(sig), len(sig))
     freqs, psd = welch(sig, fs=sfreq, nperseg=nperseg)
     mask = (freqs >= band[0]) & (freqs <= band[1])
-    if not mask.any():
+    n_bins = int(mask.sum())
+    if n_bins == 0:
         return np.nan
+    if n_bins == 1:
+        # trapz needs >=2 points to give a nonzero area; approximate the
+        # single bin's contribution as psd * bin width instead
+        bin_width = freqs[1] - freqs[0] if len(freqs) > 1 else band[1] - band[0]
+        return float(psd[mask][0] * bin_width)
     return _trapz(psd[mask], freqs[mask])
 
 
@@ -493,8 +550,8 @@ def erd_features(sig, times, sfreq):
         if baseline.size < 8 or task.size < 8:
             out[f"{band_name}_erd_pct"] = np.nan
             continue
-        p_base = bandpower_welch(baseline, sfreq, band, nperseg=min(len(baseline), 128))
-        p_task = bandpower_welch(task, sfreq, band, nperseg=min(len(task), 128))
+        p_base = bandpower_welch(baseline, sfreq, band)
+        p_task = bandpower_welch(task, sfreq, band)
         if not p_base or np.isnan(p_base) or p_base == 0:
             out[f"{band_name}_erd_pct"] = np.nan
         else:
@@ -511,7 +568,7 @@ def psd_band_features(sig, times, sfreq):
         return out
     for band_name, band in BANDS.items():
         band = (band[0], min(band[1], sfreq / 2 - 5))
-        out[f"psd_{band_name}"] = bandpower_welch(seg, sfreq, band, nperseg=min(len(seg), 256))
+        out[f"psd_{band_name}"] = bandpower_welch(seg, sfreq, band)
     return out
 
 
@@ -582,7 +639,7 @@ def antropy_features(sig):
 # Per-subject / per-dataset pipeline
 # --------------------------------------------------------------------------
 
-def process_subject_file(key, all_keys, local_dir, accession):
+def process_subject_file(key, all_keys, local_dir, accession, print_epoch_info=False):
     m = re.search(r"(sub-[A-Za-z0-9]+)", key)
     subj = m.group(1) if m else "unknown"
 
@@ -596,8 +653,12 @@ def process_subject_file(key, all_keys, local_dir, accession):
             local_fdt = local_dir / Path(fdt_key).name
             local_fdt.write_bytes(fetch_bytes(fdt_key))
 
-        data, ch_names, times, sfreq = load_epoched_set(local_set)
+        data, ch_names, times, sfreq, eeg = load_epoched_set(local_set)
         n_epochs = data.shape[0]
+
+        if print_epoch_info:
+            print(f"    epoch window: {times.min():.3f}s to {times.max():.3f}s "
+                  f"({times.max()-times.min():.3f}s total, {len(times)} samples @ {sfreq:.0f} Hz)")
 
         vertex_idx, vertex_name = pick_channel(ch_names, VERTEX_CHANNEL_PRIORITY)
         if vertex_idx is None:
@@ -605,7 +666,9 @@ def process_subject_file(key, all_keys, local_dir, accession):
             return []
 
         plv_pairs = resolve_plv_pairs(ch_names)
-        labels_df = extract_epoch_labels_scipy(local_set, n_epochs)
+        labels_df = extract_epoch_labels_from_eeg(eeg, n_epochs)
+        if eeg is None:
+            print(f"    [!] {subj}: loaded via h5py fallback -- labels unavailable for this file (see caveats)")
 
         for ep in range(n_epochs):
             sig = data[ep, vertex_idx, :]
@@ -627,11 +690,15 @@ def process_subject_file(key, all_keys, local_dir, accession):
             if ep in labels_df.index:
                 row["rating"] = labels_df.loc[ep, "rating"] if "rating" in labels_df.columns else None
                 row["laser_power"] = labels_df.loc[ep, "laser_power"] if "laser_power" in labels_df.columns else None
+            else:
+                row["rating"] = None
+                row["laser_power"] = None
 
             rows.append(row)
 
+        n_labeled = int(pd.notna([r["laser_power"] for r in rows]).sum())
         print(f"    {subj}: {n_epochs} epochs -> features extracted (vertex={vertex_name}, "
-              f"{len(plv_pairs)} PLV pairs)")
+              f"{len(plv_pairs)} PLV pairs, {n_labeled}/{n_epochs} epochs with laser_power)")
 
     except Exception as e:
         print(f"    [!] {subj}: failed ({e})")
@@ -666,7 +733,7 @@ def process_dataset(label, accession):
     for i, key in enumerate(set_keys, 1):
         print(f"  [{i}/{len(set_keys)}] {key}")
         try:
-            all_rows.extend(process_subject_file(key, all_keys, local_dir, accession))
+            all_rows.extend(process_subject_file(key, all_keys, local_dir, accession, print_epoch_info=(i == 1)))
         except Exception:
             # process_subject_file already catches per-subject errors internally;
             # this is a belt-and-suspenders catch for anything that slips past it
@@ -676,6 +743,27 @@ def process_dataset(label, accession):
             traceback.print_exc()
 
     return pd.DataFrame(all_rows)
+
+
+def print_label_coverage_summary(combined):
+    """Post-run sanity check: per-dataset epoch count and % with a non-null
+    laser_power. Catches a regression like the flattened-struct label bug
+    immediately instead of silently shipping a smaller labeled dataset."""
+    if combined.empty:
+        return
+    print("\n" + "=" * 72)
+    print("LABEL COVERAGE SUMMARY (per dataset)")
+    print("=" * 72)
+    summary = combined.groupby("dataset").agg(
+        n_epochs=("laser_power", "size"),
+        n_labeled=("laser_power", lambda s: s.notna().sum()),
+    )
+    summary["pct_labeled"] = (summary["n_labeled"] / summary["n_epochs"] * 100).round(1)
+    print(summary.to_string())
+    zero_label_datasets = summary.index[summary["n_labeled"] == 0].tolist()
+    if zero_label_datasets:
+        print(f"\n[!] WARNING: these datasets have ZERO labeled epochs -- "
+              f"investigate before using this output: {zero_label_datasets}")
 
 
 def main():
@@ -698,6 +786,7 @@ def main():
         combined.to_csv(OUT_DIR / "features_combined.csv", index=False)
         print(f"\nSaved combined feature table -> {OUT_DIR / 'features_combined.csv'} "
               f"({len(combined)} rows)")
+        print_label_coverage_summary(combined)
     else:
         print("\nNo features extracted -- check dataset access / derivatives subfolder name.")
 
