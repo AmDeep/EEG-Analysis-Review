@@ -1,0 +1,241 @@
+{
+  "source": "C:\\Users\\patel\\EEG-Analysis-Review\\Aditya\\Feature Extraction\\features_combined.csv",
+  "source_sha256": "911bde42916a67c170ab60b04e333a6fbb9362dd435e2c28a9e1f98e326a924c",
+  "datasets": [
+    "ds005289",
+    "ds005280",
+    "ds005473"
+  ],
+  "epochs": 10340,
+  "dropped_all_missing_epochs": 0,
+  "features": [
+    "n2_amp",
+    "n2_lat",
+    "p2_amp",
+    "p2_lat",
+    "n2p2_amp",
+    "gamma_power",
+    "alpha_erd_pct",
+    "beta_erd_pct",
+    "psd_delta",
+    "psd_theta",
+    "psd_alpha",
+    "psd_beta",
+    "psd_gamma",
+    "plv_Fz-Cz",
+    "plv_Cz-Pz",
+    "plv_C3-C4",
+    "plv_FCz-CPz",
+    "perm_entropy",
+    "spectral_entropy",
+    "sample_entropy",
+    "higuchi_fd",
+    "dfa",
+    "hjorth_mobility",
+    "hjorth_complexity"
+  ],
+  "sklearn_version": "1.7.2",
+  "config": {
+    "csv": "C:\\Users\\patel\\EEG-Analysis-Review\\Aditya\\Feature Extraction\\features_combined.csv",
+    "output_dir": "C:\\Users\\patel\\EEG-Analysis-Review\\Krish\\state_discovery_results",
+    "max_k": 10,
+    "perplexities": [
+      30,
+      50
+    ],
+    "seeds": [
+      42,
+      7
+    ],
+    "seed": 42,
+    "neighbors": 15,
+    "tsne_iterations": 1000
+  },
+  "interpretation": "Exploratory clusters are unordered, unvalidated candidate states. KNN agreement measures imitation of K-means, not pain prediction accuracy.",
+  "representations": {
+    "pca": {
+      "candidate_k": 3,
+      "normalized_elbow_gap": 0.4165954476997759,
+      "pca_dimensions": 15,
+      "silhouette": 0.15350343355275414,
+      "dataset_adjusted_mutual_information": 0.030305726911185552,
+      "subject_adjusted_mutual_information": 0.07697753831724734,
+      "cluster_sizes": {
+        "0": 4255,
+        "1": 1960,
+        "2": 4125
+      }
+    },
+    "tsne_p30_seed42": {
+      "candidate_k": 4,
+      "normalized_elbow_gap": 0.49735105442723715,
+      "dimensions": 2,
+      "silhouette": 0.387483686208725,
+      "dataset_adjusted_mutual_information": 0.02200380200143486,
+      "subject_adjusted_mutual_information": 0.08234680486612624,
+      "cluster_sizes": {
+        "0": 2715,
+        "1": 2924,
+        "2": 2572,
+        "3": 2129
+      }
+    },
+    "tsne_p30_seed7": {
+      "candidate_k": 4,
+      "normalized_elbow_gap": 0.49743278463368906,
+      "dimensions": 2,
+      "silhouette": 0.38686633110046387,
+      "dataset_adjusted_mutual_information": 0.021955639918032774,
+      "subject_adjusted_mutual_information": 0.0829566801544746,
+      "cluster_sizes": {
+        "0": 2714,
+        "1": 2110,
+        "2": 2596,
+        "3": 2920
+      },
+      "adjusted_rand_vs_first_tsne": 0.9739477477380609
+    },
+    "tsne_p50_seed42": {
+      "candidate_k": 3,
+      "normalized_elbow_gap": 0.5326201361201267,
+      "dimensions": 2,
+      "silhouette": 0.3880636692047119,
+      "dataset_adjusted_mutual_information": 0.0235591909175346,
+      "subject_adjusted_mutual_information": 0.05866249352681647,
+      "cluster_sizes": {
+        "0": 3460,
+        "1": 3978,
+        "2": 2902
+      },
+      "adjusted_rand_vs_first_tsne": 0.3977099546937469
+    },
+    "tsne_p50_seed7": {
+      "candidate_k": 3,
+      "normalized_elbow_gap": 0.5378415339806932,
+      "dimensions": 2,
+      "silhouette": 0.37138575315475464,
+      "dataset_adjusted_mutual_information": 0.02829903204985854,
+      "subject_adjusted_mutual_information": 0.06680722035730838,
+      "cluster_sizes": {
+        "0": 3355,
+        "1": 3749,
+        "2": 3236
+      },
+      "adjusted_rand_vs_first_tsne": 0.5316571780712366
+    }
+  },
+  "knn_transfer": [
+    {
+      "split": "subject_held_out",
+      "fold": 1,
+      "train_epochs": 8271,
+      "test_epochs": 2069,
+      "train_subjects": 230,
+      "test_subjects": 61,
+      "test_datasets": "ds005280,ds005289,ds005473",
+      "candidate_k": 3,
+      "normalized_elbow_gap": 0.41365392266985246,
+      "knn_cluster_agreement": 0.944417593040116,
+      "majority_cluster_agreement": 0.42580956984050267,
+      "adjusted_rand_agreement": 0.8308976004243541
+    },
+    {
+      "split": "subject_held_out",
+      "fold": 2,
+      "train_epochs": 8275,
+      "test_epochs": 2065,
+      "train_subjects": 234,
+      "test_subjects": 57,
+      "test_datasets": "ds005280,ds005289,ds005473",
+      "candidate_k": 3,
+      "normalized_elbow_gap": 0.411026506984297,
+      "knn_cluster_agreement": 0.9409200968523003,
+      "majority_cluster_agreement": 0.45036319612590797,
+      "adjusted_rand_agreement": 0.8243721100986902
+    },
+    {
+      "split": "subject_held_out",
+      "fold": 3,
+      "train_epochs": 8269,
+      "test_epochs": 2071,
+      "train_subjects": 233,
+      "test_subjects": 58,
+      "test_datasets": "ds005280,ds005289,ds005473",
+      "candidate_k": 3,
+      "normalized_elbow_gap": 0.41030102530872725,
+      "knn_cluster_agreement": 0.9444712699179141,
+      "majority_cluster_agreement": 0.4041525832930951,
+      "adjusted_rand_agreement": 0.8375105869046534
+    },
+    {
+      "split": "subject_held_out",
+      "fold": 4,
+      "train_epochs": 8269,
+      "test_epochs": 2071,
+      "train_subjects": 233,
+      "test_subjects": 58,
+      "test_datasets": "ds005280,ds005289,ds005473",
+      "candidate_k": 3,
+      "normalized_elbow_gap": 0.4146582299154587,
+      "knn_cluster_agreement": 0.9478512795750845,
+      "majority_cluster_agreement": 0.4345726702076292,
+      "adjusted_rand_agreement": 0.8500633775738685
+    },
+    {
+      "split": "subject_held_out",
+      "fold": 5,
+      "train_epochs": 8276,
+      "test_epochs": 2064,
+      "train_subjects": 234,
+      "test_subjects": 57,
+      "test_datasets": "ds005280,ds005289,ds005473",
+      "candidate_k": 3,
+      "normalized_elbow_gap": 0.40180682913576565,
+      "knn_cluster_agreement": 0.9578488372093024,
+      "majority_cluster_agreement": 0.42829457364341084,
+      "adjusted_rand_agreement": 0.8750353729386449
+    },
+    {
+      "split": "dataset_held_out",
+      "fold": 1,
+      "train_epochs": 4065,
+      "test_epochs": 6275,
+      "train_subjects": 68,
+      "test_subjects": 223,
+      "test_datasets": "ds005280",
+      "candidate_k": 3,
+      "normalized_elbow_gap": 0.40265765477842463,
+      "knn_cluster_agreement": 0.9266932270916335,
+      "majority_cluster_agreement": 0.2764940239043825,
+      "adjusted_rand_agreement": 0.7860913398559307
+    },
+    {
+      "split": "dataset_held_out",
+      "fold": 2,
+      "train_epochs": 9968,
+      "test_epochs": 372,
+      "train_subjects": 252,
+      "test_subjects": 39,
+      "test_datasets": "ds005289",
+      "candidate_k": 3,
+      "normalized_elbow_gap": 0.4135404881836693,
+      "knn_cluster_agreement": 0.9166666666666666,
+      "majority_cluster_agreement": 0.44623655913978494,
+      "adjusted_rand_agreement": 0.752649165936995
+    },
+    {
+      "split": "dataset_held_out",
+      "fold": 3,
+      "train_epochs": 6647,
+      "test_epochs": 3693,
+      "train_subjects": 262,
+      "test_subjects": 29,
+      "test_datasets": "ds005473",
+      "candidate_k": 3,
+      "normalized_elbow_gap": 0.4023335422949116,
+      "knn_cluster_agreement": 0.9577579203899269,
+      "majority_cluster_agreement": 0.36826428378012455,
+      "adjusted_rand_agreement": 0.8709061047141999
+    }
+  ]
+}

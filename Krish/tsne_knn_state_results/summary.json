@@ -1,0 +1,71 @@
+{
+  "datasets": [
+    "ds005289",
+    "ds005280",
+    "ds005473"
+  ],
+  "n_epochs": 10340,
+  "n_features": 23,
+  "n_dataset_specific_subjects": 291,
+  "tsne": {
+    "perplexity": 30.0,
+    "seed": 42,
+    "n_components": 2
+  },
+  "k_sweep": [
+    {
+      "k": 2,
+      "inertia": 13349691.0,
+      "silhouette": 0.4289990961551666
+    },
+    {
+      "k": 3,
+      "inertia": 9556221.0,
+      "silhouette": 0.38617074489593506
+    },
+    {
+      "k": 4,
+      "inertia": 6735378.5,
+      "silhouette": 0.3912147283554077
+    },
+    {
+      "k": 5,
+      "inertia": 5381965.5,
+      "silhouette": 0.370062917470932
+    },
+    {
+      "k": 6,
+      "inertia": 4575082.5,
+      "silhouette": 0.3544894754886627
+    },
+    {
+      "k": 7,
+      "inertia": 3931998.75,
+      "silhouette": 0.36365288496017456
+    },
+    {
+      "k": 8,
+      "inertia": 3327647.25,
+      "silhouette": 0.3662436604499817
+    },
+    {
+      "k": 9,
+      "inertia": 2962564.0,
+      "silhouette": 0.35689258575439453
+    },
+    {
+      "k": 10,
+      "inertia": 2656420.5,
+      "silhouette": 0.3583822548389435
+    }
+  ],
+  "elbow_k": 5,
+  "best_silhouette_k": 2,
+  "silhouette_at_elbow": 0.370062917470932,
+  "knn": {
+    "n_neighbors": 15,
+    "weights": "distance",
+    "cv": "5-fold StratifiedGroupKFold by dataset-specific subject",
+    "held_out_agreement_with_kmeans": 0.995164410058027
+  }
+}
