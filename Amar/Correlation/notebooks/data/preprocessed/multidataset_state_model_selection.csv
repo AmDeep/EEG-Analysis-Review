@@ -1,0 +1,19 @@
+window_seconds,trained_on_dataset,held_out_dataset,state_count,subject_cv_log_likelihood,subject_cv_coverage,subject_temporal_block_bootstrap_ari,kmeans_silhouette,hdbscan_cluster_count,hdbscan_noise_fraction,hmm_evaluated,hmm_reason,selected
+2,ds005284,eegmmidb,2,-24.467438889659554,0.9916666666666666,0.7146158535200021,0.24657991443159277,0,1.0,False,hmmlearn unavailable; temporal metrics reported without fitting an HMM,True
+2,ds005284,eegmmidb,3,-23.219838660402356,0.9895833333333333,0.5519297861258841,0.1814515924910949,0,1.0,False,hmmlearn unavailable; temporal metrics reported without fitting an HMM,False
+2,ds005284,eegmmidb,4,-22.68087442709718,0.9937499999999998,0.5532079263611998,0.1746599280429298,0,1.0,False,hmmlearn unavailable; temporal metrics reported without fitting an HMM,False
+2,eegmmidb,ds005284,2,-29.131783945960148,0.9868525896414344,0.5018644267503397,0.21495947540538476,0,1.0,False,hmmlearn unavailable; temporal metrics reported without fitting an HMM,False
+2,eegmmidb,ds005284,3,-27.70532207878291,0.9868525896414344,0.504780211108193,0.22929172328602743,0,1.0,False,hmmlearn unavailable; temporal metrics reported without fitting an HMM,True
+2,eegmmidb,ds005284,4,-28.516654528154838,0.9832669322709163,0.49224367678414604,0.2616810085641521,0,1.0,False,hmmlearn unavailable; temporal metrics reported without fitting an HMM,False
+4,ds005284,eegmmidb,2,-34.30853589011106,0.99375,0.45065161630304873,0.9453674371530468,0,1.0,False,hmmlearn unavailable; temporal metrics reported without fitting an HMM,False
+4,ds005284,eegmmidb,3,-33.641586788652965,0.9958333333333332,0.533323640741891,0.2190925551636136,0,1.0,False,hmmlearn unavailable; temporal metrics reported without fitting an HMM,False
+4,ds005284,eegmmidb,4,-30.501128659615556,0.9916666666666666,0.6908611655075996,0.23829589024642395,0,1.0,False,hmmlearn unavailable; temporal metrics reported without fitting an HMM,True
+4,eegmmidb,ds005284,2,-34.68426530540428,0.996031746031746,0.34997908392445837,0.40444252454216145,2,0.14365079365079364,False,hmmlearn unavailable; temporal metrics reported without fitting an HMM,False
+4,eegmmidb,ds005284,3,-33.49006860406636,0.9857142857142858,0.41764963461784593,0.2196095597158317,2,0.14365079365079364,False,hmmlearn unavailable; temporal metrics reported without fitting an HMM,False
+4,eegmmidb,ds005284,4,-33.38767074313299,0.9873015873015873,0.45310656728827,0.26693782152917467,2,0.14365079365079364,False,hmmlearn unavailable; temporal metrics reported without fitting an HMM,True
+8,ds005284,eegmmidb,2,-27.260035445326707,0.9925,0.5033808700988455,0.20509796960982665,0,1.0,False,hmmlearn unavailable; temporal metrics reported without fitting an HMM,False
+8,ds005284,eegmmidb,3,-25.80859898203019,0.9949999999999999,0.7069442665337805,0.23387143309233763,0,1.0,False,hmmlearn unavailable; temporal metrics reported without fitting an HMM,True
+8,ds005284,eegmmidb,4,-26.090053739393955,0.9824999999999999,0.5762286311721013,0.23941247113686948,0,1.0,False,hmmlearn unavailable; temporal metrics reported without fitting an HMM,False
+8,eegmmidb,ds005284,2,-35.47413240443416,0.9883333333333333,0.5368952524907157,0.4336279282269778,2,0.08666666666666667,False,hmmlearn unavailable; temporal metrics reported without fitting an HMM,True
+8,eegmmidb,ds005284,3,-39.971657370260026,0.9850000000000001,0.39762134069803917,0.22009946716331721,2,0.08666666666666667,False,hmmlearn unavailable; temporal metrics reported without fitting an HMM,False
+8,eegmmidb,ds005284,4,-40.94404307134446,0.9766666666666666,0.39301277554167463,0.2664157645654262,2,0.08666666666666667,False,hmmlearn unavailable; temporal metrics reported without fitting an HMM,False
