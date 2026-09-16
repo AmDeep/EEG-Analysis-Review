@@ -1,0 +1,53 @@
+Loaded 10984 trials from ['ds005293', 'ds005473']
+global_subject nunique: 124
+
+====================================================================================================
+LASER_POWER DISCRETENESS CHECK
+====================================================================================================
+ds005293: 8 unique values -> [np.float64(2.0), np.float64(2.25), np.float64(2.5), np.float64(3.0), np.float64(3.5), np.float64(3.75), np.float64(4.0), np.float64(4.5)]
+ds005473: 15 unique values -> [np.float64(1.0), np.float64(1.25), np.float64(1.5), np.float64(1.75), np.float64(2.0), np.float64(2.25), np.float64(2.5), np.float64(2.75), np.float64(3.0), np.float64(3.25), np.float64(3.5), np.float64(3.75), np.float64(4.0), np.float64(4.25), np.float64(4.5)]
+
+Using 27 feature columns
+
+====================================================================================================
+CONFIG A: raw model, no dataset feature (baseline -- same as before, redone with
+          train-only imputation to remove even the mild feature-side leakage)
+====================================================================================================
+
+--- Config A: no dataset feature, no calibration ---
+  RandomForest       OVERALL  R2=0.2703  MAE=0.6210  within+/-0.5J=43.4%  n=10984
+    ds005293     R2=0.0959  MAE=0.5904  within+/-0.5J=44.3%  n=7291
+    ds005473     R2=0.2177  MAE=0.6814  within+/-0.5J=41.6%  n=3693
+  GradientBoosting   OVERALL  R2=0.2784  MAE=0.6178  within+/-0.5J=43.3%  n=10984
+    ds005293     R2=0.0982  MAE=0.5890  within+/-0.5J=44.1%  n=7291
+    ds005473     R2=0.2361  MAE=0.6748  within+/-0.5J=41.7%  n=3693
+
+====================================================================================================
+CONFIG B: + dataset as explicit feature (legitimate, known upfront)
+====================================================================================================
+
+--- Config B: + dataset feature, no calibration ---
+  RandomForest       OVERALL  R2=0.2739  MAE=0.6196  within+/-0.5J=43.3%  n=10984
+    ds005293     R2=0.0997  MAE=0.5894  within+/-0.5J=44.2%  n=7291
+    ds005473     R2=0.2223  MAE=0.6793  within+/-0.5J=41.4%  n=3693
+  GradientBoosting   OVERALL  R2=0.2808  MAE=0.6172  within+/-0.5J=43.3%  n=10984
+    ds005293     R2=0.1005  MAE=0.5887  within+/-0.5J=44.2%  n=7291
+    ds005473     R2=0.2397  MAE=0.6735  within+/-0.5J=41.6%  n=3693
+
+====================================================================================================
+CONFIG C: + calibration-trial personal baseline (first 10 trials/subject,
+          leak-free -- offset computed only from calibration trials, applied to the rest)
+====================================================================================================
+
+--- Config C: + dataset feature + calibration offset ---
+  RandomForest       OVERALL  R2=0.2505  MAE=0.6340  within+/-0.5J=45.2%  n=9744
+    ds005293     R2=-0.0012  MAE=0.6100  within+/-0.5J=47.1%  n=6341
+    ds005473     R2=0.2271  MAE=0.6787  within+/-0.5J=41.6%  n=3403
+  GradientBoosting   OVERALL  R2=0.2613  MAE=0.6313  within+/-0.5J=45.3%  n=9744
+    ds005293     R2=0.0014  MAE=0.6101  within+/-0.5J=47.2%  n=6341
+    ds005473     R2=0.2519  MAE=0.6709  within+/-0.5J=41.9%  n=3403
+
+====================================================================================================
+Compare A vs B vs C above. C is the only config with a personal-baseline
+correction that is actually honest and deployable.
+====================================================================================================
