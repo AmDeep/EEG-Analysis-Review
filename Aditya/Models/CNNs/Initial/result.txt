@@ -1,0 +1,21 @@
+PS C:\Users\hi2ad\OneDrive\UT Austin\Nurovo\Code\Baseline Models> cd "C:/Users/hi2ad/OneDrive/UT Austin/Nurovo/Code/Baseline Models"; python .\CNN\train_eegnet.py --input .\CNN\nurovo_epochs.npz --outdir .\CNN\nurovo_runs_regression_full --epochs 50 --folds 5 --batch-size 64 --margin 0.5 --seed 42
+fold 1: mae=0.605, rmse=0.753, within0.5=0.489
+fold 2: mae=0.589, rmse=0.727, within0.5=0.508
+fold 3: mae=0.580, rmse=0.725, within0.5=0.510
+fold 4: mae=0.712, rmse=0.878, within0.5=0.413
+fold 5: mae=0.599, rmse=0.729, within0.5=0.472
+
+OOF:
+{
+  "mae": 0.6170068927711583,
+  "rmse": 0.7644896922012713,
+  "within_margin_accuracy": 0.47860524399126003,
+  "subject_mean_mae": 0.6122821525233166,
+  "n_subjects": 124
+}
+PS C:\Users\hi2ad\OneDrive\UT Austin\Nurovo\Code\Baseline Models> 
+
+
+
+ Implemented a compact EEGNet-inspired convolutional regressor for single-trial laser-intensity prediction from 28-channel EEG epochs. The model takes inputs of shape N × 1 × 28 × 250, uses a temporal convolution followed by depthwise spatial filtering and a separable temporal block, and outputs a scalar laser-power estimate for each epoch. The architecture includes 3 main convolutional stages with batch normalization, ELU activations, average pooling, and dropout (0.5), followed by a final linear regression head; the full model has 1,409 trainable parameters. Training was performed with subject-grouped 5-fold cross-validation to prevent leakage across subjects, channel-wise normalization was fit only on training data, and optimization used AdamW with L1 loss and ReduceLROnPlateau scheduling. The final clinical evaluation used a fixed tolerance margin of ±0.5 in laser-power units, yielding an OOF within-margin accuracy of 47.86%, MAE of 0.617, and RMSE of 0.764 across 124 subjects.
+
