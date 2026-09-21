@@ -1,0 +1,47 @@
+# Config for preprocessing/build_epochs.py
+#
+# Values marked "VERIFY" are my best guess from the papers/READMEs, not confirmed against the
+# actual BIDS events.tsv files (I haven't been able to download/open them yet). The script prints
+# the columns it actually finds for the first subject of each dataset so you can fix these fast.
+
+sample_rate_hz: 256
+notch_hz: [50, 100]
+bandpass_hz: [0.5, 45]
+epoch_window_s: [0.0, 1.0]      # relative to laser/stimulus onset
+baseline_window_s: [-0.5, -0.1] # for baseline correction
+reject_uv: 200                  # peak-to-peak amplitude threshold, microvolts
+
+# Common channel subset present across Biosemi / ANT / BrainProducts / Tiemann's system.
+# Aditya's existing pipeline already used C3/CZ/C4; we widen slightly for a CNN that benefits
+# from a bit more spatial coverage.
+common_channels: [Fz, Cz, Pz, F3, F4, C3, C4, P3, P4]
+
+datasets:
+  ds005284:
+    source: openneuro
+    n_subjects: 26
+    system: Biosemi
+    label_column: stim_intensity   # VERIFY against events.tsv (Joules, continuous 2.5-4.5)
+    label_units: joules
+    already_have_features_csv: true   # this is Aditya's existing work
+
+  ds005285:
+    source: openneuro
+    n_subjects: 29
+    system: ANT
+    label_column: stim_intensity   # VERIFY
+    label_units: joules
+
+  ds005473:
+    source: openneuro
+    n_subjects: 29
+    system: BrainProducts
+    label_column: stim_intensity   # VERIFY
+    label_units: joules
+
+  tiemann2018:
+    source: osf
+    n_subjects: 51
+    system: unknown (Tiemann lab hardware)
+    label_column: intensity_level   # VERIFY - expect categorical low/medium/high per trial
+    label_units: ordinal_3level
