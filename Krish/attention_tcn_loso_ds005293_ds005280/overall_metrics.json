@@ -1,0 +1,12 @@
+{
+  "cv": "LeaveOneGroupOut over dataset + subject",
+  "n_intervals": 13566,
+  "n_completed_subjects": 318,
+  "accuracy": 0.19578357658853016,
+  "balanced_accuracy": 0.1995146557906196,
+  "macro_f1": 0.17081584321223184,
+  "mae_joules": 0.5024476327657379,
+  "rmse_joules": 0.6285277488259672,
+  "within_0.25_joules": 0.3093763821318001,
+  "is_complete_loso": true
+}
