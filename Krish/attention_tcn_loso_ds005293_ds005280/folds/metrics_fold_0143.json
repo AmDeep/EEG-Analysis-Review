@@ -1,0 +1,13 @@
+{
+  "fold": 143,
+  "held_out_subject": "ds005280__sub-143",
+  "n_test_intervals": 29,
+  "epochs_trained": 8,
+  "best_validation_loss": 1.9987508058547974,
+  "accuracy": 0.0,
+  "balanced_accuracy": 0.0,
+  "macro_f1": 0.0,
+  "mae_joules": 0.6142250669413599,
+  "rmse_joules": 0.6628390511323158,
+  "within_0.25_joules": 0.034482758620689655
+}

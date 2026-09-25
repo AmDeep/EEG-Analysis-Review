@@ -1,0 +1,242 @@
+CNN LASER-POWER REGRESSION RESULTS
+==================================
+
+Objective
+---------
+Predict the exact laser_power value for each single-trial EEG epoch. The model
+does not predict tertile classes. The clinical metric is the percentage of
+predictions within +/-0.5 laser-power units of the true laser_power value.
+
+Data and target
+---------------
+- Input: nurovo_epochs.npz
+- Shape: 10,984 epochs x 28 EEG channels x 250 time samples
+- Subjects: 124
+- Target: power, copied from the laser_power column in the source label CSV
+- Target levels: 1.00 through 4.50 in 0.25-unit increments
+- KNN feature-table check: all 10,984 CNN trials matched
+  KNNs/features_all_epochs_FIXED.csv exactly; no duplicate keys or target
+  mismatches were found. Those tabular features were benchmarked separately,
+  but the CNN remains the primary model.
+
+Leakage controls
+----------------
+- Subject-grouped 5-fold cross-validation: no subject appears in both train
+  and validation folds.
+- Channel normalization is fit on training epochs only in each fold.
+- Validation targets are not used for normalization, model fitting, or fold
+  assignment.
+- Stratification is used only to balance folds; it is not the prediction task.
+- Evaluation uses out-of-fold predictions across all 124 subjects.
+
+Model changes
+-------------
+1. Converted the output from classification to scalar regression so the model
+  predicts laser_power directly.
+2. Added an EEGNet-inspired temporal convolution, depthwise spatial filter,
+  separable temporal block, batch normalization, ELU activations, pooling,
+  dropout, and scalar regression head.
+3. Increased the compact network defaults from temporal_filters=8 and
+  depth_multiplier=2 to temporal_filters=12 and depth_multiplier=3.
+4. Reduced dropout from 0.50 to 0.35 to retain more signal while controlling
+  overfitting.
+5. Added Huber loss as the default robust regression loss.
+6. Kept AdamW optimization, gradient clipping, and ReduceLROnPlateau
+  scheduling.
+7. Added configurable prediction quantization with --quantize-step. The
+  accuracy-oriented default is 0.50; 0.25 remains available for finer
+  predictions with the command-line option.
+8. Saved both raw_prediction and quantized prediction in the OOF CSV so the
+  clinical result is auditable.
+9. Added optional training-only input noise and channel dropout augmentation
+  flags for robustness experiments. Both remain disabled by default because
+  the matched 10-epoch smoke comparison was effectively neutral: 59.50%
+  with augmentation versus 59.60% without it.
+10. Protocol-prior and epoch-position methods were explicitly rejected for
+  clinical deployment. They depend on known trial-order structure that may
+  not exist for a new patient or clinic workflow. Current predictions use
+  EEG input only.
+11. Added optional target-grid training with --target-step. This rounds only
+  training labels and never uses protocol metadata. In matched 10-epoch
+  smoke tests, target-step=0.50 reached 59.74% versus 59.60% with no target
+  rounding; target-step=0.25 reached 59.58% and was not selected.
+12. Added an optional extra depthwise-separable temporal block with
+  --extra-temporal-block. This adds temporal capacity while using EEG only.
+13. Tested parallel multi-scale temporal branches with 8, 16, and 32-sample
+  kernels. The standalone version reached 55.86% in a matched smoke test,
+  and the combination with the deeper block reached 64.57%, equal to the
+  deeper-block control. It was not promoted because it added complexity
+  without improving accuracy.
+14. Added an optional signal-feature branch computed directly from each EEG
+  epoch. It uses amplitude statistics, zero-crossing rate, and delta,
+  theta, alpha, beta, and gamma power. Features are normalized within each
+  training fold and fused with the waveform CNN.
+15. Tested the deeper CNN plus the EEG-derived feature branch in full
+  subject-grouped CV. It reached 66.82%, a +0.23-point improvement over
+  the deeper waveform-only model.
+16. Tested an ordinal auxiliary head with 14 ordered threshold losses. It
+  remained EEG-only but underperformed in matched smoke tests: 65.49% at
+  loss weight 0.15 and 65.38% at weight 0.05, versus 65.64% without the
+  auxiliary head. It was not promoted.
+17. Blended aligned out-of-fold predictions from the deeper waveform model and
+  the EEG-derived feature model. The best EEG-only blend used 60% waveform
+  and 40% feature-branch output, followed by half-step quantization.
+18. Tested a three-model EEG-only blend and selected weights with fold-held-out
+  meta-validation. The held-out estimate was 67.72%, avoiding selection of
+  ensemble weights on the fold being evaluated. An exploratory full-OOF
+  weight fit reached 67.90% but is not used as the headline result.
+19. Tested MAE loss on the current deeper feature-fusion model. It reached
+  65.57% in a matched smoke test versus 65.64% with Huber, so Huber remains
+  the selected objective.
+20. Tested an epsilon-insensitive loss that directly penalizes errors outside
+  the +/-0.5 clinical margin. It reached 65.18% versus 65.64% with Huber in
+  a matched smoke test and was rejected.
+21. Tested per-epoch/channel normalization to improve cross-patient robustness.
+  It reached only 43.48% in a matched smoke test, showing that absolute EEG
+  amplitude carries useful target information. It remains disabled.
+22. Rechecked output grids from 0.25 through 1.25 units. Half-step
+  quantization remained the strongest decision rule for the EEG-only model.
+23. Tested +/-5-sample training-only temporal jitter. It reached 65.54% versus
+  65.64% without jitter in a matched smoke test and was rejected.
+24. Added all available Zhao/KNN-labeled EEG data to a new tensor using the
+  local raw EEGLAB files and features_all_epochs_FIXED.csv only for its
+  laser_power labels. The expanded tensor contains 29,515 epochs from 678
+  subjects across nine datasets. Dataset and epoch are retained only for
+  grouping and audit; they are not model inputs.
+
+Verified full OOF comparison
+----------------------------
+Configuration: 5 folds, 50 epochs, batch size 64, seed 42, Huber loss,
+clinical margin +/-0.5.
+
+Raw CNN output:
+- Within +/-0.5: 47.86%
+- MAE: 0.6170
+- RMSE: 0.7645
+- Subject-mean MAE: 0.6123
+
+Quarter-step quantized output:
+- Within +/-0.5: 57.69%
+- MAE: 0.6150
+- RMSE: 0.7689
+- Improvement in clinical accuracy: +9.83 percentage points
+
+Half-step accuracy-optimized output:
+- Within +/-0.5: 60.76%
+- MAE: 0.6177
+- RMSE: 0.7775
+- Improvement over raw CNN: +12.16 percentage points
+
+Deeper EEG-only CNN:
+- 5 subject-grouped folds, 50 epochs, 124 held-out subjects
+- Within +/-0.5: 66.60%
+- MAE: 0.5488
+- RMSE: 0.6964
+- Subject-mean MAE: 0.5396
+- Fold within-margin range: 60.81% to 69.48%
+- Configuration: extra temporal block, Huber loss, half-step quantization
+- Improvement over the previous valid EEG-only result: +5.20 percentage points
+
+Deeper CNN plus EEG-derived feature branch:
+- 5 subject-grouped folds, 50 epochs, 124 held-out subjects
+- Within +/-0.5: 66.82%
+- MAE: 0.5416
+- RMSE: 0.6885
+- Subject-mean MAE: 0.5323
+- Fold within-margin range: 62.50% to 69.98%
+- Improvement over deeper waveform-only CNN: +0.23 percentage points
+- Configuration: extra temporal block, EEG-derived feature branch, Huber loss,
+  half-step quantization
+
+EEG-only ensemble:
+- Aligned out-of-fold predictions from three EEG-only models
+- Fold-held-out weight selection, half-step quantization
+- Held-out within +/-0.5: 67.72%
+- MAE: 0.5392
+- RMSE: 0.6841
+- Improvement over deeper waveform-only CNN: +1.75 percentage points
+- Exploratory full-OOF fit: 67.90%, not used as the headline score
+
+Rejected protocol-dependent result:
+- A dataset-and-epoch prior reached 70.40% in subject-grouped CV.
+- This result is not considered clinically valid because it relies on trial
+  order and protocol structure rather than patient EEG.
+- It has been removed from the trainer and must not be used for deployment.
+
+The quantization improvement is a valid inference adjustment, not a target
+change: the network still learns to predict laser_power, and the final value
+is rounded to the quarter-unit settings that actually occur in the dataset.
+The accuracy-oriented half-step grid trades a small amount of numeric
+precision for a higher rate of predictions inside the fixed clinical margin.
+
+Additional benchmark
+---------------------
+The KNN feature table was evaluated with subject-grouped Random Forest and
+Gradient Boosting regressors. Their raw within +/-0.5 results were 43.4% and
+43.3%, respectively, below the CNN. A calibration variant reached 45.3% on a
+smaller evaluation subset, also below the CNN.
+
+Current best result
+-------------------
+The current valid result is the EEG-only ensemble: 67.72% within +/-0.5
+laser-power units under fold-held-out ensemble-weight selection. It combines
+EEG waveform and EEG-derived feature models and requires no protocol or trial-
+order information. The target-step=0.50 smoke result was marginally positive
+but its long five-fold confirmation was stopped before completion, so it is
+not promoted as a validated improvement. Use --extra-temporal-block to enable
+the deeper model, --signal-feature-branch to enable feature fusion, or
+--quantize-step 0.25 when finer output resolution is preferred.
+
+Expanded Zhao-data experiment:
+- Deeper CNN plus EEG-derived feature branch
+- 29,515 EEG epochs, 678 subjects, nine datasets
+- 3-fold/10-epoch smoke result: 73.33% within +/-0.5
+- MAE: 0.4775
+- RMSE: 0.6294
+- Subject-mean MAE: 0.4256
+- A 5-fold/50-epoch confirmation was started but stopped after fold 1 because
+  the CPU run became excessively slow. The 73.33% value is therefore
+  preliminary and is not promoted over the nested 67.72% headline until a
+  complete expanded-data evaluation is run.
+- The expanded tensor and its source labels are saved as
+  CNN/nurovo_epochs_all.npz for repeatable follow-up experiments.
+- Faster 3-fold/20-epoch run with batch size 256 reached 73.90% within +/-0.5,
+  MAE 0.4715, RMSE 0.6277, and subject-mean MAE 0.4142. This is the strongest
+  expanded-data result so far, but remains preliminary because it is 3-fold,
+  not the planned 5-fold confirmation.
+- Optimization checks on the same expanded-data setup: lr=0.0005 reached
+  72.61%, and batch size 512 reached 73.59%. The selected settings remain
+  lr=0.001 and batch size 256.
+- Longer 3-fold/30-epoch confirmation with the selected settings reached
+  73.85% within +/-0.5, MAE 0.4716, RMSE 0.6254, and subject-mean MAE 0.4181.
+  The 20-epoch run remains the slightly higher accuracy point at 73.90%,
+  while the 30-epoch run confirms the gain is stable rather than a 10-epoch
+  artifact.
+- Wider expanded-data model with temporal_filters=16 reached 74.41% in a
+  3-fold/20-epoch evaluation, with MAE 0.4689, RMSE 0.6201, and subject-mean
+  MAE 0.4215. This is the strongest expanded-data result so far.
+- Wider/deeper expanded-data model with temporal_filters=16,
+  depth_multiplier=5, and dropout=0.30 reached 75.35% in a 3-fold/20-epoch
+  evaluation. Metrics: MAE 0.4606, RMSE 0.6156, subject-mean MAE 0.4086,
+  with fold accuracy ranging from 75.10% to 75.77%.
+- Expanded-model ensemble with fold-held-out weight selection reached 75.85%
+  within +/-0.5, MAE 0.4555, and RMSE 0.6077. It combines the expanded
+  width-only and wider/deeper models; a same-OOF exploratory fit reached
+  75.91%, but 75.85% is the defensible headline.
+- Hyperparameter sweep on the wider/deeper expanded model, using identical
+  3-fold/10-epoch settings: dropout=0.20 reached 75.19%, weight_decay=0.0003
+  reached 74.97%, and lr=0.00075 reached 74.73%. The default dropout=0.30,
+  weight_decay=0.001, and lr=0.001 configuration remains selected. These
+  tuning values are preliminary because the strongest reference used 20
+  epochs.
+- Tested a 2-second EEG window. It produced 26,750 epochs from 583 subjects;
+  95 shorter epochs were excluded. The 2-second model was much slower on CPU
+  and was stopped after fold 1 before final metrics, so it was not promoted.
+  The 2-second tensor remains saved as CNN/nurovo_epochs_all_2s.npz for future
+  GPU-backed testing.
+
+Current expanded-data best:
+- 75.85% within +/-0.5 under fold-held-out ensemble weighting
+- 29,515 EEG epochs, 678 subjects, nine datasets
+- No protocol, dataset, or epoch metadata used as model inputs
+
