@@ -1,0 +1,25 @@
+{
+  "confound_gate_passed_window_lengths": [
+    2
+  ],
+  "lodo_coverage_gate_passed_window_lengths": [],
+  "reproducible_window_lengths": [],
+  "rejected_window_lengths": [
+    2,
+    4,
+    8
+  ],
+  "confirmed_on_one_independent_edf_dataset": false,
+  "general_cross_dataset_state_claim_supported": false,
+  "result": "No portable state solution passed both bidirectional LODO coverage and nuisance-confound gates on the independent EDF dataset.",
+  "generalization_note": "Confirmation in this two-dataset task is distinct from a general EEG state claim, which remains gated on recurrence in a third dataset.",
+  "decision_rule": {
+    "subject_dominated": "maximum subject share within any state > 0.30",
+    "dataset_or_device_dominated": "maximum dataset share > 0.80 or Cramer's V > 0.50",
+    "qc_dominated": "maximum normalized mutual information with a QC variable > 0.20",
+    "lodo_transportable": "coverage >= 0.50 in both assignment directions",
+    "independent_edf_confirmation": "confound and LODO gates pass in both directions",
+    "general_cross_dataset_claim": "later recurrence in at least three independent datasets"
+  },
+  "interpretation_policy": "Task/run annotations were excluded from all feature, scaling, clustering, model-selection, and LODO fitting steps and joined only afterward."
+}

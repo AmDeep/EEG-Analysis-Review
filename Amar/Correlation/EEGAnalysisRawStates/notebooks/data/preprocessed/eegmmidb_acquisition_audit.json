@@ -1,0 +1,16 @@
+{
+  "dataset_id": "eegmmidb",
+  "version": "1.0.0",
+  "checked_on": "2026-09-15",
+  "official_url": "https://physionet.org/content/eegmmidb/1.0.0/",
+  "access_policy": "Anyone can access files subject to the stated license.",
+  "license": "Open Data Commons Attribution License v1.0",
+  "doi": "10.13026/C28G6P",
+  "full_uncompressed_size_gb": 3.4,
+  "full_zip_size_gb": 1.9,
+  "local_subset": "S001-S010; runs 01,02,03,04,07,08,11,12",
+  "local_file_count": 80,
+  "local_bytes": 167230368,
+  "selection_rationale": "First 10 subjects, with two baseline, three execution, and three imagery runs.",
+  "comparison_subset": "ds005284 sub-001 through sub-010 for balanced subject counts"
+}
