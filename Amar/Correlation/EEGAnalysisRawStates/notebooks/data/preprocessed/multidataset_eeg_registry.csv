@@ -1,0 +1,7 @@
+dataset_id,source,url,expected_format,primary_validation_role,local_status,local_root
+ds005284,OpenNeuro,https://openneuro.org/datasets/ds005284,BDF + BIDS sidecars,Development baseline,available,data/ds005284
+eegmmidb,PhysioNet,https://physionet.org/content/eegmmidb/,EDF+,Rest/movement/imagery and format transfer,available_subset_audited,data/eegmmidb
+sleep-edfx,PhysioNet,https://physionet.org/content/sleep-edfx/1.0.0/,EDF + hypnogram,Sparse montage and temporal-state validation,not_downloaded,
+ds004148,OpenNeuro,https://openneuro.org/datasets/ds004148/versions/1.0.1,BIDS EEG; inspect after download,Test-retest rest/cognitive-state stability,not_downloaded,
+ds003838,OpenNeuro,https://openneuro.org/datasets/ds003838/versions/1.0.6,BIDS EEG + ECG + PPG + pupillometry,Multimodal external validation,not_downloaded,
+DEAP,Queen Mary University of London,https://www.eecs.qmul.ac.uk/mmv/datasets/deap/,Dataset-specific EEG + peripheral physiology,Multimodal affect sensitivity,access_terms_require_review,
