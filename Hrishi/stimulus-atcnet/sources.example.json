@@ -1,0 +1,44 @@
+{
+  "sources": [
+    {
+      "name": "zhao_ds005473",
+      "root": "data/zhao",
+      "cohort": "zhao_ds005473",
+      "source_url": "https://openneuro.org/datasets/ds005473",
+      "energy_column": "SET_VERIFIED_ENERGY_COLUMN",
+      "units": "J",
+      "schema_verified": false,
+      "cohort_verified": false,
+      "events_glob": "**/*events.tsv",
+      "exclude_path_contains": [
+        "derivatives"
+      ],
+      "event_filter": {},
+      "energy_map": {},
+      "energy_multiplier": 1,
+      "onset_column": "onset",
+      "onset_offset_s": 0,
+      "subject_map": {}
+    },
+    {
+      "name": "tiemann_munich",
+      "root": "data/tiemann/SET_MUNICH_ROOT",
+      "cohort": "tiemann_munich",
+      "source_url": "https://osf.io/z2h86/",
+      "energy_column": "SET_VERIFIED_ENERGY_COLUMN",
+      "units": "J",
+      "schema_verified": false,
+      "cohort_verified": false,
+      "events_glob": "**/*events.tsv",
+      "exclude_path_contains": [
+        "derivatives"
+      ],
+      "event_filter": {},
+      "energy_map": {},
+      "energy_multiplier": 1,
+      "onset_column": "onset",
+      "onset_offset_s": 0,
+      "subject_map": {}
+    }
+  ]
+}

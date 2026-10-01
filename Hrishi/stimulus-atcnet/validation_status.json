@@ -1,0 +1,24 @@
+{
+  "scientific_training_run": false,
+  "new_test_scores": null,
+  "passed": [
+    "Python syntax compilation",
+    "Synthetic Spline/Ridge and Extra Trees fit/predict",
+    "Participant isolation across sessions and shared dataset identities",
+    "External-cohort participant isolation",
+    "Unverified energy mapping rejected",
+    "Download path traversal rejected"
+  ],
+  "not_executed": [
+    "Raw downloads and real event mapping",
+    "MNE raw preprocessing",
+    "ATCNet forward/backward or training",
+    "Real multi-dataset benchmark"
+  ],
+  "blockers": [
+    "OSF and PyPI HTTP 403 in execution environment",
+    "PyTorch and MNE not installed",
+    "Required raw EEG absent"
+  ],
+  "synthetic_metrics_are_research_results": false
+}
