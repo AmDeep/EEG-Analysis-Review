@@ -1,0 +1,46 @@
+{
+  "key": "ds005289",
+  "source": "OpenNeuro",
+  "status": "analyzed",
+  "segment_start_s": 0.0,
+  "segment_duration_s": 207.919,
+  "sampling_hz": 128,
+  "scalp_channels_for_qc_and_reference": 63,
+  "covariance_channels": 23,
+  "windows_total": 41,
+  "windows_rejected": 0,
+  "windows_used": 41,
+  "epoch_seconds": 5,
+  "frequency_spacing_hz": 0.2,
+  "raw_binary_sha256": "1086658745dfc832865ab1080bc6702fb7e5f048d0a02503b10f4bf247d7d0d4",
+  "roi_cog_9_11_hz": 10.204912574644654,
+  "roi_first_half_hz": 10.160698978843353,
+  "roi_second_half_hz": 10.24702076112209,
+  "channels": {
+    "C3": {
+      "cog_9_11_hz": 10.159160938341367,
+      "cog_8_12_hz": 10.310884966050285,
+      "argmax_8_12_hz": 11.4,
+      "qualified_local_peak_hz": 11.4,
+      "local_peak_prominence_db": 3.281696428459684,
+      "epoch_sd_hz": 0.3247737820402273
+    },
+    "C4": {
+      "cog_9_11_hz": 10.22623418375835,
+      "cog_8_12_hz": 10.512309039623615,
+      "argmax_8_12_hz": 11.200000000000001,
+      "qualified_local_peak_hz": 11.200000000000001,
+      "local_peak_prominence_db": 7.788256007550981,
+      "epoch_sd_hz": 0.2676092916580579
+    },
+    "CZ": {
+      "cog_9_11_hz": 10.229342601834244,
+      "cog_8_12_hz": 10.340852101297983,
+      "argmax_8_12_hz": 10.8,
+      "qualified_local_peak_hz": 10.8,
+      "local_peak_prominence_db": 10.328562759524283,
+      "epoch_sd_hz": 0.32483556587931744
+    }
+  },
+  "qualification": "Excerpt-level spectral feature, not confirmed pain-free baseline or pain prediction."
+}

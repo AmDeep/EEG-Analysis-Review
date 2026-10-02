@@ -1,0 +1,46 @@
+{
+  "key": "osf-sub008-eo",
+  "source": "OSF m45j2",
+  "status": "analyzed",
+  "segment_start_s": 0.0,
+  "segment_duration_s": 300.0,
+  "sampling_hz": 128,
+  "scalp_channels_for_qc_and_reference": 29,
+  "covariance_channels": 23,
+  "windows_total": 60,
+  "windows_rejected": 2,
+  "windows_used": 58,
+  "epoch_seconds": 5,
+  "frequency_spacing_hz": 0.2,
+  "raw_binary_sha256": "7abc739de1e490cc82461f055c106cc8929ea98f4cea9873d05a70da1df58355",
+  "roi_cog_9_11_hz": 9.897735783269772,
+  "roi_first_half_hz": 9.95846155703834,
+  "roi_second_half_hz": 9.837010009501205,
+  "channels": {
+    "C3": {
+      "cog_9_11_hz": 9.929462947277868,
+      "cog_8_12_hz": 9.881446758157802,
+      "argmax_8_12_hz": 9.600000000000001,
+      "qualified_local_peak_hz": 9.600000000000001,
+      "local_peak_prominence_db": 3.917438533955883,
+      "epoch_sd_hz": 0.24676786418791463
+    },
+    "C4": {
+      "cog_9_11_hz": 9.825570595580727,
+      "cog_8_12_hz": 9.774018661229922,
+      "argmax_8_12_hz": 9.600000000000001,
+      "qualified_local_peak_hz": 9.600000000000001,
+      "local_peak_prominence_db": 8.539029287327313,
+      "epoch_sd_hz": 0.18612648319062747
+    },
+    "CZ": {
+      "cog_9_11_hz": 9.93817380695072,
+      "cog_8_12_hz": 9.833177507902972,
+      "argmax_8_12_hz": 9.600000000000001,
+      "qualified_local_peak_hz": 9.600000000000001,
+      "local_peak_prominence_db": 3.743187695965327,
+      "epoch_sd_hz": 0.2507067934024677
+    }
+  },
+  "qualification": "Excerpt-level spectral feature, not confirmed pain-free baseline or pain prediction."
+}
