@@ -1,0 +1,18 @@
+{
+  "trials": 2520,
+  "columns_cached": 505,
+  "csp_columns_inside_training": 2,
+  "participants": {
+    "heat_f2mua": 10
+  },
+  "trials_by_dataset": {
+    "heat_f2mua": 2520
+  },
+  "finite_fraction": 0.9975294672324375,
+  "families_tested": 21,
+  "untested_families": [
+    "High-gamma response",
+    "CVUE/Piq\u03b2"
+  ],
+  "scope": "No dimensionality reduction/PCA or unsupervised clustering altered; new supervised validation only."
+}

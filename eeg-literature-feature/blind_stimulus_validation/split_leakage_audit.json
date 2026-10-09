@@ -1,0 +1,194 @@
+[
+  {
+    "evaluation": "subject_heldout",
+    "train_dataset": "heat_f2mua",
+    "test_dataset": "heat_f2mua",
+    "fold": 0,
+    "task": "classification",
+    "train_subjects": [
+      "heat_f2mua:RawData_PART1",
+      "heat_f2mua:RawData_PART14",
+      "heat_f2mua:RawData_PART21",
+      "heat_f2mua:RawData_PART22",
+      "heat_f2mua:RawData_PART3",
+      "heat_f2mua:RawData_PART30",
+      "heat_f2mua:RawData_PART31"
+    ],
+    "test_subjects": [
+      "heat_f2mua:RawData_PART11",
+      "heat_f2mua:RawData_PART24",
+      "heat_f2mua:RawData_PART8"
+    ],
+    "subject_overlap": [],
+    "training_rows": 1764,
+    "testing_rows": 756
+  },
+  {
+    "evaluation": "subject_heldout",
+    "train_dataset": "heat_f2mua",
+    "test_dataset": "heat_f2mua",
+    "fold": 0,
+    "task": "regression",
+    "train_subjects": [
+      "heat_f2mua:RawData_PART1",
+      "heat_f2mua:RawData_PART14",
+      "heat_f2mua:RawData_PART21",
+      "heat_f2mua:RawData_PART22",
+      "heat_f2mua:RawData_PART3",
+      "heat_f2mua:RawData_PART30",
+      "heat_f2mua:RawData_PART31"
+    ],
+    "test_subjects": [
+      "heat_f2mua:RawData_PART11",
+      "heat_f2mua:RawData_PART24",
+      "heat_f2mua:RawData_PART8"
+    ],
+    "subject_overlap": [],
+    "training_rows": 1764,
+    "testing_rows": 756
+  },
+  {
+    "evaluation": "subject_heldout",
+    "train_dataset": "heat_f2mua",
+    "test_dataset": "heat_f2mua",
+    "fold": 1,
+    "task": "classification",
+    "train_subjects": [
+      "heat_f2mua:RawData_PART11",
+      "heat_f2mua:RawData_PART14",
+      "heat_f2mua:RawData_PART21",
+      "heat_f2mua:RawData_PART24",
+      "heat_f2mua:RawData_PART3",
+      "heat_f2mua:RawData_PART30",
+      "heat_f2mua:RawData_PART8"
+    ],
+    "test_subjects": [
+      "heat_f2mua:RawData_PART1",
+      "heat_f2mua:RawData_PART22",
+      "heat_f2mua:RawData_PART31"
+    ],
+    "subject_overlap": [],
+    "training_rows": 1764,
+    "testing_rows": 756
+  },
+  {
+    "evaluation": "subject_heldout",
+    "train_dataset": "heat_f2mua",
+    "test_dataset": "heat_f2mua",
+    "fold": 1,
+    "task": "regression",
+    "train_subjects": [
+      "heat_f2mua:RawData_PART11",
+      "heat_f2mua:RawData_PART14",
+      "heat_f2mua:RawData_PART21",
+      "heat_f2mua:RawData_PART24",
+      "heat_f2mua:RawData_PART3",
+      "heat_f2mua:RawData_PART30",
+      "heat_f2mua:RawData_PART8"
+    ],
+    "test_subjects": [
+      "heat_f2mua:RawData_PART1",
+      "heat_f2mua:RawData_PART22",
+      "heat_f2mua:RawData_PART31"
+    ],
+    "subject_overlap": [],
+    "training_rows": 1764,
+    "testing_rows": 756
+  },
+  {
+    "evaluation": "subject_heldout",
+    "train_dataset": "heat_f2mua",
+    "test_dataset": "heat_f2mua",
+    "fold": 2,
+    "task": "classification",
+    "train_subjects": [
+      "heat_f2mua:RawData_PART1",
+      "heat_f2mua:RawData_PART11",
+      "heat_f2mua:RawData_PART14",
+      "heat_f2mua:RawData_PART22",
+      "heat_f2mua:RawData_PART24",
+      "heat_f2mua:RawData_PART3",
+      "heat_f2mua:RawData_PART31",
+      "heat_f2mua:RawData_PART8"
+    ],
+    "test_subjects": [
+      "heat_f2mua:RawData_PART21",
+      "heat_f2mua:RawData_PART30"
+    ],
+    "subject_overlap": [],
+    "training_rows": 2016,
+    "testing_rows": 504
+  },
+  {
+    "evaluation": "subject_heldout",
+    "train_dataset": "heat_f2mua",
+    "test_dataset": "heat_f2mua",
+    "fold": 2,
+    "task": "regression",
+    "train_subjects": [
+      "heat_f2mua:RawData_PART1",
+      "heat_f2mua:RawData_PART11",
+      "heat_f2mua:RawData_PART14",
+      "heat_f2mua:RawData_PART22",
+      "heat_f2mua:RawData_PART24",
+      "heat_f2mua:RawData_PART3",
+      "heat_f2mua:RawData_PART31",
+      "heat_f2mua:RawData_PART8"
+    ],
+    "test_subjects": [
+      "heat_f2mua:RawData_PART21",
+      "heat_f2mua:RawData_PART30"
+    ],
+    "subject_overlap": [],
+    "training_rows": 2016,
+    "testing_rows": 504
+  },
+  {
+    "evaluation": "subject_heldout",
+    "train_dataset": "heat_f2mua",
+    "test_dataset": "heat_f2mua",
+    "fold": 3,
+    "task": "classification",
+    "train_subjects": [
+      "heat_f2mua:RawData_PART1",
+      "heat_f2mua:RawData_PART11",
+      "heat_f2mua:RawData_PART21",
+      "heat_f2mua:RawData_PART22",
+      "heat_f2mua:RawData_PART24",
+      "heat_f2mua:RawData_PART30",
+      "heat_f2mua:RawData_PART31",
+      "heat_f2mua:RawData_PART8"
+    ],
+    "test_subjects": [
+      "heat_f2mua:RawData_PART14",
+      "heat_f2mua:RawData_PART3"
+    ],
+    "subject_overlap": [],
+    "training_rows": 2016,
+    "testing_rows": 504
+  },
+  {
+    "evaluation": "subject_heldout",
+    "train_dataset": "heat_f2mua",
+    "test_dataset": "heat_f2mua",
+    "fold": 3,
+    "task": "regression",
+    "train_subjects": [
+      "heat_f2mua:RawData_PART1",
+      "heat_f2mua:RawData_PART11",
+      "heat_f2mua:RawData_PART21",
+      "heat_f2mua:RawData_PART22",
+      "heat_f2mua:RawData_PART24",
+      "heat_f2mua:RawData_PART30",
+      "heat_f2mua:RawData_PART31",
+      "heat_f2mua:RawData_PART8"
+    ],
+    "test_subjects": [
+      "heat_f2mua:RawData_PART14",
+      "heat_f2mua:RawData_PART3"
+    ],
+    "subject_overlap": [],
+    "training_rows": 2016,
+    "testing_rows": 504
+  }
+]

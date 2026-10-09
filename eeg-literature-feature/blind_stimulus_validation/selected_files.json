@@ -1,0 +1,142 @@
+[
+  {
+    "dataset": "heat_f2mua",
+    "name": "RawData_PART31.mat",
+    "url": "https://osf.io/download/st342/",
+    "expected_bytes": 208827208,
+    "selection_hash": "04003ab7fc119fd7cb2f78a714080bcb03f47f49327bdd5305dd974127083a06"
+  },
+  {
+    "dataset": "heat_f2mua",
+    "name": "RawData_PART22.mat",
+    "url": "https://osf.io/download/a2gjd/",
+    "expected_bytes": 204517095,
+    "selection_hash": "09b5a988240a033d1585c0996cca930693c28b0d0793a57e7ea1390ea970be3d"
+  },
+  {
+    "dataset": "heat_f2mua",
+    "name": "RawData_PART14.mat",
+    "url": "https://osf.io/download/4xp8q/",
+    "expected_bytes": 203926091,
+    "selection_hash": "19391254102bbecad9ec4298b5c97ed5b6d2bf02c9a76db8809f952158396aee"
+  },
+  {
+    "dataset": "heat_f2mua",
+    "name": "RawData_PART11.mat",
+    "url": "https://osf.io/download/x47fy/",
+    "expected_bytes": 202110863,
+    "selection_hash": "39518d4cf0452a6f87c7c7797f7f7058fd52d80c521d2e98bd0668a45cf542f6"
+  },
+  {
+    "dataset": "heat_f2mua",
+    "name": "RawData_PART30.mat",
+    "url": "https://osf.io/download/e5fyx/",
+    "expected_bytes": 198781003,
+    "selection_hash": "405485de272730a5788853e5803b3bbdc75fc7b63e5fbdfdf19f7df2e98430cd"
+  },
+  {
+    "dataset": "heat_f2mua",
+    "name": "RawData_PART21.mat",
+    "url": "https://osf.io/download/2ngj7/",
+    "expected_bytes": 195439460,
+    "selection_hash": "445ff130727047d59feef9cda4851a6b59a17da45b890f5bcd463ce508409537"
+  },
+  {
+    "dataset": "heat_f2mua",
+    "name": "RawData_PART3.mat",
+    "url": "https://osf.io/download/nkxcd/",
+    "expected_bytes": 198883528,
+    "selection_hash": "519426df62e4b3d73d9ae5e7bb2ef1ea77ad1e56babd61f4645cb1b34d5034b7"
+  },
+  {
+    "dataset": "heat_f2mua",
+    "name": "RawData_PART8.mat",
+    "url": "https://osf.io/download/stf29/",
+    "expected_bytes": 202624216,
+    "selection_hash": "54258098d7bec5da61f1f3293bd170112c6cefad7f7aeb24590a620f2ccd3783"
+  },
+  {
+    "dataset": "heat_f2mua",
+    "name": "RawData_PART24.mat",
+    "url": "https://osf.io/download/qvcag/",
+    "expected_bytes": 206221739,
+    "selection_hash": "62ab52cdbc7974b2e2e878c00ac4fe66e985a1c2397809ba1580151d9b7c7928"
+  },
+  {
+    "dataset": "heat_f2mua",
+    "name": "RawData_PART1.mat",
+    "url": "https://osf.io/download/8c9rm/",
+    "expected_bytes": 202388660,
+    "selection_hash": "63747067df0d7fcfb028ea38bb320d20741a55cd43cb8011d82963f81a1b958d"
+  },
+  {
+    "dataset": "shock_w25k4",
+    "name": "P29_cleaned_2702.set",
+    "url": "https://osf.io/download/z5fby/",
+    "expected_bytes": 135309616,
+    "selection_hash": "00325af7706a2b05a04b8f4e1e435312a839425511f0f4fca3fc1c9fa6fee80c"
+  },
+  {
+    "dataset": "shock_w25k4",
+    "name": "P15_cleaned_2702.set",
+    "url": "https://osf.io/download/cfbmt/",
+    "expected_bytes": 138557496,
+    "selection_hash": "01f7dbefa95a3e9244047be4ac30d7ddb2a419f28ad622ceba22993fe5ff7b0e"
+  },
+  {
+    "dataset": "shock_w25k4",
+    "name": "P14_cleaned_2702.set",
+    "url": "https://osf.io/download/z5cyk/",
+    "expected_bytes": 103647232,
+    "selection_hash": "21c6829bd8a2a1bf84e2b1a35bc5960c96b6759a1577dc2519eb7ef708f4ca9f"
+  },
+  {
+    "dataset": "shock_w25k4",
+    "name": "P12_cleaned_2702.set",
+    "url": "https://osf.io/download/uwygk/",
+    "expected_bytes": 138784856,
+    "selection_hash": "2755039f25c673312cbce8ea5c499dcb979dfdb14c5576048e6fb5316aa84d6f"
+  },
+  {
+    "dataset": "shock_w25k4",
+    "name": "P19_cleaned_2702.set",
+    "url": "https://osf.io/download/z8epk/",
+    "expected_bytes": 139154984,
+    "selection_hash": "47d0e224ab43f84f303db5626685d864c42c90899d4929c27f34716dcd671fbc"
+  },
+  {
+    "dataset": "shock_w25k4",
+    "name": "P17_cleaned_2702.set",
+    "url": "https://osf.io/download/67c1e68219e6bd26c5bd63aa/",
+    "expected_bytes": 130559968,
+    "selection_hash": "4b080b20f6f4f94f3dd70dc184c79b84edf6062b2d43a455ce6eced31d7e8dea"
+  },
+  {
+    "dataset": "shock_w25k4",
+    "name": "P03_cleaned_2702.set",
+    "url": "https://osf.io/download/v2djz/",
+    "expected_bytes": 134884000,
+    "selection_hash": "4b87a732aed141f88c75e39bd549f14ec47928402f66ca0e25fc6cf863f49f2a"
+  },
+  {
+    "dataset": "shock_w25k4",
+    "name": "P02_cleaned_2702.set",
+    "url": "https://osf.io/download/67c1e6d757df6bd8b6bd5c4e/",
+    "expected_bytes": 129300736,
+    "selection_hash": "5e2de9fffb6706ac6876ee95678c51b9dc0a9b268f1705905a81f63703939c5c"
+  },
+  {
+    "dataset": "shock_w25k4",
+    "name": "P10_cleaned_2702.set",
+    "url": "https://osf.io/download/4kczj/",
+    "expected_bytes": 137909936,
+    "selection_hash": "616b3886e69aa39be20956c0e746c7c63152a1e747215218e215ecc679368aba"
+  },
+  {
+    "dataset": "shock_w25k4",
+    "name": "P04_cleaned_2702.set",
+    "url": "https://osf.io/download/25csb/",
+    "expected_bytes": 139549960,
+    "selection_hash": "6541168e2219e80091dd61b50a66c07cb37711b6f4f42c8037e64e66cd87e42c"
+  }
+]

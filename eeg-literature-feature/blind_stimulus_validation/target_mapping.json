@@ -1,0 +1,20 @@
+{
+  "heat": {
+    "mapping_authority": "https://api.osf.io/v2/wikis/xc3vs/content/",
+    "column": "trialinfo[:,1] (MATLAB column 2), stimulus-cue combination",
+    "heat_conditions": "1-9 and 19-27",
+    "temperature_mapping": "1-3,19-21 =42 C; 4-6,22-24 =46 C; 7-9,25-27 =48 C",
+    "actual_schema": "Six columns; old wiki mentions four. Column 4 contains cue markers 37-42, NOT physical temperature. No rating column is used.",
+    "alignment": "Deposited time vector around stimulus trigger; no intensity-dependent ramp-up shift.",
+    "units_caveat": "MAT has no channel-unit field; voltage values treated as microvolts in line with BrainAmp export convention. This assumption affects amplitude QC and is explicitly disclosed."
+  },
+  "shock": {
+    "mapping_authority": "https://raw.githubusercontent.com/dhewitt16/PainAnticipationVRStudy/main/EEGAnalysis/PPS_2_EpochFiles.m",
+    "column": "epoch.eventtype / epoch.eventlatency",
+    "positive": "PCollShock1-4: pain-related collision resulting in electrical shock",
+    "negative": "PCollNoShock1-4: same pain-associated cues, omitted shock",
+    "excluded": "middle/nonpain-associated cues and nPCollNoShock events",
+    "alignment": "Collision-event latency in both delivered and omitted cases; not cue onset.",
+    "source_processing": "Author average reference, 1-70 Hz filtering, 48-52 Hz stop filter, ICA/manual cleaning; already epoched. Not an equivalent raw preprocessing replication."
+  }
+}

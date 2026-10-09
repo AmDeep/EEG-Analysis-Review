@@ -1,0 +1,16 @@
+{
+  "UTC_before_first_model_fit": "2026-10-09T22:13:05.321670+00:00",
+  "file_sha256": {
+    "protocol.json": "9d75e399e001574173c3d5d76ca06605b32ca1519c7948187524024056bf945a",
+    "protocol_availability_amendment.json": "75a55854b8ae453580e4c867c3128fb7eb0d1d3c296e6b9d5e2647e10f1b7b7c",
+    "acquire.py": "e27d25c1c7e4d0748218bfe3a9665a2cfed1a9887415e5b0642edff174299de1",
+    "readers.py": "1aa44c431d59105f89170528f371aea4c6521ea16dc5e7948d395615ba23bbb5",
+    "features.py": "8268a0ab33dfb5ce00b86b6ffbdd681b26c7c5d3af699d5229cac7ad18394fc3",
+    "build_features.py": "016781fe878932577bb83a7e6e0e5169c68ff22beff04dfc22e8ce7e1b40e8cd",
+    "evaluate.py": "7cc54e3e3c7dec44d96a7af011fbd9c1f1f1d572e7c0997bbdc44a9f8376c658"
+  },
+  "implementation_detail": "Fourth-order causal 1-40 Hz filter, fixed -10..+30 ms trigger interpolation for every class, resample 500 to250Hz; source shock filtering remains irreversible.",
+  "native_level_accuracy_definition": "Regressor predictions rounded to nearest prespecified 42/46/48 C; no threshold optimized on data.",
+  "retrospective": true,
+  "not_public_preregistration": true
+}

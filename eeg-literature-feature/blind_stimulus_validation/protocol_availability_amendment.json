@@ -1,0 +1,11 @@
+{
+  "amendment_before_any_model_scores": true,
+  "reason": "Raw schema/timing inspection, not predictive performance. The second deposited cohort is cue-epoched and ends at cue+3.498 s; collision/shock occurs around cue+3.36 to3.41 s. Only about0.09-0.14 s postshock remains. The prespecified0.05-1.25 s poststimulus feature window cannot be extracted. Some collision markers are outside the deposit entirely.",
+  "do_not_do": ["Do not shorten windows to claim the same families were tested", "Do not relabel anticipation as a poststimulus pain response", "Do not reuse any excluded feature-source cohort", "Do not invent cross-dataset scores"],
+  "available_stage": "Run the already prespecified four-fold participant-held-out classification and native temperature regression on heat_f2mua. These are genuine out-of-participant scores in a new cohort, NOT independent cross-dataset transfer.",
+  "family_ablation_amendment": "Report fixed logistic family ablations over the same participant-held-out heat folds as exploratory. No feature selection, tuning or claim of independent validation of the resulting ranking.",
+  "permutation_amendment": "Twenty within-training-participant label permutations, retaining each participant-held-out fold. Conditional exploratory null for the available cohort only.",
+  "cross_dataset_stage": "BLOCKED pending a second independent pain EEG cohort with physical dose labels and adequate poststimulus recordings.",
+  "great_accuracy_criterion": "Original two-cohort criterion remains unmet/untestable even if a single-cohort score is high. Do not apply it to fewer cohorts.",
+  "scope": "This is a partial empirical result, not complete multi-dataset validation."
+}

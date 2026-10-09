@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "seed": 20261009,
+  "purpose": "Test candidate EEG feature implementations on cohorts not used in the feature-source papers. Results may reject rather than validate the feature set.",
+  "target": "Physical stimulus intensity, using source-defined columns; never replace missing physical labels with subjective ratings.",
+  "datasets": {
+    "heat_f2mua": {
+      "project": "f2mua",
+      "title": "The temporal and spectral characteristics of expectations and prediction errors in pain and thermoception",
+      "paper_doi": "10.7554/eLife.62809",
+      "source": "https://osf.io/f2mua/",
+      "paper": "https://elifesciences.org/articles/62809",
+      "signal": "Author-deposited single-participant FieldTrip MAT EEG",
+      "target_units": "degrees Celsius",
+      "protocol_values": [42, 46, 48],
+      "binary_target": "Higher temperature (46 or 48 degrees) versus lower temperature (42 degrees). This is NOT a subjective pain/no-pain diagnosis."
+    },
+    "shock_w25k4": {
+      "project": "w25k4",
+      "title": "Tonic pain re-values associative memories of phasic pain: a combined VR-EEG study",
+      "source": "https://osf.io/w25k4/",
+      "methods_code": "https://github.com/dhewitt16/PainAnticipationVRStudy",
+      "signal": "Author-cleaned cue-epoched EEGLAB SET EEG",
+      "target_units": "Source-defined delivered/omitted fixed electrical shock, 0/1",
+      "protocol_values": [0, 1],
+      "binary_target": "PCollShock versus PCollNoShock following pain-associated cues; omit non-pain-associated cues. Actual per-trial current in mA is not supplied.",
+      "limitation": "Dose presence/absence, NOT continuous current magnitude. Tonic block context and source preprocessing are possible confounds."
+    }
+  },
+  "sampling": "Select 10 participant files per cohort by SHA256(seed:dataset:filename) rank, before any predictive scores. No selection by performance. Log failed downloads/schema/quality exclusions; do not replace excluded participants based on scores.",
+  "cross_dataset_primary": "Two directed tests: train on one entire cohort and evaluate on the other, with no target-cohort fitting or model tuning. This tests transfer of the source-defined low/higher stimulus contrast, NOT transfer of absolute Celsius into milliamps.",
+  "within_dataset_secondary": "Four-fold GroupKFold by participant. Heat: native temperature regression plus binary contrast. Shock: delivered/omitted classification only.",
+  "models": {
+    "regression": ["DummyRegressor mean", "Ridge alpha=10", "ExtraTreesRegressor n_estimators=200 max_depth=8 min_samples_leaf=8 max_features=0.7"],
+    "classification": ["DummyClassifier most_frequent", "LogisticRegression C=0.1 class_weight=balanced max_iter=3000", "ExtraTreesClassifier n_estimators=200 max_depth=8 min_samples_leaf=8 max_features=0.7 class_weight=balanced"]
+  },
+  "feature_sets": ["power_only", "all_compatible", "prestimulus_only"],
+  "family_ablation": "For each compatible family, remove it from all_compatible and score the fixed logistic model on both directed holdouts; do not select a model using these results.",
+  "preprocessing": {
+    "sampling_rate": 250,
+    "common_filter_hz": [1, 40],
+    "reference": "Average of the prespecified common selected EEG electrodes",
+    "electrodes": ["F3", "F4", "Fz", "C3", "C4", "Cz", "P3", "P4", "Pz"],
+    "poststimulus_seconds": [0.05, 1.25],
+    "prestimulus_seconds": [-0.8, -0.05],
+    "alignment": "Fixed source hardware event; never shift time using a target temperature or shock label.",
+    "quality": "Reject nonfinite or incomplete epochs, poststimulus absolute maximum >400 uV, prestimulus absolute maximum >200 uV, or median channel SD <0.05 uV. No label-conditioned cleaning.",
+    "missing_values": "Median imputer and StandardScaler fit only on training rows; use keep_empty_features. Missing family coverage disclosed.",
+    "no_metadata_predictors": ["participant ID", "stimulus marker", "temperature", "rating", "trial index", "block", "cue identity", "time", "file name", "dataset ID"]
+  },
+  "csp": "Training-only supervised low/higher covariance contrast; two extreme generalized-eigenvector log-variance features. Never fit CSP on held-out subjects or target cohort. This is not PCA.",
+  "scope": "New supervised validation, separate from prior unsupervised C3/C4/Cz state discovery. Prior outputs remain unchanged. No PCA.",
+  "metrics": ["accuracy", "balanced_accuracy", "ROC_AUC", "macro_F1", "R2 for heat native Celsius only", "MAE Celsius", "RMSE Celsius"],
+  "uncertainty": "1000 participant-cluster bootstrap replicates; 95% intervals, paired full-minus-power balanced-accuracy intervals. Cross-cohort training uncertainty is not included.",
+  "negative_control": "20 within-participant training-label permutations per direction for the all-compatible logistic model. Held-out labels never permuted for the observed score; all permutations reported.",
+  "interpretation_threshold": "Predeclared operational meaning of 'great': both directed logistic holdouts have balanced accuracy >=0.80 with 95% lower bounds above 0.50 and positive full-minus-power gain on both. This is not a clinical threshold. Native temperature R2>=0.50 is reported separately, not required of a shock-presence target.",
+  "blindness_limitations": "Public data and known study designs; retrospective computational holdout, not prospective or human-blinded clinical validation. Dataset/cohort disjointness is audited from provenance, not guaranteed by globally identifying individual participants.",
+  "unavailable_families": {
+    "High-gamma response": "Cross-cohort common pipeline ends at 40 Hz. Shock source was already low-pass filtered at 70 Hz. Do not substitute 30-40 Hz for the listed 60-100 Hz feature.",
+    "CVUE/Piqβ": "Published long-record upper-envelope/Piqβ threshold is not validly reproduced by short event epochs. Generic beta envelope CV goes under amplitude variability, not Piqβ.",
+    "Evoked latencies/morphology": "Fixed latency and waveform descriptors are family-level candidates, not a claimed replication of Hu's WF+MLRd implementation."
+  }
+}

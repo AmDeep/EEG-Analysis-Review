@@ -1,0 +1,247 @@
+[
+  {
+    "dataset": "heat_f2mua",
+    "name": "RawData_PART34.mat",
+    "url": "https://osf.io/download/vs8mk/",
+    "expected_bytes": 200249749,
+    "selection_hash": "737fedbe151d12fe18a315d8f5bb02e9ad28a3341b77d7a9dcccdf72c0926db7"
+  },
+  {
+    "dataset": "heat_f2mua",
+    "name": "RawData_PART35.mat",
+    "url": "https://osf.io/download/jxd3z/",
+    "expected_bytes": 201475362,
+    "selection_hash": "cbebfd654b96334bdbd46f497cc234c82d5bce8fd392fdd4db025facc612d44d"
+  },
+  {
+    "dataset": "heat_f2mua",
+    "name": "RawData_PART33.mat",
+    "url": "https://osf.io/download/uj82x/",
+    "expected_bytes": 203048696,
+    "selection_hash": "944c61f0f2e2b286b30ddfb2ae9e194f165dd56b8c4792f679ce27563e6c9135"
+  },
+  {
+    "dataset": "heat_f2mua",
+    "name": "RawData_PART32.mat",
+    "url": "https://osf.io/download/aqfn2/",
+    "expected_bytes": 202751361,
+    "selection_hash": "ca6a0e18a88a0b326ff420b8ab3d75ecde83d25c79c1214da38c9bb3953ecc6f"
+  },
+  {
+    "dataset": "heat_f2mua",
+    "name": "RawData_PART31.mat",
+    "url": "https://osf.io/download/st342/",
+    "expected_bytes": 208827208,
+    "selection_hash": "04003ab7fc119fd7cb2f78a714080bcb03f47f49327bdd5305dd974127083a06"
+  },
+  {
+    "dataset": "heat_f2mua",
+    "name": "RawData_PART30.mat",
+    "url": "https://osf.io/download/e5fyx/",
+    "expected_bytes": 198781003,
+    "selection_hash": "405485de272730a5788853e5803b3bbdc75fc7b63e5fbdfdf19f7df2e98430cd"
+  },
+  {
+    "dataset": "heat_f2mua",
+    "name": "RawData_PART29.mat",
+    "url": "https://osf.io/download/28crp/",
+    "expected_bytes": 201222412,
+    "selection_hash": "8921ebacc332da241896a296b0feaf604ed48539ce7f0879c07598288721c958"
+  },
+  {
+    "dataset": "heat_f2mua",
+    "name": "RawData_PART28.mat",
+    "url": "https://osf.io/download/sj3mb/",
+    "expected_bytes": 196864980,
+    "selection_hash": "75c6feda718f910232ba9f3bd393f74cde7212ecbc11dec6861d9f527849fa0a"
+  },
+  {
+    "dataset": "heat_f2mua",
+    "name": "RawData_PART27.mat",
+    "url": "https://osf.io/download/7qv4s/",
+    "expected_bytes": 201962029,
+    "selection_hash": "758194a6f5332ff6efa3d7b9729e83f1e4e99fbeb401edb0801ee567c54d527e"
+  },
+  {
+    "dataset": "heat_f2mua",
+    "name": "RawData_PART26.mat",
+    "url": "https://osf.io/download/uve5r/",
+    "expected_bytes": 196324690,
+    "selection_hash": "686f875bcd370ce08569b81f3309b4265035c30d0327e254ebef55702d3718fa"
+  },
+  {
+    "dataset": "heat_f2mua",
+    "name": "RawData_PART24.mat",
+    "url": "https://osf.io/download/qvcag/",
+    "expected_bytes": 206221739,
+    "selection_hash": "62ab52cdbc7974b2e2e878c00ac4fe66e985a1c2397809ba1580151d9b7c7928"
+  },
+  {
+    "dataset": "heat_f2mua",
+    "name": "RawData_PART25.mat",
+    "url": "https://osf.io/download/8sqfy/",
+    "expected_bytes": 215383771,
+    "selection_hash": "d675723fa6be63c16f9ef28c64677cbdc05224531e538fc229c3244f8b20b55d"
+  },
+  {
+    "dataset": "heat_f2mua",
+    "name": "RawData_PART23.mat",
+    "url": "https://osf.io/download/8ve7f/",
+    "expected_bytes": 201332074,
+    "selection_hash": "77bab615a35a3aaee6d20f66f27e391185acfe77da21daf60d0b2135bb99716f"
+  },
+  {
+    "dataset": "heat_f2mua",
+    "name": "RawData_PART22.mat",
+    "url": "https://osf.io/download/a2gjd/",
+    "expected_bytes": 204517095,
+    "selection_hash": "09b5a988240a033d1585c0996cca930693c28b0d0793a57e7ea1390ea970be3d"
+  },
+  {
+    "dataset": "heat_f2mua",
+    "name": "RawData_PART21.mat",
+    "url": "https://osf.io/download/2ngj7/",
+    "expected_bytes": 195439460,
+    "selection_hash": "445ff130727047d59feef9cda4851a6b59a17da45b890f5bcd463ce508409537"
+  },
+  {
+    "dataset": "heat_f2mua",
+    "name": "RawData_PART20.mat",
+    "url": "https://osf.io/download/ud93x/",
+    "expected_bytes": 201942399,
+    "selection_hash": "f7029ae966010e478a5046bcff027fd334df29726c53e95c0924e7e8615bdd05"
+  },
+  {
+    "dataset": "heat_f2mua",
+    "name": "RawData_PART19.mat",
+    "url": "https://osf.io/download/vjgeb/",
+    "expected_bytes": 197547280,
+    "selection_hash": "fa6e548ea930331998812afc72ddb0cda7fc88b4a3ecf9727c4059e561dc298a"
+  },
+  {
+    "dataset": "heat_f2mua",
+    "name": "RawData_PART18.mat",
+    "url": "https://osf.io/download/75eqf/",
+    "expected_bytes": 204561908,
+    "selection_hash": "84e69cbbe3e8492ea9f441979e2b005f661dac72ec4fb254dcbc387a2016398b"
+  },
+  {
+    "dataset": "heat_f2mua",
+    "name": "RawData_PART17.mat",
+    "url": "https://osf.io/download/u6evb/",
+    "expected_bytes": 200988873,
+    "selection_hash": "d340c513edf5b07d52571190812cfd1d7c59195030afc325f943d0de1f2e972a"
+  },
+  {
+    "dataset": "heat_f2mua",
+    "name": "RawData_PART16.mat",
+    "url": "https://osf.io/download/uzveq/",
+    "expected_bytes": 200831702,
+    "selection_hash": "f2472bcab7b54c6a5d67d724538614c185f309646b3ffb9356d67c98d0c0482b"
+  },
+  {
+    "dataset": "heat_f2mua",
+    "name": "RawData_PART15.mat",
+    "url": "https://osf.io/download/ucvyn/",
+    "expected_bytes": 196901891,
+    "selection_hash": "c365fa6d37f2ae5d67ddc094f1d54f331c45eb9a35bcc401a520f7cbfb9085d9"
+  },
+  {
+    "dataset": "heat_f2mua",
+    "name": "RawData_PART14.mat",
+    "url": "https://osf.io/download/4xp8q/",
+    "expected_bytes": 203926091,
+    "selection_hash": "19391254102bbecad9ec4298b5c97ed5b6d2bf02c9a76db8809f952158396aee"
+  },
+  {
+    "dataset": "heat_f2mua",
+    "name": "RawData_PART13.mat",
+    "url": "https://osf.io/download/5ut4r/",
+    "expected_bytes": 198576277,
+    "selection_hash": "cceb1c8d34a59188ad4ae0955c38423bc4397674ae409373d3b8110a6b54c7b7"
+  },
+  {
+    "dataset": "heat_f2mua",
+    "name": "RawData_PART11.mat",
+    "url": "https://osf.io/download/x47fy/",
+    "expected_bytes": 202110863,
+    "selection_hash": "39518d4cf0452a6f87c7c7797f7f7058fd52d80c521d2e98bd0668a45cf542f6"
+  },
+  {
+    "dataset": "heat_f2mua",
+    "name": "RawData_PART12.mat",
+    "url": "https://osf.io/download/xedgp/",
+    "expected_bytes": 204008994,
+    "selection_hash": "9921d1bfa193ac00055d94b735f89fb043c4587be5a077232f221e5d01dabef5"
+  },
+  {
+    "dataset": "heat_f2mua",
+    "name": "RawData_PART10.mat",
+    "url": "https://osf.io/download/jc85x/",
+    "expected_bytes": 200097185,
+    "selection_hash": "6e9c8e19fc233094ebe40f9be3812c98b28e92fd7618030b48a305966062faaa"
+  },
+  {
+    "dataset": "heat_f2mua",
+    "name": "RawData_PART9.mat",
+    "url": "https://osf.io/download/kjezb/",
+    "expected_bytes": 200429785,
+    "selection_hash": "6ee8e7eee9ae4d89d1dd2dbe7ac1233b55803b0e853cfbee17d97810cf5fe2f2"
+  },
+  {
+    "dataset": "heat_f2mua",
+    "name": "RawData_PART8.mat",
+    "url": "https://osf.io/download/stf29/",
+    "expected_bytes": 202624216,
+    "selection_hash": "54258098d7bec5da61f1f3293bd170112c6cefad7f7aeb24590a620f2ccd3783"
+  },
+  {
+    "dataset": "heat_f2mua",
+    "name": "RawData_PART6.mat",
+    "url": "https://osf.io/download/g2uwc/",
+    "expected_bytes": 196860087,
+    "selection_hash": "adf71a98b2c79b54a76f4da7316932f5b48aff292015209ae027f281a0af3080"
+  },
+  {
+    "dataset": "heat_f2mua",
+    "name": "RawData_PART7.mat",
+    "url": "https://osf.io/download/t942u/",
+    "expected_bytes": 206464872,
+    "selection_hash": "7d85e0e153f88836a98b87cf5036739d442d5fcaadb309eef2573bf5ea40c045"
+  },
+  {
+    "dataset": "heat_f2mua",
+    "name": "RawData_PART5.mat",
+    "url": "https://osf.io/download/pvb9m/",
+    "expected_bytes": 206704380,
+    "selection_hash": "bbfe2abb90f36e5fdf9c8959a7de37abdd8a460e14108b76f7700b5eef2eb98d"
+  },
+  {
+    "dataset": "heat_f2mua",
+    "name": "RawData_PART3.mat",
+    "url": "https://osf.io/download/nkxcd/",
+    "expected_bytes": 198883528,
+    "selection_hash": "519426df62e4b3d73d9ae5e7bb2ef1ea77ad1e56babd61f4645cb1b34d5034b7"
+  },
+  {
+    "dataset": "heat_f2mua",
+    "name": "RawData_PART4.mat",
+    "url": "https://osf.io/download/49xp3/",
+    "expected_bytes": 206911188,
+    "selection_hash": "b608a42dd9bff82ecd6dbc0ccc0a9b989b08b7820dcbedec94b8a3e9d29acafa"
+  },
+  {
+    "dataset": "heat_f2mua",
+    "name": "RawData_PART2.mat",
+    "url": "https://osf.io/download/j5q4e/",
+    "expected_bytes": 200902694,
+    "selection_hash": "a2979d1e809b754bf65cc8d7a9f7504e4f0f632bf5162ca31524dc01dada180b"
+  },
+  {
+    "dataset": "heat_f2mua",
+    "name": "RawData_PART1.mat",
+    "url": "https://osf.io/download/8c9rm/",
+    "expected_bytes": 202388660,
+    "selection_hash": "63747067df0d7fcfb028ea38bb320d20741a55cd43cb8011d82963f81a1b958d"
+  }
+]

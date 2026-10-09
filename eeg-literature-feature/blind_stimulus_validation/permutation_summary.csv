@@ -1,0 +1,2 @@
+test_dataset,permutations,observed_balanced_accuracy,mean_permuted_balanced_accuracy,empirical_one_sided_p,limitation
+heat_f2mua,20,0.5136904761904761,0.49943452380952386,0.09523809523809523,"20 permutations: smallest attainable p=1/21; exploratory, not familywise-corrected"

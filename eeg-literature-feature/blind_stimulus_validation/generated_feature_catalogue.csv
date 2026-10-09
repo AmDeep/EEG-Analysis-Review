@@ -1,0 +1,506 @@
+feature,family_code,family,finite_trials,missing_trials,total_trials
+contrast__erd__central_alpha,erd,Alpha/beta ERD,2520,0,2520
+contrast__erd__central_beta,erd,Alpha/beta ERD,2520,0,2520
+contrast__erd__frontal_alpha,erd,Alpha/beta ERD,2520,0,2520
+contrast__erd__frontal_beta,erd,Alpha/beta ERD,2520,0,2520
+contrast__erd__posterior_alpha,erd,Alpha/beta ERD,2520,0,2520
+contrast__erd__posterior_beta,erd,Alpha/beta ERD,2520,0,2520
+contrast__quality__central_peak_baseline_sd_ratio,quality,Signal quality/SNR and variance controls,2520,0,2520
+contrast__quality__frontal_peak_baseline_sd_ratio,quality,Signal quality/SNR and variance controls,2520,0,2520
+contrast__quality__posterior_peak_baseline_sd_ratio,quality,Signal quality/SNR and variance controls,2520,0,2520
+post__aper__central_exponent,aper,Aperiodic slope/offset,2520,0,2520
+post__aper__central_offset,aper,Aperiodic slope/offset,2520,0,2520
+post__asym__C3_C4_alpha,asym,Hemispheric power asymmetry,2520,0,2520
+post__asym__C3_C4_beta,asym,Hemispheric power asymmetry,2520,0,2520
+post__asym__C3_C4_delta,asym,Hemispheric power asymmetry,2520,0,2520
+post__asym__C3_C4_lowgamma,asym,Hemispheric power asymmetry,2520,0,2520
+post__asym__C3_C4_theta,asym,Hemispheric power asymmetry,2520,0,2520
+post__asym__F3_F4_alpha,asym,Hemispheric power asymmetry,2520,0,2520
+post__asym__F3_F4_beta,asym,Hemispheric power asymmetry,2520,0,2520
+post__asym__F3_F4_delta,asym,Hemispheric power asymmetry,2520,0,2520
+post__asym__F3_F4_lowgamma,asym,Hemispheric power asymmetry,2520,0,2520
+post__asym__F3_F4_theta,asym,Hemispheric power asymmetry,2520,0,2520
+post__asym__P3_P4_alpha,asym,Hemispheric power asymmetry,2520,0,2520
+post__asym__P3_P4_beta,asym,Hemispheric power asymmetry,2520,0,2520
+post__asym__P3_P4_delta,asym,Hemispheric power asymmetry,2520,0,2520
+post__asym__P3_P4_lowgamma,asym,Hemispheric power asymmetry,2520,0,2520
+post__asym__P3_P4_theta,asym,Hemispheric power asymmetry,2520,0,2520
+post__coh__C3_C4_alpha,coh,Magnitude-squared coherence,2520,0,2520
+post__coh__C3_C4_beta,coh,Magnitude-squared coherence,2520,0,2520
+post__coh__C3_C4_lowgamma,coh,Magnitude-squared coherence,2520,0,2520
+post__coh__C3_C4_theta,coh,Magnitude-squared coherence,2520,0,2520
+post__coh__Cz_Pz_alpha,coh,Magnitude-squared coherence,2520,0,2520
+post__coh__Cz_Pz_beta,coh,Magnitude-squared coherence,2520,0,2520
+post__coh__Cz_Pz_lowgamma,coh,Magnitude-squared coherence,2520,0,2520
+post__coh__Cz_Pz_theta,coh,Magnitude-squared coherence,2520,0,2520
+post__coh__F3_F4_alpha,coh,Magnitude-squared coherence,2520,0,2520
+post__coh__F3_F4_beta,coh,Magnitude-squared coherence,2520,0,2520
+post__coh__F3_F4_lowgamma,coh,Magnitude-squared coherence,2520,0,2520
+post__coh__F3_F4_theta,coh,Magnitude-squared coherence,2520,0,2520
+post__coh__Fz_Cz_alpha,coh,Magnitude-squared coherence,2520,0,2520
+post__coh__Fz_Cz_beta,coh,Magnitude-squared coherence,2520,0,2520
+post__coh__Fz_Cz_lowgamma,coh,Magnitude-squared coherence,2520,0,2520
+post__coh__Fz_Cz_theta,coh,Magnitude-squared coherence,2520,0,2520
+post__env__C3_C4_alpha,env,Envelope correlation,2520,0,2520
+post__env__C3_C4_beta,env,Envelope correlation,2520,0,2520
+post__env__C3_C4_lowgamma,env,Envelope correlation,2520,0,2520
+post__env__C3_C4_theta,env,Envelope correlation,2520,0,2520
+post__env__Cz_Pz_alpha,env,Envelope correlation,2520,0,2520
+post__env__Cz_Pz_beta,env,Envelope correlation,2520,0,2520
+post__env__Cz_Pz_lowgamma,env,Envelope correlation,2520,0,2520
+post__env__Cz_Pz_theta,env,Envelope correlation,2520,0,2520
+post__env__F3_F4_alpha,env,Envelope correlation,2520,0,2520
+post__env__F3_F4_beta,env,Envelope correlation,2520,0,2520
+post__env__F3_F4_lowgamma,env,Envelope correlation,2520,0,2520
+post__env__F3_F4_theta,env,Envelope correlation,2520,0,2520
+post__env__Fz_Cz_alpha,env,Envelope correlation,2520,0,2520
+post__env__Fz_Cz_beta,env,Envelope correlation,2520,0,2520
+post__env__Fz_Cz_lowgamma,env,Envelope correlation,2520,0,2520
+post__env__Fz_Cz_theta,env,Envelope correlation,2520,0,2520
+post__erp__central_N1_like_amplitude_uv,erp,Evoked N1/N2/P2 amplitudes,2520,0,2520
+post__erp__central_N2_like_amplitude_uv,erp,Evoked N1/N2/P2 amplitudes,2520,0,2520
+post__erp__central_P2_like_amplitude_uv,erp,Evoked N1/N2/P2 amplitudes,2520,0,2520
+post__erp__frontal_N1_like_amplitude_uv,erp,Evoked N1/N2/P2 amplitudes,2520,0,2520
+post__erp__frontal_N2_like_amplitude_uv,erp,Evoked N1/N2/P2 amplitudes,2520,0,2520
+post__erp__frontal_P2_like_amplitude_uv,erp,Evoked N1/N2/P2 amplitudes,2520,0,2520
+post__erp__posterior_N1_like_amplitude_uv,erp,Evoked N1/N2/P2 amplitudes,2520,0,2520
+post__erp__posterior_N2_like_amplitude_uv,erp,Evoked N1/N2/P2 amplitudes,2520,0,2520
+post__erp__posterior_P2_like_amplitude_uv,erp,Evoked N1/N2/P2 amplitudes,2520,0,2520
+post__hfd__central,hfd,Higuchi fractal dimension,2520,0,2520
+post__hfd__frontal,hfd,Higuchi fractal dimension,2520,0,2520
+post__hfd__posterior,hfd,Higuchi fractal dimension,2520,0,2520
+post__hjorth__central_activity,hjorth,Hjorth parameters,2520,0,2520
+post__hjorth__central_complexity,hjorth,Hjorth parameters,2520,0,2520
+post__hjorth__central_mobility,hjorth,Hjorth parameters,2520,0,2520
+post__hjorth__frontal_activity,hjorth,Hjorth parameters,2520,0,2520
+post__hjorth__frontal_complexity,hjorth,Hjorth parameters,2520,0,2520
+post__hjorth__frontal_mobility,hjorth,Hjorth parameters,2520,0,2520
+post__hjorth__posterior_activity,hjorth,Hjorth parameters,2520,0,2520
+post__hjorth__posterior_complexity,hjorth,Hjorth parameters,2520,0,2520
+post__hjorth__posterior_mobility,hjorth,Hjorth parameters,2520,0,2520
+post__lag__C3_C4_alpha_imaginary_coherency,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+post__lag__C3_C4_alpha_pli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+post__lag__C3_C4_alpha_wpli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+post__lag__C3_C4_beta_imaginary_coherency,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+post__lag__C3_C4_beta_pli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+post__lag__C3_C4_beta_wpli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+post__lag__C3_C4_lowgamma_imaginary_coherency,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+post__lag__C3_C4_lowgamma_pli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+post__lag__C3_C4_lowgamma_wpli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+post__lag__C3_C4_theta_imaginary_coherency,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+post__lag__C3_C4_theta_pli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+post__lag__C3_C4_theta_wpli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+post__lag__Cz_Pz_alpha_imaginary_coherency,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+post__lag__Cz_Pz_alpha_pli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+post__lag__Cz_Pz_alpha_wpli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+post__lag__Cz_Pz_beta_imaginary_coherency,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+post__lag__Cz_Pz_beta_pli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+post__lag__Cz_Pz_beta_wpli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+post__lag__Cz_Pz_lowgamma_imaginary_coherency,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+post__lag__Cz_Pz_lowgamma_pli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+post__lag__Cz_Pz_lowgamma_wpli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+post__lag__Cz_Pz_theta_imaginary_coherency,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+post__lag__Cz_Pz_theta_pli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+post__lag__Cz_Pz_theta_wpli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+post__lag__F3_F4_alpha_imaginary_coherency,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+post__lag__F3_F4_alpha_pli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+post__lag__F3_F4_alpha_wpli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+post__lag__F3_F4_beta_imaginary_coherency,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+post__lag__F3_F4_beta_pli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+post__lag__F3_F4_beta_wpli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+post__lag__F3_F4_lowgamma_imaginary_coherency,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+post__lag__F3_F4_lowgamma_pli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+post__lag__F3_F4_lowgamma_wpli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+post__lag__F3_F4_theta_imaginary_coherency,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+post__lag__F3_F4_theta_pli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+post__lag__F3_F4_theta_wpli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+post__lag__Fz_Cz_alpha_imaginary_coherency,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+post__lag__Fz_Cz_alpha_pli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+post__lag__Fz_Cz_alpha_wpli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+post__lag__Fz_Cz_beta_imaginary_coherency,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+post__lag__Fz_Cz_beta_pli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+post__lag__Fz_Cz_beta_wpli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+post__lag__Fz_Cz_lowgamma_imaginary_coherency,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+post__lag__Fz_Cz_lowgamma_pli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+post__lag__Fz_Cz_lowgamma_wpli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+post__lag__Fz_Cz_theta_imaginary_coherency,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+post__lag__Fz_Cz_theta_pli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+post__lag__Fz_Cz_theta_wpli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+post__morph__central_N1_like_latency_s,morph,Evoked latencies/morphology,2520,0,2520
+post__morph__central_N2_like_latency_s,morph,Evoked latencies/morphology,2520,0,2520
+post__morph__central_P2_like_latency_s,morph,Evoked latencies/morphology,2520,0,2520
+post__morph__central_bin0_mean_uv,morph,Evoked latencies/morphology,2520,0,2520
+post__morph__central_bin1_mean_uv,morph,Evoked latencies/morphology,2520,0,2520
+post__morph__central_bin2_mean_uv,morph,Evoked latencies/morphology,2520,0,2520
+post__morph__central_bin3_mean_uv,morph,Evoked latencies/morphology,2520,0,2520
+post__morph__central_bin4_mean_uv,morph,Evoked latencies/morphology,2520,0,2520
+post__morph__central_bin5_mean_uv,morph,Evoked latencies/morphology,2520,0,2520
+post__morph__frontal_N1_like_latency_s,morph,Evoked latencies/morphology,2520,0,2520
+post__morph__frontal_N2_like_latency_s,morph,Evoked latencies/morphology,2520,0,2520
+post__morph__frontal_P2_like_latency_s,morph,Evoked latencies/morphology,2520,0,2520
+post__morph__frontal_bin0_mean_uv,morph,Evoked latencies/morphology,2520,0,2520
+post__morph__frontal_bin1_mean_uv,morph,Evoked latencies/morphology,2520,0,2520
+post__morph__frontal_bin2_mean_uv,morph,Evoked latencies/morphology,2520,0,2520
+post__morph__frontal_bin3_mean_uv,morph,Evoked latencies/morphology,2520,0,2520
+post__morph__frontal_bin4_mean_uv,morph,Evoked latencies/morphology,2520,0,2520
+post__morph__frontal_bin5_mean_uv,morph,Evoked latencies/morphology,2520,0,2520
+post__morph__posterior_N1_like_latency_s,morph,Evoked latencies/morphology,2520,0,2520
+post__morph__posterior_N2_like_latency_s,morph,Evoked latencies/morphology,2520,0,2520
+post__morph__posterior_P2_like_latency_s,morph,Evoked latencies/morphology,2520,0,2520
+post__morph__posterior_bin0_mean_uv,morph,Evoked latencies/morphology,2520,0,2520
+post__morph__posterior_bin1_mean_uv,morph,Evoked latencies/morphology,2520,0,2520
+post__morph__posterior_bin2_mean_uv,morph,Evoked latencies/morphology,2520,0,2520
+post__morph__posterior_bin3_mean_uv,morph,Evoked latencies/morphology,2520,0,2520
+post__morph__posterior_bin4_mean_uv,morph,Evoked latencies/morphology,2520,0,2520
+post__morph__posterior_bin5_mean_uv,morph,Evoked latencies/morphology,2520,0,2520
+post__pac__central_alpha_lowgamma,pac,Phase–amplitude coupling,2520,0,2520
+post__pac__central_theta_beta,pac,Phase–amplitude coupling,2520,0,2520
+post__pac__frontal_alpha_lowgamma,pac,Phase–amplitude coupling,2520,0,2520
+post__pac__frontal_theta_beta,pac,Phase–amplitude coupling,2520,0,2520
+post__pac__posterior_alpha_lowgamma,pac,Phase–amplitude coupling,2520,0,2520
+post__pac__posterior_theta_beta,pac,Phase–amplitude coupling,2520,0,2520
+post__paf__central_peak_height,paf,Peak alpha frequency,1777,743,2520
+post__paf__central_peak_hz,paf,Peak alpha frequency,1777,743,2520
+post__pe__central_order3,pe,Permutation entropy,2520,0,2520
+post__pe__central_order5,pe,Permutation entropy,2520,0,2520
+post__pe__frontal_order3,pe,Permutation entropy,2520,0,2520
+post__pe__frontal_order5,pe,Permutation entropy,2520,0,2520
+post__pe__posterior_order3,pe,Permutation entropy,2520,0,2520
+post__pe__posterior_order5,pe,Permutation entropy,2520,0,2520
+post__plv__C3_C4_alpha,plv,PLV/phase synchrony,2520,0,2520
+post__plv__C3_C4_beta,plv,PLV/phase synchrony,2520,0,2520
+post__plv__C3_C4_lowgamma,plv,PLV/phase synchrony,2520,0,2520
+post__plv__C3_C4_theta,plv,PLV/phase synchrony,2520,0,2520
+post__plv__Cz_Pz_alpha,plv,PLV/phase synchrony,2520,0,2520
+post__plv__Cz_Pz_beta,plv,PLV/phase synchrony,2520,0,2520
+post__plv__Cz_Pz_lowgamma,plv,PLV/phase synchrony,2520,0,2520
+post__plv__Cz_Pz_theta,plv,PLV/phase synchrony,2520,0,2520
+post__plv__F3_F4_alpha,plv,PLV/phase synchrony,2520,0,2520
+post__plv__F3_F4_beta,plv,PLV/phase synchrony,2520,0,2520
+post__plv__F3_F4_lowgamma,plv,PLV/phase synchrony,2520,0,2520
+post__plv__F3_F4_theta,plv,PLV/phase synchrony,2520,0,2520
+post__plv__Fz_Cz_alpha,plv,PLV/phase synchrony,2520,0,2520
+post__plv__Fz_Cz_beta,plv,PLV/phase synchrony,2520,0,2520
+post__plv__Fz_Cz_lowgamma,plv,PLV/phase synchrony,2520,0,2520
+post__plv__Fz_Cz_theta,plv,PLV/phase synchrony,2520,0,2520
+post__power__central_alpha_logabs,power,Absolute/relative spectral power,2520,0,2520
+post__power__central_alpha_relative,power,Absolute/relative spectral power,2520,0,2520
+post__power__central_beta_logabs,power,Absolute/relative spectral power,2520,0,2520
+post__power__central_beta_relative,power,Absolute/relative spectral power,2520,0,2520
+post__power__central_delta_logabs,power,Absolute/relative spectral power,2520,0,2520
+post__power__central_delta_relative,power,Absolute/relative spectral power,2520,0,2520
+post__power__central_lowgamma_logabs,power,Absolute/relative spectral power,2520,0,2520
+post__power__central_lowgamma_relative,power,Absolute/relative spectral power,2520,0,2520
+post__power__central_theta_logabs,power,Absolute/relative spectral power,2520,0,2520
+post__power__central_theta_relative,power,Absolute/relative spectral power,2520,0,2520
+post__power__frontal_alpha_logabs,power,Absolute/relative spectral power,2520,0,2520
+post__power__frontal_alpha_relative,power,Absolute/relative spectral power,2520,0,2520
+post__power__frontal_beta_logabs,power,Absolute/relative spectral power,2520,0,2520
+post__power__frontal_beta_relative,power,Absolute/relative spectral power,2520,0,2520
+post__power__frontal_delta_logabs,power,Absolute/relative spectral power,2520,0,2520
+post__power__frontal_delta_relative,power,Absolute/relative spectral power,2520,0,2520
+post__power__frontal_lowgamma_logabs,power,Absolute/relative spectral power,2520,0,2520
+post__power__frontal_lowgamma_relative,power,Absolute/relative spectral power,2520,0,2520
+post__power__frontal_theta_logabs,power,Absolute/relative spectral power,2520,0,2520
+post__power__frontal_theta_relative,power,Absolute/relative spectral power,2520,0,2520
+post__power__posterior_alpha_logabs,power,Absolute/relative spectral power,2520,0,2520
+post__power__posterior_alpha_relative,power,Absolute/relative spectral power,2520,0,2520
+post__power__posterior_beta_logabs,power,Absolute/relative spectral power,2520,0,2520
+post__power__posterior_beta_relative,power,Absolute/relative spectral power,2520,0,2520
+post__power__posterior_delta_logabs,power,Absolute/relative spectral power,2520,0,2520
+post__power__posterior_delta_relative,power,Absolute/relative spectral power,2520,0,2520
+post__power__posterior_lowgamma_logabs,power,Absolute/relative spectral power,2520,0,2520
+post__power__posterior_lowgamma_relative,power,Absolute/relative spectral power,2520,0,2520
+post__power__posterior_theta_logabs,power,Absolute/relative spectral power,2520,0,2520
+post__power__posterior_theta_relative,power,Absolute/relative spectral power,2520,0,2520
+post__quality__central_line_length,quality,Signal quality/SNR and variance controls,2520,0,2520
+post__quality__central_log_total_power,quality,Signal quality/SNR and variance controls,2520,0,2520
+post__quality__frontal_line_length,quality,Signal quality/SNR and variance controls,2520,0,2520
+post__quality__frontal_log_total_power,quality,Signal quality/SNR and variance controls,2520,0,2520
+post__quality__posterior_line_length,quality,Signal quality/SNR and variance controls,2520,0,2520
+post__quality__posterior_log_total_power,quality,Signal quality/SNR and variance controls,2520,0,2520
+post__quality__spectral_fit_r2,quality,Signal quality/SNR and variance controls,2520,0,2520
+post__ratio__central,ratio,Alpha/theta power ratio,2520,0,2520
+post__ratio__frontal,ratio,Alpha/theta power ratio,2520,0,2520
+post__ratio__posterior,ratio,Alpha/theta power ratio,2520,0,2520
+post__sampen__central_scale1,sampen,Sample/multiscale entropy,2520,0,2520
+post__sampen__central_scale2,sampen,Sample/multiscale entropy,2520,0,2520
+post__sampen__frontal_scale1,sampen,Sample/multiscale entropy,2520,0,2520
+post__sampen__frontal_scale2,sampen,Sample/multiscale entropy,2520,0,2520
+post__sampen__posterior_scale1,sampen,Sample/multiscale entropy,2520,0,2520
+post__sampen__posterior_scale2,sampen,Sample/multiscale entropy,2520,0,2520
+post__variability__central_alpha_envelope_cv,variability,Within-window amplitude variability,2520,0,2520
+post__variability__central_beta_envelope_cv,variability,Within-window amplitude variability,2520,0,2520
+post__variability__central_kurtosis,variability,Within-window amplitude variability,2520,0,2520
+post__variability__central_lowgamma_envelope_cv,variability,Within-window amplitude variability,2520,0,2520
+post__variability__central_ptp,variability,Within-window amplitude variability,2520,0,2520
+post__variability__central_sd,variability,Within-window amplitude variability,2520,0,2520
+post__variability__central_skew,variability,Within-window amplitude variability,2520,0,2520
+post__variability__central_subwindow_sd_cv,variability,Within-window amplitude variability,2520,0,2520
+post__variability__central_theta_envelope_cv,variability,Within-window amplitude variability,2520,0,2520
+post__variability__frontal_alpha_envelope_cv,variability,Within-window amplitude variability,2520,0,2520
+post__variability__frontal_beta_envelope_cv,variability,Within-window amplitude variability,2520,0,2520
+post__variability__frontal_kurtosis,variability,Within-window amplitude variability,2520,0,2520
+post__variability__frontal_lowgamma_envelope_cv,variability,Within-window amplitude variability,2520,0,2520
+post__variability__frontal_ptp,variability,Within-window amplitude variability,2520,0,2520
+post__variability__frontal_sd,variability,Within-window amplitude variability,2520,0,2520
+post__variability__frontal_skew,variability,Within-window amplitude variability,2520,0,2520
+post__variability__frontal_subwindow_sd_cv,variability,Within-window amplitude variability,2520,0,2520
+post__variability__frontal_theta_envelope_cv,variability,Within-window amplitude variability,2520,0,2520
+post__variability__posterior_alpha_envelope_cv,variability,Within-window amplitude variability,2520,0,2520
+post__variability__posterior_beta_envelope_cv,variability,Within-window amplitude variability,2520,0,2520
+post__variability__posterior_kurtosis,variability,Within-window amplitude variability,2520,0,2520
+post__variability__posterior_lowgamma_envelope_cv,variability,Within-window amplitude variability,2520,0,2520
+post__variability__posterior_ptp,variability,Within-window amplitude variability,2520,0,2520
+post__variability__posterior_sd,variability,Within-window amplitude variability,2520,0,2520
+post__variability__posterior_skew,variability,Within-window amplitude variability,2520,0,2520
+post__variability__posterior_subwindow_sd_cv,variability,Within-window amplitude variability,2520,0,2520
+post__variability__posterior_theta_envelope_cv,variability,Within-window amplitude variability,2520,0,2520
+pre__aper__central_exponent,aper,Aperiodic slope/offset,2520,0,2520
+pre__aper__central_offset,aper,Aperiodic slope/offset,2520,0,2520
+pre__asym__C3_C4_alpha,asym,Hemispheric power asymmetry,2520,0,2520
+pre__asym__C3_C4_beta,asym,Hemispheric power asymmetry,2520,0,2520
+pre__asym__C3_C4_delta,asym,Hemispheric power asymmetry,2520,0,2520
+pre__asym__C3_C4_lowgamma,asym,Hemispheric power asymmetry,2520,0,2520
+pre__asym__C3_C4_theta,asym,Hemispheric power asymmetry,2520,0,2520
+pre__asym__F3_F4_alpha,asym,Hemispheric power asymmetry,2520,0,2520
+pre__asym__F3_F4_beta,asym,Hemispheric power asymmetry,2520,0,2520
+pre__asym__F3_F4_delta,asym,Hemispheric power asymmetry,2520,0,2520
+pre__asym__F3_F4_lowgamma,asym,Hemispheric power asymmetry,2520,0,2520
+pre__asym__F3_F4_theta,asym,Hemispheric power asymmetry,2520,0,2520
+pre__asym__P3_P4_alpha,asym,Hemispheric power asymmetry,2520,0,2520
+pre__asym__P3_P4_beta,asym,Hemispheric power asymmetry,2520,0,2520
+pre__asym__P3_P4_delta,asym,Hemispheric power asymmetry,2520,0,2520
+pre__asym__P3_P4_lowgamma,asym,Hemispheric power asymmetry,2520,0,2520
+pre__asym__P3_P4_theta,asym,Hemispheric power asymmetry,2520,0,2520
+pre__coh__C3_C4_alpha,coh,Magnitude-squared coherence,2520,0,2520
+pre__coh__C3_C4_beta,coh,Magnitude-squared coherence,2520,0,2520
+pre__coh__C3_C4_lowgamma,coh,Magnitude-squared coherence,2520,0,2520
+pre__coh__C3_C4_theta,coh,Magnitude-squared coherence,2520,0,2520
+pre__coh__Cz_Pz_alpha,coh,Magnitude-squared coherence,2520,0,2520
+pre__coh__Cz_Pz_beta,coh,Magnitude-squared coherence,2520,0,2520
+pre__coh__Cz_Pz_lowgamma,coh,Magnitude-squared coherence,2520,0,2520
+pre__coh__Cz_Pz_theta,coh,Magnitude-squared coherence,2520,0,2520
+pre__coh__F3_F4_alpha,coh,Magnitude-squared coherence,2520,0,2520
+pre__coh__F3_F4_beta,coh,Magnitude-squared coherence,2520,0,2520
+pre__coh__F3_F4_lowgamma,coh,Magnitude-squared coherence,2520,0,2520
+pre__coh__F3_F4_theta,coh,Magnitude-squared coherence,2520,0,2520
+pre__coh__Fz_Cz_alpha,coh,Magnitude-squared coherence,2520,0,2520
+pre__coh__Fz_Cz_beta,coh,Magnitude-squared coherence,2520,0,2520
+pre__coh__Fz_Cz_lowgamma,coh,Magnitude-squared coherence,2520,0,2520
+pre__coh__Fz_Cz_theta,coh,Magnitude-squared coherence,2520,0,2520
+pre__env__C3_C4_alpha,env,Envelope correlation,2520,0,2520
+pre__env__C3_C4_beta,env,Envelope correlation,2520,0,2520
+pre__env__C3_C4_lowgamma,env,Envelope correlation,2520,0,2520
+pre__env__C3_C4_theta,env,Envelope correlation,2520,0,2520
+pre__env__Cz_Pz_alpha,env,Envelope correlation,2520,0,2520
+pre__env__Cz_Pz_beta,env,Envelope correlation,2520,0,2520
+pre__env__Cz_Pz_lowgamma,env,Envelope correlation,2520,0,2520
+pre__env__Cz_Pz_theta,env,Envelope correlation,2520,0,2520
+pre__env__F3_F4_alpha,env,Envelope correlation,2520,0,2520
+pre__env__F3_F4_beta,env,Envelope correlation,2520,0,2520
+pre__env__F3_F4_lowgamma,env,Envelope correlation,2520,0,2520
+pre__env__F3_F4_theta,env,Envelope correlation,2520,0,2520
+pre__env__Fz_Cz_alpha,env,Envelope correlation,2520,0,2520
+pre__env__Fz_Cz_beta,env,Envelope correlation,2520,0,2520
+pre__env__Fz_Cz_lowgamma,env,Envelope correlation,2520,0,2520
+pre__env__Fz_Cz_theta,env,Envelope correlation,2520,0,2520
+pre__hfd__central,hfd,Higuchi fractal dimension,2520,0,2520
+pre__hfd__frontal,hfd,Higuchi fractal dimension,2520,0,2520
+pre__hfd__posterior,hfd,Higuchi fractal dimension,2520,0,2520
+pre__hjorth__central_activity,hjorth,Hjorth parameters,2520,0,2520
+pre__hjorth__central_complexity,hjorth,Hjorth parameters,2520,0,2520
+pre__hjorth__central_mobility,hjorth,Hjorth parameters,2520,0,2520
+pre__hjorth__frontal_activity,hjorth,Hjorth parameters,2520,0,2520
+pre__hjorth__frontal_complexity,hjorth,Hjorth parameters,2520,0,2520
+pre__hjorth__frontal_mobility,hjorth,Hjorth parameters,2520,0,2520
+pre__hjorth__posterior_activity,hjorth,Hjorth parameters,2520,0,2520
+pre__hjorth__posterior_complexity,hjorth,Hjorth parameters,2520,0,2520
+pre__hjorth__posterior_mobility,hjorth,Hjorth parameters,2520,0,2520
+pre__lag__C3_C4_alpha_imaginary_coherency,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+pre__lag__C3_C4_alpha_pli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+pre__lag__C3_C4_alpha_wpli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+pre__lag__C3_C4_beta_imaginary_coherency,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+pre__lag__C3_C4_beta_pli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+pre__lag__C3_C4_beta_wpli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+pre__lag__C3_C4_lowgamma_imaginary_coherency,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+pre__lag__C3_C4_lowgamma_pli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+pre__lag__C3_C4_lowgamma_wpli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+pre__lag__C3_C4_theta_imaginary_coherency,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+pre__lag__C3_C4_theta_pli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+pre__lag__C3_C4_theta_wpli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+pre__lag__Cz_Pz_alpha_imaginary_coherency,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+pre__lag__Cz_Pz_alpha_pli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+pre__lag__Cz_Pz_alpha_wpli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+pre__lag__Cz_Pz_beta_imaginary_coherency,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+pre__lag__Cz_Pz_beta_pli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+pre__lag__Cz_Pz_beta_wpli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+pre__lag__Cz_Pz_lowgamma_imaginary_coherency,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+pre__lag__Cz_Pz_lowgamma_pli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+pre__lag__Cz_Pz_lowgamma_wpli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+pre__lag__Cz_Pz_theta_imaginary_coherency,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+pre__lag__Cz_Pz_theta_pli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+pre__lag__Cz_Pz_theta_wpli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+pre__lag__F3_F4_alpha_imaginary_coherency,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+pre__lag__F3_F4_alpha_pli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+pre__lag__F3_F4_alpha_wpli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+pre__lag__F3_F4_beta_imaginary_coherency,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+pre__lag__F3_F4_beta_pli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+pre__lag__F3_F4_beta_wpli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+pre__lag__F3_F4_lowgamma_imaginary_coherency,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+pre__lag__F3_F4_lowgamma_pli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+pre__lag__F3_F4_lowgamma_wpli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+pre__lag__F3_F4_theta_imaginary_coherency,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+pre__lag__F3_F4_theta_pli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+pre__lag__F3_F4_theta_wpli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+pre__lag__Fz_Cz_alpha_imaginary_coherency,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+pre__lag__Fz_Cz_alpha_pli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+pre__lag__Fz_Cz_alpha_wpli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+pre__lag__Fz_Cz_beta_imaginary_coherency,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+pre__lag__Fz_Cz_beta_pli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+pre__lag__Fz_Cz_beta_wpli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+pre__lag__Fz_Cz_lowgamma_imaginary_coherency,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+pre__lag__Fz_Cz_lowgamma_pli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+pre__lag__Fz_Cz_lowgamma_wpli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+pre__lag__Fz_Cz_theta_imaginary_coherency,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+pre__lag__Fz_Cz_theta_pli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+pre__lag__Fz_Cz_theta_wpli,lag,PLI/wPLI/imaginary coherency,2520,0,2520
+pre__pac__central_alpha_lowgamma,pac,Phase–amplitude coupling,2520,0,2520
+pre__pac__central_theta_beta,pac,Phase–amplitude coupling,2520,0,2520
+pre__pac__frontal_alpha_lowgamma,pac,Phase–amplitude coupling,2520,0,2520
+pre__pac__frontal_theta_beta,pac,Phase–amplitude coupling,2520,0,2520
+pre__pac__posterior_alpha_lowgamma,pac,Phase–amplitude coupling,2520,0,2520
+pre__pac__posterior_theta_beta,pac,Phase–amplitude coupling,2520,0,2520
+pre__paf__central_peak_height,paf,Peak alpha frequency,1691,829,2520
+pre__paf__central_peak_hz,paf,Peak alpha frequency,1691,829,2520
+pre__pe__central_order3,pe,Permutation entropy,2520,0,2520
+pre__pe__central_order5,pe,Permutation entropy,2520,0,2520
+pre__pe__frontal_order3,pe,Permutation entropy,2520,0,2520
+pre__pe__frontal_order5,pe,Permutation entropy,2520,0,2520
+pre__pe__posterior_order3,pe,Permutation entropy,2520,0,2520
+pre__pe__posterior_order5,pe,Permutation entropy,2520,0,2520
+pre__plv__C3_C4_alpha,plv,PLV/phase synchrony,2520,0,2520
+pre__plv__C3_C4_beta,plv,PLV/phase synchrony,2520,0,2520
+pre__plv__C3_C4_lowgamma,plv,PLV/phase synchrony,2520,0,2520
+pre__plv__C3_C4_theta,plv,PLV/phase synchrony,2520,0,2520
+pre__plv__Cz_Pz_alpha,plv,PLV/phase synchrony,2520,0,2520
+pre__plv__Cz_Pz_beta,plv,PLV/phase synchrony,2520,0,2520
+pre__plv__Cz_Pz_lowgamma,plv,PLV/phase synchrony,2520,0,2520
+pre__plv__Cz_Pz_theta,plv,PLV/phase synchrony,2520,0,2520
+pre__plv__F3_F4_alpha,plv,PLV/phase synchrony,2520,0,2520
+pre__plv__F3_F4_beta,plv,PLV/phase synchrony,2520,0,2520
+pre__plv__F3_F4_lowgamma,plv,PLV/phase synchrony,2520,0,2520
+pre__plv__F3_F4_theta,plv,PLV/phase synchrony,2520,0,2520
+pre__plv__Fz_Cz_alpha,plv,PLV/phase synchrony,2520,0,2520
+pre__plv__Fz_Cz_beta,plv,PLV/phase synchrony,2520,0,2520
+pre__plv__Fz_Cz_lowgamma,plv,PLV/phase synchrony,2520,0,2520
+pre__plv__Fz_Cz_theta,plv,PLV/phase synchrony,2520,0,2520
+pre__power__central_alpha_logabs,power,Absolute/relative spectral power,2520,0,2520
+pre__power__central_alpha_relative,power,Absolute/relative spectral power,2520,0,2520
+pre__power__central_beta_logabs,power,Absolute/relative spectral power,2520,0,2520
+pre__power__central_beta_relative,power,Absolute/relative spectral power,2520,0,2520
+pre__power__central_delta_logabs,power,Absolute/relative spectral power,2520,0,2520
+pre__power__central_delta_relative,power,Absolute/relative spectral power,2520,0,2520
+pre__power__central_lowgamma_logabs,power,Absolute/relative spectral power,2520,0,2520
+pre__power__central_lowgamma_relative,power,Absolute/relative spectral power,2520,0,2520
+pre__power__central_theta_logabs,power,Absolute/relative spectral power,2520,0,2520
+pre__power__central_theta_relative,power,Absolute/relative spectral power,2520,0,2520
+pre__power__frontal_alpha_logabs,power,Absolute/relative spectral power,2520,0,2520
+pre__power__frontal_alpha_relative,power,Absolute/relative spectral power,2520,0,2520
+pre__power__frontal_beta_logabs,power,Absolute/relative spectral power,2520,0,2520
+pre__power__frontal_beta_relative,power,Absolute/relative spectral power,2520,0,2520
+pre__power__frontal_delta_logabs,power,Absolute/relative spectral power,2520,0,2520
+pre__power__frontal_delta_relative,power,Absolute/relative spectral power,2520,0,2520
+pre__power__frontal_lowgamma_logabs,power,Absolute/relative spectral power,2520,0,2520
+pre__power__frontal_lowgamma_relative,power,Absolute/relative spectral power,2520,0,2520
+pre__power__frontal_theta_logabs,power,Absolute/relative spectral power,2520,0,2520
+pre__power__frontal_theta_relative,power,Absolute/relative spectral power,2520,0,2520
+pre__power__posterior_alpha_logabs,power,Absolute/relative spectral power,2520,0,2520
+pre__power__posterior_alpha_relative,power,Absolute/relative spectral power,2520,0,2520
+pre__power__posterior_beta_logabs,power,Absolute/relative spectral power,2520,0,2520
+pre__power__posterior_beta_relative,power,Absolute/relative spectral power,2520,0,2520
+pre__power__posterior_delta_logabs,power,Absolute/relative spectral power,2520,0,2520
+pre__power__posterior_delta_relative,power,Absolute/relative spectral power,2520,0,2520
+pre__power__posterior_lowgamma_logabs,power,Absolute/relative spectral power,2520,0,2520
+pre__power__posterior_lowgamma_relative,power,Absolute/relative spectral power,2520,0,2520
+pre__power__posterior_theta_logabs,power,Absolute/relative spectral power,2520,0,2520
+pre__power__posterior_theta_relative,power,Absolute/relative spectral power,2520,0,2520
+pre__pre__central_alpha_end_phase_cos,pre,Pre-stimulus power/phase,2520,0,2520
+pre__pre__central_alpha_end_phase_sin,pre,Pre-stimulus power/phase,2520,0,2520
+pre__pre__central_alpha_power,pre,Pre-stimulus power/phase,2520,0,2520
+pre__pre__central_beta_end_phase_cos,pre,Pre-stimulus power/phase,2520,0,2520
+pre__pre__central_beta_end_phase_sin,pre,Pre-stimulus power/phase,2520,0,2520
+pre__pre__central_beta_power,pre,Pre-stimulus power/phase,2520,0,2520
+pre__pre__central_lowgamma_end_phase_cos,pre,Pre-stimulus power/phase,2520,0,2520
+pre__pre__central_lowgamma_end_phase_sin,pre,Pre-stimulus power/phase,2520,0,2520
+pre__pre__central_lowgamma_power,pre,Pre-stimulus power/phase,2520,0,2520
+pre__pre__central_theta_end_phase_cos,pre,Pre-stimulus power/phase,2520,0,2520
+pre__pre__central_theta_end_phase_sin,pre,Pre-stimulus power/phase,2520,0,2520
+pre__pre__central_theta_power,pre,Pre-stimulus power/phase,2520,0,2520
+pre__pre__frontal_alpha_end_phase_cos,pre,Pre-stimulus power/phase,2520,0,2520
+pre__pre__frontal_alpha_end_phase_sin,pre,Pre-stimulus power/phase,2520,0,2520
+pre__pre__frontal_alpha_power,pre,Pre-stimulus power/phase,2520,0,2520
+pre__pre__frontal_beta_end_phase_cos,pre,Pre-stimulus power/phase,2520,0,2520
+pre__pre__frontal_beta_end_phase_sin,pre,Pre-stimulus power/phase,2520,0,2520
+pre__pre__frontal_beta_power,pre,Pre-stimulus power/phase,2520,0,2520
+pre__pre__frontal_lowgamma_end_phase_cos,pre,Pre-stimulus power/phase,2520,0,2520
+pre__pre__frontal_lowgamma_end_phase_sin,pre,Pre-stimulus power/phase,2520,0,2520
+pre__pre__frontal_lowgamma_power,pre,Pre-stimulus power/phase,2520,0,2520
+pre__pre__frontal_theta_end_phase_cos,pre,Pre-stimulus power/phase,2520,0,2520
+pre__pre__frontal_theta_end_phase_sin,pre,Pre-stimulus power/phase,2520,0,2520
+pre__pre__frontal_theta_power,pre,Pre-stimulus power/phase,2520,0,2520
+pre__pre__posterior_alpha_end_phase_cos,pre,Pre-stimulus power/phase,2520,0,2520
+pre__pre__posterior_alpha_end_phase_sin,pre,Pre-stimulus power/phase,2520,0,2520
+pre__pre__posterior_alpha_power,pre,Pre-stimulus power/phase,2520,0,2520
+pre__pre__posterior_beta_end_phase_cos,pre,Pre-stimulus power/phase,2520,0,2520
+pre__pre__posterior_beta_end_phase_sin,pre,Pre-stimulus power/phase,2520,0,2520
+pre__pre__posterior_beta_power,pre,Pre-stimulus power/phase,2520,0,2520
+pre__pre__posterior_lowgamma_end_phase_cos,pre,Pre-stimulus power/phase,2520,0,2520
+pre__pre__posterior_lowgamma_end_phase_sin,pre,Pre-stimulus power/phase,2520,0,2520
+pre__pre__posterior_lowgamma_power,pre,Pre-stimulus power/phase,2520,0,2520
+pre__pre__posterior_theta_end_phase_cos,pre,Pre-stimulus power/phase,2520,0,2520
+pre__pre__posterior_theta_end_phase_sin,pre,Pre-stimulus power/phase,2520,0,2520
+pre__pre__posterior_theta_power,pre,Pre-stimulus power/phase,2520,0,2520
+pre__quality__central_line_length,quality,Signal quality/SNR and variance controls,2520,0,2520
+pre__quality__central_log_total_power,quality,Signal quality/SNR and variance controls,2520,0,2520
+pre__quality__frontal_line_length,quality,Signal quality/SNR and variance controls,2520,0,2520
+pre__quality__frontal_log_total_power,quality,Signal quality/SNR and variance controls,2520,0,2520
+pre__quality__posterior_line_length,quality,Signal quality/SNR and variance controls,2520,0,2520
+pre__quality__posterior_log_total_power,quality,Signal quality/SNR and variance controls,2520,0,2520
+pre__quality__spectral_fit_r2,quality,Signal quality/SNR and variance controls,2520,0,2520
+pre__ratio__central,ratio,Alpha/theta power ratio,2520,0,2520
+pre__ratio__frontal,ratio,Alpha/theta power ratio,2520,0,2520
+pre__ratio__posterior,ratio,Alpha/theta power ratio,2520,0,2520
+pre__sampen__central_scale1,sampen,Sample/multiscale entropy,2520,0,2520
+pre__sampen__central_scale2,sampen,Sample/multiscale entropy,2520,0,2520
+pre__sampen__frontal_scale1,sampen,Sample/multiscale entropy,2520,0,2520
+pre__sampen__frontal_scale2,sampen,Sample/multiscale entropy,2520,0,2520
+pre__sampen__posterior_scale1,sampen,Sample/multiscale entropy,2520,0,2520
+pre__sampen__posterior_scale2,sampen,Sample/multiscale entropy,2520,0,2520
+pre__variability__central_alpha_envelope_cv,variability,Within-window amplitude variability,2520,0,2520
+pre__variability__central_beta_envelope_cv,variability,Within-window amplitude variability,2520,0,2520
+pre__variability__central_kurtosis,variability,Within-window amplitude variability,2520,0,2520
+pre__variability__central_lowgamma_envelope_cv,variability,Within-window amplitude variability,2520,0,2520
+pre__variability__central_ptp,variability,Within-window amplitude variability,2520,0,2520
+pre__variability__central_sd,variability,Within-window amplitude variability,2520,0,2520
+pre__variability__central_skew,variability,Within-window amplitude variability,2520,0,2520
+pre__variability__central_subwindow_sd_cv,variability,Within-window amplitude variability,2520,0,2520
+pre__variability__central_theta_envelope_cv,variability,Within-window amplitude variability,2520,0,2520
+pre__variability__frontal_alpha_envelope_cv,variability,Within-window amplitude variability,2520,0,2520
+pre__variability__frontal_beta_envelope_cv,variability,Within-window amplitude variability,2520,0,2520
+pre__variability__frontal_kurtosis,variability,Within-window amplitude variability,2520,0,2520
+pre__variability__frontal_lowgamma_envelope_cv,variability,Within-window amplitude variability,2520,0,2520
+pre__variability__frontal_ptp,variability,Within-window amplitude variability,2520,0,2520
+pre__variability__frontal_sd,variability,Within-window amplitude variability,2520,0,2520
+pre__variability__frontal_skew,variability,Within-window amplitude variability,2520,0,2520
+pre__variability__frontal_subwindow_sd_cv,variability,Within-window amplitude variability,2520,0,2520
+pre__variability__frontal_theta_envelope_cv,variability,Within-window amplitude variability,2520,0,2520
+pre__variability__posterior_alpha_envelope_cv,variability,Within-window amplitude variability,2520,0,2520
+pre__variability__posterior_beta_envelope_cv,variability,Within-window amplitude variability,2520,0,2520
+pre__variability__posterior_kurtosis,variability,Within-window amplitude variability,2520,0,2520
+pre__variability__posterior_lowgamma_envelope_cv,variability,Within-window amplitude variability,2520,0,2520
+pre__variability__posterior_ptp,variability,Within-window amplitude variability,2520,0,2520
+pre__variability__posterior_sd,variability,Within-window amplitude variability,2520,0,2520
+pre__variability__posterior_skew,variability,Within-window amplitude variability,2520,0,2520
+pre__variability__posterior_subwindow_sd_cv,variability,Within-window amplitude variability,2520,0,2520
+pre__variability__posterior_theta_envelope_cv,variability,Within-window amplitude variability,2520,0,2520

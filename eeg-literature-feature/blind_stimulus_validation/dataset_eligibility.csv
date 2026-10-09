@@ -1,0 +1,8 @@
+dataset,source,status,observed_target,reason
+heat_f2mua,https://osf.io/f2mua/,eligible for participant-held-out scoring,"42/46/48 Celsius via author codebook","Independent of feature-cited original cohorts; 10 presampled participants; 252 usable heat trials each"
+shock_w25k4,https://osf.io/w25k4/,downloaded but excluded,"delivered/omitted fixed shock; no mA","Cue epochs end at +3.498 seconds; shocks occur near +3.36 to3.41 seconds; about100ms postshock cannot support planned0.05-1.25s features. All10 presampled participants excluded by timing; not by accuracy."
+cued_4kgtp,https://osf.io/4kgtp/,access blocked,"Paper describes calibrated electrical stimulation levels","Anonymous public API and article-published view-only link returned401; no protected data accessed and no dose labels fabricated."
+spinal_ds005307,https://openneuro.org/datasets/ds005307,physical dose mapping not verified,"Examined event table has pain label and constant value1","No trial-resolved laser energy mapping in examined source event tables; constant event code cannot be treated as measured laser dose."
+nine_LEP_archives,https://doi.org/10.1038/s41597-025-05900-1,excluded feature-source cohorts,"laser stimulation and pain ratings","All9 archives in the feature-cited678 participant resource excluded even where potentially usable."
+chronic_pain_sources,https://osf.io/m45j2/,excluded and wrong target,"resting chronic pain recordings","Feature-source/overlapping chronic cohorts excluded; resting pain severity without controlled physical stimulus dose does not answer selected target."
+DEIPP_ds006815,https://openneuro.org/datasets/ds006815,ineligible,"spontaneous pain","MRI rather than usable scalp EEG with controlled stimulus-intensity labels."

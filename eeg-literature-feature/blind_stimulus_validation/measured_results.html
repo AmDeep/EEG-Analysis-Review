@@ -1,0 +1,447 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Independent EEG physical-stimulus test — measured results</title>
+<style>body{font:15px/1.6 system-ui,sans-serif;color:#18222e;max-width:1200px;margin:40px auto;padding:0 20px}
+h1,h2{line-height:1.2}.notice{background:#fff2d6;padding:16px;border-left:5px solid #a46b00}
+table{border-collapse:collapse;font-size:13px;width:100%;margin:20px 0}td,th{padding:8px;text-align:left;border:1px solid #d9dfe5}
+th{background:#edf2f6}.scroll{overflow:auto}code{background:#edf2f6;padding:2px 5px}a{color:#155db1}
+</style></head><body><h1>Independent EEG feature test: physical stimulus intensity</h1>
+<p class="notice"><strong>Partial result—not complete cross-dataset validation.</strong>
+Great cross-dataset accuracy is NOT validated. Only one cohort had usable dose-labeled poststimulus EEG; the independent second-cohort stage is blocked. This study does not establish prediction of perceived or clinical pain.</p>
+<p><strong>2,520 real trials;10 held-out participants;21 candidate families;507 full-model predictors.</strong>
+Target:42,46 or48°C. Four-fold participant-held-out splits, training-only imputation/scaling/CSP,
+no PCA and no test-set tuning. The original feature-source cohorts were excluded.</p>
+<h2>Native temperature prediction</h2><p>MAE and RMSE are degrees Celsius. R²=0 is the mean-prediction reference;
+negative R² is worse. Exact-level accuracy rounds predictions to the nearest of42/46/48°C.
+Intervals resample entire people1000 times, conditional on the fitted models.</p>
+<div class="scroll"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>feature_set</th>
+      <th>model</th>
+      <th>R2</th>
+      <th>R2_CI_low</th>
+      <th>R2_CI_high</th>
+      <th>MAE</th>
+      <th>RMSE</th>
+      <th>native_level_accuracy</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>all_compatible</td>
+      <td>dummy</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>2.2222</td>
+      <td>2.4944</td>
+      <td>0.3333</td>
+    </tr>
+    <tr>
+      <td>all_compatible</td>
+      <td>extra_trees</td>
+      <td>-0.0070</td>
+      <td>-0.0189</td>
+      <td>0.0007</td>
+      <td>2.2374</td>
+      <td>2.5031</td>
+      <td>0.3333</td>
+    </tr>
+    <tr>
+      <td>all_compatible</td>
+      <td>ridge</td>
+      <td>-1.3589</td>
+      <td>-3.4737</td>
+      <td>-0.2719</td>
+      <td>2.9185</td>
+      <td>3.8312</td>
+      <td>0.3437</td>
+    </tr>
+    <tr>
+      <td>power_only</td>
+      <td>dummy</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>2.2222</td>
+      <td>2.4944</td>
+      <td>0.3333</td>
+    </tr>
+    <tr>
+      <td>power_only</td>
+      <td>extra_trees</td>
+      <td>-0.0213</td>
+      <td>-0.0336</td>
+      <td>-0.0132</td>
+      <td>2.2314</td>
+      <td>2.5209</td>
+      <td>0.3333</td>
+    </tr>
+    <tr>
+      <td>power_only</td>
+      <td>ridge</td>
+      <td>-0.0407</td>
+      <td>-0.0717</td>
+      <td>-0.0180</td>
+      <td>2.2320</td>
+      <td>2.5447</td>
+      <td>0.3333</td>
+    </tr>
+    <tr>
+      <td>prestimulus_only</td>
+      <td>dummy</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>0.0000</td>
+      <td>2.2222</td>
+      <td>2.4944</td>
+      <td>0.3333</td>
+    </tr>
+    <tr>
+      <td>prestimulus_only</td>
+      <td>extra_trees</td>
+      <td>-0.0046</td>
+      <td>-0.0109</td>
+      <td>0.0010</td>
+      <td>2.2276</td>
+      <td>2.5001</td>
+      <td>0.3333</td>
+    </tr>
+    <tr>
+      <td>prestimulus_only</td>
+      <td>ridge</td>
+      <td>-0.4720</td>
+      <td>-1.0756</td>
+      <td>-0.1114</td>
+      <td>2.4689</td>
+      <td>3.0264</td>
+      <td>0.3405</td>
+    </tr>
+  </tbody>
+</table></div>
+<h2>Secondary experimental contrast</h2><p>42°C versus46/48°C is not a pain diagnosis.
+Majority ordinary accuracy is66.7%; balanced chance accuracy is50%.
+These temperatures include a low condition often perceived as nonpainful.</p>
+<div class="scroll"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>feature_set</th>
+      <th>model</th>
+      <th>accuracy</th>
+      <th>balanced_accuracy</th>
+      <th>balanced_accuracy_CI_low</th>
+      <th>balanced_accuracy_CI_high</th>
+      <th>ROC_AUC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>all_compatible</td>
+      <td>dummy</td>
+      <td>0.6667</td>
+      <td>0.5000</td>
+      <td>0.5000</td>
+      <td>0.5000</td>
+      <td>0.5000</td>
+    </tr>
+    <tr>
+      <td>all_compatible</td>
+      <td>extra_trees</td>
+      <td>0.6238</td>
+      <td>0.5077</td>
+      <td>0.4985</td>
+      <td>0.5176</td>
+      <td>0.5149</td>
+    </tr>
+    <tr>
+      <td>all_compatible</td>
+      <td>logistic</td>
+      <td>0.5111</td>
+      <td>0.5137</td>
+      <td>0.4943</td>
+      <td>0.5330</td>
+      <td>0.5170</td>
+    </tr>
+    <tr>
+      <td>power_only</td>
+      <td>dummy</td>
+      <td>0.6667</td>
+      <td>0.5000</td>
+      <td>0.5000</td>
+      <td>0.5000</td>
+      <td>0.5000</td>
+    </tr>
+    <tr>
+      <td>power_only</td>
+      <td>extra_trees</td>
+      <td>0.5659</td>
+      <td>0.5012</td>
+      <td>0.4908</td>
+      <td>0.5107</td>
+      <td>0.4955</td>
+    </tr>
+    <tr>
+      <td>power_only</td>
+      <td>logistic</td>
+      <td>0.5036</td>
+      <td>0.5024</td>
+      <td>0.4887</td>
+      <td>0.5164</td>
+      <td>0.5012</td>
+    </tr>
+    <tr>
+      <td>prestimulus_only</td>
+      <td>dummy</td>
+      <td>0.6667</td>
+      <td>0.5000</td>
+      <td>0.5000</td>
+      <td>0.5000</td>
+      <td>0.5000</td>
+    </tr>
+    <tr>
+      <td>prestimulus_only</td>
+      <td>extra_trees</td>
+      <td>0.6071</td>
+      <td>0.5009</td>
+      <td>0.4908</td>
+      <td>0.5104</td>
+      <td>0.5101</td>
+    </tr>
+    <tr>
+      <td>prestimulus_only</td>
+      <td>logistic</td>
+      <td>0.5210</td>
+      <td>0.5208</td>
+      <td>0.5089</td>
+      <td>0.5318</td>
+      <td>0.5245</td>
+    </tr>
+  </tbody>
+</table></div>
+<h2>Do all the collected families help?</h2><p>Compare the fixed full logistic model with power-only on exactly the same held-out trials.
+Positive gains favor the full feature set; an interval containing zero is inconclusive.</p><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>evaluation</th>
+      <th>test_dataset</th>
+      <th>balanced_accuracy_gain_full_minus_power</th>
+      <th>gain_CI_low</th>
+      <th>gain_CI_high</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>subject_heldout</td>
+      <td>heat_f2mua</td>
+      <td>0.0113</td>
+      <td>-0.0086</td>
+      <td>0.0369</td>
+    </tr>
+  </tbody>
+</table>
+<h2>What was generated</h2><p>505 cached columns plus2 CSP columns fitted within training folds.
+High-gamma and CVUE/Piqβ were not tested. Published algorithms are not all identically replicated:
+short-window connectivity/entropy/PAF and candidate component-like extrema need additional validation.</p>
+<div class="scroll"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>feature</th>
+      <th>generated_columns</th>
+      <th>status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Evoked N1/N2/P2 amplitudes</td>
+      <td>9</td>
+      <td>candidate implementation tested; not an exact paper-specific algorithm replication</td>
+    </tr>
+    <tr>
+      <td>Evoked latencies/morphology</td>
+      <td>27</td>
+      <td>candidate implementation tested; not an exact paper-specific algorithm replication</td>
+    </tr>
+    <tr>
+      <td>Alpha/beta ERD</td>
+      <td>6</td>
+      <td>candidate implementation tested; not an exact paper-specific algorithm replication</td>
+    </tr>
+    <tr>
+      <td>High-gamma response</td>
+      <td>0</td>
+      <td>not tested</td>
+    </tr>
+    <tr>
+      <td>Pre-stimulus power/phase</td>
+      <td>36</td>
+      <td>candidate implementation tested; not an exact paper-specific algorithm replication</td>
+    </tr>
+    <tr>
+      <td>Absolute/relative spectral power</td>
+      <td>60</td>
+      <td>candidate implementation tested; not an exact paper-specific algorithm replication</td>
+    </tr>
+    <tr>
+      <td>Peak alpha frequency</td>
+      <td>4</td>
+      <td>candidate implementation tested; not an exact paper-specific algorithm replication</td>
+    </tr>
+    <tr>
+      <td>Aperiodic slope/offset</td>
+      <td>4</td>
+      <td>candidate implementation tested; not an exact paper-specific algorithm replication</td>
+    </tr>
+    <tr>
+      <td>Hemispheric power asymmetry</td>
+      <td>30</td>
+      <td>candidate implementation tested; not an exact paper-specific algorithm replication</td>
+    </tr>
+    <tr>
+      <td>Alpha/theta power ratio</td>
+      <td>6</td>
+      <td>candidate implementation tested; not an exact paper-specific algorithm replication</td>
+    </tr>
+    <tr>
+      <td>Magnitude-squared coherence</td>
+      <td>32</td>
+      <td>candidate implementation tested; not an exact paper-specific algorithm replication</td>
+    </tr>
+    <tr>
+      <td>PLV/phase synchrony</td>
+      <td>32</td>
+      <td>candidate implementation tested; not an exact paper-specific algorithm replication</td>
+    </tr>
+    <tr>
+      <td>PLI/wPLI/imaginary coherency</td>
+      <td>96</td>
+      <td>candidate implementation tested; not an exact paper-specific algorithm replication</td>
+    </tr>
+    <tr>
+      <td>Phase–amplitude coupling</td>
+      <td>12</td>
+      <td>candidate implementation tested; not an exact paper-specific algorithm replication</td>
+    </tr>
+    <tr>
+      <td>Envelope correlation</td>
+      <td>32</td>
+      <td>candidate implementation tested; not an exact paper-specific algorithm replication</td>
+    </tr>
+    <tr>
+      <td>CVUE/Piqβ</td>
+      <td>0</td>
+      <td>not tested</td>
+    </tr>
+    <tr>
+      <td>Within-window amplitude variability</td>
+      <td>54</td>
+      <td>candidate implementation tested; not an exact paper-specific algorithm replication</td>
+    </tr>
+    <tr>
+      <td>Higuchi fractal dimension</td>
+      <td>6</td>
+      <td>candidate implementation tested; not an exact paper-specific algorithm replication</td>
+    </tr>
+    <tr>
+      <td>Permutation entropy</td>
+      <td>12</td>
+      <td>candidate implementation tested; not an exact paper-specific algorithm replication</td>
+    </tr>
+    <tr>
+      <td>Sample/multiscale entropy</td>
+      <td>12</td>
+      <td>candidate implementation tested; not an exact paper-specific algorithm replication</td>
+    </tr>
+    <tr>
+      <td>Hjorth parameters</td>
+      <td>18</td>
+      <td>candidate implementation tested; not an exact paper-specific algorithm replication</td>
+    </tr>
+    <tr>
+      <td>CSP/spatial log-variance</td>
+      <td>2</td>
+      <td>trained inside each training fold only</td>
+    </tr>
+    <tr>
+      <td>Signal quality/SNR and variance controls</td>
+      <td>17</td>
+      <td>candidate implementation tested; not an exact paper-specific algorithm replication</td>
+    </tr>
+  </tbody>
+</table></div>
+<h2>Dataset audit</h2><div class="scroll"><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>dataset</th>
+      <th>source</th>
+      <th>status</th>
+      <th>observed_target</th>
+      <th>reason</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>heat_f2mua</td>
+      <td>https://osf.io/f2mua/</td>
+      <td>eligible for participant-held-out scoring</td>
+      <td>42/46/48 Celsius via author codebook</td>
+      <td>Independent of feature-cited original cohorts; 10 presampled participants; 252 usable heat trials each</td>
+    </tr>
+    <tr>
+      <td>shock_w25k4</td>
+      <td>https://osf.io/w25k4/</td>
+      <td>downloaded but excluded</td>
+      <td>delivered/omitted fixed shock; no mA</td>
+      <td>Cue epochs end at +3.498 seconds; shocks occur near +3.36 to3.41 seconds; about100ms postshock cannot support planned0.05-1.25s features. All10 presampled participants excluded by timing; not by accuracy.</td>
+    </tr>
+    <tr>
+      <td>cued_4kgtp</td>
+      <td>https://osf.io/4kgtp/</td>
+      <td>access blocked</td>
+      <td>Paper describes calibrated electrical stimulation levels</td>
+      <td>Anonymous public API and article-published view-only link returned401; no protected data accessed and no dose labels fabricated.</td>
+    </tr>
+    <tr>
+      <td>spinal_ds005307</td>
+      <td>https://openneuro.org/datasets/ds005307</td>
+      <td>physical dose mapping not verified</td>
+      <td>Examined event table has pain label and constant value1</td>
+      <td>No trial-resolved laser energy mapping in examined source event tables; constant event code cannot be treated as measured laser dose.</td>
+    </tr>
+    <tr>
+      <td>nine_LEP_archives</td>
+      <td>https://doi.org/10.1038/s41597-025-05900-1</td>
+      <td>excluded feature-source cohorts</td>
+      <td>laser stimulation and pain ratings</td>
+      <td>All9 archives in the feature-cited678 participant resource excluded even where potentially usable.</td>
+    </tr>
+    <tr>
+      <td>chronic_pain_sources</td>
+      <td>https://osf.io/m45j2/</td>
+      <td>excluded and wrong target</td>
+      <td>resting chronic pain recordings</td>
+      <td>Feature-source/overlapping chronic cohorts excluded; resting pain severity without controlled physical stimulus dose does not answer selected target.</td>
+    </tr>
+    <tr>
+      <td>DEIPP_ds006815</td>
+      <td>https://openneuro.org/datasets/ds006815</td>
+      <td>ineligible</td>
+      <td>spontaneous pain</td>
+      <td>MRI rather than usable scalp EEG with controlled stimulus-intensity labels.</td>
+    </tr>
+  </tbody>
+</table></div>
+<h2>Limits on interpretation</h2><ul>
+<li>One independent cohort is scored; multiple participants are not multiple datasets.</li>
+<li>VR deposited cue epochs end about100ms after shock, too short for the prespecified features; no fake transfer result is supplied.</li>
+<li>Only10 people; no globally identifying linkage to prove every historical cohort disjointness.</li>
+<li>Cue expectations, arousal and peripheral artifacts can explain prediction; no causal/pain-specificity claim.</li>
+<li>MAT voltage units use the stated BrainAmp microvolt assumption; short spectra limit peak-frequency estimation.</li>
+<li>21 family ablations and20 permutation controls are exploratory, not independently validated selection.</li>
+</ul><h2>Reproduce and inspect</h2><p>Open <code>blind_stimulus_validation.ipynb</code> for executable model code and actual outputs.
+All tables and predictions, feature cache, source audits and code are in the same folder and bundle.
+Raw EEG is not redistributed. Sources:
+<a href="https://osf.io/f2mua/">OSF f2mua</a>,
+<a href="https://elifesciences.org/articles/62809">eLife62809</a>,
+<a href="https://api.osf.io/v2/wikis/xc3vs/content/">author codebook</a>.
+Earlier literature tables and unsupervised results remain unchanged.</p></body></html>

@@ -1,0 +1,18 @@
+{
+  "predeclared_great_contrast_accuracy_met": false,
+  "all_features_improve_over_power_with_positive_lower_CI_on_both_cohorts": false,
+  "clinical_pain_prediction_validated": false,
+  "absolute_cross_modal_physical_intensity_validated": false,
+  "summary": "Great cross-dataset accuracy is NOT validated. Only one cohort had usable dose-labeled poststimulus EEG; the independent second-cohort stage is blocked.",
+  "cohorts_with_measured_scores": 1,
+  "sampling": "10 presampled participants per cohort; usable counts in feature_summary.json",
+  "interpretation": "Heat = measured Celsius, shock = presence of a fixed dose. Cross-cohort transfer scores apply only to the source-defined contrast. No mA or pain ratings were inferred.",
+  "uncertainty": "Participant-cluster intervals conditional on each fitted training model; only two cohorts, retrospective holdouts, source-preprocessing and modality differences.",
+  "software": {
+    "python": "3.13.11",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "sklearn": "1.9.1",
+    "fooof": "1.1.1"
+  }
+}
