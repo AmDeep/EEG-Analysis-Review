@@ -1,0 +1,23 @@
+[
+  {
+    "snippet": "2017;21:100–110. doi: 10.1016/j.tics.2016.12.001. [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ]\n17. Huang G., Xiao P., Hung Y., Iannetti G., Zhang Z., Hu L. A novel approach to predict subjective pain perception from single-trial laser-evoked potentials. Neuroimage. 2013;81:283–293. doi: 10.1016/j.neuroimage.2013.05.017.",
+    "title": "\n            Towards the Objective Identification of the Presence of Pain Based on Electroencephalography Signals’ Analysis: A Proof-of-Concept - PMC\n        ",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9413583"
+  },
+  {
+    "snippet": "2020 Sep 30;347:108964. doi: 10.1016/j.jneumeth.2020.108964\nIn contrast, most pain decoding methods are based on batch supervised learning without source localization. In a few studies ( Huang et al., 2013 ; Lancaster et al., 2017 ), the reported accuracy was 70–86% for detecting the pain stimulus intensity and 77–86% for detecting the subjective pain score ( Schulz et al., 2012 ; Tu et al., 2016 ).\n[ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ]\n17. Huang G, Xiao P, Hung YS, Iannetti GD, Zhang ZG, Hu L (2013). A novel approach to predict subjective pain perception from single-trial laser-evoked potentials. Neuroimage 81: 283–293. [ DOI ] [ PubMed ] [ Google Scholar ]\n18. Huang Y, Shang Q, Dai S, Ma Q (2017).",
+    "title": "\n            Detecting acute pain signals from human EEG - PMC\n        ",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7744433"
+  },
+  {
+    "snippet": "doi: 10.1016/j.tics.2016.12.001 [ DOI ] [ PMC free article ] [ PubMed ] [ Google Scholar ]\n37. Huang G, Xiao P, Hung YS, Zhang ZG, Hu L. A novel approach to predict subjective pain perception from single‐trial laser‐evoked potentials. Neuroimage. 2013;81:283‐293. doi: 10.1016/j.neuroimage.2013.05.017 [ DOI ] [ PubMed ] [ Google Scholar ]\n38.",
+    "title": "\n            Electroencephalography functional connectivity—A biomarker for painful polyneuropathy - PMC\n        ",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10092565"
+  },
+  {
+    "publishedDate": "2025-09-02",
+    "snippet": "```\n          https://doi.org/10.1016/j.neuroimage.2013.08.057\n          \n```\n```\n          https://doi.org/10.1016/j.neuroimage.2013.05.017\n          \n         (2013).\") , [9](#ref-CR9 \"Hu, L. & Iannetti, G. D. Neural indicators of perceptual variability of pain across species. Proceeding of the national academy of sciences of the united states of America 116, 1782–1791, \n```\nA novel approach to predict subjective pain perception from single-trial laser-evoked potentials. NeuroImage 81 , 283–293, https://doi.org/10.1016/j.neuroimage.2013.05.017 (2013).\nArticle PubMed CAS Google Scholar\n9. Hu, L. & Iannetti, G. D. Neural indicators of perceptual variability of pain across species.",
+    "title": "A comprehensive EEG dataset of laser-evoked potentials for pain research | Scientific Data",
+    "url": "https://www.nature.com/articles/s41597-025-05900-1"
+  }
+]

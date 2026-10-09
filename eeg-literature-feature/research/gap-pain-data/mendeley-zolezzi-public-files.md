@@ -1,0 +1,4 @@
+# Zolezzi public Mendeley raw EEG access verification
+
+Primary repository: https://data.mendeley.com/datasets/yj52xrfgtz/4
+DOI 10.17632/yj52xrfgtz.4, version 4. Public page identifies 36 chronic neuropathic pain participants and a public 529 MB download. It enumerates individual .gdf EEG files (e.g. ID0.gdf, ID10.gdf), a demographics/questionnaires spreadsheet and channel labels. This is raw EEG, not just derived feature values. The linked data descriptor (Zolezzi et al. 2023, Data in Brief, DOI 10.1016/j.dib.2023.109060) explicitly calls the electrophysiological recordings raw and says EEG, position text and questionnaire files are available from Mendeley. Descriptor methods specify 22 electrodes, 250 Hz and eyes-open/eyes-closed five-minute periods. This raw public dataset is the same cohort reused by the 2023 feature paper, the 2024 Barbosa secondary analysis and 2024 Ryu paper; those analyses must not be counted as independent participants.

@@ -1,0 +1,7 @@
+# OSF public-file-list audit: Han 2026 and Mari 2023
+
+## Han et al. 2026
+Article: https://pmc.ncbi.nlm.nih.gov/articles/PMC13317760/ (DOI 10.1002/ejp.70313). Article-related OSF link previously recorded as https://osf.io/2mqtb/files/osfstorage. Direct public OSF API requests made to https://api.osf.io/v2/nodes/2mqtb/ and https://api.osf.io/v2/nodes/2mqtb/files/osfstorage/ returned HTTP 401 Unauthorized with “Authentication credentials were not provided.” The browser-visible OSF route rendered a sign-in requirement. Neither listing establishes public file names, file content, or download. Conclusion: public raw EEG accessibility remains unverified; a 401 is not evidence of an empty public project or proof of private status, but this does not meet public-access verification.
+
+## Mari et al. 2023
+Article: https://pmc.ncbi.nlm.nih.gov/articles/PMC9816165/ (DOI 10.1038/s41598-022-27298-1); paper points to OSF uqt9z. OSF API node https://api.osf.io/v2/nodes/uqt9z/ returned HTTP 200 and reports public=true; the public file-list endpoint https://api.osf.io/v2/nodes/uqt9z/files/osfstorage/ returned HTTP 200 with data=[] and meta.total=0. Thus the project is public but has no files in OSF storage at audit; public raw EEG is not available there. Do not elevate the paper's “freely available” statement to public raw data. Existing source also identifies the article's reported classifier metrics, but data criterion remains unmet.
