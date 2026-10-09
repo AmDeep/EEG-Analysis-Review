@@ -1,0 +1,30 @@
+{
+  "research_date": "2026-10-09",
+  "unique_items_screened": 172,
+  "paper_rows_screened": 145,
+  "open_text_public_eeg_items": 33,
+  "open_text_public_eeg_original_papers": 14,
+  "open_text_public_derived_only_items": 4,
+  "direct_pain_public_eeg_original_papers": 10,
+  "type_counts": {
+    "paper": 145,
+    "dataset": 18,
+    "review": 6,
+    "software": 3
+  },
+  "scope_counts": {
+    "direct pain": 51,
+    "transferable EEG": 121
+  },
+  "access_counts": {
+    "Open text + public EEG verified": 33,
+    "Public data not verified": 128,
+    "Publication access not verified": 3,
+    "Does not meet public-data requirement": 4,
+    "Open text + public derived data only": 4
+  },
+  "requested_100_open_public_eeg_papers_achieved": false,
+  "feature_rows": 23,
+  "supplementary_automated_screen_items": 105,
+  "fully_reviewed_screen_items": 67
+}
