@@ -1,0 +1,375 @@
+{
+  "items": [
+    {
+      "title": "Predicting Pain: Electroencephalography Signatures of Neural Integration During Experimental Tonic Thermal Pain",
+      "authors": "Yiyuan Han, Elia Valentini, Sebastian Halder",
+      "year": 2026,
+      "doi": "10.1002/ejp.70313",
+      "item_type": "paper",
+      "evidence_scope": "direct pain",
+      "feature_family": "Alpha inter-site phase connectivity (ISPC); phase-based cross-frequency coupling (delta/theta/alpha/low beta); dwPLI robustness analysis",
+      "feature_definition": "ISPC is mean phase-difference consistency across channels or frequency bands; dwPLI weights non-zero-lag phase coupling.",
+      "prediction_rationale": "Authors found phase features more discriminative than power features for tonic thermal pain; proposed use is within-person pain/non-pain state classification, not continuous pain-rating prediction.",
+      "verified_result_metric": "Phase features outperformed power features; abstract calls accuracy high but numeric accuracy not verified in saved evidence.",
+      "prediction_target": "Tonic thermal pain versus non-painful warm/rest conditions",
+      "validation_design": "Within-participant binary comparisons; separate temporal halves for feature selection and evaluation, swapped; 10-fold CV on evaluation half. Overlapping epochs handled by temporal-half split.",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13317760/",
+      "open_access_status": "Open-access full text (CC BY 4.0; PMC)",
+      "data_url": "https://osf.io/2mqtb/files/osfstorage",
+      "data_access_status": "unverified",
+      "data_evidence": "Article-linked OSF EEG-data URL found in a research-result record, but fetched OSF page showed sign-in and raw file access/content was not independently verified; do not count as verified public raw EEG.",
+      "relevance_limitations": "Study used 62 channels, 1000-Hz acquisition and frontal/occipital topographies; strongest coupling was low-frequency. Pipeline C3/C4/Cz only misses frontal/occipital topology. Reproduce original bands (to low beta) within 1–40 Hz; check event/rest condition timing and 1–10-s windows. Source compares state labels, not pain severity ratings.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/phase-coupling/han-2026.md",
+        "eeg-variance-pain-literature/research/sources/phase-coupling/han-osf-access-check.md"
+      ],
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC13317760/",
+        "https://www.ovid.com/journals/ejop/fulltext/10.1002/ejp.70313~predicting-pain-electroencephalography-signatures-of-neural"
+      ]
+    },
+    {
+      "title": "Exploring electroencephalographic chronic pain biomarkers: a mega-analysis",
+      "authors": "Felix S. Bott et al.",
+      "year": 2025,
+      "doi": "10.1016/j.ebiom.2025.105955",
+      "item_type": "paper",
+      "evidence_scope": "direct pain",
+      "feature_family": "Resting-state EEG large-scale brain-network connectivity (metric family; not PLV/PLI/wPLI/PAC specifically verified in saved evidence)",
+      "feature_definition": "Connectivity among large-scale functional brain networks; study includes frequency-specific network analyses.",
+      "prediction_rationale": "Pain-intensity-associated network connectivity can motivate participant-level severity modelling, but the source reports association analysis, not a validated prediction tool.",
+      "verified_result_metric": "Discovery/replication associations had limited replicability; pooled mega-analysis found pain-intensity associations at theta and limbic-including networks; no numeric predictive R²/correlation verified in saved abstract.",
+      "prediction_target": "Chronic pain intensity association (not a confirmed out-of-sample prediction target)",
+      "validation_design": "Discovery–replication followed by mega-analysis across eight independent resting EEG datasets; 614 people with chronic pain.",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12517086/",
+      "open_access_status": "Open-access full text (CC BY; PMC)",
+      "data_url": "Not located in verified sources",
+      "data_access_status": "unverified",
+      "data_evidence": "Methods report contacting study authors and receiving datasets from four external groups; captured evidence did not verify a public raw-EEG repository or participant-level download.",
+      "relevance_limitations": "Resting-state large-scale network coverage exceeds C3/C4/Cz. Avoid treating the pooled associations as predictive performance; check frequency definition and epoch length before transfer. No public-data criterion satisfied from current evidence.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/phase-coupling/bott-2025.md"
+      ],
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12517086/",
+        "https://www.thelancet.com/journals/ebiom/article/PIIS2352-3964(25)00399-8/fulltext"
+      ]
+    },
+    {
+      "title": "Resting-state frontal electroencephalography (EEG) biomarkers for detecting the severity of chronic neuropathic pain",
+      "authors": "S. Ryu, D. Gwon, C. Park, Y. Ha, M. Ahn",
+      "year": 2024,
+      "doi": "10.1038/s41598-024-71219-3",
+      "item_type": "paper",
+      "evidence_scope": "direct pain",
+      "feature_family": "Frontal EEG PAC and PAC asymmetry; spectral power asymmetry",
+      "feature_definition": "Cross-frequency coupling between low-frequency phase and higher-frequency amplitude at Fp1/Fp2; left-right asymmetry features.",
+      "prediction_rationale": "PAC/asymmetry may capture chronic pain severity-related nonstationary interactions missed by band power; this rationale is directly tested by the paper’s correlations and regression models.",
+      "verified_result_metric": "Reported r: beta-power asymmetry −0.375; gamma-power asymmetry −0.433; low-beta-to-low-gamma coupling −0.397. Best polynomial-kernel SVR R²=0.655; no external validation verified.",
+      "prediction_target": "Patient-level chronic neuropathic pain intensity from clinical ratings",
+      "validation_design": "Secondary analysis of public resting EEG from 36 patients; feature-score correlations and five-model regression comparison; no external cohort/independent-site validation reported in retrieved abstract.",
+      "article_url": "https://www.nature.com/articles/s41598-024-71219-3",
+      "open_access_status": "Open access (Scientific Reports full text)",
+      "data_url": "https://data.mendeley.com/datasets/yj52xrfgtz/4",
+      "data_access_status": "public EEG verified",
+      "data_evidence": "Ryu methods explicitly identify a publicly available dataset from the cited Zolezzi study; the linked 2023 data paper reports raw resting EEG plus BPI/painDETECT reports and Mendeley repository DOI 10.17632/yj52xrfgtz.4.",
+      "relevance_limitations": "The actual predictor channels are Fp1/Fp2, absent in C3/C4/Cz pipeline; frontal asymmetry cannot be recreated. Resting 5-min eyes-open data and person-level pain labels differ from five-second trial labels. Gamma feature bands may exceed 40 Hz; any >64-Hz high-gamma component is beyond 128-Hz Nyquist and current filter.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/phase-coupling/ryu-2024.md",
+        "eeg-variance-pain-literature/research/sources/phase-coupling/zolezzi-2023-dataset.md"
+      ],
+      "source_urls": [
+        "https://www.nature.com/articles/s41598-024-71219-3",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10050461/",
+        "https://data.mendeley.com/datasets/yj52xrfgtz/4"
+      ]
+    },
+    {
+      "title": "Chronic neuropathic pain: EEG data in eyes open and eyes closed with painDETECT and brief pain inventory reports",
+      "authors": "Daniela M. Zolezzi, Norberto E. Naal-Ruiz, Luz María Alonso-Valerdi, David I. Ibarra-Zarate",
+      "year": 2023,
+      "doi": "10.1016/j.dib.2023.109060",
+      "item_type": "dataset",
+      "evidence_scope": "direct pain",
+      "feature_family": "Public resting EEG resource for candidate PAC, phase connectivity and feature-stability analyses",
+      "feature_definition": "Raw 250-Hz EEG from 36 chronic neuropathic-pain patients (5-min eyes-open and eyes-closed conditions) with BPI and painDETECT questionnaires; paper reports bandwidth 0.1–100 Hz.",
+      "prediction_rationale": "Could test whether within-session phase/PAC summaries carry information about patient questionnaire pain scores; this is a proposed reanalysis, not a result of the data descriptor.",
+      "verified_result_metric": "Not applicable (dataset item; no prediction result claimed).",
+      "prediction_target": "Proposed patient-level BPI/painDETECT severity or questionnaire-defined pain features",
+      "validation_design": "Dataset includes 36 patients; analyses need subject-level splits to avoid window-level leakage and independent validation before clinical claims.",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10050461/",
+      "open_access_status": "Open-access data descriptor (CC BY; PMC)",
+      "data_url": "https://data.mendeley.com/datasets/yj52xrfgtz/4",
+      "data_access_status": "public EEG verified",
+      "data_evidence": "The data article links Mendeley repository versions and identifies raw electrophysiological signals plus questionnaire/demographic files; repository metadata identifies original data and files.",
+      "relevance_limitations": "Resting state, not stimulus-locked pain; only 36 patients; five-second window labels would replicate a subject’s fixed clinical scores and are not independent. Verify channel layout for network connectivity; >40-Hz analyses require changing pipeline filters, and >64-Hz content is unavailable at 250-Hz sampling.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/phase-coupling/zolezzi-2023-dataset.md"
+      ],
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10050461/",
+        "https://data.mendeley.com/datasets/yj52xrfgtz/4"
+      ]
+    },
+    {
+      "title": "A comprehensive EEG dataset of laser-evoked potentials for pain research",
+      "authors": "Xiangyue Zhao et al.",
+      "year": 2025,
+      "doi": "10.1038/s41597-025-05900-1",
+      "item_type": "dataset",
+      "evidence_scope": "direct pain",
+      "feature_family": "Public high-density stimulus-evoked EEG with single-trial pain ratings; candidate event-locked phase connectivity/CFC reanalysis",
+      "feature_definition": "EEG from 678 healthy participants exposed to laser stimuli (2.5–4.5 J), with single-trial self-reported pain ratings embedded in EEGLAB epoch metadata; article links code/data repository.",
+      "prediction_rationale": "Event-aligned inter-channel phase consistency or phase-amplitude coupling could be tested against trial-level pain ratings; proposed analysis, not a source-reported coupling result.",
+      "verified_result_metric": "Not applicable (dataset item; no phase-feature prediction metric claimed).",
+      "prediction_target": "Single-trial pain rating and/or pain discriminability after laser stimuli",
+      "validation_design": "Large 678-participant resource; recommended subject-held-out validation and preserve event/condition grouping. Exact baseline/event intervals must be checked in event metadata before modeling.",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12405539/",
+      "open_access_status": "Open-access data descriptor (PMC; explicit public-sharing consent)",
+      "data_url": "https://github.com/XiangyueZhao/Supplement-Data",
+      "data_access_status": "public EEG verified",
+      "data_evidence": "Article describes high-density EEG and single-trial ratings, states participants consented to public data sharing, and links the repository containing dataset files and MATLAB code; its instructions point to EEG.epoch ratings.",
+      "relevance_limitations": "Task-evoked laser responses require stimulus-marker and baseline timing rather than generic resting five-second epochs; verify event layout and electrode coverage. Sensor sampling/bandwidth must be checked before >40-Hz or >64-Hz features. Three central channels cannot reproduce high-density network maps.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/phase-coupling/laser-eeg-dataset-2025.md"
+      ],
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12405539/",
+        "https://github.com/XiangyueZhao/Supplement-Data"
+      ]
+    },
+    {
+      "title": "Accurate classification of pain experiences using wearable electroencephalography in adolescents with and without chronic musculoskeletal pain",
+      "authors": "Elizabeth F. Teel et al.",
+      "year": 2022,
+      "doi": "10.3389/fpain.2022.991793",
+      "item_type": "paper",
+      "evidence_scope": "direct pain",
+      "feature_family": "Directed PLI (dPLI) and wPLI were calculated; only dPLI was retained in reported classification feature set; other entropy/graph features were also tested",
+      "feature_definition": "wPLI summarizes weighted non-zero-lag phase coupling; dPLI captures direction of phase leads/lags. Paper reports wPLI removed before classification; dPLI retained.",
+      "prediction_rationale": "dPLI’s reported classification performance is relevant to directional phase-based connectivity; it does not establish predictive utility for wPLI.",
+      "verified_result_metric": "Separate SVM baseline-vs-CPT classification: chronic-pain cohort 75.2% accuracy (95% CI 71.4–77.1%); no-pain-vs-pain classification SVM 75.6% (95% CI 71.9–77.6%). dPLI/PE/peak frequency significant individually; wPLI excluded, so no wPLI metric.",
+      "prediction_target": "Baseline versus cold-pressor-task EEG condition (separately in control and chronic-pain adolescents); no-pain vs pain group-label result is also reported.",
+      "validation_design": "19-channel EEG, 10-s epochs, SVM/logistic models; paper reports test/train performance. External validation not verified.",
+      "article_url": "https://www.frontiersin.org/journals/pain-research/articles/10.3389/fpain.2022.991793/full",
+      "open_access_status": "Open-access full article (Frontiers)",
+      "data_url": "Not provided as a repository link",
+      "data_access_status": "on request",
+      "data_evidence": "Article data-availability statement says raw supporting data ‘will be made available by the authors, without undue reservation’; no public repository link verified.",
+      "relevance_limitations": "Adolescent cold-pressor paradigm and 10-s epochs differ from 5-s chronic adult signals. wPLI was removed from classifier; reported accuracy does not evidence wPLI prediction. Task condition confounds subjective pain; no repository link and data are on request.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/phase-coupling/teel-2022-wpli-pain.md"
+      ],
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9552004/",
+        "https://www.frontiersin.org/journals/pain-research/articles/10.3389/fpain.2022.991793/full"
+      ]
+    },
+    {
+      "title": "Brain dysfunction in chronic pain patients assessed by resting-state electroencephalography",
+      "authors": "Vanessa D. Hohn et al.",
+      "year": 2020,
+      "doi": "10.1097/j.pain.0000000000001666",
+      "item_type": "paper",
+      "evidence_scope": "direct pain",
+      "feature_family": "Phase-based functional connectivity: PLV and dwPLI; amplitude-envelope correlation comparator",
+      "feature_definition": "Sensor-pair connectivity estimated from phase synchrony (PLV/dwPLI); chronic pain resting-state EEG compared with healthy controls.",
+      "prediction_rationale": "Reported pain-control connectivity differences can motivate a participant-level group classifier, but sensitivity/specificity and clinical validity need independent validation.",
+      "verified_result_metric": "SVM patient/control accuracy 57% (above chance as reported); corrected comparisons found increased theta and >60-Hz frontal connectivity. This is classification accuracy, not variance explained.",
+      "prediction_target": "Chronic pain versus healthy-control group; not continuous pain severity",
+      "validation_design": "101 chronic-pain patients plus healthy controls; resting-state feature comparison and SVM classification. Data/scripts available on request, not a public validation set.",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7195856/",
+      "open_access_status": "Open-access full text (CC BY 4.0; PMC)",
+      "data_url": "Not public; request to authors",
+      "data_access_status": "on request",
+      "data_evidence": "Article data-availability statement explicitly says all scripts and data are available on request.",
+      "relevance_limitations": "Important feature-family precedent, but frontal topography is unavailable in C3/C4/Cz; gamma above 64 Hz exceeds 128-Hz Nyquist and >40 Hz is removed by pipeline filter. Do not interpret 57% classification as variance or regression performance.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/phase-coupling/hohn-2020-chronic-pain-fc.md"
+      ],
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7195856/"
+      ]
+    },
+    {
+      "title": "Reproducibility of Functional Connectivity and Graph Measures Based on the Phase Lag Index (PLI) and Weighted Phase Lag Index (wPLI) Derived from High Resolution EEG",
+      "authors": "M. Hardmeier et al.",
+      "year": 2014,
+      "doi": "10.1371/journal.pone.0108648",
+      "item_type": "paper",
+      "evidence_scope": "transferable EEG",
+      "feature_family": "PLI/wPLI test-retest reliability and inter-subject variability",
+      "feature_definition": "PLI indexes asymmetry of pairwise instantaneous phase differences; wPLI weights by magnitude of imaginary phase relation; repeated 256-channel eyes-closed resting EEG.",
+      "prediction_rationale": "Reliability statistics can screen candidate phase features for repeatability before pain prediction; reliability is not itself a pain predictor.",
+      "verified_result_metric": "44 healthy subjects; 35 follow-up participants at years 1/2; global PLI/wPLI ICC 0.68–0.80, regional 0.58–0.77; PLI CoV 0.12–0.28, wPLI CoV 0.25–0.55.",
+      "prediction_target": "Not a pain-prediction target; transferable feature repeatability",
+      "validation_design": "Longitudinal test-retest at baseline and years 1/2; repeated resting-state EEG.",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4186758/",
+      "open_access_status": "Open-access full text (PLOS ONE/PMC)",
+      "data_url": "Not located in verified sources",
+      "data_access_status": "unverified",
+      "data_evidence": "Source paper reports repeated EEG sample and metrics, but no public raw-data repository was verified; do not treat published tables as raw EEG.",
+      "relevance_limitations": "Transferable feature-reliability evidence only; healthy cohort and 256-channel montage, not pain. Longitudinal years-scale reliability does not guarantee five-second window stability; only a subset of the 256-channel network is available in current pipeline.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/phase-coupling/hardmeier-2014-pli-reliability.md"
+      ],
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC4186758/",
+        "https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0108648"
+      ]
+    },
+    {
+      "title": "Reliability and state-dependency of EEG connectivity, complexity and network characteristics",
+      "authors": "E. van Dellen et al.",
+      "year": 2025,
+      "doi": "10.1038/s41598-025-23662-z",
+      "item_type": "paper",
+      "evidence_scope": "transferable EEG",
+      "feature_family": "PLI functional connectivity reliability; complexity and network measures as comparators",
+      "feature_definition": "64-channel EEG PLI/AECc, entropy and minimum spanning tree metrics across repeated resting sessions and semi-resting task epochs.",
+      "prediction_rationale": "Feature stability across time/state is a necessary screening condition before a connectivity feature is interpreted as pain-related; it is not direct pain prediction evidence.",
+      "verified_result_metric": "n=42 repeated sessions, n=24 semi-rest comparisons; alpha PLI among most robust measures; theta/alpha PE ICC >0.75–0.90; PLI ICC range described as poor-to-excellent overall.",
+      "prediction_target": "Not pain; transferable biomarker reliability/stability",
+      "validation_design": "Two sessions six weeks apart; resting versus semi-rest task; ICC at sensor/source level.",
+      "article_url": "https://www.nature.com/articles/s41598-025-23662-z",
+      "open_access_status": "Open access (Scientific Reports)",
+      "data_url": "Not located in verified sources",
+      "data_access_status": "unverified",
+      "data_evidence": "Retrieved primary abstract verifies design and findings; no public participant-level EEG repository verified.",
+      "relevance_limitations": "Healthy-adult repeatability is not pain validity. State and task effects may matter for baseline timing; only central channels available; 64-channel network metrics cannot be reconstructed.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/phase-coupling/van-dellen-2025-connectivity-reliability.md"
+      ],
+      "source_urls": [
+        "https://www.nature.com/articles/s41598-025-23662-z"
+      ]
+    },
+    {
+      "title": "Connectivity Analysis in EEG Data: A Tutorial Review of the State of the Art and Emerging Trends",
+      "authors": "Giovanni Chiarion, Laura Sparacino, Yuri Antonacci, Luca Faes, Luca Mesin",
+      "year": 2023,
+      "doi": "10.3390/bioengineering10030372",
+      "item_type": "review",
+      "evidence_scope": "transferable EEG",
+      "feature_family": "Phase, coherence, directed, multivariate and information-theoretic EEG connectivity; methodological review",
+      "feature_definition": "Tutorial compares data-driven EEG functional connectivity approaches and their assumptions/limitations, including preprocessing and source-localization impacts.",
+      "prediction_rationale": "Use to choose/interpret phase features and avoid equating functional connectivity with causal communication; no pain prediction is reported.",
+      "verified_result_metric": "Not applicable (methods review).",
+      "prediction_target": "Not applicable; methodological guidance",
+      "validation_design": "Narrative/tutorial methods review; no independent cohort validation.",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10044923/",
+      "open_access_status": "Open access (CC BY; PMC)",
+      "data_url": "Not applicable",
+      "data_access_status": "not applicable",
+      "data_evidence": "Review article; not a dataset publication and no raw EEG data claim is used here.",
+      "relevance_limitations": "Transferable EEG methods only, not direct pain evidence or a feature-performance benchmark. Connectivity is pairwise statistical dependence, not causal interaction; phase metrics require enough oscillatory cycles and careful artifact/volume-conduction control.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/phase-coupling/chiarion-2023-connectivity-review.md"
+      ],
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10044923/"
+      ]
+    },
+    {
+      "title": "DISCOVER-EEG: an open, fully automated EEG pipeline for biomarker discovery in clinical neuroscience",
+      "authors": "Cristina Gil Ávila et al.",
+      "year": 2023,
+      "doi": "10.1038/s41597-023-02525-0",
+      "item_type": "software",
+      "evidence_scope": "transferable EEG",
+      "feature_family": "Automated EEG feature pipeline including oscillatory power, connectivity (dwPLI) and network characteristics",
+      "feature_definition": "Open BIDS workflow for resting EEG preprocessing, feature extraction and visualization; includes debiased weighted phase-lag index connectivity.",
+      "prediction_rationale": "Reusable reference for reproducible extraction of phase connectivity; it does not establish a pain prediction model.",
+      "verified_result_metric": "Tested pipeline on openly available LEMON (213 participants) and TDBRAIN (1274 participants) datasets; verifies pipeline capability, not pain prediction accuracy.",
+      "prediction_target": "Not pain; general resting EEG biomarker workflow",
+      "validation_design": "Pipeline demonstrated on two independent publicly available EEG datasets; healthy adults and mainly psychiatric patients.",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10495446/",
+      "open_access_status": "Open access (Scientific Data/PMC)",
+      "data_url": "Not applicable (software item; input datasets are external)",
+      "data_access_status": "not applicable",
+      "data_evidence": "Article states pipeline code is on GitHub and co-deposited at Zenodo; states it was tested with two openly available EEG datasets, but this row is a software entry, not a dataset claim.",
+      "relevance_limitations": "Transferable infrastructure, no pain cohort and no pain prediction results. Pipeline setup uses resting-state BIDS data and channel/network coverage beyond current three central leads; does not replace validation of window length or feature stability.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/phase-coupling/discover-eeg-2023-software.md"
+      ],
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10495446/",
+        "https://www.nature.com/articles/s41597-023-02525-0"
+      ]
+    }
+  ],
+  "conflicts": [
+    "The requested ‘2021 resting frontal neuropathic pain PAC paper’ resolves to Ryu et al., Scientific Reports 2024 (published online 30 Aug 2024; DOI 10.1038/s41598-024-71219-3). 2021 search hits point to an IASP commentary/summary, not the article publication year.",
+    "Han et al. is an open 2026 article and links an OSF EEG-data page, but the captured OSF endpoint rendered a sign-in page; therefore raw public EEG accessibility remains unverified here.",
+    "Bott et al. 2025 reports 614 people and eight datasets gathered with external-group contributions, but this research did not verify a public participant-level data repository; cohort size must not be confused with public access.",
+    "Ryu et al.’s R²=0.655 is regression R², whereas Hohn et al.’s 57% and Teel et al.’s 75% are classification accuracy; none is interchangeable with variance coverage or correlation. Ryu’s R² is not externally validated in saved evidence."
+  ],
+  "gaps": [
+    "Two unique public pain EEG resources were verified in this phase: Zolezzi et al.’s chronic neuropathic resting EEG dataset (also reanalyzed by Ryu et al.) and Zhao et al.’s laser-evoked EEG dataset. The linked Ryu paper is not a separate dataset.",
+    "No verified open raw-EEG dataset was established for the Bott mega-analysis or Teel wearable adolescent study; the latter explicitly offers data on request, which is not public access.",
+    "No robust pain EEG validation cohort using PLV/PLI/wPLI/PAC with externally validated continuous pain R²/correlation was verified. Several studies report within-sample state/group classification or candidate associations, not clinical prediction.",
+    "For current C3/C4/Cz-only 128-Hz processing, frontal Fp1/Fp2 and frontal-occipital/limbic network claims are not directly testable; >64-Hz high gamma exceeds Nyquist, >40-Hz features are filtered out, and task/event/baseline studies need marker-aligned windows. 5-s epochs may be too short for stable low-frequency phase estimates; validate window-length sensitivity."
+  ],
+  "sources": [
+    {
+      "path": "eeg-variance-pain-literature/research/sources/phase-coupling/han-2026.md",
+      "title": "Han et al. 2026",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13317760/"
+    },
+    {
+      "path": "eeg-variance-pain-literature/research/sources/phase-coupling/bott-2025.md",
+      "title": "Bott et al. 2025",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12517086/"
+    },
+    {
+      "path": "eeg-variance-pain-literature/research/sources/phase-coupling/ryu-2024.md",
+      "title": "Ryu et al. 2024",
+      "url": "https://www.nature.com/articles/s41598-024-71219-3"
+    },
+    {
+      "path": "eeg-variance-pain-literature/research/sources/phase-coupling/zolezzi-2023-dataset.md",
+      "title": "Zolezzi et al. 2023 data descriptor",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10050461/"
+    },
+    {
+      "path": "eeg-variance-pain-literature/research/sources/phase-coupling/laser-eeg-dataset-2025.md",
+      "title": "Zhao et al. 2025 dataset descriptor",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12405539/"
+    },
+    {
+      "path": "eeg-variance-pain-literature/research/sources/phase-coupling/teel-2022-wpli-pain.md",
+      "title": "Teel et al. 2022",
+      "url": "https://www.frontiersin.org/journals/pain-research/articles/10.3389/fpain.2022.991793/full"
+    },
+    {
+      "path": "eeg-variance-pain-literature/research/sources/phase-coupling/hohn-2020-chronic-pain-fc.md",
+      "title": "Hohn et al. 2020",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7195856/"
+    },
+    {
+      "path": "eeg-variance-pain-literature/research/sources/phase-coupling/hardmeier-2014-pli-reliability.md",
+      "title": "Hardmeier et al. 2014",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4186758/"
+    },
+    {
+      "path": "eeg-variance-pain-literature/research/sources/phase-coupling/van-dellen-2025-connectivity-reliability.md",
+      "title": "van Dellen et al. 2025",
+      "url": "https://www.nature.com/articles/s41598-025-23662-z"
+    },
+    {
+      "path": "eeg-variance-pain-literature/research/sources/phase-coupling/chiarion-2023-connectivity-review.md",
+      "title": "Chiarion et al. 2023",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10044923/"
+    },
+    {
+      "path": "eeg-variance-pain-literature/research/sources/phase-coupling/discover-eeg-2023-software.md",
+      "title": "DISCOVER-EEG 2023 software",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10495446/"
+    },
+    {
+      "path": "eeg-variance-pain-literature/research/sources/phase-coupling/han-osf-access-check.md",
+      "title": "OSF access check for linked Han EEG repository",
+      "url": "https://osf.io/2mqtb/files/osfstorage"
+    }
+  ]
+}

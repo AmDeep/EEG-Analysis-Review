@@ -1,0 +1,665 @@
+{
+  "items": [
+    {
+      "title": "Taking into account latency, amplitude, and morphology: improved estimation of single-trial ERPs by wavelet filtering and multiple linear regression",
+      "authors": "L Hu, M Liang, A Mouraux, R G Wise, Y Hu, G D Iannetti",
+      "year": 2011,
+      "doi": "10.1152/jn.00220.2011",
+      "item_type": "paper",
+      "evidence_scope": "direct pain",
+      "feature_family": "single-trial laser-evoked potentials (LEPs); evoked N2/P2",
+      "feature_definition": "Wavelet filtering plus multiple linear regression estimates single-trial LEP latency, amplitude, and morphology.",
+      "prediction_rationale": "Single-trial N2/P2 amplitude covaries with reported pain and can be modeled as a trial-level subjective-pain marker.",
+      "verified_result_metric": "In 12 healthy participants, single-trial N2/P2 amplitudes significantly correlated with pain perception; inspected abstract did not report a numeric coefficient or prediction error.",
+      "prediction_target": "Trial-level subjective pain perception (relationship, not a quantified out-of-sample predictor in the verified abstract).",
+      "validation_design": "Human laser-pain study; n=12. No independent external validation verified.",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3234084/",
+      "open_access_status": "Open-access full text",
+      "data_url": null,
+      "data_access_status": "unverified",
+      "data_evidence": "No paper-linked public raw EEG repository was verified.",
+      "relevance_limitations": "LEP is stimulus-locked and vertex-heavy; the project needs event markers and a pre-stimulus baseline. 5-s windows can contain the response but are not equivalent to the paper's epoched single-trial analysis.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/pain-evidence/hu-2011-single-trial-lep.md"
+      ],
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC3234084/"
+      ]
+    },
+    {
+      "title": "Determinants of Laser-Evoked EEG Responses: Pain Perception or Stimulus Saliency?",
+      "authors": "G D Iannetti, N P Hughes, M C Lee, A Mouraux",
+      "year": 2008,
+      "doi": "10.1152/jn.00097.2008",
+      "item_type": "paper",
+      "evidence_scope": "direct pain",
+      "feature_family": "laser-evoked N1/N2/P2 and event-related synchronization",
+      "feature_definition": "Evoked responses and synchronization following repeated noxious laser stimuli at different energies.",
+      "prediction_rationale": "This is a critical validity test: evoked amplitude may reflect stimulus novelty/salience rather than pain intensity itself.",
+      "verified_result_metric": "In 7 healthy participants, repetition reduced N1/N2/P2 and event-related synchronization and disrupted their relationship with pain; authors interpret responses as more salience-related than pain-specific.",
+      "prediction_target": "Not a pain predictor; tests interpretation of pain-evoked response amplitudes.",
+      "validation_design": "Within-subject repeated-stimulus manipulation; no out-of-sample prediction design.",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2525705/",
+      "open_access_status": "Open-access full text",
+      "data_url": null,
+      "data_access_status": "unverified",
+      "data_evidence": "No public raw EEG repository verified.",
+      "relevance_limitations": "Strong caveat for using evoked amplitudes as pain labels: stimulus salience/habituation must be controlled. Requires event timing and baseline; Cz alone loses spatial information.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/pain-evidence/iannetti-2008-laser-saliency.md"
+      ],
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC2525705/"
+      ]
+    },
+    {
+      "title": "Gamma-Band Oscillations in the Primary Somatosensory Cortex—A Direct and Obligatory Correlate of Subjective Pain Intensity",
+      "authors": "Z G Zhang, L Hu, Y S Hung, A Mouraux, G D Iannetti",
+      "year": 2012,
+      "doi": "10.1523/JNEUROSCI.5877-11.2012",
+      "item_type": "paper",
+      "evidence_scope": "direct pain",
+      "feature_family": "induced gamma-band oscillations (GBO)",
+      "feature_definition": "Pain-evoked 30–100 Hz oscillatory activity over primary somatosensory cortex, assessed against subjective ratings under repeated-stimulus conditions.",
+      "prediction_rationale": "The article reports GBO tracks trial pain intensity even when repeated stimulation changes salience-related evoked responses.",
+      "verified_result_metric": "Authors report GBO intensity relates to subjective pain intensity despite repetition; no numeric predictive accuracy verified in the inspected record.",
+      "prediction_target": "Subjective pain intensity on laser trials.",
+      "validation_design": "Human laser-pain experiment (reported n=7); within-study relationship, no external validation verified.",
+      "article_url": "https://www.jneurosci.org/content/32/22/7429",
+      "open_access_status": "Open-access full text",
+      "data_url": null,
+      "data_access_status": "unverified",
+      "data_evidence": "No linked public EEG repository verified.",
+      "relevance_limitations": "Most of the 30–100-Hz band lies above the pipeline's 40-Hz low-pass and part lies above the 64-Hz Nyquist at Fs=128; this feature is therefore largely not recoverable. Source/cortical localization also exceeds C3/C4/Cz.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/pain-evidence/zhang-2012-gamma.md"
+      ],
+      "source_urls": [
+        "https://www.jneurosci.org/content/32/22/7429"
+      ]
+    },
+    {
+      "title": "Brain oscillations differentially encode noxious stimulus intensity and pain intensity",
+      "authors": "M M Nickel, E S May, L Tiemann, P Schmidt, M Postorino, S T Dinh, J Gross, M Ploner",
+      "year": 2017,
+      "doi": "10.1016/j.neuroimage.2017.01.011",
+      "item_type": "paper",
+      "evidence_scope": "direct pain",
+      "feature_family": "tonic alpha/beta desynchronization and gamma power",
+      "feature_definition": "EEG oscillatory power during 10-min painful heat; source-space alpha/beta related to physical stimulus intensity, medial prefrontal gamma to pain ratings.",
+      "prediction_rationale": "Separating physical stimulus intensity from subjective pain is central to pain prediction; alpha/beta and gamma showed different relationships to those targets.",
+      "verified_result_metric": "39 healthy participants; stimulus-intensity links included alpha t=-6.9, p<.001, and pain-rating links included prefrontal gamma t=4.1/4.8, p<.001. These are association statistics, not held-out prediction metrics.",
+      "prediction_target": "Continuous pain rating, distinct from physical stimulus intensity.",
+      "validation_design": "Within-subject continuous 10-min heat, left/right hand; linear mixed models; no independent validation verified.",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5349759/",
+      "open_access_status": "Open-access full text",
+      "data_url": null,
+      "data_access_status": "unverified",
+      "data_evidence": "No public data repository tied to this 2017 paper verified; do not substitute another Nickel-group OSF dataset.",
+      "relevance_limitations": "Long tonic protocol and source-localized medial prefrontal target are not captured by five-second C3/C4/Cz windows. Gamma band and prefrontal regions are largely outside the project's 1–40-Hz/sparse-channel coverage.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/pain-evidence/nickel-2017-tonic-oscillations.md"
+      ],
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5349759/"
+      ]
+    },
+    {
+      "title": "EEG Indices of Tonic Pain-Related Activity in the Somatosensory Cortices",
+      "authors": "R Dowman, H Rissacher, P Schuckers",
+      "year": 2008,
+      "doi": "10.1016/j.clinph.2008.01.019",
+      "item_type": "paper",
+      "evidence_scope": "direct pain",
+      "feature_family": "tonic alpha and gamma-band power",
+      "feature_definition": "Scalp spectral indices during a 600-s cold-pressor pain task; alpha change in contralateral temporal electrodes and apparent gamma increase.",
+      "prediction_rationale": "Tests whether sustained oscillatory changes covary with the evolving tonic pain experience.",
+      "verified_result_metric": "15 adults; 29 electrodes at 200 Hz. Authors report alpha decreases; apparent widespread gamma increase was judged likely scalp EMG artifact. No pain-prediction score verified.",
+      "prediction_target": "Tonic experimental pain-related EEG activity; no validated numerical rating predictor verified.",
+      "validation_design": "Within-subject cold-pressor recording with 9-point ratings each minute; no out-of-sample validation.",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2676940/",
+      "open_access_status": "Open-access full text",
+      "data_url": null,
+      "data_access_status": "unverified",
+      "data_evidence": "No public raw dataset linked to the article verified.",
+      "relevance_limitations": "600-s tonic design, temporal electrodes, and artifact-sensitive gamma do not transfer directly to five-second C3/C4/Cz windows; preserve EMG controls.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/pain-evidence/dowman-2008-tonic-pain.md"
+      ],
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC2676940/"
+      ]
+    },
+    {
+      "title": "Tonic pain and continuous EEG: Prediction of subjective pain perception by alpha-1 power during stimulation and at rest",
+      "authors": "R R Nir, A Sinai, R Moont, E Harari, D Yarnitsky",
+      "year": 2012,
+      "doi": "10.1016/j.clinph.2011.08.006",
+      "item_type": "paper",
+      "evidence_scope": "direct pain",
+      "feature_family": "alpha-1 power at rest and during tonic stimulation",
+      "feature_definition": "Continuous EEG alpha-1 power (individualized low-alpha range) during rest, warmth, and noxious stimulation, related to numeric pain score.",
+      "prediction_rationale": "Resting alpha-1 may predict subsequent tonic-pain sensitivity; stimulation alpha-1 tracks concurrent pain ratings.",
+      "verified_result_metric": "18 volunteers, five-minute conditions; temporal scalp alpha-1 negatively correlated with concurrent NPS and resting alpha-1 with subsequent noxious NPS (p≤.04); full-text effect sizes unavailable in inspected abstract.",
+      "prediction_target": "Subjective tonic pain numeric pain score during stimulation and after rest.",
+      "validation_design": "Within-subject rest/warm/noxious continuous EEG; independent predictive validation not verified.",
+      "article_url": "https://pure.johnshopkins.edu/en/publications/tonic-pain-and-continuous-eeg-prediction-of-subjective-pain-perce-3",
+      "open_access_status": "Abstract readable; full text open access not verified",
+      "data_url": null,
+      "data_access_status": "unverified",
+      "data_evidence": "No public repository found in the inspected abstract record.",
+      "relevance_limitations": "Temporal scalp distribution and sustained 5-min contexts differ from central C3/C4/Cz; five-second crops do not reproduce resting-state or tonic trajectories.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/pain-evidence/nir-2012-tonic-alpha.md"
+      ],
+      "source_urls": [
+        "https://pure.johnshopkins.edu/en/publications/tonic-pain-and-continuous-eeg-prediction-of-subjective-pain-perce-3"
+      ]
+    },
+    {
+      "title": "Pre-stimulus alpha power affects vertex N2-P2 potentials evoked by noxious stimuli",
+      "authors": "C Babiloni et al.",
+      "year": 2008,
+      "doi": "10.1016/j.brainresbull.2007.09.009",
+      "item_type": "paper",
+      "evidence_scope": "direct pain",
+      "feature_family": "prestimulus alpha sub-band power and evoked N2-P2",
+      "feature_definition": "Single trials stratified by prestimulus alpha1/2/3 power; compare vertex N2-P2 amplitudes.",
+      "prediction_rationale": "Pre-event state could explain trial-to-trial variation in pain-evoked potentials and possibly perception, but the tested outcome is evoked amplitude.",
+      "verified_result_metric": "10 participants, 30 electrodes; weak alpha-3 (about 10–12 Hz) preceded significantly larger N2-P2 than strong alpha-3 (p<.05); alpha-1/2 effects not significant. This is not a verified pain-rating prediction result.",
+      "prediction_target": "Evoked N2-P2 amplitude; pain perception prediction is proposed, not established in this abstract.",
+      "validation_design": "Within-subject high/low-alpha single-trial grouping; no predictive validation.",
+      "article_url": "https://pubmed.ncbi.nlm.nih.gov/18355634/",
+      "open_access_status": "PubMed abstract verified; full text/OA not verified",
+      "data_url": null,
+      "data_access_status": "unverified",
+      "data_evidence": "No public EEG repository identified.",
+      "relevance_limitations": "The reported 10–12-Hz state is within pipeline passband, but accurate stimulus/event timing and prestimulus baseline are required; the abstract does not establish subjective pain prediction.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/pain-evidence/babiloni-2008-prestim-alpha.md"
+      ],
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/18355634/"
+      ]
+    },
+    {
+      "title": "A novel approach to predict subjective pain perception from single-trial laser-evoked potentials",
+      "authors": "G Huang, P Xiao, Y S Hung, G D Iannetti, Z G Zhang, L Hu",
+      "year": 2013,
+      "doi": "10.1016/j.neuroimage.2013.05.017",
+      "item_type": "paper",
+      "evidence_scope": "direct pain",
+      "feature_family": "single-trial LEP features; common spatial patterns and multiple linear regression",
+      "feature_definition": "CSP plus MLR estimate trial-level LEP features; Naive Bayes classifies low/high pain and linear regression estimates 0–10 pain rating.",
+      "prediction_rationale": "Directly trains single-trial LEP features against participants' subjective pain reports.",
+      "verified_result_metric": "Publisher abstract reports binary accuracy 86.3±8.4% within-person and 80.3±8.5% cross-person; continuous MAE 1.031±0.136 and 1.821±0.202 respectively. Publisher abstract verified; full primary text not accessed here.",
+      "prediction_target": "Low/high pain classification and continuous single-trial subjective rating (0–10).",
+      "validation_design": "Within-individual and cross-individual prediction; no independent external cohort verified in inspected abstract.",
+      "article_url": "https://doi.org/10.1016/j.neuroimage.2013.05.017",
+      "open_access_status": "Publisher abstract verified; full text appears access-restricted, OA not verified",
+      "data_url": null,
+      "data_access_status": "unverified",
+      "data_evidence": "No public raw EEG repository linked to this paper was verified; do not infer that a later public dataset is this study's data.",
+      "relevance_limitations": "CSP uses spatial patterns beyond three central channels; LEPs require precise triggers and trial epochs. Verify full methods, subject count, and leakage-safe cross-person split before using reported scores.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/pain-evidence/huang-2013-primary-abstract.md",
+        "eeg-variance-pain-literature/research/sources/pain-evidence/huang-2013-search.json"
+      ],
+      "source_urls": [
+        "https://doi.org/10.1016/j.neuroimage.2013.05.017"
+      ]
+    },
+    {
+      "title": "Detecting acute pain signals from human EEG",
+      "authors": "G Sun, Z Wen, D Ok, L Doan, J Wang, Z S Chen et al.",
+      "year": 2020,
+      "doi": "10.1016/j.jneumeth.2020.108964",
+      "item_type": "paper",
+      "evidence_scope": "direct pain",
+      "feature_family": "source-localized EEG features and sequential state-space pain-onset detection",
+      "feature_definition": "Unsupervised state-space detector using localized ROI EEG to detect onset of acute pain, compared with SVM.",
+      "prediction_rationale": "An onset detector estimates pain occurrence from brain activity, complementary to rating-level prediction.",
+      "verified_result_metric": "Paper reports feasibility across two EEG datasets and cross-subject/cross-modality tests versus SVM; no numeric accuracy captured in the inspected abstract/source excerpts.",
+      "prediction_target": "Presence/onset of acute experimentally induced pain, not continuous subjective rating.",
+      "validation_design": "Two EEG datasets with cross-subject and cross-modality evaluation; source localization and sequential modeling.",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7744433/",
+      "open_access_status": "Open-access full text",
+      "data_url": "https://osf.io/bsv86/",
+      "data_access_status": "public EEG verified",
+      "data_evidence": "The primary paper links to public OSF Brain mediators of pain study data; the OSF record describes BrainVision EEG and perception-condition numeric ratings for 60 painful stimuli/condition at three intensity levels. This verifies public EEG and ratings, not that every analysis subset is identical.",
+      "relevance_limitations": "Published method depends on source localization and temporal context; the linked EEG is 1000-Hz/65-channel in the cited dataset description, unlike the target 128-Hz sparse montage. Onset detection is not a pain-intensity regression target.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/pain-evidence/sun-2020-acute-pain-detector.md"
+      ],
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7744433/"
+      ]
+    },
+    {
+      "title": "Towards the Objective Identification of the Presence of Pain Based on Electroencephalography Signals’ Analysis: A Proof-of-Concept",
+      "authors": "M K Segning et al.",
+      "year": 2022,
+      "doi": "10.3390/s22166272",
+      "item_type": "paper",
+      "evidence_scope": "direct pain",
+      "feature_family": "CVUE (coefficient of variation of upper envelope), alpha/beta/gamma",
+      "feature_definition": "Standard deviation divided by mean of the upper Hilbert-envelope distribution, computed for band-limited EEG features.",
+      "prediction_rationale": "CVUE is proposed as a signal descriptor that separates pain presence from control state.",
+      "verified_result_metric": "Four fibromyalgia patients and seven healthy capsaicin-pain controls; beta CVUE increased at FC5; authors report no correlation between beta CVUE and pain-intensity ratings/task performance. No predictive accuracy established.",
+      "prediction_target": "Pain presence/group condition, not pain intensity regression.",
+      "validation_design": "Small proof-of-concept comparison of fibromyalgia and experimentally induced pain with healthy baseline; no independent test cohort.",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9413583/",
+      "open_access_status": "Open-access full text",
+      "data_url": null,
+      "data_access_status": "unverified",
+      "data_evidence": "No public EEG repository verified.",
+      "relevance_limitations": "FC5/T7 are absent from C3/C4/Cz; EEG was downsampled to 128 Hz, but paper's beta features (and its gamma to 43 Hz) need matching band definitions. Very small cohort and null pain-rating correlation limit direct predictive use.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/pain-evidence/segning-2022-cvue.md"
+      ],
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9413583/"
+      ]
+    },
+    {
+      "title": "Magnitude and Temporal Variability of Inter-stimulus EEG Modulate the Linear Relationship Between Laser-Evoked Potentials and Fast-Pain Perception",
+      "authors": "L Li, G Huang, Q Lin, J Liu, S Zhang, Z Zhang",
+      "year": 2018,
+      "doi": "10.3389/fnins.2018.00340",
+      "item_type": "paper",
+      "evidence_scope": "direct pain",
+      "feature_family": "inter-stimulus EEG magnitude (RMS) and temporal variability (nMSSD); LEP N2-P2",
+      "feature_definition": "Between-stimulus broadband/frequency-band RMS and normalized mean-square successive difference; LEP amplitude-pain linear model.",
+      "prediction_rationale": "Interstimulus state features index between-person differences in the LEP–pain mapping, enabling individualized cross-person modeling.",
+      "verified_result_metric": "Authors report individualized cross-person fast-pain MAE 1.19±0.35 versus conventional cross-person LEP MAE 1.36±0.51 (paired p=.002). Alpha-2 nMSSD correlated with LEP model slope; interstimulus RMS with intercept.",
+      "prediction_target": "Fast-pain subjective rating from single-trial LEP, with cross-person transfer.",
+      "validation_design": "34 healthy participants; test-person selection/weighting by interstimulus EEG; reported comparison to conventional cross-individual predictor.",
+      "article_url": "https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2018.00340/full",
+      "open_access_status": "Open-access full text",
+      "data_url": null,
+      "data_access_status": "unverified",
+      "data_evidence": "No public raw data URL verified in inspected article excerpts.",
+      "relevance_limitations": "This asks for between-stimulus signal and event-locked LEP windows, not just fixed continuous 5-s features. Broad scalp RMS feature needs channel coverage; the alpha-2 band is within 1–40 Hz.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/pain-evidence/interstimulus-2018-lep-prediction.md"
+      ],
+      "source_urls": [
+        "https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2018.00340/full"
+      ]
+    },
+    {
+      "title": "Interindividual variability and individual stability of pain- and touch-related neuronal gamma oscillations",
+      "authors": "E Valentini et al.",
+      "year": 2023,
+      "doi": "10.1152/jn.00530.2021",
+      "item_type": "paper",
+      "evidence_scope": "direct pain",
+      "feature_family": "pain-evoked gamma-band oscillations and within-person stability",
+      "feature_definition": "Gamma response prevalence, magnitude, and repeatability following noxious pain and innocuous touch stimulation.",
+      "prediction_rationale": "Characterizes whether pain-related gamma features are stable enough to function as individual biomarkers.",
+      "verified_result_metric": "Paper reports marked between-person variability and individual stability in one dataset, with gamma responses evident only in a subset; no pain-rating prediction accuracy verified.",
+      "prediction_target": "Pain-evoked response reproducibility/individual trait, not a validated rating predictor.",
+      "validation_design": "Two EEG datasets; 48-person pain/touch dataset linked to public OSF and a repeated-session dataset; study assesses repeatability and variability.",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10396281/",
+      "open_access_status": "Open-access full text",
+      "data_url": "https://osf.io/jw8rv/",
+      "data_access_status": "public EEG verified",
+      "data_evidence": "Paper links the 48-participant pain/touch EEG dataset to OSF jw8rv; article methods include pain ratings. This repository is for this gamma-stability dataset, not Nickel et al. 2017 tonic heat.",
+      "relevance_limitations": "Gamma frequencies above 40 Hz are removed by the target filter and most are above 64-Hz Nyquist. Gamma response variability cautions against assuming this feature is universal.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/pain-evidence/valentini-2023-gamma-stability.md"
+      ],
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10396281/"
+      ]
+    },
+    {
+      "title": "Assessing the predictive value of peak alpha frequency for the sensitivity to pain",
+      "authors": "E S May, L Tiemann, C Gil Ávila, F S Bott, V D Hohn, J Gross, M Ploner",
+      "year": 2025,
+      "doi": "10.1097/j.pain.0000000000003571",
+      "item_type": "paper",
+      "evidence_scope": "direct pain",
+      "feature_family": "resting-state peak alpha frequency (PAF)",
+      "feature_definition": "Peak frequency in the alpha range (8–13 Hz) in resting EEG, related to interindividual and intraindividual pain ratings during brief laser pain.",
+      "prediction_rationale": "Evaluates whether previously proposed resting PAF biomarker generalizes to brief experimental pain.",
+      "verified_result_metric": "159 healthy participants, two sessions; multiverse/specification-curve analyses did not yield consistent evidence that PAF predicts sensitivity to brief laser pain.",
+      "prediction_target": "Between-person and within-person pain sensitivity from brief laser stimuli.",
+      "validation_design": "Two identical sessions with replication across sessions; 159 participants.",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12363489/",
+      "open_access_status": "Open-access full text",
+      "data_url": "https://osf.io/s75q6/",
+      "data_access_status": "public EEG verified",
+      "data_evidence": "Paper data statement explicitly says raw and preprocessed EEG-BIDS and analysis code are openly available at OSF s75q6.",
+      "relevance_limitations": "Resting PAF needs a sufficiently long clean resting segment; a single five-second window may be unstable. Within 1–40 Hz and Nyquist, but central-only montage may omit optimal sensorimotor locations.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/pain-evidence/may-2025-paf-pain.md"
+      ],
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12363489/"
+      ]
+    },
+    {
+      "title": "Neural encoding of pain is robust within but unstable between individuals",
+      "authors": "L Tiemann, F S Bott, E S May, M M Nickel, V D Hohn, C Gil Ávila et al.",
+      "year": 2026,
+      "doi": "10.1371/journal.pbio.3003948",
+      "item_type": "paper",
+      "evidence_scope": "direct pain",
+      "feature_family": "evoked N1/N2/P2 amplitudes and induced alpha/beta/gamma; Bayesian multimodel regression",
+      "feature_definition": "Six canonical event-related EEG predictors related to trial pain rating after accounting for stimulus intensity.",
+      "prediction_rationale": "Separates within-person moment-to-moment pain variation from between-person differences and tests replication.",
+      "verified_result_metric": "161-person primary cohort repeated after ~4 weeks and independent cohort n=111; within-person neural patterns replicated over time and across cohorts, between-person patterns repeated over time but not across cohorts. Exact R² values are not used here.",
+      "prediction_target": "Single-trial verbal pain ratings (0–100) after brief painful laser stimuli.",
+      "validation_design": "Repeated two-session within-person replication plus independent external cohort; Bayesian multimodel regression.",
+      "article_url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003948",
+      "open_access_status": "Open-access full text",
+      "data_url": "https://osf.io/z2h86/",
+      "data_access_status": "public EEG verified",
+      "data_evidence": "Article data statement links standardized EEG-BIDS at OSF z2h86. OSF identifies raw BIDS for 166 healthy participants, two sessions, 80 brief laser trials/session, verbal rating each trial; do not assume the external n=111 cohort is in this repository.",
+      "relevance_limitations": "64-channel recordings and event-locked features exceed C3/C4/Cz spatial coverage; induced gamma largely outside 1–40 Hz. Accurate stimulus triggers/baseline are essential; fixed 5-s crops may obscure event morphology.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/pain-evidence/tiemann-2025-neural-encoding.md"
+      ],
+      "source_urls": [
+        "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003948",
+        "https://osf.io/z2h86/"
+      ]
+    },
+    {
+      "title": "A comprehensive EEG dataset of laser-evoked potentials for pain research",
+      "authors": "X Zhao, J Zhou, L Zhang, Y Zhuang, H Duan, S Wei, S Yao, X Lu, Y Bi, L Hu",
+      "year": 2025,
+      "doi": "10.1038/s41597-025-05900-1",
+      "item_type": "paper",
+      "evidence_scope": "direct pain",
+      "feature_family": "high-density LEP, raw EEG and trial pain ratings",
+      "feature_definition": "Dataset paper describing single-trial LEP EEG and ratings for graded laser stimuli.",
+      "prediction_rationale": "Large dataset enables within- and between-person LEP feature analysis/prediction, though the paper is a resource description rather than a prediction model.",
+      "verified_result_metric": "678 healthy participants; the paper describes raw high-density EEG, 2.5–4.5-J laser stimuli, and single-trial pain ratings; no model prediction metric claimed.",
+      "prediction_target": "Resource for future prediction of single-trial subjective pain rating; no predictor evaluated.",
+      "validation_design": "Large-scale data resource with technical validation of EEG responses and stimulus-intensity/rating trends.",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12405539/",
+      "open_access_status": "Open-access full text",
+      "data_url": "https://openneuro.org/datasets/ds005284",
+      "data_access_status": "public EEG verified",
+      "data_evidence": "Paper's Data Records section explicitly lists nine OpenNeuro BIDS datasets (ds005284, ds005285, ds005289, ds005286, ds005291, ds005293, ds005292, ds005280, ds005473); raw EEG plus per-trial stimulus and subjective pain ratings in EEGLAB epoch structures; preprocessed data/code also linked.",
+      "relevance_limitations": "High-density resource, but recording systems/sampling rates differ by experiment; inspect each dataset's EEG JSON. Event-locked LEPs require markers/epochs; do not presume all data meet 128 Hz or C3/C4/Cz without harmonization.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/pain-evidence/zhao-2025-lep-dataset.md"
+      ],
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12405539/"
+      ]
+    },
+    {
+      "title": "Comprehensive laser-evoked potential EEG dataset (nine OpenNeuro experiments)",
+      "authors": "X Zhao et al.; dataset described in 2025 Scientific Data article",
+      "year": 2025,
+      "doi": "10.18112/openneuro.ds005284.v1.0.0; 10.18112/openneuro.ds005285.v1.0.0; 10.18112/openneuro.ds005289.v1.0.0; 10.18112/openneuro.ds005286.v1.0.0; 10.18112/openneuro.ds005291.v1.0.0; 10.18112/openneuro.ds005293.v1.0.0; 10.18112/openneuro.ds005292.v1.0.0; 10.18112/openneuro.ds005280.v1.0.0; 10.18112/openneuro.ds005473.v1.0.0",
+      "item_type": "dataset",
+      "evidence_scope": "direct pain",
+      "feature_family": "raw BIDS EEG, LEPs, trial pain ratings",
+      "feature_definition": "Nine OpenNeuro experiments with raw BIDS EEG; single-trial behavioral rating and laser intensity embedded in EEGLAB epochs.",
+      "prediction_rationale": "Open single-trial pain-labeled EEG supports feature engineering and model validation.",
+      "verified_result_metric": "678-participant combined resource as reported by its data descriptor; repository data itself is not a prediction result.",
+      "prediction_target": "Subjective pain rating per laser trial.",
+      "validation_design": "Public multi-experiment dataset; individual study design and participant counts vary by OpenNeuro accession.",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12405539/",
+      "open_access_status": "Public dataset; article open access",
+      "data_url": "https://openneuro.org/datasets/ds005284; https://openneuro.org/datasets/ds005285; https://openneuro.org/datasets/ds005289; https://openneuro.org/datasets/ds005286; https://openneuro.org/datasets/ds005291; https://openneuro.org/datasets/ds005293; https://openneuro.org/datasets/ds005292; https://openneuro.org/datasets/ds005280; https://openneuro.org/datasets/ds005473",
+      "data_access_status": "public EEG verified",
+      "data_evidence": "The descriptor explicitly lists all nine OpenNeuro dataset DOIs and BIDS/raw-data contents; no inferred link.",
+      "relevance_limitations": "Not a harmonized single recording protocol. Check each BIDS EEG sidecar for channels, sampling frequency, reference, units, and event markers before selecting compatible subjects.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/pain-evidence/zhao-2025-lep-dataset.md"
+      ],
+      "source_urls": [
+        "https://openneuro.org/datasets/ds005284",
+        "https://openneuro.org/datasets/ds005285",
+        "https://openneuro.org/datasets/ds005289",
+        "https://openneuro.org/datasets/ds005286",
+        "https://openneuro.org/datasets/ds005291",
+        "https://openneuro.org/datasets/ds005293",
+        "https://openneuro.org/datasets/ds005292",
+        "https://openneuro.org/datasets/ds005280",
+        "https://openneuro.org/datasets/ds005473"
+      ]
+    },
+    {
+      "title": "Intra- and Inter-individual Differences of Pain - Data",
+      "authors": "L Tiemann, E S May, M Ploner, F Bott",
+      "year": 2026,
+      "doi": "10.17605/OSF.IO/Z2H86",
+      "item_type": "dataset",
+      "evidence_scope": "direct pain",
+      "feature_family": "raw BIDS EEG, evoked and oscillatory activity, trial ratings",
+      "feature_definition": "Public raw BIDS EEG from 166 healthy participants across two sessions, plus resting state and 80 laser-pain trials/session with verbal pain rating.",
+      "prediction_rationale": "Supports repeated-trial modeling of moment-to-moment pain and inter-session stability.",
+      "verified_result_metric": "OSF project describes 166 participants and two sessions; source article analyzes 161 in main cohort. This is dataset metadata, not an accuracy metric.",
+      "prediction_target": "Verbal rating of pain after each brief laser stimulus.",
+      "validation_design": "Repeated within-person sessions separated by about one month; repository has raw data for participants sub-001–sub-169 (actual enrolled n=166 per project description).",
+      "article_url": "https://osf.io/z2h86/",
+      "open_access_status": "Public OSF project",
+      "data_url": "https://osf.io/z2h86/",
+      "data_access_status": "public EEG verified",
+      "data_evidence": "Public OSF page exposes raw BIDS components and gives detailed protocol and participant count. PLOS article directly links this repository in its data availability statement.",
+      "relevance_limitations": "64-channel system; verify only selected participants and exact channel montage against the pipeline. Laser epochs need event alignment; gamma features are incompatible with 1–40-Hz passband.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/pain-evidence/tiemann-2025-neural-encoding.md"
+      ],
+      "source_urls": [
+        "https://osf.io/z2h86/",
+        "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003948"
+      ]
+    },
+    {
+      "title": "Peak-alpha-frequency laser pain EEG dataset (OSF s75q6)",
+      "authors": "E S May et al.",
+      "year": 2025,
+      "doi": "Not assigned/verified",
+      "item_type": "dataset",
+      "evidence_scope": "direct pain",
+      "feature_family": "raw/preprocessed EEG-BIDS, resting PAF, brief laser pain ratings",
+      "feature_definition": "Raw and preprocessed EEG-BIDS from 159 healthy participants with two sessions, resting state and laser-pain tasks at four intensities.",
+      "prediction_rationale": "Enables replication of PAF and testing alternative EEG features against pain sensitivity.",
+      "verified_result_metric": "159 participants, two sessions; associated article reports no consistent PAF prediction for brief experimental pain.",
+      "prediction_target": "Within- and between-person pain sensitivity in brief laser pain.",
+      "validation_design": "Two sessions with repeated trials; repository/code publicly linked by article.",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12363489/",
+      "open_access_status": "Public OSF project; article open access",
+      "data_url": "https://osf.io/s75q6/",
+      "data_access_status": "public EEG verified",
+      "data_evidence": "May et al. explicitly state raw and preprocessed standardized EEG-BIDS and manuscript code are openly available at OSF s75q6.",
+      "relevance_limitations": "Rest PAF needs longer windows than 5 s for stable estimation. Verify electrode selection and referencing; some trial-locked analyses require event epochs.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/pain-evidence/may-2025-paf-pain.md"
+      ],
+      "source_urls": [
+        "https://osf.io/s75q6/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12363489/"
+      ]
+    },
+    {
+      "title": "Brain mediators of pain (OSF bsv86)",
+      "authors": "L Tiemann, V Hohn, M Ploner, S Zaitoun",
+      "year": 2025,
+      "doi": "Not assigned/verified",
+      "item_type": "dataset",
+      "evidence_scope": "direct pain",
+      "feature_family": "raw BrainVision EEG, nociceptive stimulation, verbal ratings",
+      "feature_definition": "Public EEG project with perception condition: 60 painful laser trials at three individualized intensity levels, numeric pain report after each stimulus; also motor/autonomic conditions.",
+      "prediction_rationale": "Public perception condition provides signal aligned to numeric pain labels, while ancillary motor and autonomic channels/conditions can support multimodal analyses.",
+      "verified_result_metric": "OSF record verifies public BrainVision EEG and 60-trial design; this is dataset metadata rather than predictor performance.",
+      "prediction_target": "Numeric pain rating (0–100) per trial in perception task.",
+      "validation_design": "Within-subject four-condition experiment with randomized task conditions; source paper uses a subset for acute-pain onset work.",
+      "article_url": "https://osf.io/bsv86/",
+      "open_access_status": "Public OSF project",
+      "data_url": "https://osf.io/bsv86/",
+      "data_access_status": "public EEG verified",
+      "data_evidence": "OSF primary page states project is public, lists raw .eeg/.vhdr/.vmrk files and numeric-rating perception condition; Sun et al. 2020 primary paper links to this dataset.",
+      "relevance_limitations": "The repository is BrainVision format and channel/sample details must be checked from headers; published onset-detection target is not the same as pain intensity prediction. Harmonize sampling and montage first.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/pain-evidence/sun-2020-acute-pain-detector.md"
+      ],
+      "source_urls": [
+        "https://osf.io/bsv86/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7744433/"
+      ]
+    },
+    {
+      "title": "Selective and replicable neuroimaging-based indicators of pain discriminability",
+      "authors": "L-B Zhang, X-J Lu, G Huang, H-J Zhang, Y-H Tu, Y-Z Kong, L Hu",
+      "year": 2022,
+      "doi": "10.1016/j.xcrm.2022.100846",
+      "item_type": "paper",
+      "evidence_scope": "direct pain",
+      "feature_family": "pain-evoked EEG responses evaluated using signal-detection theory",
+      "feature_definition": "EEG neural indicators of discriminability between higher and lower pain percepts; three EEG datasets (total N=366), with exploratory and validation sets.",
+      "prediction_rationale": "Pain-discriminability d′ can distinguish perceptual sensitivity from simple stimulus response and tests reproducibility across datasets.",
+      "verified_result_metric": "Primary full-text summary reports robust, pain-selective indicators replicated in EEG validation datasets; numeric EEG performance value not captured in inspected excerpt.",
+      "prediction_target": "Pain percept discriminability (high vs low pain), not continuous intensity regression.",
+      "validation_design": "Dataset 1 exploratory; EEG datasets 2–3 validation; separate fMRI datasets excluded from this EEG-focused row.",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9798031/",
+      "open_access_status": "Open-access full text",
+      "data_url": null,
+      "data_access_status": "unverified",
+      "data_evidence": "Article identifies three EEG datasets but no data repository link was verified in captured excerpt; access status left unverified.",
+      "relevance_limitations": "Discriminability classification differs from regression on subjective ratings. Three central channels limit spatial features; evoked study requires trial/event labels and correct stimulus intensity control.",
+      "source_evidence_paths": [],
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9798031/"
+      ]
+    },
+    {
+      "title": "Pain- and touch-related neuronal gamma oscillation EEG dataset (OSF jw8rv)",
+      "authors": "E Valentini et al.",
+      "year": 2023,
+      "doi": "Not assigned/verified",
+      "item_type": "dataset",
+      "evidence_scope": "direct pain",
+      "feature_family": "raw EEG, pain/touch event-related gamma, trial ratings",
+      "feature_definition": "Public 48-participant EEG dataset with painful laser and matched tactile trials; paper also reports a separate repeated-session dataset.",
+      "prediction_rationale": "Enables analysis of gamma response variability, stability, and relation to single-trial pain ratings.",
+      "verified_result_metric": "Publicly linked dataset contains 48 healthy participants; 75 laser-pain and 75 touch trials, ratings 0–10 after each; no dataset prediction metric.",
+      "prediction_target": "Pain/touch intensity ratings and event-related gamma response features.",
+      "validation_design": "Single-session dataset of 48 participants; the linked study also discusses a distinct two-session 22-person dataset, do not assume both are in this OSF record.",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10396281/",
+      "open_access_status": "Public OSF project; article open access",
+      "data_url": "https://osf.io/jw8rv/",
+      "data_access_status": "public EEG verified",
+      "data_evidence": "Valentini et al. explicitly link jw8rv and describe its 48 healthy participants, pain/touch paradigms, and ratings. This is distinct from Nickel et al. 2017 tonic-heat data.",
+      "relevance_limitations": "Gamma above 40 Hz is removed by target filter; 64-Hz Nyquist prevents higher components. Pain and touch blocks, trial events, full montage and sampling must be checked; only C3/C4/Cz remain in target pipeline.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/pain-evidence/valentini-2023-gamma-stability.md"
+      ],
+      "source_urls": [
+        "https://osf.io/jw8rv/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10396281/"
+      ]
+    }
+  ],
+  "conflicts": [
+    "Interpretation conflict is context dependent: Iannetti et al. (2008) found prominent laser-evoked N1/N2/P2/ERS attenuation with repetition and argued these scalp responses can index salience, whereas Zhang et al. (2012) reported SI gamma tracked subjective pain despite repetition. Do not collapse evoked vertex ERP and induced/source-localized gamma as one feature or assume either is pain-specific.",
+    "Stimulus intensity and subjective pain are distinct prediction targets: Nickel et al. (2017) found sensorimotor alpha/beta more related to physical intensity but prefrontal gamma to pain ratings. Models should control the applied stimulus level and evaluate residual subjective variance.",
+    "Tonic-pain papers report alpha-1/alpha-3 relationships, but May et al. (2025) did not find consistent PAF prediction for brief laser pain. These may be duration/paradigm differences, not direct replication failures.",
+    "Gamma evidence is contradictory and artifact-sensitive: pain-linked medial prefrontal/SI gamma appears in some source/localized or induced analyses, while Dowman et al. (2008) considered scalp gamma increase likely EMG artifact and Valentini et al. (2023) found gamma responses not universal across participants.",
+    "Possible dataset overlap: May et al. (2025) explicitly link OSF s75q6, while Tiemann et al. (2026) link z2h86; the z2h86 OSF project cites the May paper as its first related publication and describes 166 participants, while the papers analyze 159 and 161 participants. Treat these repositories/cohorts as potentially overlapping, not independent validation, until README/participant manifests are reconciled."
+  ],
+  "gaps": [
+    "The strongest public trial-labeled datasets verified here are newer, large BIDS datasets (Zhao et al. OpenNeuro; May/Tiemann OSF); public raw EEG for several canonical historical prediction papers (Hu 2011, Huang 2013, Nickel 2017, Babiloni 2008) was not verified.",
+    "The 128-Hz pipeline has 64-Hz Nyquist, but 1–40-Hz filtering removes gamma above 40 Hz. Consequently, high-gamma findings from 30–100-Hz or higher bands are not directly testable, and the top of the lower-gamma band is poorly represented.",
+    "Only C3/C4/Cz are available. This omits temporal electrodes, FC5/T7 and medial prefrontal/source-localized regions reported as informative; source reconstruction and broad topographic patterns are unavailable.",
+    "Five-second windows cannot reproduce ten-minute tonic heat/cold pressor, multi-minute resting alpha/PAF, or day-to-day effects without an explicit window aggregation/time-course design. Evoked LEPs additionally require reliable stimulus markers and baseline windows.",
+    "Do not equate proxy labels: detector/onset, high/low pain classification, pain discriminability, stimulus intensity, and continuous subjective rating are different outcomes. Use participant-grouped and external validation to avoid trial/participant leakage.",
+    "Substantive evidence under strict direct human EEG/EEG dataset scope totals 20 curated records (including dataset records). Huang's primary abstract is publisher-verifiable but full text is not OA-verified; Babiloni and Nir are retained as limited-access candidates with explicit caveats; no lower-relevance padding was used.",
+    "Participant-level overlap between OSF s75q6 and z2h86 is unresolved. Both article data statements and OSF metadata are recorded, but deduplicate participants before combining or calling cross-validation external."
+  ],
+  "sources": [
+    {
+      "title": "Single-trial LEP estimation; open full text",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3234084/",
+      "path": "eeg-variance-pain-literature/research/sources/pain-evidence/hu-2011-single-trial-lep.md"
+    },
+    {
+      "title": "Laser-evoked response salience; open full text",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2525705/",
+      "path": "eeg-variance-pain-literature/research/sources/pain-evidence/iannetti-2008-laser-saliency.md"
+    },
+    {
+      "title": "Pain intensity and gamma; publisher full text",
+      "url": "https://www.jneurosci.org/content/32/22/7429",
+      "path": "eeg-variance-pain-literature/research/sources/pain-evidence/zhang-2012-gamma.md"
+    },
+    {
+      "title": "Tonic pain oscillations; open full text",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5349759/",
+      "path": "eeg-variance-pain-literature/research/sources/pain-evidence/nickel-2017-tonic-oscillations.md"
+    },
+    {
+      "title": "Tonic pain and EMG artifact warning",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2676940/",
+      "path": "eeg-variance-pain-literature/research/sources/pain-evidence/dowman-2008-tonic-pain.md"
+    },
+    {
+      "title": "Tonic alpha pain prediction (abstract page)",
+      "url": "https://pure.johnshopkins.edu/en/publications/tonic-pain-and-continuous-eeg-prediction-of-subjective-pain-perce-3",
+      "path": "eeg-variance-pain-literature/research/sources/pain-evidence/nir-2012-tonic-alpha.md"
+    },
+    {
+      "title": "Prestimulus alpha and LEP; PubMed abstract",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18355634/",
+      "path": "eeg-variance-pain-literature/research/sources/pain-evidence/babiloni-2008-prestim-alpha.md"
+    },
+    {
+      "title": "Huang et al. publisher abstract (full text not verified open)",
+      "url": "https://doi.org/10.1016/j.neuroimage.2013.05.017",
+      "path": null
+    },
+    {
+      "title": "Public acute-pain EEG and detection study",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7744433/",
+      "path": "eeg-variance-pain-literature/research/sources/pain-evidence/sun-2020-acute-pain-detector.md"
+    },
+    {
+      "title": "CVUE proof-of-concept",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9413583/",
+      "path": "eeg-variance-pain-literature/research/sources/pain-evidence/segning-2022-cvue.md"
+    },
+    {
+      "title": "Interstimulus features and LEP prediction",
+      "url": "https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2018.00340/full",
+      "path": "eeg-variance-pain-literature/research/sources/pain-evidence/interstimulus-2018-lep-prediction.md"
+    },
+    {
+      "title": "Gamma stability and pain/touch EEG",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10396281/",
+      "path": "eeg-variance-pain-literature/research/sources/pain-evidence/valentini-2023-gamma-stability.md"
+    },
+    {
+      "title": "PAF brief pain null finding and public OSF data",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12363489/",
+      "path": "eeg-variance-pain-literature/research/sources/pain-evidence/may-2025-paf-pain.md"
+    },
+    {
+      "title": "Within-/between-person pain EEG replication and OSF data",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003948",
+      "path": "eeg-variance-pain-literature/research/sources/pain-evidence/tiemann-2025-neural-encoding.md"
+    },
+    {
+      "title": "678-participant LEP data paper and OpenNeuro links",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12405539/",
+      "path": "eeg-variance-pain-literature/research/sources/pain-evidence/zhao-2025-lep-dataset.md"
+    },
+    {
+      "title": "EEG pain discriminability paper",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9798031/",
+      "path": null
+    },
+    {
+      "title": "Public pain/touch gamma EEG dataset OSF jw8rv",
+      "url": "https://osf.io/jw8rv/",
+      "path": "eeg-variance-pain-literature/research/sources/pain-evidence/valentini-2023-gamma-stability.md"
+    }
+  ]
+}

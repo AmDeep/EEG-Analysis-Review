@@ -1,0 +1,409 @@
+{
+  "items": [
+    {
+      "title": "Assessing the balance between excitation and inhibition in chronic pain through the aperiodic component of EEG",
+      "authors": "Cristina Gil Ávila; Elisabeth S. May; Felix S. Bott; Laura Tiemann; Vanessa Hohn; Henrik Heitmann; Paul Theo Zebhauser; Joachim Gross; Markus Ploner",
+      "year": 2025,
+      "doi": "10.7554/eLife.101727",
+      "item_type": "paper",
+      "evidence_scope": "direct pain",
+      "feature_family": "Aperiodic exponent (aperiodic 1/f slope) and periodic/aperiodic spectral separation",
+      "feature_definition": "Fit the 2–40 Hz power spectrum into aperiodic offset/exponent plus oscillatory peaks; primary feature was exponent in source-localized mPFC, with whole-brain analyses.",
+      "prediction_rationale": "Aperiodic exponent was proposed as a scalable proxy for excitation/inhibition and a candidate marker of chronic pain; this study provides strong counter-evidence to simple status/intensity prediction.",
+      "verified_result_metric": "Authors report robust evidence against chronic-pain/control exponent differences (all BF10 <0.22 across preregistered analyses); no relationship with pain intensity. Not classification accuracy or R².",
+      "prediction_target": "Chronic pain vs healthy status and average pain intensity association; no deployed or validated predictor.",
+      "validation_design": "Preregistered secondary analysis of 3 EEG cohorts; blinded analyses and multiverse; 149 chronic pain and 115 controls in final sample.",
+      "article_url": "https://elifesciences.org/articles/101727",
+      "open_access_status": "Open access; full article freely readable at eLife.",
+      "data_url": "https://osf.io/qgfma/",
+      "data_access_status": "public EEG verified",
+      "data_evidence": "Paper reports a third cohort made public; OSF qgfma is public and links raw-data projects for Ta Dinh 2019 (g3snh) and Heitmann 2022 (gywtc). The linked preregistration states no access restrictions and identifies raw BIDS EEG URLs srpbg, a8bpx and qgfma. Data access is verified at OSF project level; cohort composition differs from final analyzed N.",
+      "relevance_limitations": "Scalp EEG has 64 channels, 1000 Hz acquisition and 5-minute eyes-closed recordings before preprocessing; main mPFC/source analyses cannot be replicated with C3/C4/Cz alone. 2–40 Hz fitting is compatible with 1–40 Hz filter, but 5-second windows do not reproduce full source/aperiodic pipeline. No alpha asymmetry test.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/spectral-features/gil-avila-aperiodic-pain.md",
+        "eeg-variance-pain-literature/research/sources/spectral-features/gil-avila-osf-raw-data.md"
+      ],
+      "source_urls": [
+        "https://elifesciences.org/articles/101727",
+        "https://osf.io/qgfma/",
+        "https://osf.io/xshmy/"
+      ]
+    },
+    {
+      "title": "The Analysis of Spontaneous Electroencephalogram (EEG) in Chronic Low Back Pain Patients Compared with Healthy Subjects",
+      "authors": "Sanaz Bemani; Javad Sarrafzadeh; Shohreh Noorizadeh Dehkordi; Saeed Talebian; Reza Salehi; Jamileh Zarei",
+      "year": 2023,
+      "doi": "10.47176/mjiri.37.128",
+      "item_type": "paper",
+      "evidence_scope": "direct pain",
+      "feature_family": "Relative and absolute band power; alpha relative power",
+      "feature_definition": "Welch/FFT power spectral density; alpha defined 8.0–13.9 Hz and relative power is band absolute power divided by total power.",
+      "prediction_rationale": "Alpha relative power may separate chronic-low-back-pain cases from controls, but the paper tested group differences rather than training a predictive model; pain-intensity prediction was not supported by its reported correlation analysis.",
+      "verified_result_metric": "Among 30 CLBP and 30 matched controls, alpha relative power was significantly higher in CLBP at eyes-open rest and lumbar flexion (P<0.05). Authors describe subjective pain vs EEG frequency-power correlation as very weak/negligible; numeric r and prediction accuracy not verified.",
+      "prediction_target": "CLBP/control group difference; secondary association with NRS pain severity, not validated prediction.",
+      "validation_design": "Cross-sectional case-control comparison; paired t-tests and Pearson correlations; 30 CLBP plus 30 controls.",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10843364/",
+      "open_access_status": "Open access; freely readable PMC full text.",
+      "data_url": "",
+      "data_access_status": "unverified",
+      "data_evidence": "Captured full article text did not expose an openly downloadable EEG repository or data-sharing statement; do not infer public raw data.",
+      "relevance_limitations": "19-channel study at 512 Hz, 0.05–60 Hz, 1-second Welch epochs; alpha band overlaps current 1–40 Hz pipeline but the article included frontal/temporal/parietal/occipital sites unavailable in C3/C4/Cz-only models. Flexion is 20 seconds with movement artifact; no external validation.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/spectral-features/bemani-clbp-alpha.md"
+      ],
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10843364/"
+      ]
+    },
+    {
+      "title": "Towards the Objective Identification of the Presence of Pain Based on Electroencephalography Signals’ Analysis: A Proof-of-Concept",
+      "authors": "Colince Meli Segning; Jessica Harvey; Hassan Ezzaidi; Karen Barros Parron Fernandes; Rubens A. da Silva; et al.",
+      "year": 2022,
+      "doi": "10.3390/s22166272",
+      "item_type": "paper",
+      "evidence_scope": "direct pain",
+      "feature_family": "Coefficient of variation of upper EEG envelope (CVUE), including alpha-band CVUE",
+      "feature_definition": "CVUE (%) of filtered upper signal envelope at FC5 and T7 in alpha (8–12 Hz), beta (12–30 Hz), and gamma (30–43 Hz); this is amplitude variability, not PSD variance.",
+      "prediction_rationale": "Envelope coefficient of variation might distinguish pain presence from no-pain state; source supports beta CVUE specifically, not alpha CVUE or pain-intensity prediction.",
+      "verified_result_metric": "Proof-of-concept reports beta CVUE at FC5 increased up to 20% in pain condition at rest; CVUEβ did not correlate with pain intensity. No validated classification metric or R² reported.",
+      "prediction_target": "Pain presence (fibromyalgia or capsaicin-induced pain versus no pain); pain intensity was assessed but not predicted.",
+      "validation_design": "Very small proof-of-concept: 4 chronic fibromyalgia participants and 7 healthy volunteers, including experimentally induced capsaicin pain; within-study condition/group comparisons.",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9413583/",
+      "open_access_status": "Open access; freely readable PMC full text.",
+      "data_url": "",
+      "data_access_status": "unverified",
+      "data_evidence": "No public raw EEG repository was verified in captured article text.",
+      "relevance_limitations": "Only 4 chronic-pain participants; reported discriminating feature is beta envelope CVUE rather than alpha power. FC5 and T7 are not in the current model; beta 12–30 Hz is within 1–40 Hz but filtering and exact timing must match. No generalizable validation.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/spectral-features/segning-cvue-pain.md"
+      ],
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9413583/"
+      ]
+    },
+    {
+      "title": "External validation of binary machine learning models for pain intensity perception classification from EEG in healthy individuals",
+      "authors": "Tyler Mari; Oda Asgard; Jessica Henderson; et al.",
+      "year": 2023,
+      "doi": "10.1038/s41598-022-27298-1",
+      "item_type": "paper",
+      "evidence_scope": "direct pain",
+      "feature_family": "Single-trial peri-stimulus time-frequency EEG features; not an alpha-only spectral test",
+      "feature_definition": "Feature-selected time-frequency values from all electrodes during high/low pneumatic pressure pain; frequencies/electrodes span more than alpha.",
+      "prediction_rationale": "Independent-sample validation tests whether EEG features generalize for subjective high/low experimental pain intensity; it is contextual prediction evidence, not evidence that alpha power alone predicts pain.",
+      "verified_result_metric": "Random Forest accuracy: 73.18% cross-validation, 68.32% external validation 1, 60.42% external validation 2. These are classification accuracies, not R² or correlations.",
+      "prediction_target": "Binary low vs high experimental pain intensity.",
+      "validation_design": "Study 1 n=25 train/cross-validation; study 2 n=15 independent participants used for two external validations (one same stimulation, one new parameters).",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9816165/",
+      "open_access_status": "Open access; freely readable PMC full text and publisher page.",
+      "data_url": "https://osf.io/uqt9z/",
+      "data_access_status": "unverified",
+      "data_evidence": "Article states EEG is freely available at OSF uqt9z, but fetched OSF project page shows “No files are available at this time”; availability of raw EEG could not be verified, so it is not counted as public EEG.",
+      "relevance_limitations": "1000 Hz acquisition, high/low pressure event markers, peri-stimulus time-frequency features, and frontal/central/parietal electrodes; current C3/C4/Cz-only, 1–40 Hz, five-second features cannot reproduce event-locked multichannel features. No alpha-specific feature ranking/result verified.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/spectral-features/mari-pain-validation.md",
+        "eeg-variance-pain-literature/research/sources/spectral-features/mari-osf-uqt9z.md"
+      ],
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9816165/",
+        "https://osf.io/uqt9z/"
+      ]
+    },
+    {
+      "title": "Multimodal insights into diverse pain experiences: PhysioPain dataset",
+      "authors": "Boran Toktay; İkbal Işık Orhan; Elif Yıldırım; Fatma Patlar Akbulut; Cagatay Catal",
+      "year": 2025,
+      "doi": "10.1016/j.dib.2025.111992",
+      "item_type": "paper",
+      "evidence_scope": "direct pain",
+      "feature_family": "EEG band-wave measurements (alpha, beta, theta, gamma) paired with pain labels; dataset paper, not a feature-performance study",
+      "feature_definition": "Dataset paper describes EEG from a NeuroSky MindWave Mobile device and separate raw/processed files; article describes processed band signals labelled by pain type/intensity.",
+      "prediction_rationale": "Pain-type and intensity labels paired to EEG permit future signal-feature modeling; this paper itself does not demonstrate alpha-based prediction.",
+      "verified_result_metric": "No EEG-based predictive metric or alpha-power result verified/reported in this dataset paper.",
+      "prediction_target": "Potential pain type/intensity analyses, not a model evaluated in this paper.",
+      "validation_design": "Dataset description; 99 recruited participants, 6 excluded, with 93 in core analytic cohort; cross-sectional pain categories include headache, back pain, menstrual pain and no pain.",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12410463/",
+      "open_access_status": "Open access; freely readable PMC full text.",
+      "data_url": "https://data.mendeley.com/datasets/mf2cgph9cy/4",
+      "data_access_status": "public EEG verified",
+      "data_evidence": "Paper Data Availability links PhysioPain original data on Mendeley; current Mendeley version 4 page confirms 1.16 GB download, raw and processed device data plus survey answers, 99 participants, and CC BY 4.0. Paper names “Raw EEG Data (1 Hz)” files with pain labels; ambiguous wording means do not infer the MindWave sampling rate from this label.",
+      "relevance_limitations": "Single-channel consumer MindWave rather than scalp montage; dataset description’s 1 Hz EEG folder label is not an adequate sampling-rate specification. Verify file schema and actual sampling before use; cannot map to C3/C4/Cz or infer 1–40 Hz PSD from preprocessed band series. Derived band data is not equivalent to raw EEG.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/spectral-features/physiopain-paper.md",
+        "eeg-variance-pain-literature/research/sources/spectral-features/physiopain-mendeley.md"
+      ],
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12410463/",
+        "https://data.mendeley.com/datasets/mf2cgph9cy/4"
+      ]
+    },
+    {
+      "title": "PhysioPain Dataset",
+      "authors": "Fatma Patlar Akbulut; Boran Toktay; İkbal Işık Orhan; Elif Yıldırım",
+      "year": 2025,
+      "doi": "10.17632/mf2cgph9cy.4",
+      "item_type": "dataset",
+      "evidence_scope": "direct pain",
+      "feature_family": "Public EEG plus wearable physiology and pain-report labels",
+      "feature_definition": "Mendeley record describes raw/processed EEG and survey data by participant; paper identifies alpha/beta/theta/gamma signal files and pain-type/intensity labels.",
+      "prediction_rationale": "Public participant-linked EEG and pain-rating labels may support pain presence/type/intensity models after raw file sampling, channel, and label alignment are audited.",
+      "verified_result_metric": "Dataset item; no model metric applies.",
+      "prediction_target": "Pain/no-pain, pain type and pain intensity labels in dataset; not a demonstrated prediction result.",
+      "validation_design": "Dataset resource; 99 participants with headache, back pain, menstrual pain and no pain; not a predictive validation study.",
+      "article_url": "https://data.mendeley.com/datasets/mf2cgph9cy/4",
+      "open_access_status": "Public dataset record, CC BY 4.0; 1.16 GB download is listed.",
+      "data_url": "https://data.mendeley.com/datasets/mf2cgph9cy/4",
+      "data_access_status": "public EEG verified",
+      "data_evidence": "Public Mendeley record identifies raw and processed EEG device data plus survey answers in participant-ID files; source dataset is directly linked from the open-access PhysioPain paper. Version 4 is the currently verified record; paper cites older version 2.",
+      "relevance_limitations": "Consumer MindWave is not multichannel scalp EEG; its single-channel recording is not directly compatible with C3/C4/Cz model. Confirm sample-rate field and distinguish raw EEG from 1 Hz summarized wave labels; derived frequency-band files must not be treated as raw EEG.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/spectral-features/physiopain-mendeley.md",
+        "eeg-variance-pain-literature/research/sources/spectral-features/physiopain-paper.md"
+      ],
+      "source_urls": [
+        "https://data.mendeley.com/datasets/mf2cgph9cy/4",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12410463/"
+      ]
+    },
+    {
+      "title": "1/f in chronic pain: raw EEG datasets linked to the preregistered aperiodic analysis",
+      "authors": "Cristina Gil Ávila; Markus Ploner; linked cohort contributors",
+      "year": 2024,
+      "doi": "",
+      "item_type": "dataset",
+      "evidence_scope": "direct pain",
+      "feature_family": "Resting-state raw BIDS EEG with clinical pain labels; source data for periodic/aperiodic and alpha analyses",
+      "feature_definition": "Public OSF project joins/references raw EEG cohorts; preregistration identifies eyes-open/closed five-minute resting state recordings and pain ratings.",
+      "prediction_rationale": "Raw EEG tied to pain intensity and case/control labels permits reproducible spectral-power and aperiodic feature tests; no standalone prediction is claimed for this repository.",
+      "verified_result_metric": "Dataset item; no model metric applies.",
+      "prediction_target": "Cohort diagnosis and pain intensity labels linked to EEG; not a model result.",
+      "validation_design": "Public multi-cohort dataset resource; study article analyzed 149 pain participants and 115 controls; source cohort count and inclusion rules differ.",
+      "article_url": "https://osf.io/qgfma/",
+      "open_access_status": "Public OSF projects; preregistration states there are no dataset access restrictions.",
+      "data_url": "https://osf.io/qgfma/",
+      "data_access_status": "public EEG verified",
+      "data_evidence": "OSF qgfma is public and links the raw-data cohort projects; preregistration xshmy explicitly lists raw BIDS-EEG URLs srpbg, a8bpx and qgfma, states public/no restrictions, and ties them to this chronic-pain study. The fetched srpbg/a8bpx OSF pages are Public Projects with study-identifying records and raw-data components/folders (their folder listings show 0 B; file bytes were not independently downloaded).",
+      "relevance_limitations": "64-channel raw BIDS EEG, 1000 Hz original sampling; original paper uses eyes-closed five-minute sessions, source reconstruction and mPFC. Requires montage mapping, preprocessing, timing and baseline audit. Only C3/C4/Cz and five-second 1–40 Hz model cannot reproduce source-localized frontal alpha/aperiodic analysis.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/spectral-features/gil-avila-osf-raw-data.md",
+        "eeg-variance-pain-literature/research/sources/spectral-features/gil-avila-aperiodic-pain.md",
+        "eeg-variance-pain-literature/research/sources/spectral-features/gil-avila-srpbg.md",
+        "eeg-variance-pain-literature/research/sources/spectral-features/gil-avila-a8bpx.md"
+      ],
+      "source_urls": [
+        "https://osf.io/qgfma/",
+        "https://osf.io/xshmy/",
+        "https://osf.io/srpbg/",
+        "https://osf.io/a8bpx/",
+        "https://osf.io/srpbg/",
+        "https://osf.io/a8bpx/"
+      ]
+    },
+    {
+      "title": "Electrophysiological Frequency Band Ratio Measures Conflate Periodic and Aperiodic Neural Activity",
+      "authors": "Thomas Donoghue; Julio Dominguez; Bradley Voytek",
+      "year": 2020,
+      "doi": "10.1523/ENEURO.0192-20.2020",
+      "item_type": "paper",
+      "evidence_scope": "transferable EEG",
+      "feature_family": "Band ratios; periodic peak and aperiodic spectral components",
+      "feature_definition": "A ratio of integrated power in two frequency bands; simulations and human EEG parameterization show ratios can change with aperiodic slope/offset and periodic center frequency/bandwidth, not only oscillation amplitude.",
+      "prediction_rationale": "Before interpreting alpha/beta or similar ratios as pain-linked rhythms, model periodic alpha peaks and broadband slope separately; otherwise a ratio may encode global signal-strength/spectral tilt.",
+      "verified_result_metric": "Qualitative result verified: multiple disparate periodic/aperiodic features influence ratios; no pain-prediction metric or R² reported.",
+      "prediction_target": "Transferable measurement-validity method; no pain target in the paper.",
+      "validation_design": "Simulation plus human EEG analysis using MIPDB; open article and authors’ analysis code; not a pain cohort validation.",
+      "article_url": "https://www.eneuro.org/content/7/6/ENEURO.0192-20.2020",
+      "open_access_status": "Open access; full article readable at eNeuro.",
+      "data_url": "",
+      "data_access_status": "unverified",
+      "data_evidence": "Article links an open code repository and states it analyzed MIPDB EEG, but a direct dataset URL and dataset contents tied to this analysis were not verified in the fetched source. Do not count as public EEG.",
+      "relevance_limitations": "Transferable methodology only, not direct pain evidence. No pain prediction, alpha asymmetry, or externally validated biomarker. Five-second 1–40 Hz PSDs can support band ratios but require PSD/aperiodic estimation choices to be held constant.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/spectral-features/donoghue-band-ratio.md"
+      ],
+      "source_urls": [
+        "https://www.eneuro.org/content/7/6/ENEURO.0192-20.2020",
+        "https://github.com/voytekresearch/BandRatios"
+      ]
+    },
+    {
+      "title": "Parameterizing neural power spectra into periodic and aperiodic components",
+      "authors": "Thomas Donoghue; Matar Haller; Erik J. Peterson; Paroma Varma; Patrick H. Shah; Claudia Luna; Richard G. Hermans; ...",
+      "year": 2020,
+      "doi": "10.1038/s41593-020-00744-x",
+      "item_type": "paper",
+      "evidence_scope": "transferable EEG",
+      "feature_family": "Periodic peaks (including alpha) separated from aperiodic offset and exponent",
+      "feature_definition": "Model the log power spectrum as an aperiodic 1/f-like background plus parameterized oscillatory peaks; papers’ methods explicitly distinguish peak height/center/bandwidth from broadband slope/offset.",
+      "prediction_rationale": "Estimating peak-specific alpha amplitude independently from broadband exponent/offset can test whether putative pain signal strength reflects oscillation or global spectral tilt; proposed transfer only.",
+      "verified_result_metric": "Not verified/reported for pain prediction; paper is a methods article and no pain prediction metric applies.",
+      "prediction_target": "Transferable spectral decomposition; no pain target.",
+      "validation_design": "Method development and validation across electrophysiological spectra; article discusses EEG/MEG and publicly released analysis code.",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8106550/",
+      "open_access_status": "Open access; freely readable PMC full text.",
+      "data_url": "",
+      "data_access_status": "unverified",
+      "data_evidence": "Paper code availability is described, but a public EEG repository directly tied to the method paper was not verified from captured evidence.",
+      "relevance_limitations": "Transferable EEG method, not direct pain evidence. Fitting range, aperiodic mode, peak width and recording duration affect estimates. 1–40 Hz filtering supports alpha and many slope estimates but excludes >40 Hz and high gamma; five-second segments yield limited low-frequency resolution.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/spectral-features/donoghue-spectral-parameterization.md"
+      ],
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8106550/"
+      ]
+    },
+    {
+      "title": "Time-resolved parameterization of aperiodic and periodic brain activity",
+      "authors": "Luc Edward Wilson; Jason da Silva Castanheira; Sylvain Baillet",
+      "year": 2022,
+      "doi": "10.7554/eLife.77348",
+      "item_type": "paper",
+      "evidence_scope": "transferable EEG",
+      "feature_family": "Time-resolved aperiodic exponent/offset and periodic peak parameters (SPRiNT)",
+      "feature_definition": "Spectral Parameterization Resolved in Time (SPRiNT) estimates periodic and aperiodic spectrum components across time-varying windows; demonstration includes synthetic data and resting EEG.",
+      "prediction_rationale": "Separate alpha peak dynamics from time-varying broadband signal-strength changes and assess drift over an entire recording; this is a proposed robustness check, not pain evidence.",
+      "verified_result_metric": "Article reports recovery of time-varying features in simulations and demonstrates time-varying aperiodic features on EEG; no pain-prediction metric verified/reported.",
+      "prediction_target": "Transferable signal dynamics and state changes; no pain outcome in the article.",
+      "validation_design": "Synthetic data validation; empirical LEMON EEG (n=178) eyes-open/eyes-closed and rodent intracranial movement data demonstration.",
+      "article_url": "https://elifesciences.org/articles/77348",
+      "open_access_status": "Open access; freely readable eLife article.",
+      "data_url": "",
+      "data_access_status": "unverified",
+      "data_evidence": "Article states empirical LEMON EEG was openly available but no direct dataset/repository endpoint tied to this study was verified in captured source text.",
+      "relevance_limitations": "Transferable method only. Long time-resolved recordings and dynamic windows may be needed; five-second windows can track some variation but are not validated as an equivalent to SPRiNT. No pain cohort or pain prediction.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/spectral-features/wilson-sprint.md"
+      ],
+      "source_urls": [
+        "https://elifesciences.org/articles/77348"
+      ]
+    },
+    {
+      "title": "DISCOVER-EEG: an open, fully automated EEG pipeline for biomarker discovery in clinical neuroscience",
+      "authors": "Cristina Gil Ávila; Felix S. Bott; Joachim Gross; Markus Ploner",
+      "year": 2023,
+      "doi": "10.1038/s41597-023-02525-0",
+      "item_type": "software",
+      "evidence_scope": "transferable EEG",
+      "feature_family": "Automated spectral power and alpha peak frequency; preprocessing pipeline",
+      "feature_definition": "Open MATLAB pipeline extracts global/channel power spectra and alpha peak frequency; defaults to 2-second epochs with 50% overlap and offers user-configurable preprocessing/features.",
+      "prediction_rationale": "Can provide a reproducible reference for extracting alpha power/peak frequency and parameter sensitivity, but it does not establish pain prediction.",
+      "verified_result_metric": "Pipeline demonstrates expected eyes-closed greater alpha power than eyes-open in two open EEG datasets; no pain prediction metric reported.",
+      "prediction_target": "No pain target; general EEG feature extraction software.",
+      "validation_design": "Tested in two large openly available EEG datasets and benchmarked on expected eyes-open/closed alpha effect.",
+      "article_url": "https://www.nature.com/articles/s41597-023-02525-0",
+      "open_access_status": "Open access; full Scientific Data article freely readable.",
+      "data_url": "",
+      "data_access_status": "not applicable",
+      "data_evidence": "This row is software, not a dataset. Article links the pipeline code on GitHub and co-deposits it at Zenodo; validation datasets are unrelated to pain.",
+      "relevance_limitations": "Resting-state method, not a pain pipeline. Default two-second epochs and global/channel averaging differ from five-second supervised pain windows. Alpha/APF require stable spectral resolution; pipeline supports broader montage than C3/C4/Cz-only model. Keep high-gamma >64 Hz and frontal channels out unless raw acquisition/montage support them.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/spectral-features/discover-eeg.md"
+      ],
+      "source_urls": [
+        "https://www.nature.com/articles/s41597-023-02525-0",
+        "https://github.com/crisglav/discover-eeg"
+      ]
+    }
+  ],
+  "conflicts": [
+    "Pain article results differ by task/feature and are not a coherent alpha biomarker: Bemani reports higher alpha relative power by CLBP/control group but negligible linear association with subjective pain; Gil Ávila et al. found strong evidence against aperiodic exponent separating chronic pain from controls or tracking pain intensity.",
+    "Mari et al. claim EEG data are freely available at OSF uqt9z, but the fetched public OSF page says no files are available. Treat the paper’s repository claim as unresolved; do not count it as verified public raw EEG.",
+    "PhysioPain article cites Mendeley version 2 while the current record is version 4. Both share the same dataset accession; current download is public, but its “Raw EEG Data (1 Hz)” folder wording is ambiguous and must not be read as 1 Hz sampling frequency.",
+    "Alpha absolute/relative power, alpha peak frequency, alpha asymmetry, periodic alpha peak height, aperiodic exponent, and envelope CVUE are distinct features. Do not substitute or pool these metrics."
+  ],
+  "gaps": [
+    "No verified public raw EEG was found for the CLBP alpha case-control study or the small CVUE pain proof-of-concept.",
+    "Only one publicly accessible pain EEG resource was verified in this focus area: PhysioPain; it uses a consumer single-channel MindWave and its EEG sampling/file structure needs audit before fitting current C3/C4/Cz models.",
+    "No direct pain-alpha asymmetry paper with verified public EEG data was confirmed in this run; alpha asymmetry remains a research gap, not a supported result.",
+    "The 1–40 Hz pipeline cannot evaluate high-gamma features (>64 Hz; and even 40–64 Hz is filtered out), and its three central electrodes omit frontal sites implicated in several pain studies.",
+    "Pain studies often rely on event/baseline comparisons or 3–5 minute resting recordings; five-second epochs are not interchangeable with full-record baselines or peri-stimulus timing. Validate marker alignment and recording-length sensitivity before transferring reported results.",
+    "Best verified set is 11 rows (7 direct-pain papers/dataset resources including a data-description paper, plus 4 transferable method/software items), below the requested 25-item target. Candidates were not padded because public EEG access, alpha-specific evidence, or article-level details could not be verified to the requested standard."
+  ],
+  "sources": [
+    {
+      "path": "eeg-variance-pain-literature/research/sources/spectral-features/bemani-clbp-alpha.md",
+      "title": "The Analysis of Spontaneous Electroencephalogram (EEG) in Chronic Low Back Pain Patients Compared with Healthy Subjects",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10843364/",
+      "date": "2023; DOI 10.47176/mjiri.37.128"
+    },
+    {
+      "path": "eeg-variance-pain-literature/research/sources/spectral-features/physiopain-paper.md",
+      "title": "Multimodal insights into diverse pain experiences: PhysioPain dataset",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12410463/",
+      "date": "2025; DOI 10.1016/j.dib.2025.111992"
+    },
+    {
+      "path": "eeg-variance-pain-literature/research/sources/spectral-features/physiopain-mendeley.md",
+      "title": "PhysioPain Dataset",
+      "url": "https://data.mendeley.com/datasets/mf2cgph9cy/4",
+      "date": "Published 11 February 2025; version 4; DOI 10.17632/mf2cgph9cy.4"
+    },
+    {
+      "path": "eeg-variance-pain-literature/research/sources/spectral-features/segning-cvue-pain.md",
+      "title": "Towards the Objective Identification of the Presence of Pain Based on Electroencephalography Signals’ Analysis: A Proof-of-Concept",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9413583/",
+      "date": "2022; DOI 10.3390/s22166272"
+    },
+    {
+      "path": "eeg-variance-pain-literature/research/sources/spectral-features/mari-pain-validation.md",
+      "title": "External validation of binary machine learning models for pain intensity perception classification from EEG in healthy individuals",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9816165/",
+      "date": "2023; DOI 10.1038/s41598-022-27298-1"
+    },
+    {
+      "path": "eeg-variance-pain-literature/research/sources/spectral-features/mari-osf-uqt9z.md",
+      "title": "External validation of binary machine learning models for pain intensity perception classification from EEG in healthy individuals (OSF project)",
+      "url": "https://osf.io/uqt9z/",
+      "date": "OSF public project, created March 14, 2022; updated March 16, 2022"
+    },
+    {
+      "path": "eeg-variance-pain-literature/research/sources/spectral-features/gil-avila-aperiodic-pain.md",
+      "title": "Assessing the balance between excitation and inhibition in chronic pain through the aperiodic component of EEG",
+      "url": "https://elifesciences.org/articles/101727",
+      "date": "Published January 13, 2025; DOI 10.7554/eLife.101727.3"
+    },
+    {
+      "path": "eeg-variance-pain-literature/research/sources/spectral-features/gil-avila-osf-raw-data.md",
+      "title": "1/f in chronic pain (public raw EEG dataset project and linked cohorts)",
+      "url": "https://osf.io/qgfma/",
+      "date": "OSF project created February 8, 2023; citation updated October 10, 2024"
+    },
+    {
+      "path": "eeg-variance-pain-literature/research/sources/spectral-features/donoghue-band-ratio.md",
+      "title": "Electrophysiological Frequency Band Ratio Measures Conflate Periodic and Aperiodic Neural Activity",
+      "url": "https://www.eneuro.org/content/7/6/ENEURO.0192-20.2020",
+      "date": "2020; DOI 10.1523/ENEURO.0192-20.2020"
+    },
+    {
+      "path": "eeg-variance-pain-literature/research/sources/spectral-features/donoghue-spectral-parameterization.md",
+      "title": "Parameterizing neural power spectra into periodic and aperiodic components",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8106550/",
+      "date": "2020; DOI 10.1038/s41593-020-00744-x"
+    },
+    {
+      "path": "eeg-variance-pain-literature/research/sources/spectral-features/wilson-sprint.md",
+      "title": "Time-resolved parameterization of aperiodic and periodic brain activity",
+      "url": "https://elifesciences.org/articles/77348",
+      "date": "2022; DOI 10.7554/eLife.77348"
+    },
+    {
+      "path": "eeg-variance-pain-literature/research/sources/spectral-features/discover-eeg.md",
+      "title": "DISCOVER-EEG: an open, fully automated EEG pipeline for biomarker discovery in clinical neuroscience",
+      "url": "https://www.nature.com/articles/s41597-023-02525-0",
+      "date": "2023; DOI 10.1038/s41597-023-02525-0"
+    },
+    {
+      "path": "eeg-variance-pain-literature/research/sources/spectral-features/gil-avila-srpbg.md",
+      "title": "Dynamics of brain function in patients with chronic pain assessed by microstate analysis of resting-state electroencephalography; OSF data project",
+      "url": "https://osf.io/srpbg/",
+      "date": "Public OSF project page; cited raw-data cohort record"
+    },
+    {
+      "path": "eeg-variance-pain-literature/research/sources/spectral-features/gil-avila-a8bpx.md",
+      "title": "Longitudinal resting state EEG in chronic pain patients undergoing interdisciplinary multimodal pain therapy; OSF raw data",
+      "url": "https://osf.io/a8bpx/",
+      "date": "Public OSF project page; raw-data cohort record"
+    }
+  ]
+}

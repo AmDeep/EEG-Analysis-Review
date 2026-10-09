@@ -1,0 +1,315 @@
+{
+  "items": [
+    {
+      "title": "An Innovative EEG-Based Pain Identification and Quantification: A Pilot Study",
+      "authors": "Colince Meli Segning, Rubens A. da Silva, Suzy Ngomo",
+      "year": 2024,
+      "doi": "10.3390/s24123873",
+      "item_type": "paper",
+      "evidence_scope": "direct pain",
+      "feature_family": "Beta amplitude-envelope coefficient of variation (CVUEβ/Piqβ)",
+      "feature_definition": "Authors band-pass beta at 13–30 Hz, form Hilbert analytic signal, take upper-envelope magnitude, and compute SD/mean × 100%; normalization references the first 60 s.",
+      "prediction_rationale": "Authors propose envelope variability as a scale-independent cue for pain presence/magnitude; it is an exploratory association, not a held-out predictor.",
+      "verified_result_metric": "In chronic-pain Group 3 (n=66), source reports Piqβ–VNRS r=0.69, p<0.0001 and R²=0.47; the source does not establish externally validated prediction. Authors visually propose Piqβ≥10% as a pain threshold.",
+      "prediction_target": "Pain presence and participant-reported pain intensity (VNRS).",
+      "validation_design": "Pilot convenience samples: 7 capsaicin, 15 thermal-pain and 66 chronic-pain participants; 5-min EEG; threshold proposed from observed groups, with no independent test set or external validation.",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11207749/",
+      "open_access_status": "Freely readable full text in PMC; CC BY article.",
+      "data_url": "Not public; article reports data cannot be publicly shared owing to confidentiality and an ongoing patent application.",
+      "data_access_status": "not public",
+      "data_evidence": "Saved source excerpt states raw data cannot be publicly shared for confidentiality and ongoing patent application; no public EEG repository is linked. Not eligible as a public-EEG validation item.",
+      "relevance_limitations": "10% is a pilot threshold, not universal reliability/sensitivity; channels FC5/T7 are absent from C3/C4/Cz; 30–43 Hz gamma fits current 1–40 Hz only partly and is not evidence about >64 Hz high gamma; baseline/task timing and 60-s reference differ from generic 5-s windows.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/complexity-envelope/cvue-piq-pilot-pmc.md",
+        "eeg-variance-pain-literature/research/sources/complexity-envelope/piq-pilot-publisher.md",
+        "eeg-variance-pain-literature/research/sources/main-claim-0-tail.md"
+      ],
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11207749/",
+        "https://www.mdpi.com/1424-8220/24/12/3873"
+      ]
+    },
+    {
+      "title": "Towards the Objective Identification of the Presence of Pain Based on Electroencephalography Signals’ Analysis: A Proof-of-Concept",
+      "authors": "Colince Meli Segning et al.",
+      "year": 2022,
+      "doi": "10.3390/s22166272",
+      "item_type": "paper",
+      "evidence_scope": "direct pain",
+      "feature_family": "CVUE in alpha, beta and gamma; beta upper-envelope variability emphasized",
+      "feature_definition": "Hilbert upper-envelope coefficient of variation from FC5 and T7; alpha 8–12, beta 12–30 and gamma 30–43 Hz; compared at rest and during a visuo-motor task.",
+      "prediction_rationale": "Authors propose increased CVUEβ at FC5 as an indicator of pain presence; no supervised predictive model is established.",
+      "verified_result_metric": "Abstract reports CVUEβ increased up to 20% at rest in pain conditions and reports no correlation with pain intensity or task performance; n=4 chronic fibromyalgia and n=7 experimentally induced pain/control participants.",
+      "prediction_target": "Pain presence; pain intensity and task performance were also assessed.",
+      "validation_design": "Small proof-of-concept, group contrasts with baseline/rest and active-task conditions; no independent test cohort.",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9413583/",
+      "open_access_status": "Freely readable full text in PMC; open-access Sensors article.",
+      "data_url": "No public EEG repository identified in the inspected paper/source pages.",
+      "data_access_status": "unverified",
+      "data_evidence": "The inspected article provides no verified public raw-EEG repository link; do not treat accessible tables/figures as raw EEG.",
+      "relevance_limitations": "Does not validate a universal 10% reliability threshold; n is very small, no intensity correlation, and FC5/T7 are not available in the C3/C4/Cz pipeline. Its task/rest comparisons require timing and baseline distinctions.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/complexity-envelope/cvue-proof-of-concept-pmc.md"
+      ],
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9413583/"
+      ]
+    },
+    {
+      "title": "Neural variability reliably encodes interindividual differences in the perception of pain intensity",
+      "authors": "Li-Bo Zhang, Xin-Yi Geng, Li Hu et al.",
+      "year": 2025,
+      "doi": "10.1371/journal.pbio.3003470",
+      "item_type": "paper",
+      "evidence_scope": "direct pain",
+      "feature_family": "Temporal response standard deviation and permutation entropy (PE)",
+      "feature_definition": "Temporal SD of evoked EEG responses in 100-ms sliding windows; PE compares ordinal pattern probabilities. Paper analyzes six datasets (total N=633) and describes a Cz time point analysis.",
+      "prediction_rationale": "Authors interpret variability as encoding individual differences in pain-intensity discriminability; association does not equal an evaluated prediction model.",
+      "verified_result_metric": "Dataset 1 ROI near the variability peak: r=0.43, p=1.16×10⁻⁷, BF=8.05×10⁴ for temporal-SD difference vs pain-rating difference; partial r≈0.45, p=2.23×10⁻⁸ controlling for amplitude. PE associations are reported, but no theta-specific weighted-feature claim is verified.",
+      "prediction_target": "Between-person pain-intensity discriminability (high-minus-low subjective rating), not trial-level pain rating prediction.",
+      "validation_design": "Retrospective analysis of six datasets, with replicability across multiple datasets and amplitude/noise control analyses; correlation analyses, not held-out classifier/regressor validation.",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12574952/",
+      "open_access_status": "Freely readable full text in PMC; PLOS Biology open access.",
+      "data_url": "https://doi.org/10.17605/OSF.IO/QTV8A",
+      "data_access_status": "public derived data only",
+      "data_evidence": "Article links figure-underlying data to OSF DOI; OSF landing page confirms a public project, but raw EEG files were not verified there. Do not label as public raw EEG.",
+      "relevance_limitations": "The primary metric is event-locked ERP variability in 100-ms windows, not generic 5-s resting variance; needs stimulus timing/baseline and event-epoch support. Cz is pipeline-compatible, but full method cannot be reproduced from figure data alone.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/complexity-envelope/neural-variability-pain-pmc.md",
+        "eeg-variance-pain-literature/research/sources/complexity-envelope/neural-variability-osf-repository.md"
+      ],
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12574952/",
+        "https://doi.org/10.17605/OSF.IO/QTV8A"
+      ]
+    },
+    {
+      "title": "Markers of Central Neuropathic Pain in Higuchi Fractal Analysis of EEG Signals From People With Spinal Cord Injury",
+      "authors": "Keri Anderson, Cristian Chirion, Matthew Fraser, Mariel Purcell, Sebastian Stein, Aleksandra Vuckovic",
+      "year": 2021,
+      "doi": "10.3389/fnins.2021.705652",
+      "item_type": "paper",
+      "evidence_scope": "direct pain",
+      "feature_family": "Higuchi fractal dimension (HFD), imagined-movement EEG",
+      "feature_definition": "Non-oscillatory HFD computed from EEG during imagined movement; the study tests group differences and machine-learning classification in chronic/subacute spinal-cord-injury pain cohorts.",
+      "prediction_rationale": "Authors investigate HFD as a prognostic/diagnostic feature for central neuropathic pain after SCI; their interpretation is not general nociceptive pain-intensity prediction.",
+      "verified_result_metric": "Abstract reports transferable classifiers with >80% accuracy for chronic-SCI groups using a single EEG channel; HFD differs across chronic and 6-month follow-up groups. Metric is classification accuracy, not variance explained or pain-intensity correlation.",
+      "prediction_target": "Chronic central neuropathic pain group status and later CNP development after SCI.",
+      "validation_design": "Two datasets: chronic groups (10 able-bodied, 10 SCI+CNP, 10 SCI without CNP) and subacute SCI follow-up (N=20; 10 developed CNP); bootstrapped group tests and transferable classifier. Raw dataset availability not verified.",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8427815/",
+      "open_access_status": "Freely readable full text in PMC; Frontiers open-access article.",
+      "data_url": "No linked public raw EEG repository verified.",
+      "data_access_status": "unverified",
+      "data_evidence": "Paper describes existing EEG datasets but this research pass did not verify a public repository tied to them; candidate only for public-data criterion.",
+      "relevance_limitations": "Frontal effects/channels and imagined-movement epochs may be essential; frontal sensors are absent from C3/C4/Cz and movement event timing is not represented by generic 5-s windows. Clinical SCI neuropathic pain is not equivalent to acute pain-intensity rating.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/complexity-envelope/higuchi-central-neuropathic-pain-pmc.md"
+      ],
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8427815/"
+      ]
+    },
+    {
+      "title": "A comprehensive EEG dataset of laser-evoked potentials for pain research",
+      "authors": "Xiangyue Zhao et al.",
+      "year": 2025,
+      "doi": "10.1038/s41597-025-05900-1",
+      "item_type": "dataset",
+      "evidence_scope": "direct pain",
+      "feature_family": "Raw evoked EEG suitable for derived amplitude/variance/entropy feature comparisons; descriptor does not itself validate these features.",
+      "feature_definition": "Nine OpenNeuro BIDS laser-evoked EEG experiments with trial intensity and subjective pain ratings; paper states raw EEG files and per-trial labels are available.",
+      "prediction_rationale": "Candidate public benchmark for testing proposed amplitude-envelope variance, SD, entropy or HFD against stimulus intensity and single-trial pain ratings; this is a proposed reuse, not the paper's reported model.",
+      "verified_result_metric": "Not a prediction paper. Descriptor reports LEP response increases with laser stimulus intensity and a similar relation to subjective ratings; no feature-family prediction metric verified.",
+      "prediction_target": "Trial-level reported pain rating / stimulus intensity, for proposed feature evaluation.",
+      "validation_design": "Data descriptor combines nine experiments and 678 healthy participants; no model validation design reported. OpenNeuro confirms BIDS EEG and pain-rating task files in ds005284 and ds005473.",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12405539/",
+      "open_access_status": "Freely readable full text in PMC / Scientific Data.",
+      "data_url": "https://openneuro.org/datasets/ds005284/versions/1.0.0 (paper additionally lists ds005285, ds005289, ds005286, ds005291, ds005293, ds005292, ds005280 and ds005473).",
+      "data_access_status": "public EEG verified",
+      "data_evidence": "Paper explicitly maps its nine experiments to OpenNeuro dataset DOIs, identifies subject-level raw .eeg/.bdf files and per-trial ratings; OpenNeuro pages fetched for ds005284 and ds005473 show EEG modality, downloadable BIDS files and laser pain rating instructions.",
+      "relevance_limitations": "Event-locked, high-density and heterogeneous acquisition; use event labels/baselines and appropriate channel mapping rather than unaligned five-second segments. No source validation of CVUE, Hjorth, entropy, HFD or >64-Hz features.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/complexity-envelope/laser-evoked-dataset-paper-pmc.md",
+        "eeg-variance-pain-literature/research/sources/complexity-envelope/laser-evoked-github-repository.md",
+        "eeg-variance-pain-literature/research/sources/complexity-envelope/laser-openneuro-ds005284.md",
+        "eeg-variance-pain-literature/research/sources/complexity-envelope/laser-openneuro-ds005473.md"
+      ],
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12405539/",
+        "https://openneuro.org/datasets/ds005284/versions/1.0.0",
+        "https://openneuro.org/datasets/ds005473/versions/1.0.0",
+        "https://github.com/XiangyueZhao/Supplement-Data"
+      ]
+    },
+    {
+      "title": "PhysioPain Dataset",
+      "authors": "Boran Toktay, İkbal Işık Orhan, Elif Yıldırım, Fatma Patlar Akbulut et al.",
+      "year": 2025,
+      "doi": "10.17632/mf2cgph9cy.4",
+      "item_type": "dataset",
+      "evidence_scope": "direct pain",
+      "feature_family": "Pain-labelled EEG-derived bands (not verified raw voltage EEG)",
+      "feature_definition": "Dataset contains pain questionnaire and EEG device outputs; paper describes MindWave brainwave bands sampled at 1 Hz and stored processed EEG by pain label/intensity. This supports only reanalysis of stored derived data, not recomputation of CVUE/HFD/entropy on raw samples.",
+      "prediction_rationale": "Potential baseline for pain-type/intensity classification using its published derived EEG-band series; raw-signal nonlinear-feature analysis is not supported by verified files.",
+      "verified_result_metric": "Dataset paper reports no validated prediction metric; data resource only.",
+      "prediction_target": "Pain type/intensity self-report (headache, back/neck/waist, menstrual, no-pain labels).",
+      "validation_design": "99 collected; paper says 6 excluded from core analytical cohort (n=93). Dataset page offers public download; no prediction validation design for this resource.",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12410463/",
+      "open_access_status": "Freely readable full text in PMC / Data in Brief.",
+      "data_url": "https://data.mendeley.com/datasets/mf2cgph9cy/4",
+      "data_access_status": "public derived data only",
+      "data_evidence": "Paper links its PhysioPain original-data record and a table identifies Mendeley DOI 10.17632/mf2cgph9cy.4; fetched Mendeley page offers a 1.16-GB CC BY 4.0 download and describes 99 participants, survey answers and raw/processed device exports. Paper characterizes EEG as 1-Hz MindWave band outputs, not verified continuous raw voltage.",
+      "relevance_limitations": "1-Hz derived band streams cannot reproduce beta-envelope CV, HFD or entropy on EEG waveform; likely unsuitable for event-level five-second EEG features. Do not overstate as public raw EEG.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/complexity-envelope/physiopain-paper-pmc.md",
+        "eeg-variance-pain-literature/research/sources/complexity-envelope/physiopain-mendeley-dataset.md"
+      ],
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12410463/",
+        "https://data.mendeley.com/datasets/mf2cgph9cy/4"
+      ]
+    },
+    {
+      "title": "Electroencephalography Signatures for Conditioned Pain Modulation and Pain Perception in Nonspecific Chronic Low Back Pain—An Exploratory Study",
+    "authors": "Paulo E. P. Teixeira et al.",
+      "year": 2022,
+      "doi": "10.1093/pm/pnab293",
+      "item_type": "paper",
+      "evidence_scope": "direct pain",
+      "feature_family": "EEG spectral signal strength (relative power), not CVUE/nonlinear complexity",
+      "feature_definition": "Resting-state absolute/relative delta–beta power per electrode, using 5-s FFT windows with 50% overlap; 30-patient cross-sectional chronic low-back-pain sample.",
+      "prediction_rationale": "Authors report central delta/theta relative power associations with self-reported pain when controlling for depression; transferable baseline signal-strength features, not a validated predictor.",
+      "verified_result_metric": "Authors say significant delta/theta EEG models explained approximately 20% of pain-score variability; separate CPM–pain model R²=0.12 and nonsignificant (p=.12). The EEG result is exploratory, not held-out accuracy.",
+      "prediction_target": "Seven-day average self-reported low-back-pain VAS; CPM was a separate target.",
+      "validation_design": "N=30 cross-sectional exploratory regressions with feature screening/backward selection; no external test set. EEG model includes mood/QST covariates.",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9125498/",
+      "open_access_status": "Freely readable full text in PMC.",
+      "data_url": "No linked public EEG repository verified.",
+      "data_access_status": "unverified",
+      "data_evidence": "Inspected full-text excerpt documents study and results but no verified linked public raw-EEG repository; source tables are not raw EEG.",
+      "relevance_limitations": "5-s windows and 1–40 Hz match the current pipeline; central channels include C3/C4/Cz, but paper also uses frontal/parietal sensors unavailable here. Tests relative power, not variance/CVUE/HFD/PE; no public raw data verified.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/complexity-envelope/chronic-low-back-pain-eeg-pmc.md"
+      ],
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9125498/"
+      ]
+    },
+    {
+      "title": "Pain and the Brain: A Systematic Review of Methods, EEG Biomarkers, Limitations, and Future Directions",
+      "authors": "Bayan Ahmad, Buket D. Barkana",
+      "year": 2025,
+      "doi": "10.3390/neurolint17040046",
+      "item_type": "review",
+      "evidence_scope": "direct pain",
+      "feature_family": "Review coverage includes spectral entropy, permutation entropy and multiscale sample entropy among pain-EEG methods.",
+      "feature_definition": "Narrative/systematic literature synthesis; no new EEG signal feature or dataset is produced.",
+      "prediction_rationale": "Useful map of candidate feature families and limitations; not evidence that any entropy is a validated pain predictor or top-weighted feature.",
+      "verified_result_metric": "Not applicable to the review as a new prediction model; reviewed study metrics were not independently recoded in this pass.",
+      "prediction_target": "Not applicable; review-level coverage of pain EEG methods.",
+      "validation_design": "Literature review; no model validation.",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12029872/",
+      "open_access_status": "Freely readable full text in PMC; open-access Neurology International review.",
+      "data_url": "Not applicable.",
+      "data_access_status": "not applicable",
+      "data_evidence": "Review article; no new participant EEG dataset.",
+      "relevance_limitations": "Review-level categorization is not primary evidence of feature performance; exact statement that theta permutation entropy is the highest weighted feature was not verified.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/complexity-envelope/pain-eeg-review-pmc.md"
+      ],
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12029872/"
+      ]
+    }
+  ],
+  "conflicts": [
+    "CVUE/Piqβ ≥10% is a source-proposed pilot threshold, not verified reliability: the 2022 proof-of-concept has n=4 chronic-pain and n=7 induced-pain/control participants, reports no CVUEβ–pain-intensity correlation, and lacks external validation; the 2024 pilot reports a chronic-group association but its raw data are not public. Neither source establishes universal sensitivity/specificity or test–retest reliability.",
+    "The 2022 no-intensity-correlation result and 2024 r=.69 result have different samples/designs and should not be collapsed into one replicated effect. 2024 R²=.47 is a source-reported within-sample relationship, not held-out model performance.",
+    "Theta permutation entropy as the highest weighted feature was not verified. The 2025 variability paper analyzes PE and temporal SD, reporting pain-discriminability correlations; no theta band, feature-weight ranking or classification weighting claim was found in the primary evidence inspected.",
+    "PhysioPain is openly downloadable and linked by its data paper, but its EEG exports are described as 1-Hz MindWave band data; this is not verified raw voltage EEG for computing CVUE/Hjorth/HFD/entropy. PainMonit was screened out because the cited dataset modalities do not include EEG."
+  ],
+  "gaps": [
+    "This verified pass yields a small set of relevant items, not 100; no padding or duplicate variants used. Only the laser-evoked OpenNeuro resource was verified here as public raw EEG with pain-linked single-trial ratings.",
+    "No publicly shared raw EEG was verified for either CVUE/Piqβ paper, and the 10% threshold needs independent calibration, reliability testing, sensitivity/specificity and external validation.",
+    "No pain-specific Hjorth study or sample-entropy prediction with public raw EEG was verified in this pass; theta-weighted permutation-entropy assertion remains unsubstantiated.",
+    "Pipeline channel limits exclude CVUE papers' FC5/T7/frontotemporal locations; HFD SCI work emphasizes frontal regions and imagined movement. LEP and temporal-SD evidence requires event-locked stimulus/baseline timing; 100-ms variability windows do not match unaligned 5-s windows.",
+    "At 128 Hz, Nyquist is 64 Hz, so >64-Hz high-gamma content is not representable; the current 1–40-Hz filter excludes it regardless. None of the verified CVUE sources supports extrapolation to >64-Hz activity."
+  ],
+  "sources": [
+    {
+      "type": "search",
+      "research_date": "2026-10-09",
+      "queries": [
+        "Which peer-reviewed EEG pain studies quantify amplitude envelope variance, coefficient of variation, CVUE, or Piq beta and report reliability or pain prediction results?",
+        "What pain EEG studies use Hjorth parameters, permutation entropy, sample entropy, or Higuchi fractal dimension, and what open EEG data are linked to them?",
+        "Which EEG pain datasets are openly downloadable with paper-linked evidence, especially thermal pain, laser pain, or pain intensity ratings?",
+        "Which open-access EEG signal prediction and nonlinear feature papers report theta permutation entropy as a weighted feature or CVUE at least 10 percent reliability?"
+      ]
+    },
+    {
+      "type": "primary article, open EEG repository, or dataset source",
+      "path": "eeg-variance-pain-literature/research/sources/complexity-envelope/cvue-piq-pilot-pmc.md",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11207749/"
+    },
+    {
+      "type": "primary article",
+      "path": "eeg-variance-pain-literature/research/sources/complexity-envelope/cvue-proof-of-concept-pmc.md",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9413583/"
+    },
+    {
+      "type": "primary article",
+      "path": "eeg-variance-pain-literature/research/sources/complexity-envelope/neural-variability-pain-pmc.md",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12574952/"
+    },
+    {
+      "type": "public derived-data repository",
+      "path": "eeg-variance-pain-literature/research/sources/complexity-envelope/neural-variability-osf-repository.md",
+      "url": "https://doi.org/10.17605/OSF.IO/QTV8A"
+    },
+    {
+      "type": "primary article",
+      "path": "eeg-variance-pain-literature/research/sources/complexity-envelope/higuchi-central-neuropathic-pain-pmc.md",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8427815/"
+    },
+    {
+      "type": "dataset descriptor",
+      "path": "eeg-variance-pain-literature/research/sources/complexity-envelope/laser-evoked-dataset-paper-pmc.md",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12405539/"
+    },
+    {
+      "type": "OpenNeuro data page",
+      "path": "eeg-variance-pain-literature/research/sources/complexity-envelope/laser-openneuro-ds005284.md",
+      "url": "https://openneuro.org/datasets/ds005284/versions/1.0.0"
+    },
+    {
+      "type": "OpenNeuro data page",
+      "path": "eeg-variance-pain-literature/research/sources/complexity-envelope/laser-openneuro-ds005473.md",
+      "url": "https://openneuro.org/datasets/ds005473/versions/1.0.0"
+    },
+    {
+      "type": "dataset descriptor",
+      "path": "eeg-variance-pain-literature/research/sources/complexity-envelope/physiopain-paper-pmc.md",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12410463/"
+    },
+    {
+      "type": "dataset repository",
+      "path": "eeg-variance-pain-literature/research/sources/complexity-envelope/physiopain-mendeley-dataset.md",
+      "url": "https://data.mendeley.com/datasets/mf2cgph9cy/4"
+    },
+    {
+      "type": "primary article",
+      "path": "eeg-variance-pain-literature/research/sources/complexity-envelope/chronic-low-back-pain-eeg-pmc.md",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9125498/"
+    },
+    {
+      "type": "review",
+      "path": "eeg-variance-pain-literature/research/sources/complexity-envelope/pain-eeg-review-pmc.md",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12029872/"
+    },
+    {
+      "type": "primary data-availability statement",
+      "path": "eeg-variance-pain-literature/research/sources/main-claim-0-tail.md",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11207749/"
+    }
+  ]
+}

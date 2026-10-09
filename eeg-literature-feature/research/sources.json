@@ -1,0 +1,2290 @@
+{
+  "R001": {
+    "title": "Detecting acute pain signals from human EEG",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7744433/",
+    "year": 2020,
+    "doi": "10.1016/j.jneumeth.2020.108964",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/pain-evidence/sun-2020-acute-pain-detector.md"
+    ],
+    "data_url": "https://osf.io/bsv86/",
+    "access_assessment": "Open text + public EEG verified"
+  },
+  "R002": {
+    "title": "Selective and replicable neuroimaging-based indicators of pain discriminability",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9798031/",
+    "year": 2022,
+    "doi": "10.1016/j.xcrm.2022.100846",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/signal-data/laser-evoked-pain-data-678-paper.md",
+      "eeg-variance-pain-literature/research/sources/signal-data/openneuro-ds005292-record.md",
+      "eeg-variance-pain-literature/research/sources/signal-data/pain-discriminability-replicability.md"
+    ],
+    "data_url": "https://openneuro.org/datasets/ds005292",
+    "access_assessment": "Open text + public EEG verified"
+  },
+  "R003": {
+    "title": "Chronic neuropathic pain: EEG data in eyes open and eyes closed with painDETECT and brief pain inventory reports",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10050461/",
+    "year": 2023,
+    "doi": "10.1016/j.dib.2023.109060",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/phase-coupling/zolezzi-2023-dataset.md"
+    ],
+    "data_url": "https://data.mendeley.com/datasets/yj52xrfgtz/4",
+    "access_assessment": "Open text + public EEG verified"
+  },
+  "R004": {
+    "title": "EEG frequency band analysis in chronic neuropathic pain: A linear and nonlinear approach to classify pain severity",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0169260723000160",
+    "year": 2023,
+    "doi": "10.1016/j.cmpb.2023.107349",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/gap-pain-data/zolezzi-2023-primary.md",
+      "eeg-variance-pain-literature/research/sources/gap-pain-data/mendeley-zolezzi-public-files.md"
+    ],
+    "data_url": "https://data.mendeley.com/datasets/yj52xrfgtz/4",
+    "access_assessment": "Open text + public EEG verified"
+  },
+  "R005": {
+    "title": "Interindividual variability and individual stability of pain- and touch-related neuronal gamma oscillations",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10396281/",
+    "year": 2023,
+    "doi": "10.1152/jn.00530.2021",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/pain-evidence/valentini-2023-gamma-stability.md"
+    ],
+    "data_url": "https://osf.io/jw8rv/",
+    "access_assessment": "Open text + public EEG verified"
+  },
+  "R006": {
+    "title": "Pain- and touch-related neuronal gamma oscillation EEG dataset (OSF jw8rv)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10396281/",
+    "year": 2023,
+    "doi": "",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/pain-evidence/valentini-2023-gamma-stability.md"
+    ],
+    "data_url": "https://osf.io/jw8rv/",
+    "access_assessment": "Open text + public EEG verified"
+  },
+  "R007": {
+    "title": "1/f in chronic pain: raw EEG datasets linked to the preregistered aperiodic analysis",
+    "url": "https://osf.io/qgfma/",
+    "year": 2024,
+    "doi": "",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/spectral-features/gil-avila-osf-raw-data.md",
+      "eeg-variance-pain-literature/research/sources/spectral-features/gil-avila-aperiodic-pain.md",
+      "eeg-variance-pain-literature/research/sources/spectral-features/gil-avila-srpbg.md",
+      "eeg-variance-pain-literature/research/sources/spectral-features/gil-avila-a8bpx.md"
+    ],
+    "data_url": "https://osf.io/qgfma/",
+    "access_assessment": "Open text + public EEG verified"
+  },
+  "R008": {
+    "title": "Resting-state electroencephalography delta and theta bands as compensatory oscillations in chronic neuropathic pain: a secondary data analysis",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11309019/",
+    "year": 2024,
+    "doi": "10.4103/bnm.bnm_17_24",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/gap-pain-data/barbosa-2024-primary.md",
+      "eeg-variance-pain-literature/research/sources/gap-pain-data/mendeley-zolezzi-public-files.md"
+    ],
+    "data_url": "https://data.mendeley.com/datasets/yj52xrfgtz/4",
+    "access_assessment": "Open text + public EEG verified"
+  },
+  "R009": {
+    "title": "Resting-state frontal electroencephalography (EEG) biomarkers for detecting the severity of chronic neuropathic pain",
+    "url": "https://www.nature.com/articles/s41598-024-71219-3",
+    "year": 2024,
+    "doi": "10.1038/s41598-024-71219-3",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/phase-coupling/ryu-2024.md",
+      "eeg-variance-pain-literature/research/sources/phase-coupling/zolezzi-2023-dataset.md"
+    ],
+    "data_url": "https://data.mendeley.com/datasets/yj52xrfgtz/4",
+    "access_assessment": "Open text + public EEG verified"
+  },
+  "R010": {
+    "title": "A comprehensive EEG dataset of laser-evoked potentials for pain research",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12405539/",
+    "year": 2025,
+    "doi": "10.1038/s41597-025-05900-1",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/complexity-envelope/laser-evoked-dataset-paper-pmc.md",
+      "eeg-variance-pain-literature/research/sources/complexity-envelope/laser-evoked-github-repository.md",
+      "eeg-variance-pain-literature/research/sources/complexity-envelope/laser-openneuro-ds005284.md",
+      "eeg-variance-pain-literature/research/sources/complexity-envelope/laser-openneuro-ds005473.md",
+      "eeg-variance-pain-literature/research/sources/pain-evidence/zhao-2025-lep-dataset.md",
+      "eeg-variance-pain-literature/research/sources/phase-coupling/laser-eeg-dataset-2025.md",
+      "eeg-variance-pain-literature/research/sources/signal-data/laser-evoked-pain-data-678-paper.md",
+      "eeg-variance-pain-literature/research/sources/signal-data/openneuro-ds005292-record.md"
+    ],
+    "data_url": "https://openneuro.org/datasets/ds005284",
+    "access_assessment": "Open text + public EEG verified"
+  },
+  "R011": {
+    "title": "Assessing the balance between excitation and inhibition in chronic pain through the aperiodic component of EEG",
+    "url": "https://elifesciences.org/articles/101727",
+    "year": 2025,
+    "doi": "10.7554/elife.101727",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/spectral-features/gil-avila-aperiodic-pain.md",
+      "eeg-variance-pain-literature/research/sources/spectral-features/gil-avila-osf-raw-data.md"
+    ],
+    "data_url": "https://osf.io/qgfma/",
+    "access_assessment": "Open text + public EEG verified"
+  },
+  "R012": {
+    "title": "Assessing the predictive value of peak alpha frequency for the sensitivity to pain",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12363489/",
+    "year": 2025,
+    "doi": "10.1097/j.pain.0000000000003571",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/pain-evidence/may-2025-paf-pain.md"
+    ],
+    "data_url": "https://osf.io/s75q6/",
+    "access_assessment": "Open text + public EEG verified"
+  },
+  "R013": {
+    "title": "Brain mediators of pain (OSF bsv86)",
+    "url": "https://osf.io/bsv86/",
+    "year": 2025,
+    "doi": "",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/pain-evidence/sun-2020-acute-pain-detector.md"
+    ],
+    "data_url": "https://osf.io/bsv86/",
+    "access_assessment": "Open text + public EEG verified"
+  },
+  "R014": {
+    "title": "Comprehensive laser-evoked potential EEG dataset (nine OpenNeuro experiments)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12405539/",
+    "year": 2025,
+    "doi": "10.18112/openneuro.ds005284.v1.0.0",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/pain-evidence/zhao-2025-lep-dataset.md"
+    ],
+    "data_url": "https://openneuro.org/datasets/ds005284; https://openneuro.org/datasets/ds005285; https://openneuro.org/datasets/ds005289; https://openneuro.org/datasets/ds005286; https://openneuro.org/datasets/ds005291; https://openneuro.org/datasets/ds005293; https://openneuro.org/datasets/ds005292; https://openneuro.org/datasets/ds005280; https://openneuro.org/datasets/ds005473",
+    "access_assessment": "Open text + public EEG verified"
+  },
+  "R015": {
+    "title": "OpenNeuro ds005280 — 223 participants; Brain Products; laser EEG with trialwise ratings, low/high stimuli",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12405539/",
+    "year": 2025,
+    "doi": "",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/signal-data/laser-evoked-pain-data-678-paper.md",
+      "eeg-variance-pain-literature/research/sources/signal-data/openneuro-ds005280-record.md"
+    ],
+    "data_url": "https://openneuro.org/datasets/ds005280",
+    "access_assessment": "Open text + public EEG verified"
+  },
+  "R016": {
+    "title": "OpenNeuro ds005284 — 26 participants; BioSemi; public laser EEG with pain stimuli",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12405539/",
+    "year": 2025,
+    "doi": "",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/signal-data/laser-evoked-pain-data-678-paper.md",
+      "eeg-variance-pain-literature/research/sources/signal-data/openneuro-ds005284-record.md"
+    ],
+    "data_url": "https://openneuro.org/datasets/ds005284",
+    "access_assessment": "Open text + public EEG verified"
+  },
+  "R017": {
+    "title": "OpenNeuro ds005285 — 29 participants; ANT; laser EEG experiment 2",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12405539/",
+    "year": 2025,
+    "doi": "",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/signal-data/laser-evoked-pain-data-678-paper.md"
+    ],
+    "data_url": "https://openneuro.org/datasets/ds005285",
+    "access_assessment": "Open text + public EEG verified"
+  },
+  "R018": {
+    "title": "OpenNeuro ds005286 — 30 participants; ANT; laser EEG, verbal trialwise pain ratings; README flags laser markers delayed by 100 ms",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12405539/",
+    "year": 2025,
+    "doi": "",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/signal-data/laser-evoked-pain-data-678-paper.md",
+      "eeg-variance-pain-literature/research/sources/signal-data/openneuro-ds005286-record.md"
+    ],
+    "data_url": "https://openneuro.org/datasets/ds005286",
+    "access_assessment": "Open text + public EEG verified"
+  },
+  "R019": {
+    "title": "OpenNeuro ds005289 — 39 participants; Brain Products; laser EEG with pain and unpleasantness ratings",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12405539/",
+    "year": 2025,
+    "doi": "",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/signal-data/laser-evoked-pain-data-678-paper.md",
+      "eeg-variance-pain-literature/research/sources/signal-data/openneuro-ds005289-record.md"
+    ],
+    "data_url": "https://openneuro.org/datasets/ds005289",
+    "access_assessment": "Open text + public EEG verified"
+  },
+  "R020": {
+    "title": "OpenNeuro ds005291 — 65 participants; ANT; laser EEG, verbal pain ratings; README flags laser markers delayed by 100 ms",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12405539/",
+    "year": 2025,
+    "doi": "",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/signal-data/laser-evoked-pain-data-678-paper.md",
+      "eeg-variance-pain-literature/research/sources/signal-data/openneuro-ds005291-record.md"
+    ],
+    "data_url": "https://openneuro.org/datasets/ds005291",
+    "access_assessment": "Open text + public EEG verified"
+  },
+  "R021": {
+    "title": "OpenNeuro ds005292 — 142 participants; BioSemi; laser EEG with trialwise ratings, low/high stimuli",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12405539/",
+    "year": 2025,
+    "doi": "",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/signal-data/laser-evoked-pain-data-678-paper.md",
+      "eeg-variance-pain-literature/research/sources/signal-data/openneuro-ds005292-record.md"
+    ],
+    "data_url": "https://openneuro.org/datasets/ds005292",
+    "access_assessment": "Open text + public EEG verified"
+  },
+  "R022": {
+    "title": "OpenNeuro ds005293 — 95 participants; Brain Products; laser EEG with pain ratings for four intensity levels",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12405539/",
+    "year": 2025,
+    "doi": "",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/signal-data/laser-evoked-pain-data-678-paper.md",
+      "eeg-variance-pain-literature/research/sources/signal-data/openneuro-ds005293-record.md"
+    ],
+    "data_url": "https://openneuro.org/datasets/ds005293",
+    "access_assessment": "Open text + public EEG verified"
+  },
+  "R023": {
+    "title": "OpenNeuro ds005473 — 29 participants; Brain Products; Aδ/C nociceptor laser EEG experiment",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12405539/",
+    "year": 2025,
+    "doi": "",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/signal-data/laser-evoked-pain-data-678-paper.md",
+      "eeg-variance-pain-literature/research/sources/signal-data/openneuro-ds005473-record.md"
+    ],
+    "data_url": "https://openneuro.org/datasets/ds005473",
+    "access_assessment": "Open text + public EEG verified"
+  },
+  "R024": {
+    "title": "Peak-alpha-frequency laser pain EEG dataset (OSF s75q6)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12363489/",
+    "year": 2025,
+    "doi": "",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/pain-evidence/may-2025-paf-pain.md"
+    ],
+    "data_url": "https://osf.io/s75q6/",
+    "access_assessment": "Open text + public EEG verified"
+  },
+  "R025": {
+    "title": "Intra- and Inter-individual Differences of Pain - Data",
+    "url": "https://osf.io/z2h86/",
+    "year": 2026,
+    "doi": "10.17605/osf.io/z2h86",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/pain-evidence/tiemann-2025-neural-encoding.md"
+    ],
+    "data_url": "https://osf.io/z2h86/",
+    "access_assessment": "Open text + public EEG verified"
+  },
+  "R026": {
+    "title": "Neural encoding of pain is robust within but unstable between individuals",
+    "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003948",
+    "year": 2026,
+    "doi": "10.1371/journal.pbio.3003948",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/pain-evidence/tiemann-2025-neural-encoding.md"
+    ],
+    "data_url": "https://osf.io/z2h86/",
+    "access_assessment": "Open text + public EEG verified"
+  },
+  "R027": {
+    "title": "Determinants of Laser-Evoked EEG Responses: Pain Perception or Stimulus Saliency?",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2525705/",
+    "year": 2008,
+    "doi": "10.1152/jn.00097.2008",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/pain-evidence/iannetti-2008-laser-saliency.md"
+    ],
+    "data_url": null,
+    "access_assessment": "Public data not verified"
+  },
+  "R028": {
+    "title": "EEG Indices of Tonic Pain-Related Activity in the Somatosensory Cortices",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2676940/",
+    "year": 2008,
+    "doi": "10.1016/j.clinph.2008.01.019",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/pain-evidence/dowman-2008-tonic-pain.md"
+    ],
+    "data_url": null,
+    "access_assessment": "Public data not verified"
+  },
+  "R029": {
+    "title": "Pre-stimulus alpha power affects vertex N2-P2 potentials evoked by noxious stimuli",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/18355634/",
+    "year": 2008,
+    "doi": "10.1016/j.brainresbull.2007.09.009",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/pain-evidence/babiloni-2008-prestim-alpha.md"
+    ],
+    "data_url": null,
+    "access_assessment": "Publication access not verified"
+  },
+  "R030": {
+    "title": "Taking into account latency, amplitude, and morphology: improved estimation of single-trial ERPs by wavelet filtering and multiple linear regression",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3234084/",
+    "year": 2011,
+    "doi": "10.1152/jn.00220.2011",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/pain-evidence/hu-2011-single-trial-lep.md"
+    ],
+    "data_url": null,
+    "access_assessment": "Public data not verified"
+  },
+  "R031": {
+    "title": "Gamma-Band Oscillations in the Primary Somatosensory Cortex—A Direct and Obligatory Correlate of Subjective Pain Intensity",
+    "url": "https://www.jneurosci.org/content/32/22/7429",
+    "year": 2012,
+    "doi": "10.1523/jneurosci.5877-11.2012",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/pain-evidence/zhang-2012-gamma.md"
+    ],
+    "data_url": null,
+    "access_assessment": "Public data not verified"
+  },
+  "R032": {
+    "title": "Tonic pain and continuous EEG: Prediction of subjective pain perception by alpha-1 power during stimulation and at rest",
+    "url": "https://pure.johnshopkins.edu/en/publications/tonic-pain-and-continuous-eeg-prediction-of-subjective-pain-perce-3",
+    "year": 2012,
+    "doi": "10.1016/j.clinph.2011.08.006",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/pain-evidence/nir-2012-tonic-alpha.md"
+    ],
+    "data_url": null,
+    "access_assessment": "Publication access not verified"
+  },
+  "R033": {
+    "title": "A novel approach to predict subjective pain perception from single-trial laser-evoked potentials",
+    "url": "https://doi.org/10.1016/j.neuroimage.2013.05.017",
+    "year": 2013,
+    "doi": "10.1016/j.neuroimage.2013.05.017",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/pain-evidence/huang-2013-primary-abstract.md",
+      "eeg-variance-pain-literature/research/sources/pain-evidence/huang-2013-search.json"
+    ],
+    "data_url": null,
+    "access_assessment": "Publication access not verified"
+  },
+  "R034": {
+    "title": "Brain oscillations differentially encode noxious stimulus intensity and pain intensity",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5349759/",
+    "year": 2017,
+    "doi": "10.1016/j.neuroimage.2017.01.011",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/pain-evidence/nickel-2017-tonic-oscillations.md"
+    ],
+    "data_url": null,
+    "access_assessment": "Public data not verified"
+  },
+  "R035": {
+    "title": "Magnitude and Temporal Variability of Inter-stimulus EEG Modulate the Linear Relationship Between Laser-Evoked Potentials and Fast-Pain Perception",
+    "url": "https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2018.00340/full",
+    "year": 2018,
+    "doi": "10.3389/fnins.2018.00340",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/pain-evidence/interstimulus-2018-lep-prediction.md"
+    ],
+    "data_url": null,
+    "access_assessment": "Public data not verified"
+  },
+  "R036": {
+    "title": "Brain dysfunction in chronic pain patients assessed by resting-state electroencephalography",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7195856/",
+    "year": 2020,
+    "doi": "10.1097/j.pain.0000000000001666",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/phase-coupling/hohn-2020-chronic-pain-fc.md"
+    ],
+    "data_url": "Not public; request to authors",
+    "access_assessment": "Does not meet public-data requirement"
+  },
+  "R037": {
+    "title": "Markers of Central Neuropathic Pain in Higuchi Fractal Analysis of EEG Signals From People With Spinal Cord Injury",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8427815/",
+    "year": 2021,
+    "doi": "10.3389/fnins.2021.705652",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/complexity-envelope/higuchi-central-neuropathic-pain-pmc.md"
+    ],
+    "data_url": "No linked public raw EEG repository verified.",
+    "access_assessment": "Public data not verified"
+  },
+  "R038": {
+    "title": "Accurate classification of pain experiences using wearable electroencephalography in adolescents with and without chronic musculoskeletal pain",
+    "url": "https://www.frontiersin.org/journals/pain-research/articles/10.3389/fpain.2022.991793/full",
+    "year": 2022,
+    "doi": "10.3389/fpain.2022.991793",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/phase-coupling/teel-2022-wpli-pain.md"
+    ],
+    "data_url": "Not provided as a repository link",
+    "access_assessment": "Does not meet public-data requirement"
+  },
+  "R039": {
+    "title": "Electroencephalography Signatures for Conditioned Pain Modulation and Pain Perception in Nonspecific Chronic Low Back Pain—An Exploratory Study",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9125498/",
+    "year": 2022,
+    "doi": "10.1093/pm/pnab293",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/complexity-envelope/chronic-low-back-pain-eeg-pmc.md"
+    ],
+    "data_url": "No linked public EEG repository verified.",
+    "access_assessment": "Public data not verified"
+  },
+  "R040": {
+    "title": "Towards the Objective Identification of the Presence of Pain Based on Electroencephalography Signals’ Analysis: A Proof-of-Concept",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9413583/",
+    "year": 2022,
+    "doi": "10.3390/s22166272",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/complexity-envelope/cvue-proof-of-concept-pmc.md",
+      "eeg-variance-pain-literature/research/sources/pain-evidence/segning-2022-cvue.md",
+      "eeg-variance-pain-literature/research/sources/signal-data/cvue-pain-proof-of-concept.md",
+      "eeg-variance-pain-literature/research/sources/spectral-features/segning-cvue-pain.md"
+    ],
+    "data_url": null,
+    "access_assessment": "Public data not verified"
+  },
+  "R041": {
+    "title": "A systematic review of neurophysiological sensing for the assessment of acute pain",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10133304/",
+    "year": 2023,
+    "doi": "10.1038/s41746-023-00810-1",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/signal-data/acute-pain-neurophys-review.md"
+    ],
+    "data_url": "not applicable",
+    "access_assessment": "Public data not verified"
+  },
+  "R042": {
+    "title": "External validation of binary machine learning models for pain intensity perception classification from EEG in healthy individuals",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9816165/",
+    "year": 2023,
+    "doi": "10.1038/s41598-022-27298-1",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/signal-data/external-validation-binary-pain-eeg.md",
+      "eeg-variance-pain-literature/research/sources/spectral-features/mari-osf-uqt9z.md",
+      "eeg-variance-pain-literature/research/sources/spectral-features/mari-pain-validation.md"
+    ],
+    "data_url": "https://osf.io/uqt9z/",
+    "access_assessment": "Public data not verified"
+  },
+  "R043": {
+    "title": "The Analysis of Spontaneous Electroencephalogram (EEG) in Chronic Low Back Pain Patients Compared with Healthy Subjects",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10843364/",
+    "year": 2023,
+    "doi": "10.47176/mjiri.37.128",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/spectral-features/bemani-clbp-alpha.md"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R044": {
+    "title": "An Innovative EEG-Based Pain Identification and Quantification: A Pilot Study",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11207749/",
+    "year": 2024,
+    "doi": "10.3390/s24123873",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/complexity-envelope/cvue-piq-pilot-pmc.md",
+      "eeg-variance-pain-literature/research/sources/complexity-envelope/piq-pilot-publisher.md",
+      "eeg-variance-pain-literature/research/sources/main-claim-0-tail.md",
+      "eeg-variance-pain-literature/research/sources/signal-data/piq-beta-pain-pilot.md"
+    ],
+    "data_url": "Not public; article reports data cannot be publicly shared owing to confidentiality and an ongoing patent application.",
+    "access_assessment": "Does not meet public-data requirement"
+  },
+  "R045": {
+    "title": "Exploring electroencephalographic chronic pain biomarkers: a mega-analysis",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12517086/",
+    "year": 2025,
+    "doi": "10.1016/j.ebiom.2025.105955",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/phase-coupling/bott-2025.md"
+    ],
+    "data_url": "Not located in verified sources",
+    "access_assessment": "Public data not verified"
+  },
+  "R046": {
+    "title": "Multimodal insights into diverse pain experiences: PhysioPain dataset",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12410463/",
+    "year": 2025,
+    "doi": "10.1016/j.dib.2025.111992",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/spectral-features/physiopain-paper.md",
+      "eeg-variance-pain-literature/research/sources/spectral-features/physiopain-mendeley.md"
+    ],
+    "data_url": "https://data.mendeley.com/datasets/mf2cgph9cy/4",
+    "access_assessment": "Open text + public derived data only"
+  },
+  "R047": {
+    "title": "Neural variability reliably encodes interindividual differences in the perception of pain intensity",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12574952/",
+    "year": 2025,
+    "doi": "10.1371/journal.pbio.3003470",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/complexity-envelope/neural-variability-osf-repository.md",
+      "eeg-variance-pain-literature/research/sources/complexity-envelope/neural-variability-pain-pmc.md",
+      "eeg-variance-pain-literature/research/sources/signal-data/neural-variability-pain-plos.md"
+    ],
+    "data_url": "https://doi.org/10.17605/OSF.IO/QTV8A",
+    "access_assessment": "Open text + public derived data only"
+  },
+  "R048": {
+    "title": "Pain and the Brain: A Systematic Review of Methods, EEG Biomarkers, Limitations, and Future Directions",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12029872/",
+    "year": 2025,
+    "doi": "10.3390/neurolint17040046",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/complexity-envelope/pain-eeg-review-pmc.md"
+    ],
+    "data_url": "Not applicable.",
+    "access_assessment": "Public data not verified"
+  },
+  "R049": {
+    "title": "PhysioPain Dataset",
+    "url": "https://data.mendeley.com/datasets/mf2cgph9cy/4",
+    "year": 2025,
+    "doi": "10.17632/mf2cgph9cy.4",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/complexity-envelope/physiopain-mendeley-dataset.md",
+      "eeg-variance-pain-literature/research/sources/complexity-envelope/physiopain-paper-pmc.md",
+      "eeg-variance-pain-literature/research/sources/spectral-features/physiopain-mendeley.md",
+      "eeg-variance-pain-literature/research/sources/spectral-features/physiopain-paper.md"
+    ],
+    "data_url": "https://data.mendeley.com/datasets/mf2cgph9cy/4",
+    "access_assessment": "Open text + public derived data only"
+  },
+  "R050": {
+    "title": "Normative Modeling of EEG Complexity Reveals Cortical Rigidity Associated with Pain Severity in Chronic Pain",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13499553/",
+    "year": "2026",
+    "doi": "10.2147/jpr.s604974",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC13499553.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R051": {
+    "title": "Predicting Pain: Electroencephalography Signatures of Neural Integration During Experimental Tonic Thermal Pain",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13317760/",
+    "year": 2026,
+    "doi": "10.1002/ejp.70313",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/phase-coupling/han-2026.md",
+      "eeg-variance-pain-literature/research/sources/phase-coupling/han-osf-access-check.md"
+    ],
+    "data_url": "https://osf.io/2mqtb/files/osfstorage",
+    "access_assessment": "Public data not verified"
+  },
+  "R052": {
+    "title": "EEGdenoiseNet",
+    "url": "https://github.com/ncclabsustech/EEGdenoiseNet",
+    "year": 2021,
+    "doi": "",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/signal-data/eegdenoisenet-repository.md",
+      "eeg-variance-pain-literature/research/sources/signal-data/eegdenoisenet-paper.md"
+    ],
+    "data_url": "https://github.com/ncclabsustech/EEGdenoiseNet",
+    "access_assessment": "Open text + public EEG verified"
+  },
+  "R053": {
+    "title": "EEGdenoiseNet benchmark code",
+    "url": "https://github.com/ncclabsustech/EEGdenoiseNet",
+    "year": 2021,
+    "doi": "",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/signal-data/eegdenoisenet-repository.md",
+      "eeg-variance-pain-literature/research/sources/signal-data/eegdenoisenet-paper.md"
+    ],
+    "data_url": "https://github.com/ncclabsustech/EEGdenoiseNet",
+    "access_assessment": "Open text + public EEG verified"
+  },
+  "R054": {
+    "title": "EEGdenoiseNet: a benchmark dataset for deep learning solutions of EEG denoising",
+    "url": "https://iopscience.iop.org/article/10.1088/1741-2552/ac2bf8/meta",
+    "year": 2021,
+    "doi": "10.1088/1741-2552/ac2bf8",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/signal-data/eegdenoisenet-paper.md",
+      "eeg-variance-pain-literature/research/sources/signal-data/eegdenoisenet-repository.md"
+    ],
+    "data_url": "https://github.com/ncclabsustech/EEGdenoiseNet",
+    "access_assessment": "Open text + public EEG verified"
+  },
+  "R055": {
+    "title": "DeepSeparator reference implementation",
+    "url": "https://github.com/ncclabsustech/DeepSeparator",
+    "year": 2022,
+    "doi": "",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/signal-data/deepseparator-repository.md",
+      "eeg-variance-pain-literature/research/sources/signal-data/deepseparator-paper.md"
+    ],
+    "data_url": "https://github.com/ncclabsustech/EEGdenoiseNet",
+    "access_assessment": "Open text + public EEG verified"
+  },
+  "R056": {
+    "title": "Embedding decomposition for artifacts removal in EEG signals (DeepSeparator)",
+    "url": "https://iopscience.iop.org/article/10.1088/1741-2552/ac63eb",
+    "year": 2022,
+    "doi": "10.1088/1741-2552/ac63eb",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/signal-data/deepseparator-paper.md",
+      "eeg-variance-pain-literature/research/sources/signal-data/deepseparator-repository.md",
+      "eeg-variance-pain-literature/research/sources/signal-data/eegdenoisenet-paper.md",
+      "eeg-variance-pain-literature/research/sources/signal-data/eegdenoisenet-repository.md"
+    ],
+    "data_url": "https://github.com/ncclabsustech/EEGdenoiseNet",
+    "access_assessment": "Open text + public EEG verified"
+  },
+  "R057": {
+    "title": "Test-retest reliability of spectral parameterization by 1/f characterization using SpecParam",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10793580/",
+    "year": 2023,
+    "doi": "10.1093/cercor/bhad482",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/gap-public-methods/specparam-pmc-study.md",
+      "eeg-variance-pain-literature/research/sources/gap-public-methods/openneuro-ds004148.md"
+    ],
+    "data_url": "https://openneuro.org/datasets/ds004148/versions/1.0.1",
+    "access_assessment": "Open text + public EEG verified"
+  },
+  "R058": {
+    "title": "Test-Retest Reliability of Single Spectral Power and Spectral Power Ratios in Relative and Absolute Values",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12589806/",
+    "year": 2025,
+    "doi": "10.1002/brb3.71035",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/gap-public-methods/chang-2025-spectral-ratio-reliability.md",
+      "eeg-variance-pain-literature/research/sources/gap-public-methods/openneuro-ds004148.md"
+    ],
+    "data_url": "https://doi.org/10.18112/openneuro.ds004148.v1.0.1 ; https://doi.org/10.18112/openneuro.ds003478.v1.1.0",
+    "access_assessment": "Open text + public EEG verified"
+  },
+  "R059": {
+    "title": "Reproducibility of Functional Connectivity and Graph Measures Based on the Phase Lag Index (PLI) and Weighted Phase Lag Index (wPLI) Derived from High Resolution EEG",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4186758/",
+    "year": 2014,
+    "doi": "10.1371/journal.pone.0108648",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/phase-coupling/hardmeier-2014-pli-reliability.md"
+    ],
+    "data_url": "Not located in verified sources",
+    "access_assessment": "Public data not verified"
+  },
+  "R060": {
+    "title": "An Intelligence EEG Signal Recognition Method via Noise Insensitive TSK Fuzzy System Based on Interclass Competitive Learning",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7499470/",
+    "year": "2020",
+    "doi": "10.3389/fnins.2020.00837",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC7499470.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R061": {
+    "title": "Electrophysiological Frequency Band Ratio Measures Conflate Periodic and Aperiodic Neural Activity",
+    "url": "https://www.eneuro.org/content/7/6/ENEURO.0192-20.2020",
+    "year": 2020,
+    "doi": "10.1523/eneuro.0192-20.2020",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/spectral-features/donoghue-band-ratio.md"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R062": {
+    "title": "Parameterizing neural power spectra into periodic and aperiodic components",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8106550/",
+    "year": 2020,
+    "doi": "10.1038/s41593-020-00744-x",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/spectral-features/donoghue-spectral-parameterization.md"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R063": {
+    "title": "Electrophysiological aftereffects of high-frequency transcranial random noise stimulation (hf-tRNS): an EEG investigation",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8354881/",
+    "year": "2021",
+    "doi": "10.1007/s00221-021-06142-4",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC8354881.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R064": {
+    "title": "Quantifying Signal Quality From Unimodal and Multimodal Sources: Application to EEG With Ocular and Motion Artifacts",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7906969/",
+    "year": "2021",
+    "doi": "10.3389/fnins.2021.566004",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC7906969.json"
+    ],
+    "data_url": "https://www.github.com/dbp-osel/EEG-quality",
+    "access_assessment": "Public data not verified"
+  },
+  "R065": {
+    "title": "Auto-Denoising for EEG Signals Using Generative Adversarial Network",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8914841/",
+    "year": "2022",
+    "doi": "10.3390/s22051750",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC8914841.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R066": {
+    "title": "Denoising EEG Signals for Real-World BCI Applications Using GANs",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10790876/",
+    "year": 2022,
+    "doi": "10.3389/fnrgo.2021.805573",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/signal-data/gan-eeg-denoising.md"
+    ],
+    "data_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10790876/#SM1",
+    "access_assessment": "Does not meet public-data requirement"
+  },
+  "R067": {
+    "title": "Time-resolved parameterization of aperiodic and periodic brain activity",
+    "url": "https://elifesciences.org/articles/77348",
+    "year": 2022,
+    "doi": "10.7554/elife.77348",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/spectral-features/wilson-sprint.md"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R068": {
+    "title": "A general dual-pathway network for EEG denoising",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10847297/",
+    "year": "2023",
+    "doi": "10.3389/fnins.2023.1258024",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC10847297.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R069": {
+    "title": "Connectivity Analysis in EEG Data: A Tutorial Review of the State of the Art and Emerging Trends",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10044923/",
+    "year": 2023,
+    "doi": "10.3390/bioengineering10030372",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/phase-coupling/chiarion-2023-connectivity-review.md"
+    ],
+    "data_url": "Not applicable",
+    "access_assessment": "Public data not verified"
+  },
+  "R070": {
+    "title": "DISCOVER-EEG: an open, fully automated EEG pipeline for biomarker discovery in clinical neuroscience",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10495446/",
+    "year": 2023,
+    "doi": "10.1038/s41597-023-02525-0",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/phase-coupling/discover-eeg-2023-software.md",
+      "eeg-variance-pain-literature/research/sources/spectral-features/discover-eeg.md"
+    ],
+    "data_url": "Not applicable (software item; input datasets are external)",
+    "access_assessment": "Public data not verified"
+  },
+  "R071": {
+    "title": "EEG Phase Can Be Predicted with Similar Accuracy across Cognitive States after Accounting for Power and Signal-to-Noise Ratio",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10481640/",
+    "year": "2023",
+    "doi": "10.1523/eneuro.0050-23.2023",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC10481640.json"
+    ],
+    "data_url": "https://github.com/CogNeW/project_eeg_public_dataset",
+    "access_assessment": "Public data not verified"
+  },
+  "R072": {
+    "title": "Literature review of stroke assessment for upper-extremity physical function via EEG, EMG, kinematic, and kinetic measurements and their reliability",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9930366/",
+    "year": "2023",
+    "doi": "10.1186/s12984-023-01142-7",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC9930366.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R073": {
+    "title": "Noise characteristics in spaceflight multichannel EEG",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9937484/",
+    "year": "2023",
+    "doi": "10.1371/journal.pone.0280822",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC9937484.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R074": {
+    "title": "Quantitative Electroencephalography Markers for an Accurate Diagnosis of Frontotemporal Dementia: A Spectral Power Ratio Approach",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10744364/",
+    "year": "2023",
+    "doi": "10.3390/medicina59122155",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC10744364.json"
+    ],
+    "data_url": "https://openneuro.org/datasets/ds004504/versions/1.0.2",
+    "access_assessment": "Public data not verified"
+  },
+  "R075": {
+    "title": "Advancing the reporting of pediatric EEG data: Tools for estimating reliability, effect size, and data quality metrics",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11565042/",
+    "year": "2024",
+    "doi": "10.1016/j.dcn.2024.101458",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC11565042.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R076": {
+    "title": "AnEEG: leveraging deep learning for effective artifact removal in EEG data",
+    "url": "https://www.nature.com/articles/s41598-024-75091-z",
+    "year": 2024,
+    "doi": "10.1038/s41598-024-75091-z",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/signal-data/aneeg-denoising-paper.md"
+    ],
+    "data_url": "unverified",
+    "access_assessment": "Public data not verified"
+  },
+  "R077": {
+    "title": "EEG biomarkers in Alzheimer’s and prodromal Alzheimer’s: a comprehensive analysis of spectral and connectivity features",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11515355/",
+    "year": "2024",
+    "doi": "10.1186/s13195-024-01582-w",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC11515355.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R078": {
+    "title": "Microstate Analysis of Continuous Infant EEG: Tutorial and Reliability",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11199263/",
+    "year": "2024",
+    "doi": "10.1007/s10548-024-01043-5",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC11199263.json"
+    ],
+    "data_url": "https://openneuro.org/datasets/ds004635",
+    "access_assessment": "Public data not verified"
+  },
+  "R079": {
+    "title": "Resting-State EEG Alterations of Practice-Related Spectral Activity and Connectivity Patterns in Depression",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11428598/",
+    "year": "2024",
+    "doi": "10.3390/biomedicines12092054",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC11428598.json"
+    ],
+    "data_url": "https://openneuro.org",
+    "access_assessment": "Public data not verified"
+  },
+  "R080": {
+    "title": "Signal quality evaluation of an in-ear EEG device in comparison to a conventional cap system",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11420159/",
+    "year": "2024",
+    "doi": "10.3389/fnins.2024.1441897",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC11420159.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R081": {
+    "title": "Test-retest reliability of EEG microstate metrics for evaluating noise reductions in simultaneous EEG-fMRI",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12290594/",
+    "year": "2024",
+    "doi": "10.1162/imag_a_00272",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC12290594.json"
+    ],
+    "data_url": "https://github.com/atr-iine/joint_decorrelation_for_phase-locked_artifact_attenuation",
+    "access_assessment": "Public data not verified"
+  },
+  "R082": {
+    "title": "A comparative study of EEG functional and effective connectivity patterns in children with learning difficulties during reading and math tasks",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12411729/",
+    "year": "2025",
+    "doi": "10.3389/fnins.2025.1612884",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC12411729.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R083": {
+    "title": "A Multi-Branch Network for Integrating Spatial, Spectral, and Temporal Features in Motor Imagery EEG Classification",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12384646/",
+    "year": "2025",
+    "doi": "10.3390/brainsci15080877",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC12384646.json"
+    ],
+    "data_url": "https://www.physionet.org/content/eegmmidb/get-zip/1.0.0/",
+    "access_assessment": "Public data not verified"
+  },
+  "R084": {
+    "title": "A multi-graph convolutional network method for Alzheimer’s disease diagnosis based on multi-frequency EEG data with dual-mode connectivity",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12263931/",
+    "year": "2025",
+    "doi": "10.3389/fnins.2025.1555657",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC12263931.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R085": {
+    "title": "Adaptive multi-scale phase-aware fusion network for EEG seizure recognition",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12340438/",
+    "year": "2025",
+    "doi": "10.3389/fneur.2025.1631064",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC12340438.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R086": {
+    "title": "Adversarial denoising of EEG signals: a comparative analysis of standard GAN and WGAN-GP approaches",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12089060/",
+    "year": "2025",
+    "doi": "10.3389/fnhum.2025.1583342",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC12089060.json"
+    ],
+    "data_url": "https://openneuro.org/datasets/ds004362/versions/1.0.0",
+    "access_assessment": "Public data not verified"
+  },
+  "R087": {
+    "title": "Artifact-reference multivariate backward regression (ARMBR): a novel method for EEG blink artifact removal with minimal data requirements",
+    "url": "https://iopscience.iop.org/article/10.1088/1741-2552/ade566/meta",
+    "year": 2025,
+    "doi": "10.1088/1741-2552/ade566",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/gap-public-methods/armbr-paper-iop.md",
+      "eeg-variance-pain-literature/research/sources/gap-public-methods/armbr-validation-details.md",
+      "eeg-variance-pain-literature/research/sources/gap-public-methods/armbr-osf-eeg-derived-files.md"
+    ],
+    "data_url": "https://osf.io/th2g6/ (semi-synthetic signal files); implementation: https://github.com/S-Shah-Lab/ARMBR",
+    "access_assessment": "Open text + public derived data only"
+  },
+  "R088": {
+    "title": "Assessing the Role of EEG Biosignal Preprocessing to Enhance Multiscale Fuzzy Entropy in Alzheimer’s Disease Detection",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12190283/",
+    "year": "2025",
+    "doi": "10.3390/bios15060374",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC12190283.json"
+    ],
+    "data_url": "https://github.com/ipis-mjkim/caueeg-dataset",
+    "access_assessment": "Public data not verified"
+  },
+  "R089": {
+    "title": "Confronting the connectivity crisis in human M/EEG research",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7619133/",
+    "year": "2025",
+    "doi": "10.1016/j.tics.2025.09.001",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC7619133.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R090": {
+    "title": "DHCT-GAN: Improving EEG Signal Quality with a Dual-Branch Hybrid CNN–Transformer Network",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11723461/",
+    "year": "2025",
+    "doi": "10.3390/s25010231",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC11723461.json"
+    ],
+    "data_url": "https://github.com/ncclabsustech/EEGdenoiseNet",
+    "access_assessment": "Public data not verified"
+  },
+  "R091": {
+    "title": "Discovery of EEG effective connectivity during visual motor imagery with multi-scale symbolic transfer entropy",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12578988/",
+    "year": "2025",
+    "doi": "10.1038/s41598-025-22143-7",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC12578988.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R092": {
+    "title": "Dynamic brain network modulation by paced breathing and breath-holding: an EEG-based functional connectivity study",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12711548/",
+    "year": "2025",
+    "doi": "10.3389/fphys.2025.1722715",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC12711548.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R093": {
+    "title": "EEG Complexity Analysis of Psychogenic Non-Epileptic and Epileptic Seizures Using Entropy and Machine Learning",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12564079/",
+    "year": "2025",
+    "doi": "10.3390/e27101044",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC12564079.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R094": {
+    "title": "EEG microstate and functional connectivity analyses for differentiating suicide attempt from suicidal ideation in major depressive disorder",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12707185/",
+    "year": "2025",
+    "doi": "10.1139/jpn-25-0078",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC12707185.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R095": {
+    "title": "Enhancing Alzheimer’s Diagnosis with Machine Learning on EEG: A Spectral Feature-Based Comparative Analysis",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12428020/",
+    "year": "2025",
+    "doi": "10.3390/diagnostics15172190",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC12428020.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R096": {
+    "title": "Entropy Analysis of Electroencephalography for Post-Stroke Dysphagia Assessment",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12385819/",
+    "year": "2025",
+    "doi": "10.3390/e27080818",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC12385819.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R097": {
+    "title": "Evaluating EEG complexity and spectral signatures in Alzheimer’s disease and frontotemporal dementia: evidence for rostrocaudal asymmetry",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12149297/",
+    "year": "2025",
+    "doi": "10.1038/s41514-025-00243-y",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC12149297.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R098": {
+    "title": "Evaluating EEG-to-text models through noise-based performance analysis",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12770527/",
+    "year": "2025",
+    "doi": "10.1038/s41598-025-29587-x",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC12770527.json"
+    ],
+    "data_url": "https://github.com/khu-aims/EEG-To-Text",
+    "access_assessment": "Public data not verified"
+  },
+  "R099": {
+    "title": "Exploring physical and functional EEG connectivity with multilayer graph transformer convolutional networks for emotion recognition",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12833301/",
+    "year": "2025",
+    "doi": "10.3389/fnhum.2025.1715410",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC12833301.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R100": {
+    "title": "Gradients in signal complexity of sleep-wake intracerebral EEG",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11957301/",
+    "year": "2025",
+    "doi": "10.1371/journal.pone.0320648",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC11957301.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R101": {
+    "title": "Graph-theoretical analysis of EEG-based functional connectivity during emotional experience in virtual reality for emotion recognition",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12618519/",
+    "year": "2025",
+    "doi": "10.1038/s41598-025-23573-z",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC12618519.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R102": {
+    "title": "Impact of age-related hearing loss on decompensation of left DLPFC during speech perception in noise: a combined EEG-fNIRS study",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11979022/",
+    "year": "2025",
+    "doi": "10.1007/s11357-024-01393-9",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC11979022.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R103": {
+    "title": "Improving EEG classification of alcoholic and control subjects using DWT-CNN-BiGRU with various noise filtering techniques",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12401955/",
+    "year": "2025",
+    "doi": "10.3389/fninf.2025.1618050",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC12401955.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R104": {
+    "title": "Integrating fMRI spatial network dynamics and EEG spectral power: insights into resting state connectivity",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11810936/",
+    "year": "2025",
+    "doi": "10.3389/fnins.2025.1484954",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC11810936.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R105": {
+    "title": "Intra- and Inter-Regional Complexity in Multi-Channel Awake EEG Through Multivariate Multiscale Dispersion Entropy for Assessing Sleep Quality and Aging",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12024975/",
+    "year": "2025",
+    "doi": "10.3390/bios15040240",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC12024975.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R106": {
+    "title": "Lightweight EEG Phase Prediction Based on Channel Attention and Spatio-Temporal Parallel Processing",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12838940/",
+    "year": "2025",
+    "doi": "10.3390/brainsci16010011",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC12838940.json"
+    ],
+    "data_url": "https://github.com/BMHLab/TEPs-MEPs",
+    "access_assessment": "Public data not verified"
+  },
+  "R107": {
+    "title": "LRR ‐ UNet : A Deep Unfolding Network With Low‐Rank Recovery for EEG Signal Denoising",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12559029/",
+    "year": "2025",
+    "doi": "10.1111/cns.70632",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC12559029.json"
+    ],
+    "data_url": "https://github.com/ncclabsustech/EEGdenoiseNet",
+    "access_assessment": "Public data not verified"
+  },
+  "R108": {
+    "title": "Motor imagery EEG classification via wavelet-packet synthetic augmentation and entropy-based channel selection",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12641008/",
+    "year": "2025",
+    "doi": "10.3389/fnins.2025.1689647",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC12641008.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R109": {
+    "title": "Reevaluating the neural noise in dyslexia using biomarkers from electroencephalography and high-resolution magnetic resonance spectroscopy",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11875536/",
+    "year": "2025",
+    "doi": "10.7554/elife.99920",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC11875536.json"
+    ],
+    "data_url": "https://osf.io/4e7ps/",
+    "access_assessment": "Public data not verified"
+  },
+  "R110": {
+    "title": "Reliability and state-dependency of EEG connectivity, complexity and network characteristics",
+    "url": "https://www.nature.com/articles/s41598-025-23662-z",
+    "year": 2025,
+    "doi": "10.1038/s41598-025-23662-z",
+    "tier": 1,
+    "review_level": "Study/access evidence reviewed; see individual limitations",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/phase-coupling/van-dellen-2025-connectivity-reliability.md"
+    ],
+    "data_url": "Not located in verified sources",
+    "access_assessment": "Public data not verified"
+  },
+  "R111": {
+    "title": "The electroencephalography protocol for the Accelerating Medicines Partnership® Schizophrenia Program: Reliability and stability of measures",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12144291/",
+    "year": "2025",
+    "doi": "10.1038/s41537-025-00622-0",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC12144291.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R112": {
+    "title": "Tracking dynamic EEG connectivity in schizophrenia and bipolar disorder",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12572171/",
+    "year": "2025",
+    "doi": "10.1038/s41598-025-21747-3",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC12572171.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R113": {
+    "title": "A computational pipeline for a neurotransmitter-centric analysis of the effects of psychiatric medication on EEG spectral power",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13328094/",
+    "year": "2026",
+    "doi": "10.3389/fpsyt.2026.1737357",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC13328094.json"
+    ],
+    "data_url": "https://github.com/rwth-imi/Drug_induced_spectral_changes_TUH",
+    "access_assessment": "Public data not verified"
+  },
+  "R114": {
+    "title": "A Cross-Subject Band-Power Complexity Metric for Detecting Mental Fatigue Through EEG",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12938332/",
+    "year": "2026",
+    "doi": "10.3390/brainsci16020199",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC12938332.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R115": {
+    "title": "A Dual-Branch Spatiotemporal Framework with Dynamic Weighted Permutation Entropy for Short-Window Motor Imagery EEG Decoding",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13364447/",
+    "year": "2026",
+    "doi": "10.3390/s26134101",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC13364447.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R116": {
+    "title": "A novel deep learning model for objective quantification of generalized anxiety disorder severity using EEG functional connectivity",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12957247/",
+    "year": "2026",
+    "doi": "10.3389/fpsyt.2026.1764932",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC12957247.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R117": {
+    "title": "A Novel Depression Recognition Network Based on Brain Functional Connectivity from Prefrontal Emotional State EEG",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13406410/",
+    "year": "2026",
+    "doi": "10.3390/brainsci16070746",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC13406410.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R118": {
+    "title": "A principal component entropy metric for assessing global synchronicity in EEG signals",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12957513/",
+    "year": "2026",
+    "doi": "10.1038/s41598-026-36434-0",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC12957513.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R119": {
+    "title": "Adaptive frequency band attention-guided CNN–BiLSTM for Spatial–Spectral–Temporal EEG emotion recognition",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13507023/",
+    "year": "2026",
+    "doi": "10.1186/s40708-026-00319-9",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC13507023.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R120": {
+    "title": "Alteration of functional connectivity and network properties after stereo-electroencephalography guided radiofrequency thermocoagulation",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12980985/",
+    "year": "2026",
+    "doi": "10.1186/s41016-026-00428-8",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC12980985.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R121": {
+    "title": "Altered spectral patterns of aperiodic electroencephalography in autism",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13139815/",
+    "year": "2026",
+    "doi": "10.1111/pcn.70044",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC13139815.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R122": {
+    "title": "Alzheimer’s Disease Detection Using Combined EEG Source Connectivity and Microstate Features",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13511316/",
+    "year": "2026",
+    "doi": "10.3390/brainsci16080856",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC13511316.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R123": {
+    "title": "Anti‐Seizure Medications Alter Functional and Effective Connectivity as Measured With Intracranial Electroencephalography",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13240049/",
+    "year": "2026",
+    "doi": "10.1002/brb3.71507",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC13240049.json"
+    ],
+    "data_url": "https://github.com/sakkol/CCEP_ASM_connectivity",
+    "access_assessment": "Public data not verified"
+  },
+  "R124": {
+    "title": "Architecture-data matching for EEG-EMG decoding: compact deep models match classical spectral decoders on the WAY-EEG-GAL grasp-and-lift dataset",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13429724/",
+    "year": "2026",
+    "doi": "10.3389/fnins.2026.1874302",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC13429724.json"
+    ],
+    "data_url": "https://github.com/osmar235/eeg-emg-architecture-data-matching",
+    "access_assessment": "Public data not verified"
+  },
+  "R125": {
+    "title": "Associations between self-reported interoception and resting-state EEG markers in panic disorder: heartbeat-evoked potentials and spectral power",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13334908/",
+    "year": "2026",
+    "doi": "10.1186/s40359-026-04736-7",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC13334908.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R126": {
+    "title": "Clustered pattern projection for EEG dementia classification: evaluating the reliability of disorder patterns",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13469650/",
+    "year": "2026",
+    "doi": "10.3389/fnins.2026.1871265",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC13469650.json"
+    ],
+    "data_url": "https://openneuro.org/datasets/ds004504/versions/1.0.8",
+    "access_assessment": "Public data not verified"
+  },
+  "R127": {
+    "title": "Comparing aperiodic activity in consumer-grade and research-grade EEG: Reliability and association with mathematical ability",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12775036/",
+    "year": "2026",
+    "doi": "10.3758/s13428-025-02905-x",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC12775036.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R128": {
+    "title": "Depression Detection from Three-Channel Resting-State EEG Using a Hybrid Conv1D and Spectral–Statistical Fusion Model",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12987048/",
+    "year": "2026",
+    "doi": "10.3390/s26051417",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC12987048.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R129": {
+    "title": "Diagnosing Epilepsy using Entropy Measures and Embedding Parameters of EEG Signals",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13263383/",
+    "year": "2026",
+    "doi": "10.31661/jbpe.v0i0.2402-1720",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC13263383.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R130": {
+    "title": "EEG CONNECT : A proposed reporting checklist for EEG ‐based connectivity studies in clinical epilepsy research",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13487411/",
+    "year": "2026",
+    "doi": "10.1002/epi4.70343",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC13487411.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R131": {
+    "title": "EEG Connectivity Signatures in Migraine and Tension-Type Headache: A Multimethod ROI-Based Functional Connectivity and Machine-Learning Analysis",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13467108/",
+    "year": "2026",
+    "doi": "10.3390/jcm15156046",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC13467108.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R132": {
+    "title": "EEG functional connectivity for Parkinson’s disease diagnosis and non-motor symptom prediction: a machine learning approach",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13624067/",
+    "year": "2026",
+    "doi": "10.3389/fnhum.2026.1921946",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC13624067.json"
+    ],
+    "data_url": "https://github.com/FanzunMeng/EEG-FC-PD-Diagnosis-and-Symptom-Prediction.git",
+    "access_assessment": "Public data not verified"
+  },
+  "R133": {
+    "title": "EEG microstates and dynamic functional connectivity reveal stage-specific brain networks in subjective tinnitus",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13452246/",
+    "year": "2026",
+    "doi": "10.1016/j.isci.2026.116995",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC13452246.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R134": {
+    "title": "EEG-based classification of alzheimer’s disease and frontotemporal dementia using functional connectivity",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12873302/",
+    "year": "2026",
+    "doi": "10.1038/s41598-026-35316-9",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC12873302.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R135": {
+    "title": "EEG-based emotion recognition using phase-space reconstruction with Poincaré sections: a study on the AMIGOS dataset",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13290899/",
+    "year": "2026",
+    "doi": "10.3389/fnhum.2026.1660402",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC13290899.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R136": {
+    "title": "EEG-DBNet: a dual-branch framework for temporal-spectral representation learning of motor imagery electroencephalography",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13391462/",
+    "year": "2026",
+    "doi": "10.1186/s40708-026-00321-1",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC13391462.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R137": {
+    "title": "Effective Connectivity-based Unsupervised Channel Selection Method for Electroencephalography",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13274949/",
+    "year": "2026",
+    "doi": "10.4103/jmss.jmss_55_25",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC13274949.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R138": {
+    "title": "Emotion recognition using spectral-spatial attention multi-temporal scale network: EEG study",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13272739/",
+    "year": "2026",
+    "doi": "10.1186/s40708-026-00309-x",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC13272739.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R139": {
+    "title": "Enhanced EEG Emotion Recognition Using MIMO-Based Denoising and Band-Wise Attention Graph Neural Network",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12943892/",
+    "year": "2026",
+    "doi": "10.3390/s26041133",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC12943892.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R140": {
+    "title": "Entropy-Based Analysis of Olfactory EEG as a Candidate Biomarker for Early Mild Cognitive Impairment Detection: A Proof-of-Concept Study",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13604161/",
+    "year": "2026",
+    "doi": "10.3390/bios16090504",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC13604161.json"
+    ],
+    "data_url": "https://data.mendeley.com/datasets/sgzbgwjfkr/5",
+    "access_assessment": "Public data not verified"
+  },
+  "R141": {
+    "title": "Entropy-Based Dual-Teacher Distillation for Efficient Motor Imagery EEG Classification",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13026056/",
+    "year": "2026",
+    "doi": "10.3390/e28030310",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC13026056.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R142": {
+    "title": "Exploring Nociceptive–Analgesic Balance and EEG Modulation Patterns During General Anesthesia Using Holo‐Hilbert Spectral Analysis",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12867002/",
+    "year": "2026",
+    "doi": "10.1155/prm/5504074",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC12867002.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R143": {
+    "title": "Functional connectivity study on visually evoked auditory response based on high-density electroencephalography",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12883636/",
+    "year": "2026",
+    "doi": "10.3389/fnins.2026.1691902",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC12883636.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R144": {
+    "title": "Impact of Recording Conditions and Feature Fusion on Dementia Classification Using Spectral, Entropy, and Complexity EEG Features",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13605554/",
+    "year": "2026",
+    "doi": "10.3390/e28091034",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC13605554.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R145": {
+    "title": "Individualized prediction of heroin cue-induced craving using task-based EEG functional connectivity",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13396468/",
+    "year": "2026",
+    "doi": "10.1038/s41746-026-02948-0",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC13396468.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R146": {
+    "title": "Integrating attractor dynamics and connectivity features for EEG-based dementia classification",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13057247/",
+    "year": "2026",
+    "doi": "10.1038/s41598-026-41745-3",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC13057247.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R147": {
+    "title": "Interpretable Spectral Features for Cross-Session EEG Biometric Identification and Verification",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13469576/",
+    "year": "2026",
+    "doi": "10.3390/s26154811",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC13469576.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R148": {
+    "title": "Long-term reliability and stability of parameterized resting state EEG: evidence from a five-year follow-up",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13456336/",
+    "year": "2026",
+    "doi": "10.1093/cercor/bhag113",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC13456336.json"
+    ],
+    "data_url": "https://github.com/MindSpaceLab/Aperiodic_Test_Retest_5year",
+    "access_assessment": "Public data not verified"
+  },
+  "R149": {
+    "title": "Measuring motor intent for BCI control–A comparative analysis of signal quality of simultaneously recorded vECoG and scalp EEG",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13584699/",
+    "year": "2026",
+    "doi": "10.1088/1741-2552/ae9eef",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC13584699.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R150": {
+    "title": "Microbaric oxygen therapy modulates EEG microstates and spectral power in patients with chronic insomnia disorder",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13126995/",
+    "year": "2026",
+    "doi": "10.1186/s12888-026-07994-2",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC13126995.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R151": {
+    "title": "NeuroStat: An Open-Source EEG Connectivity Platform for Randomised Controlled Trials",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13364487/",
+    "year": "2026",
+    "doi": "10.3390/s26134019",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC13364487.json"
+    ],
+    "data_url": "https://github.com/ghani097/NeuroStat-for-RCTs",
+    "access_assessment": "Public data not verified"
+  },
+  "R152": {
+    "title": "NeuroStream: spectral-spatio-temporal deep learning for visual stimulus classification from EEG",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13569483/",
+    "year": "2026",
+    "doi": "10.1038/s41598-026-68186-2",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC13569483.json"
+    ],
+    "data_url": "https://github.com/perceivelab/eeg_visual_classification",
+    "access_assessment": "Public data not verified"
+  },
+  "R153": {
+    "title": "Noise-robust temporal–spectral fusion transformers for EEG-based cognitive state classification in aviation environments",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13392987/",
+    "year": "2026",
+    "doi": "10.3389/fdata.2026.1837706",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC13392987.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R154": {
+    "title": "Preoperative frontal EEG power spectral features associated with psychomotor subtypes of postoperative delirium in cardiovascular surgery: a prospective study",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13171878/",
+    "year": "2026",
+    "doi": "10.1038/s41598-026-46109-5",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC13171878.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R155": {
+    "title": "Primary Somatosensory to Motor Cortex Microstructural Connectivity Predicts the Mu‐Rhythm Phase Effect on Corticospinal Excitability: An EEG ‐ TMS Study",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13581075/",
+    "year": "2026",
+    "doi": "10.1002/hbm.70576",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC13581075.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R156": {
+    "title": "Quantitative EEG signatures of power and functional connectivity alterations in Alzheimer’s disease and frontotemporal dementia",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13076725/",
+    "year": "2026",
+    "doi": "10.1038/s41598-026-42452-9",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC13076725.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R157": {
+    "title": "Resting-State EEG Characteristics of Tardive Dyskinesia: Spectral and Network Connectivity Insights",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13292849/",
+    "year": "2026",
+    "doi": "10.2147/ndt.s595872",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC13292849.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R158": {
+    "title": "Resting-state EEG default mode network connectivity and suicidal ideation in depressive disorders: a retrospective cross-sectional study",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13508222/",
+    "year": "2026",
+    "doi": "10.1186/s12888-026-08312-6",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC13508222.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R159": {
+    "title": "Resting-State EEG Functional Connectivity and Independent Correlates of Cognitive Impairment in Patients with Atrial Fibrillation",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13477156/",
+    "year": "2026",
+    "doi": "10.2147/ndt.s607557",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC13477156.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R160": {
+    "title": "SE-Driven Dynamic Convolution for Adaptive EEG-Based Driver Fatigue Detection Across Spectral, Spatial, and Temporal Domains",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13165855/",
+    "year": "2026",
+    "doi": "10.3390/s26092728",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC13165855.json"
+    ],
+    "data_url": "https://doi.org/10.6084/m9.figshare.6427334.v5",
+    "access_assessment": "Public data not verified"
+  },
+  "R161": {
+    "title": "Shared Spectral Parameters Between EEG and Basal Ganglia LFP Distinguish Sleep‐Specific Oscillations in Parkinson's Disease",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13519526/",
+    "year": "2026",
+    "doi": "10.1111/ene.70733",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC13519526.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R162": {
+    "title": "Spectral and Directed Connectivity EEG Markers for Classifying Alzheimer’s Disease, Frontotemporal Dementia, and Healthy Controls with Exploratory Photobiomodulation Case-Study Projection",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13568113/",
+    "year": "2026",
+    "doi": "10.3390/s26175530",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC13568113.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R163": {
+    "title": "Stability‐Driven Selection of EEG Connectivity Features for Psychosis Classification: A Network‐Based Machine Learning Approach",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13240269/",
+    "year": "2026",
+    "doi": "10.1002/cns.70943",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC13240269.json"
+    ],
+    "data_url": "https://openneuro.org/datasets/ds004000/versions/1.0.0",
+    "access_assessment": "Public data not verified"
+  },
+  "R164": {
+    "title": "Static and Dynamic Resting‐State fMRI Connectivity Show Frequency‐Resolved Associations With Intracranial EEG Connectivity",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13625044/",
+    "year": "2026",
+    "doi": "10.1002/hbm.70646",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC13625044.json"
+    ],
+    "data_url": "https://github.com/rashnavadi/Static-and-dynamic-resting-state-fMRI-icEEG-FC",
+    "access_assessment": "Public data not verified"
+  },
+  "R165": {
+    "title": "Structured multi-domain EEG descriptors with phase-based connectivity for lie and truth detection",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13452325/",
+    "year": "2026",
+    "doi": "10.1016/j.mex.2026.104077",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC13452325.json"
+    ],
+    "data_url": "https://github.com/dutarisurya/lie-truth-eeg-descriptor",
+    "access_assessment": "Public data not verified"
+  },
+  "R166": {
+    "title": "Subject-Wise Depression Screening from Eight-Channel Resting-State EEG Using Asymmetry-Aware Spectral Features and Connectivity Ablation",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13210619/",
+    "year": "2026",
+    "doi": "10.3390/s26103065",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC13210619.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R167": {
+    "title": "Task-Oriented Semantic Feature Transmission for Robust EEG Motor Imagery Decoding Under Additive White Gaussian Noise",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13611534/",
+    "year": "2026",
+    "doi": "10.3390/s26185728",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC13611534.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R168": {
+    "title": "Test-retest reliability analysis of resting-state EEG measures and their association with long-term memory in children and adults",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13130526/",
+    "year": "2026",
+    "doi": "10.1162/imag.a.1224",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC13130526.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R169": {
+    "title": "Theta-band EEG functional connectivity during emotional music in disorders of consciousness: wPLI differences between MCS and UWS",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13043408/",
+    "year": "2026",
+    "doi": "10.3389/fneur.2026.1777525",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC13043408.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R170": {
+    "title": "Topographic Reorganization of EEG Complexity During Visual Mental Imagery: Insights from Lempel-Ziv Complexity in High-Density EEG",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13388782/",
+    "year": "2026",
+    "doi": "10.1007/s10548-026-01238-y",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC13388782.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  },
+  "R171": {
+    "title": "Toward precision EEG: assessing the reliability of individual-level ERPs across EEG systems",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13102848/",
+    "year": "2026",
+    "doi": "10.3389/fnhum.2026.1763477",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC13102848.json"
+    ],
+    "data_url": "https://osf.io/7dsqk/overview",
+    "access_assessment": "Public data not verified"
+  },
+  "R172": {
+    "title": "Transformer-Based Modeling of Directed Transfer Entropy Connectivity for EEG-Based ADHD Classification in Children",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13611253/",
+    "year": "2026",
+    "doi": "10.3390/s26185786",
+    "tier": 1,
+    "review_level": "Supplementary automated bibliographic/access screen; study/data not independently reviewed",
+    "evidence_paths": [
+      "eeg-variance-pain-literature/research/sources/bibliographic-screen/PMC13611253.json"
+    ],
+    "data_url": "",
+    "access_assessment": "Public data not verified"
+  }
+}

@@ -1,0 +1,802 @@
+{
+  "items": [
+    {
+      "title": "Neural variability reliably encodes interindividual differences in the perception of pain intensity",
+      "authors": "Zhang et al.",
+      "year": 2025,
+      "doi": "10.1371/journal.pbio.3003470",
+      "item_type": "paper",
+      "evidence_scope": "direct pain",
+      "feature_family": "Temporal response variance / standard deviation",
+      "feature_definition": "Temporal SD of EEG responses; primary variability measure in 100-ms sliding windows, compared with evoked-response amplitude.",
+      "prediction_rationale": "Inference: response variability can add information about between-person differences in pain-intensity discriminability beyond mean evoked amplitude.",
+      "verified_result_metric": "Authors report robust, replicated correlations with pain-intensity discriminability across six EEG datasets (N=633); no numeric coefficient copied here.",
+      "prediction_target": "Between-person pain intensity discriminability (difference in mean ratings for low vs high stimuli).",
+      "validation_design": "Association replicated across several EEG datasets; multiple sensory modalities and patient/healthy cohorts; not a prospectively held-out clinical prediction model.",
+      "article_url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003470",
+      "open_access_status": "Open-access full text (PLOS CC BY).",
+      "data_url": "https://doi.org/10.17605/OSF.IO/QTV8A",
+      "data_access_status": "unverified",
+      "data_evidence": "Article states data and code are on OSF; repository content could not be independently inspected, so raw-vs-derived EEG availability is not verified.",
+      "relevance_limitations": "Directly relevant variance evidence, but per-stimulus 100-ms variability and inter-individual discrimination differ from 5-s resting-window features; source interpretation is association, not a validated predictor. No use of spectral feature interpretation.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/signal-data/neural-variability-pain-plos.md"
+      ],
+      "source_urls": [
+        "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003470",
+        "https://doi.org/10.17605/OSF.IO/QTV8A"
+      ]
+    },
+    {
+      "title": "Selective and replicable neuroimaging-based indicators of pain discriminability",
+      "authors": "Zhang et al.",
+      "year": 2022,
+      "doi": "10.1016/j.xcrm.2022.100846",
+      "item_type": "paper",
+      "evidence_scope": "direct pain",
+      "feature_family": "Evoked-potential response amplitude and latency; pain AUC",
+      "feature_definition": "Differences in N2/P2 peak amplitude and latency; signal-detection-theory AUC operationalizes an individual’s pain discriminability.",
+      "prediction_rationale": "Inference: evoked EEG response features may estimate how sensitively an individual distinguishes pain intensity, not moment-to-moment pain itself.",
+      "verified_result_metric": "LASSO-predicted AUC correlated with measured pain AUC: Pearson r=0.536 in Dataset 1 and r=0.423 in Dataset 2 (both p<0.0001). These are correlations, not R²/accuracy.",
+      "prediction_target": "Individual pain-intensity discriminability (AUC).",
+      "validation_design": "Three EEG cohorts (N=114,111,141); exploratory Dataset 1 and replication in Datasets 2/3; pain-selectivity assessed against non-pain sensory modalities.",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9798031/",
+      "open_access_status": "Open-access full text (PMC; CC BY-NC-ND).",
+      "data_url": "https://openneuro.org/datasets/ds005292",
+      "data_access_status": "public EEG verified",
+      "data_evidence": "Linked EEG dataset paper lists raw BIDS records including ds005292; this specific data page describes trialwise pain ratings.",
+      "relevance_limitations": "Peak-based, stimulus-locked feature design requires event-aligned epochs and broad scalp electrodes; article’s AUC target is not a pain rating forecast and its evidence is not based on 5-s resting windows.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/signal-data/pain-discriminability-replicability.md",
+        "eeg-variance-pain-literature/research/sources/signal-data/laser-evoked-pain-data-678-paper.md",
+        "eeg-variance-pain-literature/research/sources/signal-data/openneuro-ds005292-record.md"
+      ],
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9798031/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12405539/",
+        "https://openneuro.org/datasets/ds005292"
+      ]
+    },
+    {
+      "title": "External validation of binary machine learning models for pain intensity perception classification from EEG in healthy individuals",
+      "authors": "Mari et al.",
+      "year": 2023,
+      "doi": "10.1038/s41598-022-27298-1",
+      "item_type": "paper",
+      "evidence_scope": "direct pain",
+      "feature_family": "Single-trial time-frequency EEG features",
+      "feature_definition": "Peri-stimulus, single-trial time-frequency features over selected frontal, central and parietal electrodes.",
+      "prediction_rationale": "Inference: independent-sample validation tests whether pain-intensity patterns generalize beyond the training cohort and stimulation protocol.",
+      "verified_result_metric": "Random Forest accuracy: 73.18% cross-validation, 68.32% external validation with identical stimulation, 60.42% external validation with changed stimulation. Accuracy only; no variance-explained claim.",
+      "prediction_target": "Low versus high experimental pain intensity.",
+      "validation_design": "Study 1 n=25 training/cross-validation; study 2 n=15 external validation, with a second changed stimulation protocol.",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9816165/",
+      "open_access_status": "Open-access full text (PMC; CC BY 4.0).",
+      "data_url": "unverified",
+      "data_access_status": "unverified",
+      "data_evidence": "Paper describes two experimental datasets but no publicly accessible raw EEG repository was verified in its Data Availability statement in the captured article.",
+      "relevance_limitations": "Event-locked features and frontal/parietal channels; not directly reproduced by C3/C4/Cz-only, 1–40-Hz, 5-s windows. Cross-validation and external performance differ materially.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/signal-data/external-validation-binary-pain-eeg.md"
+      ],
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9816165/"
+      ]
+    },
+    {
+      "title": "An Innovative EEG-Based Pain Identification and Quantification: A Pilot Study",
+      "authors": "Segning et al.",
+      "year": 2024,
+      "doi": "10.3390/s24123873",
+      "item_type": "paper",
+      "evidence_scope": "direct pain",
+      "feature_family": "Envelope coefficient of variation / signal-strength variability",
+      "feature_definition": "Average coefficient of variation of the Hilbert-derived upper envelope in beta (13–30 Hz), termed Piqβ; recordings at rest and repeated pain report every 30 s.",
+      "prediction_rationale": "Authors propose beta-envelope variability as an objective pain-presence/magnitude indicator; inference: windowed amplitude dispersion is a plausible pain-related signal-strength feature.",
+      "verified_result_metric": "Authors report proposed Piqβ threshold ≥10% for pain presence and qualitatively higher Piqβ with greater pain; no verified accuracy, correlation coefficient, R² or external validation.",
+      "prediction_target": "Pain presence and magnitude / self-reported pain intensity.",
+      "validation_design": "Pilot groups: 7 healthy with pain, 15 experimentally induced thermal pain, 66 chronic-pain participants; repeated ratings; threshold proposed from study, no independent validation stated.",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11207749/",
+      "open_access_status": "Open-access full text (PMC; CC BY).",
+      "data_url": "unverified",
+      "data_access_status": "unverified",
+      "data_evidence": "Captured article provides participant/method/result information but no verified public raw EEG repository link.",
+      "relevance_limitations": "Uses contralateral motor electrodes and beta-band envelope, not a validated generic variance predictor; 30-s ratings/window timing do not align to a 5-s model; only 13–30 Hz overlaps pipeline passband.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/signal-data/piq-beta-pain-pilot.md"
+      ],
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11207749/"
+      ]
+    },
+    {
+      "title": "Towards the Objective Identification of the Presence of Pain Based on Electroencephalography Signals’ Analysis: A Proof-of-Concept",
+      "authors": "Segning et al.",
+      "year": 2022,
+      "doi": "10.3390/s22166272",
+      "item_type": "paper",
+      "evidence_scope": "direct pain",
+      "feature_family": "Envelope coefficient of variation across EEG bands",
+      "feature_definition": "Coefficient of variation of Hilbert upper envelope (CVUE) from FC5 and T7 in alpha, beta and gamma bands.",
+      "prediction_rationale": "Authors proposed higher CVUEβ as a candidate indicator of pain presence; inference: variability in envelope amplitude may complement absolute signal amplitude.",
+      "verified_result_metric": "Authors report CVUEβ rose up to 20% in pain at rest, but found no correlation with pain intensity or task performance; no classification accuracy or predictive R² verified.",
+      "prediction_target": "Pain presence (group/condition); pain intensity examined as a separate correlate.",
+      "validation_design": "Proof-of-concept: 4 chronic fibromyalgia participants and 7 healthy volunteers exposed to capsaicin; baseline and active/task conditions, small sample.",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9413583/",
+      "open_access_status": "Open-access full text (PMC; CC BY).",
+      "data_url": "unverified",
+      "data_access_status": "unverified",
+      "data_evidence": "No public raw EEG dataset link verified in captured article.",
+      "relevance_limitations": "FC5/T7 are frontal-temporal channels absent from pipeline; gamma upper edge 43 Hz partly excluded by 40-Hz filter; condition/timing and small N limit transfer. The source explicitly reports no CVUEβ–pain-intensity correlation.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/signal-data/cvue-pain-proof-of-concept.md"
+      ],
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9413583/"
+      ]
+    },
+    {
+      "title": "A systematic review of neurophysiological sensing for the assessment of acute pain",
+      "authors": "Fernandez Rojas et al.",
+      "year": 2023,
+      "doi": "10.1038/s41746-023-00810-1",
+      "item_type": "review",
+      "evidence_scope": "direct pain",
+      "feature_family": "Review of EEG response strength/variability and prediction designs",
+      "feature_definition": "Synthesizes acute-pain neurophysiological sensing, EEG feature engineering, and classification/regression studies from 2013–July 2022.",
+      "prediction_rationale": "Inference: useful as a map of candidate labels, feature definitions and study designs; does not itself validate a signal-strength feature.",
+      "verified_result_metric": "Review included 48 studies overall; no single pooled EEG variance/SNR effect or pooled prediction metric verified.",
+      "prediction_target": "Acute pain assessment across reviewed studies.",
+      "validation_design": "Systematic literature review; search July 2022; review-level evidence, not an independent validation cohort.",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10133304/",
+      "open_access_status": "Open-access full text (PMC; CC BY 4.0).",
+      "data_url": "not applicable",
+      "data_access_status": "not applicable",
+      "data_evidence": "Review article; no new raw EEG data.",
+      "relevance_limitations": "Broad sensing review includes non-EEG modalities and feature-focused studies; use only EEG-specific entries and do not treat review totals as EEG-only.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/signal-data/acute-pain-neurophys-review.md"
+      ],
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10133304/"
+      ]
+    },
+    {
+      "title": "Denoising EEG Signals for Real-World BCI Applications Using GANs",
+      "authors": "Brophy et al.",
+      "year": 2022,
+      "doi": "10.3389/fnrgo.2021.805573",
+      "item_type": "paper",
+      "evidence_scope": "transferable EEG",
+      "feature_family": "Denoising quality: SNR, RRMSE, correlation and band power",
+      "feature_definition": "GAN reconstructs cleaned EEG; denoising evaluated using SNR, relative RMSE, Pearson correlation and frequency-band power ratios.",
+      "prediction_rationale": "Inference: compare denoising before/after downstream analysis; signal cleanup cannot be presumed to improve task prediction.",
+      "verified_result_metric": "For one reported classifier, ground-truth accuracy/F1 were 88.75%/0.8987 and denoised-data accuracy/F1 were 77.94%/0.7799; downstream accuracy decreased after denoising.",
+      "prediction_target": "Artifact-free EEG reconstruction and downstream BCI classification (not pain).",
+      "validation_design": "Authors evaluated multiple artifact types; supplied dataset/task evaluations, but no pain cohorts.",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10790876/",
+      "open_access_status": "Open-access full text (PMC; CC BY).",
+      "data_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10790876/#SM1",
+      "data_access_status": "on request",
+      "data_evidence": "Article says original contributions are in article/supplementary material; further inquiries directed to corresponding author. This does not verify public raw EEG access.",
+      "relevance_limitations": "General EEG denoising method, transferable only; BCI task is not pain and reported post-denoising classifier decrement cautions against equating SNR improvement with better pain prediction.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/signal-data/gan-eeg-denoising.md"
+      ],
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10790876/"
+      ]
+    },
+    {
+      "title": "Embedding decomposition for artifacts removal in EEG signals (DeepSeparator)",
+      "authors": "Yu et al.",
+      "year": 2022,
+      "doi": "10.1088/1741-2552/ac63eb",
+      "item_type": "paper",
+      "evidence_scope": "transferable EEG",
+      "feature_family": "Denoising reconstruction error / correlation / signal quality",
+      "feature_definition": "Embedding-space separation of EEG and artifact; evaluates temporal and spectral relative RMSE and correlation against clean reference, across simulated EOG/EMG noise.",
+      "prediction_rationale": "Inference: clean reference benchmarks can test whether variance or signal-strength features are preserved after denoising.",
+      "verified_result_metric": "On semi-synthetic test data authors report lower temporal/spectral RRMSE and higher correlation than comparison methods; no numeric effect transcribed.",
+      "prediction_target": "Artifact removal / signal reconstruction, not pain.",
+      "validation_design": "Held-out 10,000 semi-synthetic test segments plus real task EEG evaluation; code and benchmark referenced.",
+      "article_url": "https://iopscience.iop.org/article/10.1088/1741-2552/ac63eb",
+      "open_access_status": "Open-access full text (IOP).",
+      "data_url": "https://github.com/ncclabsustech/EEGdenoiseNet",
+      "data_access_status": "public EEG verified",
+      "data_evidence": "Article uses EEGdenoiseNet semi-synthetic data; repository links the public dataset; DeepSeparator source repository is also public.",
+      "relevance_limitations": "Transferable method only. Semi-synthetic EEG quality scores are not pain prediction metrics; benchmark sample segmentation/SNR differs from pain event baseline design.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/signal-data/deepseparator-paper.md",
+        "eeg-variance-pain-literature/research/sources/signal-data/deepseparator-repository.md",
+        "eeg-variance-pain-literature/research/sources/signal-data/eegdenoisenet-paper.md",
+        "eeg-variance-pain-literature/research/sources/signal-data/eegdenoisenet-repository.md"
+      ],
+      "source_urls": [
+        "https://iopscience.iop.org/article/10.1088/1741-2552/ac63eb",
+        "https://github.com/ncclabsustech/DeepSeparator",
+        "https://github.com/ncclabsustech/EEGdenoiseNet"
+      ]
+    },
+    {
+      "title": "EEGdenoiseNet: a benchmark dataset for deep learning solutions of EEG denoising",
+      "authors": "Zhang et al.",
+      "year": 2021,
+      "doi": "10.1088/1741-2552/ac2bf8",
+      "item_type": "paper",
+      "evidence_scope": "transferable EEG",
+      "feature_family": "Known-SNR artifact mixtures; temporal/spectral RRMSE and correlation",
+      "feature_definition": "4514 clean EEG segments, 3400 EOG and 5598 EMG segments enable controlled mixtures with clean reference and varied SNR.",
+      "prediction_rationale": "Inference: controlled amplitude/noise perturbations support testing robustness of variance and strength features to artifact burden.",
+      "verified_result_metric": "Authors benchmarked four networks with temporal/spectral RRMSE and correlation under controlled contamination; no pain result and no specific model metric quoted.",
+      "prediction_target": "Denoising/reconstruction (not pain).",
+      "validation_design": "Benchmark comparisons on semi-synthetic mixtures with known clean targets; public data and code.",
+      "article_url": "https://iopscience.iop.org/article/10.1088/1741-2552/ac2bf8/meta",
+      "open_access_status": "Open-access full text (IOP).",
+      "data_url": "https://github.com/ncclabsustech/EEGdenoiseNet",
+      "data_access_status": "public EEG verified",
+      "data_evidence": "Paper states structured dataset publicly available; repo contains 4514 clean EEG, 3400 ocular artifact and 5598 muscle artifact epochs; G-node link provides additional 512-Hz EEG/EMG.",
+      "relevance_limitations": "Transferable denoising benchmark, not pain-labelled; synthetic SNR mixtures do not establish pain-related signal strength.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/signal-data/eegdenoisenet-paper.md",
+        "eeg-variance-pain-literature/research/sources/signal-data/eegdenoisenet-repository.md"
+      ],
+      "source_urls": [
+        "https://iopscience.iop.org/article/10.1088/1741-2552/ac2bf8/meta",
+        "https://github.com/ncclabsustech/EEGdenoiseNet"
+      ]
+    },
+    {
+      "title": "AnEEG: leveraging deep learning for effective artifact removal in EEG data",
+      "authors": "Kalita et al.",
+      "year": 2024,
+      "doi": "10.1038/s41598-024-75091-z",
+      "item_type": "paper",
+      "evidence_scope": "transferable EEG",
+      "feature_family": "NMSE, RMSE, correlation coefficient, SNR and signal-to-artifact ratio",
+      "feature_definition": "LSTM/GAN artifact-removal system evaluated on reconstructed signals with NMSE, RMSE, CC, SNR and SAR.",
+      "prediction_rationale": "Inference: a preprocessing robustness benchmark could compare pain-relevant feature stability before and after denoising.",
+      "verified_result_metric": "Authors report lower NMSE/RMSE and higher CC/SNR/SAR than wavelet-decomposition baselines; no independent pain metric and no exact value quoted.",
+      "prediction_target": "EEG artifact removal/reconstruction, not pain.",
+      "validation_design": "Authors describe five participants’ 32-channel 128-Hz recordings and a subject-held-out split; semi-synthetic/benchmark comparisons also described.",
+      "article_url": "https://www.nature.com/articles/s41598-024-75091-z",
+      "open_access_status": "Open-access full text (Scientific Reports).",
+      "data_url": "unverified",
+      "data_access_status": "unverified",
+      "data_evidence": "Article reports its own small data collection but no verified public raw EEG repository link was saved; cited datasets in background are not the study’s dataset.",
+      "relevance_limitations": "Transferable only. Its 128-Hz, 0.5–40-Hz, 5-s segmentation is unusually close to the stated pipeline, but it uses 32 channels and artifact tasks, not pain labels; wavelet targets may bias reference truth.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/signal-data/aneeg-denoising-paper.md"
+      ],
+      "source_urls": [
+        "https://www.nature.com/articles/s41598-024-75091-z"
+      ]
+    },
+    {
+      "title": "A comprehensive EEG dataset of laser-evoked potentials for pain research",
+      "authors": "Zhao et al.",
+      "year": 2025,
+      "doi": "10.1038/s41597-025-05900-1",
+      "item_type": "paper",
+      "evidence_scope": "direct pain",
+      "feature_family": "Raw EEG signal strength/variance; trialwise pain reports",
+      "feature_definition": "Dataset paper describes 678 healthy participants’ high-density EEG, nine experiments, variable laser intensities, and single-trial NRS labels; preprocessing includes 1–100 Hz and 3-s event windows.",
+      "prediction_rationale": "Inference: large raw trial-level data supports prospective analyses of signal variance versus repeated pain ratings and preprocessing robustness.",
+      "verified_result_metric": "Dataset descriptor only; no new prediction score or variance-explained result claimed by the paper.",
+      "prediction_target": "Single-trial pain rating and pain discriminability; not a trained predictor in the data descriptor.",
+      "validation_design": "Nine source experiments (N=26,29,39,30,65,95,142,223,29); paper records raw BIDS and preprocessing derivatives, no held-out prediction evaluation.",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12405539/",
+      "open_access_status": "Open-access full text (PMC; CC BY-NC-ND).",
+      "data_url": "https://openneuro.org/datasets/ds005292",
+      "data_access_status": "public EEG verified",
+      "data_evidence": "Paper states raw BIDS EEG is publicly shared, links nine OpenNeuro accessions; single-trial NRS after laser stimuli, and derivatives documented.",
+      "relevance_limitations": "High density / 1000–1024-Hz systems and 3-s (-1 to +2 s) baseline-corrected epochs differ from C3/C4/Cz, 128 Hz and 5-s windows; trials/ratings and recording system differ across cohorts.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/signal-data/laser-evoked-pain-data-678-paper.md",
+        "eeg-variance-pain-literature/research/sources/signal-data/openneuro-ds005292-record.md"
+      ],
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12405539/",
+        "https://openneuro.org/datasets/ds005292"
+      ]
+    },
+    {
+      "title": "EEGdenoiseNet",
+      "authors": "Zhang et al.; dataset repository by NCCLab",
+      "year": 2021,
+      "doi": null,
+      "item_type": "dataset",
+      "evidence_scope": "transferable EEG",
+      "feature_family": "Known-clean EEG and EOG/EMG artifact reference segments",
+      "feature_definition": "Public benchmark dataset contains clean EEG and separate ocular/muscle artifact segments for controlled synthetic contamination.",
+      "prediction_rationale": "Inference: use as transferable artifact/SNR stress-test only, never as evidence about pain-associated EEG.",
+      "verified_result_metric": "Not applicable; resource, no pain prediction result.",
+      "prediction_target": "No pain target; benchmark data enables denoising method evaluation.",
+      "validation_design": "Dataset resource; benchmark paper evaluates models, repository provides downloadable data/code.",
+      "article_url": "https://github.com/ncclabsustech/EEGdenoiseNet",
+      "open_access_status": "Publicly accessible repository; dataset README and downloadable data links observed.",
+      "data_url": "https://github.com/ncclabsustech/EEGdenoiseNet",
+      "data_access_status": "public EEG verified",
+      "data_evidence": "Repository README enumerates clean EEG/EOG/EMG segment counts and links supplementary 512-Hz segments at G-node; paper identifies the repository.",
+      "relevance_limitations": "Not pain-labeled; semi-synthetic contamination should only test artifact sensitivity, not provide pain training/validation.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/signal-data/eegdenoisenet-repository.md",
+        "eeg-variance-pain-literature/research/sources/signal-data/eegdenoisenet-paper.md"
+      ],
+      "source_urls": [
+        "https://github.com/ncclabsustech/EEGdenoiseNet",
+        "https://iopscience.iop.org/article/10.1088/1741-2552/ac2bf8/meta"
+      ]
+    },
+    {
+      "title": "DeepSeparator reference implementation",
+      "authors": "NCCLab contributors; linked to Yu et al.",
+      "year": 2022,
+      "doi": null,
+      "item_type": "software",
+      "evidence_scope": "transferable EEG",
+      "feature_family": "Denoising/embedding decomposition implementation",
+      "feature_definition": "Open code implements encoder/decomposer/decoder EEG artifact separation and denoising; training and prediction scripts documented.",
+      "prediction_rationale": "Inference: reproducibility can support an artifact-robustness sensitivity analysis before pain feature modeling.",
+      "verified_result_metric": "Not applicable; software resource.",
+      "prediction_target": "No pain target; applies to artifacted EEG.",
+      "validation_design": "Public repository provides code, setup notes and EEGdenoiseNet data instructions.",
+      "article_url": "https://github.com/ncclabsustech/DeepSeparator",
+      "open_access_status": "Public GitHub repository.",
+      "data_url": "https://github.com/ncclabsustech/EEGdenoiseNet",
+      "data_access_status": "public EEG verified",
+      "data_evidence": "Repository names the EEGdenoiseNet benchmark and links to data plus G-node supplements.",
+      "relevance_limitations": "Transferable EEG tool, not pain-specific; legacy dependencies and semi-synthetic ground-truth assumptions require review.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/signal-data/deepseparator-repository.md",
+        "eeg-variance-pain-literature/research/sources/signal-data/deepseparator-paper.md"
+      ],
+      "source_urls": [
+        "https://github.com/ncclabsustech/DeepSeparator",
+        "https://iopscience.iop.org/article/10.1088/1741-2552/ac63eb"
+      ]
+    },
+    {
+      "title": "EEGdenoiseNet benchmark code",
+      "authors": "NCCLab contributors; linked to Zhang et al.",
+      "year": 2021,
+      "doi": null,
+      "item_type": "software",
+      "evidence_scope": "transferable EEG",
+      "feature_family": "Denoising benchmarks / metrics",
+      "feature_definition": "Repository supplies code and scripts for EEGdenoiseNet benchmark networks and controlled noise mixtures.",
+      "prediction_rationale": "Inference: a reproducible reference may support fixed-SNR stress testing for feature robustness.",
+      "verified_result_metric": "Not applicable; software resource.",
+      "prediction_target": "No pain target; EEG denoising benchmark.",
+      "validation_design": "Repository separates code and data; paper reports four benchmark networks.",
+      "article_url": "https://github.com/ncclabsustech/EEGdenoiseNet",
+      "open_access_status": "Public GitHub repository.",
+      "data_url": "https://github.com/ncclabsustech/EEGdenoiseNet",
+      "data_access_status": "public EEG verified",
+      "data_evidence": "Repository lists `code` and `data` folders and data counts; paper links same repo.",
+      "relevance_limitations": "No pain labels; results are not transferred pain-prediction evidence.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/signal-data/eegdenoisenet-repository.md",
+        "eeg-variance-pain-literature/research/sources/signal-data/eegdenoisenet-paper.md"
+      ],
+      "source_urls": [
+        "https://github.com/ncclabsustech/EEGdenoiseNet",
+        "https://iopscience.iop.org/article/10.1088/1741-2552/ac2bf8/meta"
+      ]
+    },
+    {
+      "title": "OpenNeuro ds005284 — 26 participants; BioSemi; public laser EEG with pain stimuli",
+      "authors": "Zhao et al. dataset collection (dataset contributors as indexed in BIDS metadata)",
+      "year": 2025,
+      "doi": null,
+      "item_type": "dataset",
+      "evidence_scope": "direct pain",
+      "feature_family": "Raw trial-level EEG and nociceptive stimulus/pain-rating labels",
+      "feature_definition": "Open BIDS EEG dataset; source collection paper maps accession to experiment and participant count; OpenNeuro page/collection README documents pain trial labels.",
+      "prediction_rationale": "Inference: independent raw recordings can support pain-linked variance/strength analysis with subject-wise validation.",
+      "verified_result_metric": "Not applicable; dataset resource, no fitted model metric.",
+      "prediction_target": "Not a model target; supports reported pain-rating/laser-level labels.",
+      "validation_design": "Dataset descriptor only; acquisition-specific protocols and markers must be audited before pooling.",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12405539/",
+      "open_access_status": "OpenNeuro BIDS dataset page and downloadable version links observed.",
+      "data_url": "https://openneuro.org/datasets/ds005284",
+      "data_access_status": "public EEG verified",
+      "data_evidence": "Dataset article explicitly connects ds005284 to one of its nine raw BIDS EEG experiments; article states data publicly shared. Direct OpenNeuro page lists Files/Download and EEG participant files. Participant count 26.",
+      "relevance_limitations": "Separate dataset item, not a separate paper; confirm cohort independence (possible overlap among component studies), sampling metadata, event offsets, baseline and channel compatibility. 26 participants; BioSemi; public laser EEG with pain stimuli.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/signal-data/laser-evoked-pain-data-678-paper.md",
+        "eeg-variance-pain-literature/research/sources/signal-data/openneuro-ds005284-record.md"
+      ],
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12405539/",
+        "https://openneuro.org/datasets/ds005284"
+      ]
+    },
+    {
+      "title": "OpenNeuro ds005285 — 29 participants; ANT; laser EEG experiment 2",
+      "authors": "Zhao et al. dataset collection (dataset contributors as indexed in BIDS metadata)",
+      "year": 2025,
+      "doi": null,
+      "item_type": "dataset",
+      "evidence_scope": "direct pain",
+      "feature_family": "Raw trial-level EEG and nociceptive stimulus/pain-rating labels",
+      "feature_definition": "Open BIDS EEG dataset; source collection paper maps accession to experiment and participant count; OpenNeuro page/collection README documents pain trial labels.",
+      "prediction_rationale": "Inference: independent raw recordings can support pain-linked variance/strength analysis with subject-wise validation.",
+      "verified_result_metric": "Not applicable; dataset resource, no fitted model metric.",
+      "prediction_target": "Not a model target; supports reported pain-rating/laser-level labels.",
+      "validation_design": "Dataset descriptor only; acquisition-specific protocols and markers must be audited before pooling.",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12405539/",
+      "open_access_status": "OpenNeuro linked dataset; direct record fetch rate-limited; parent paper provides accession and collection data statement.",
+      "data_url": "https://openneuro.org/datasets/ds005285",
+      "data_access_status": "public EEG verified",
+      "data_evidence": "Dataset article explicitly connects ds005285 to one of its nine raw BIDS EEG experiments; article states data publicly shared. OpenNeuro direct record returned rate-limit; public accession verified via source article. Participant count 29.",
+      "relevance_limitations": "Separate dataset item, not a separate paper; confirm cohort independence (possible overlap among component studies), sampling metadata, event offsets, baseline and channel compatibility. 29 participants; ANT; laser EEG experiment 2.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/signal-data/laser-evoked-pain-data-678-paper.md"
+      ],
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12405539/",
+        "https://openneuro.org/datasets/ds005285"
+      ]
+    },
+    {
+      "title": "OpenNeuro ds005289 — 39 participants; Brain Products; laser EEG with pain and unpleasantness ratings",
+      "authors": "Zhao et al. dataset collection (dataset contributors as indexed in BIDS metadata)",
+      "year": 2025,
+      "doi": null,
+      "item_type": "dataset",
+      "evidence_scope": "direct pain",
+      "feature_family": "Raw trial-level EEG and nociceptive stimulus/pain-rating labels",
+      "feature_definition": "Open BIDS EEG dataset; source collection paper maps accession to experiment and participant count; OpenNeuro page/collection README documents pain trial labels.",
+      "prediction_rationale": "Inference: independent raw recordings can support pain-linked variance/strength analysis with subject-wise validation.",
+      "verified_result_metric": "Not applicable; dataset resource, no fitted model metric.",
+      "prediction_target": "Not a model target; supports reported pain-rating/laser-level labels.",
+      "validation_design": "Dataset descriptor only; acquisition-specific protocols and markers must be audited before pooling.",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12405539/",
+      "open_access_status": "OpenNeuro BIDS dataset page and downloadable version links observed.",
+      "data_url": "https://openneuro.org/datasets/ds005289",
+      "data_access_status": "public EEG verified",
+      "data_evidence": "Dataset article explicitly connects ds005289 to one of its nine raw BIDS EEG experiments; article states data publicly shared. Direct OpenNeuro page lists Files/Download and EEG participant files. Participant count 39.",
+      "relevance_limitations": "Separate dataset item, not a separate paper; confirm cohort independence (possible overlap among component studies), sampling metadata, event offsets, baseline and channel compatibility. 39 participants; Brain Products; laser EEG with pain and unpleasantness ratings.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/signal-data/laser-evoked-pain-data-678-paper.md",
+        "eeg-variance-pain-literature/research/sources/signal-data/openneuro-ds005289-record.md"
+      ],
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12405539/",
+        "https://openneuro.org/datasets/ds005289"
+      ]
+    },
+    {
+      "title": "OpenNeuro ds005286 — 30 participants; ANT; laser EEG, verbal trialwise pain ratings; README flags laser markers delayed by 100 ms",
+      "authors": "Zhao et al. dataset collection (dataset contributors as indexed in BIDS metadata)",
+      "year": 2025,
+      "doi": null,
+      "item_type": "dataset",
+      "evidence_scope": "direct pain",
+      "feature_family": "Raw trial-level EEG and nociceptive stimulus/pain-rating labels",
+      "feature_definition": "Open BIDS EEG dataset; source collection paper maps accession to experiment and participant count; OpenNeuro page/collection README documents pain trial labels.",
+      "prediction_rationale": "Inference: independent raw recordings can support pain-linked variance/strength analysis with subject-wise validation.",
+      "verified_result_metric": "Not applicable; dataset resource, no fitted model metric.",
+      "prediction_target": "Not a model target; supports reported pain-rating/laser-level labels.",
+      "validation_design": "Dataset descriptor only; acquisition-specific protocols and markers must be audited before pooling.",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12405539/",
+      "open_access_status": "OpenNeuro BIDS dataset page and downloadable version links observed.",
+      "data_url": "https://openneuro.org/datasets/ds005286",
+      "data_access_status": "public EEG verified",
+      "data_evidence": "Dataset article explicitly connects ds005286 to one of its nine raw BIDS EEG experiments; article states data publicly shared. Direct OpenNeuro page lists Files/Download and EEG participant files. Participant count 30.",
+      "relevance_limitations": "Separate dataset item, not a separate paper; confirm cohort independence (possible overlap among component studies), sampling metadata, event offsets, baseline and channel compatibility. 30 participants; ANT; laser EEG, verbal trialwise pain ratings; README flags laser markers delayed by 100 ms.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/signal-data/laser-evoked-pain-data-678-paper.md",
+        "eeg-variance-pain-literature/research/sources/signal-data/openneuro-ds005286-record.md"
+      ],
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12405539/",
+        "https://openneuro.org/datasets/ds005286"
+      ]
+    },
+    {
+      "title": "OpenNeuro ds005291 — 65 participants; ANT; laser EEG, verbal pain ratings; README flags laser markers delayed by 100 ms",
+      "authors": "Zhao et al. dataset collection (dataset contributors as indexed in BIDS metadata)",
+      "year": 2025,
+      "doi": null,
+      "item_type": "dataset",
+      "evidence_scope": "direct pain",
+      "feature_family": "Raw trial-level EEG and nociceptive stimulus/pain-rating labels",
+      "feature_definition": "Open BIDS EEG dataset; source collection paper maps accession to experiment and participant count; OpenNeuro page/collection README documents pain trial labels.",
+      "prediction_rationale": "Inference: independent raw recordings can support pain-linked variance/strength analysis with subject-wise validation.",
+      "verified_result_metric": "Not applicable; dataset resource, no fitted model metric.",
+      "prediction_target": "Not a model target; supports reported pain-rating/laser-level labels.",
+      "validation_design": "Dataset descriptor only; acquisition-specific protocols and markers must be audited before pooling.",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12405539/",
+      "open_access_status": "OpenNeuro BIDS dataset page and downloadable version links observed.",
+      "data_url": "https://openneuro.org/datasets/ds005291",
+      "data_access_status": "public EEG verified",
+      "data_evidence": "Dataset article explicitly connects ds005291 to one of its nine raw BIDS EEG experiments; article states data publicly shared. Direct OpenNeuro page lists Files/Download and EEG participant files. Participant count 65.",
+      "relevance_limitations": "Separate dataset item, not a separate paper; confirm cohort independence (possible overlap among component studies), sampling metadata, event offsets, baseline and channel compatibility. 65 participants; ANT; laser EEG, verbal pain ratings; README flags laser markers delayed by 100 ms.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/signal-data/laser-evoked-pain-data-678-paper.md",
+        "eeg-variance-pain-literature/research/sources/signal-data/openneuro-ds005291-record.md"
+      ],
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12405539/",
+        "https://openneuro.org/datasets/ds005291"
+      ]
+    },
+    {
+      "title": "OpenNeuro ds005293 — 95 participants; Brain Products; laser EEG with pain ratings for four intensity levels",
+      "authors": "Zhao et al. dataset collection (dataset contributors as indexed in BIDS metadata)",
+      "year": 2025,
+      "doi": null,
+      "item_type": "dataset",
+      "evidence_scope": "direct pain",
+      "feature_family": "Raw trial-level EEG and nociceptive stimulus/pain-rating labels",
+      "feature_definition": "Open BIDS EEG dataset; source collection paper maps accession to experiment and participant count; OpenNeuro page/collection README documents pain trial labels.",
+      "prediction_rationale": "Inference: independent raw recordings can support pain-linked variance/strength analysis with subject-wise validation.",
+      "verified_result_metric": "Not applicable; dataset resource, no fitted model metric.",
+      "prediction_target": "Not a model target; supports reported pain-rating/laser-level labels.",
+      "validation_design": "Dataset descriptor only; acquisition-specific protocols and markers must be audited before pooling.",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12405539/",
+      "open_access_status": "OpenNeuro BIDS dataset page and downloadable version links observed.",
+      "data_url": "https://openneuro.org/datasets/ds005293",
+      "data_access_status": "public EEG verified",
+      "data_evidence": "Dataset article explicitly connects ds005293 to one of its nine raw BIDS EEG experiments; article states data publicly shared. Direct OpenNeuro page lists Files/Download and EEG participant files. Participant count 95.",
+      "relevance_limitations": "Separate dataset item, not a separate paper; confirm cohort independence (possible overlap among component studies), sampling metadata, event offsets, baseline and channel compatibility. 95 participants; Brain Products; laser EEG with pain ratings for four intensity levels.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/signal-data/laser-evoked-pain-data-678-paper.md",
+        "eeg-variance-pain-literature/research/sources/signal-data/openneuro-ds005293-record.md"
+      ],
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12405539/",
+        "https://openneuro.org/datasets/ds005293"
+      ]
+    },
+    {
+      "title": "OpenNeuro ds005292 — 142 participants; BioSemi; laser EEG with trialwise ratings, low/high stimuli",
+      "authors": "Zhao et al. dataset collection (dataset contributors as indexed in BIDS metadata)",
+      "year": 2025,
+      "doi": null,
+      "item_type": "dataset",
+      "evidence_scope": "direct pain",
+      "feature_family": "Raw trial-level EEG and nociceptive stimulus/pain-rating labels",
+      "feature_definition": "Open BIDS EEG dataset; source collection paper maps accession to experiment and participant count; OpenNeuro page/collection README documents pain trial labels.",
+      "prediction_rationale": "Inference: independent raw recordings can support pain-linked variance/strength analysis with subject-wise validation.",
+      "verified_result_metric": "Not applicable; dataset resource, no fitted model metric.",
+      "prediction_target": "Not a model target; supports reported pain-rating/laser-level labels.",
+      "validation_design": "Dataset descriptor only; acquisition-specific protocols and markers must be audited before pooling.",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12405539/",
+      "open_access_status": "OpenNeuro BIDS dataset page and downloadable version links observed.",
+      "data_url": "https://openneuro.org/datasets/ds005292",
+      "data_access_status": "public EEG verified",
+      "data_evidence": "Dataset article explicitly connects ds005292 to one of its nine raw BIDS EEG experiments; article states data publicly shared. Direct OpenNeuro page lists Files/Download and EEG participant files. Participant count 142.",
+      "relevance_limitations": "Separate dataset item, not a separate paper; confirm cohort independence (possible overlap among component studies), sampling metadata, event offsets, baseline and channel compatibility. 142 participants; BioSemi; laser EEG with trialwise ratings, low/high stimuli.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/signal-data/laser-evoked-pain-data-678-paper.md",
+        "eeg-variance-pain-literature/research/sources/signal-data/openneuro-ds005292-record.md"
+      ],
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12405539/",
+        "https://openneuro.org/datasets/ds005292"
+      ]
+    },
+    {
+      "title": "OpenNeuro ds005280 — 223 participants; Brain Products; laser EEG with trialwise ratings, low/high stimuli",
+      "authors": "Zhao et al. dataset collection (dataset contributors as indexed in BIDS metadata)",
+      "year": 2025,
+      "doi": null,
+      "item_type": "dataset",
+      "evidence_scope": "direct pain",
+      "feature_family": "Raw trial-level EEG and nociceptive stimulus/pain-rating labels",
+      "feature_definition": "Open BIDS EEG dataset; source collection paper maps accession to experiment and participant count; OpenNeuro page/collection README documents pain trial labels.",
+      "prediction_rationale": "Inference: independent raw recordings can support pain-linked variance/strength analysis with subject-wise validation.",
+      "verified_result_metric": "Not applicable; dataset resource, no fitted model metric.",
+      "prediction_target": "Not a model target; supports reported pain-rating/laser-level labels.",
+      "validation_design": "Dataset descriptor only; acquisition-specific protocols and markers must be audited before pooling.",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12405539/",
+      "open_access_status": "OpenNeuro BIDS dataset page and downloadable version links observed.",
+      "data_url": "https://openneuro.org/datasets/ds005280",
+      "data_access_status": "public EEG verified",
+      "data_evidence": "Dataset article explicitly connects ds005280 to one of its nine raw BIDS EEG experiments; article states data publicly shared. Direct OpenNeuro page lists Files/Download and EEG participant files. Participant count 223.",
+      "relevance_limitations": "Separate dataset item, not a separate paper; confirm cohort independence (possible overlap among component studies), sampling metadata, event offsets, baseline and channel compatibility. 223 participants; Brain Products; laser EEG with trialwise ratings, low/high stimuli.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/signal-data/laser-evoked-pain-data-678-paper.md",
+        "eeg-variance-pain-literature/research/sources/signal-data/openneuro-ds005280-record.md"
+      ],
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12405539/",
+        "https://openneuro.org/datasets/ds005280"
+      ]
+    },
+    {
+      "title": "OpenNeuro ds005473 — 29 participants; Brain Products; Aδ/C nociceptor laser EEG experiment",
+      "authors": "Zhao et al. dataset collection (dataset contributors as indexed in BIDS metadata)",
+      "year": 2025,
+      "doi": null,
+      "item_type": "dataset",
+      "evidence_scope": "direct pain",
+      "feature_family": "Raw trial-level EEG and nociceptive stimulus/pain-rating labels",
+      "feature_definition": "Open BIDS EEG dataset; source collection paper maps accession to experiment and participant count; OpenNeuro page/collection README documents pain trial labels.",
+      "prediction_rationale": "Inference: independent raw recordings can support pain-linked variance/strength analysis with subject-wise validation.",
+      "verified_result_metric": "Not applicable; dataset resource, no fitted model metric.",
+      "prediction_target": "Not a model target; supports reported pain-rating/laser-level labels.",
+      "validation_design": "Dataset descriptor only; acquisition-specific protocols and markers must be audited before pooling.",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12405539/",
+      "open_access_status": "OpenNeuro BIDS dataset page and downloadable version links observed.",
+      "data_url": "https://openneuro.org/datasets/ds005473",
+      "data_access_status": "public EEG verified",
+      "data_evidence": "Dataset article explicitly connects ds005473 to one of its nine raw BIDS EEG experiments; article states data publicly shared. Direct OpenNeuro page lists Files/Download and EEG participant files. Participant count 29.",
+      "relevance_limitations": "Separate dataset item, not a separate paper; confirm cohort independence (possible overlap among component studies), sampling metadata, event offsets, baseline and channel compatibility. 29 participants; Brain Products; Aδ/C nociceptor laser EEG experiment.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/signal-data/laser-evoked-pain-data-678-paper.md",
+        "eeg-variance-pain-literature/research/sources/signal-data/openneuro-ds005473-record.md"
+      ],
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12405539/",
+        "https://openneuro.org/datasets/ds005473"
+      ]
+    }
+  ],
+  "conflicts": [
+    "Variability is not synonymous with variance explained: the large pain-variability study measures temporal SD and reports association with interindividual pain discriminability; it does not establish that an arbitrary window-variance feature explains pain ratings or yields a cross-validated R².",
+    "Metric types are incommensurate: Mari et al. report classification accuracy; Zhang et al. report Pearson correlations between predicted and observed AUC; none should be relabelled as variance explained. Piqβ/CVUE threshold findings are not accuracy/R² claims.",
+    "The 678-person raw dataset uses 1000/1024-Hz acquisition and stimulus-aligned 3-s epochs with pre-stimulus baseline; ds005286/ds005291 README pages report 100-ms laser marker delay. Existing 128-Hz five-second C3/C4/Cz processing cannot assume those timing conventions transfer unchanged.",
+    "C3/C4/Cz, 1–40-Hz pipeline excludes frontal channels used by some pain-presence results and removes all >40-Hz content; high-gamma 60–85 Hz is above the 64-Hz Nyquist frequency at 128 Hz and cannot be recovered. CVUE pilot beta 13–30 Hz overlaps but uses contralateral motor electrodes and 30-s ratings.",
+    "Denoising improvements on signal metrics do not imply better downstream prediction: the GAN paper reports lower classifier accuracy/F1 after denoising than on ground truth in its example. Denoising should be validated against preserved physiological feature and task validity, not SNR alone."
+  ],
+  "gaps": [
+    "No verified public raw EEG repository was confirmed for the two small CVUE/Piqβ signal-strength pilot studies or Mari et al. external-validation cohort; included numeric results are not a substitute for accessible raw data.",
+    "OSF QTV8A is cited by the 2025 PLOS variability article for data and code, but repository contents were not independently opened; raw EEG vs processed/derived measures remain unverified.",
+    "No source in this area establishes a validated pain predictor based only on 5-s C3/C4/Cz windows after 1–40-Hz filtering. Existing task labels are often event-locked, sub-second or rated every 15–30 s.",
+    "A systematic search did not establish a direct EEG-to-pain R² / variance-explained benchmark with public raw EEG and truly external validation. Do not infer R² from r, accuracy, SNR or classification results.",
+    "Dataset collection component accessions vary in amplifier, montage, stimulation/ratings, marker delay and preprocessed derivatives; assess provenance, event metadata, and overlap before combining. Component dataset descriptors are resources, not separate papers."
+  ],
+  "sources": [
+    {
+      "path": "eeg-variance-pain-literature/research/sources/signal-data/neural-variability-pain-plos.md",
+      "title": "Neural variability reliably encodes interindividual differences in the perception of pain intensity",
+      "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003470",
+      "capture_date": "2026-10-09",
+      "notes": "Publisher full text, includes open-access license, methods, results and OSF data statement; data repository itself not independently inspected."
+    },
+    {
+      "path": "eeg-variance-pain-literature/research/sources/signal-data/pain-discriminability-replicability.md",
+      "title": "Selective and replicable neuroimaging-based indicators of pain discriminability",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9798031/",
+      "capture_date": "2026-10-09",
+      "notes": "PMC full text; peak-based LASSO/replication results and open license captured."
+    },
+    {
+      "path": "eeg-variance-pain-literature/research/sources/signal-data/external-validation-binary-pain-eeg.md",
+      "title": "External validation of binary machine learning models for pain intensity perception classification from EEG in healthy individuals",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9816165/",
+      "capture_date": "2026-10-09",
+      "notes": "PMC full text; dataset sizes, accuracies, experiment split and license captured."
+    },
+    {
+      "path": "eeg-variance-pain-literature/research/sources/signal-data/piq-beta-pain-pilot.md",
+      "title": "An Innovative EEG-Based Pain Identification and Quantification: A Pilot Study",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11207749/",
+      "capture_date": "2026-10-09",
+      "notes": "PMC full text; beta envelope CVUE/Piq threshold and cohort details captured."
+    },
+    {
+      "path": "eeg-variance-pain-literature/research/sources/signal-data/cvue-pain-proof-of-concept.md",
+      "title": "Towards the Objective Identification of the Presence of Pain Based on Electroencephalography Signals’ Analysis: A Proof-of-Concept",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9413583/",
+      "capture_date": "2026-10-09",
+      "notes": "PMC full text; small cohort, frontal-temporal electrodes and null intensity correlation captured."
+    },
+    {
+      "path": "eeg-variance-pain-literature/research/sources/signal-data/acute-pain-neurophys-review.md",
+      "title": "A systematic review of neurophysiological sensing for the assessment of acute pain",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10133304/",
+      "capture_date": "2026-10-09",
+      "notes": "PMC open full text; review scope and selection results captured."
+    },
+    {
+      "path": "eeg-variance-pain-literature/research/sources/signal-data/laser-evoked-pain-data-678-paper.md",
+      "title": "A comprehensive EEG dataset of laser-evoked potentials for pain research",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12405539/",
+      "capture_date": "2026-10-09",
+      "notes": "PMC full text; public raw BIDS, 678 participants, nine OpenNeuro DOI accessions, acquisition and preprocessing details captured."
+    },
+    {
+      "path": "eeg-variance-pain-literature/research/sources/signal-data/openneuro-ds005284-record.md",
+      "title": "26 By Biosemi — OpenNeuro ds005284",
+      "url": "https://openneuro.org/datasets/ds005284",
+      "capture_date": "2026-10-09",
+      "notes": "Direct OpenNeuro EEG record with Files/Download and BIDS participant data."
+    },
+    {
+      "path": "eeg-variance-pain-literature/research/sources/signal-data/openneuro-ds005289-record.md",
+      "title": "39 By BP — OpenNeuro ds005289",
+      "url": "https://openneuro.org/datasets/ds005289",
+      "capture_date": "2026-10-09",
+      "notes": "Direct OpenNeuro EEG record; README describes participant pain/unpleasantness ratings."
+    },
+    {
+      "path": "eeg-variance-pain-literature/research/sources/signal-data/openneuro-ds005286-record.md",
+      "title": "30 By ANT — OpenNeuro ds005286",
+      "url": "https://openneuro.org/datasets/ds005286",
+      "capture_date": "2026-10-09",
+      "notes": "Direct OpenNeuro EEG record; README flags 100-ms laser marker delay."
+    },
+    {
+      "path": "eeg-variance-pain-literature/research/sources/signal-data/openneuro-ds005291-record.md",
+      "title": "65 By ANT — OpenNeuro ds005291",
+      "url": "https://openneuro.org/datasets/ds005291",
+      "capture_date": "2026-10-09",
+      "notes": "Direct OpenNeuro EEG record; README flags 100-ms laser marker delay."
+    },
+    {
+      "path": "eeg-variance-pain-literature/research/sources/signal-data/openneuro-ds005293-record.md",
+      "title": "95 By BP — OpenNeuro ds005293",
+      "url": "https://openneuro.org/datasets/ds005293",
+      "capture_date": "2026-10-09",
+      "notes": "Direct OpenNeuro EEG record; README includes NRS and stimulus conditions."
+    },
+    {
+      "path": "eeg-variance-pain-literature/research/sources/signal-data/openneuro-ds005292-record.md",
+      "title": "142 By Biosemi — OpenNeuro ds005292",
+      "url": "https://openneuro.org/datasets/ds005292",
+      "capture_date": "2026-10-09",
+      "notes": "Direct OpenNeuro EEG record; README describes 30 laser trials and trialwise pain ratings."
+    },
+    {
+      "path": "eeg-variance-pain-literature/research/sources/signal-data/openneuro-ds005280-record.md",
+      "title": "223 By BP — OpenNeuro ds005280",
+      "url": "https://openneuro.org/datasets/ds005280",
+      "capture_date": "2026-10-09",
+      "notes": "Direct OpenNeuro EEG record; README describes low/high laser pain and trialwise ratings."
+    },
+    {
+      "path": "eeg-variance-pain-literature/research/sources/signal-data/openneuro-ds005473-record.md",
+      "title": "29 By BP — OpenNeuro ds005473",
+      "url": "https://openneuro.org/datasets/ds005473",
+      "capture_date": "2026-10-09",
+      "notes": "Direct OpenNeuro EEG record; README points to Aδ/C nociceptor paper."
+    },
+    {
+      "path": "eeg-variance-pain-literature/research/sources/signal-data/eegdenoisenet-paper.md",
+      "title": "EEGdenoiseNet: a benchmark dataset for deep learning solutions of EEG denoising",
+      "url": "https://iopscience.iop.org/article/10.1088/1741-2552/ac2bf8/meta",
+      "capture_date": "2026-10-09",
+      "notes": "Publisher full text; public benchmark data and noise/quality metric definitions."
+    },
+    {
+      "path": "eeg-variance-pain-literature/research/sources/signal-data/eegdenoisenet-repository.md",
+      "title": "EEGdenoiseNet repository",
+      "url": "https://github.com/ncclabsustech/EEGdenoiseNet",
+      "capture_date": "2026-10-09",
+      "notes": "Repository README confirms dataset counts, public data/code, and G-node link."
+    },
+    {
+      "path": "eeg-variance-pain-literature/research/sources/signal-data/deepseparator-paper.md",
+      "title": "Embedding decomposition for artifacts removal in EEG signals",
+      "url": "https://iopscience.iop.org/article/10.1088/1741-2552/ac63eb",
+      "capture_date": "2026-10-09",
+      "notes": "IOP full text; denoising methodology and held-out synthetic test evidence."
+    },
+    {
+      "path": "eeg-variance-pain-literature/research/sources/signal-data/deepseparator-repository.md",
+      "title": "DeepSeparator implementation repository",
+      "url": "https://github.com/ncclabsustech/DeepSeparator",
+      "capture_date": "2026-10-09",
+      "notes": "Repository README explains implementation and benchmark links."
+    },
+    {
+      "path": "eeg-variance-pain-literature/research/sources/signal-data/aneeg-denoising-paper.md",
+      "title": "AnEEG: leveraging deep learning for effective artifact removal in EEG data",
+      "url": "https://www.nature.com/articles/s41598-024-75091-z",
+      "capture_date": "2026-10-09",
+      "notes": "Publisher article captured; small 32-channel, 128-Hz, 0.5–40-Hz artifact study and metrics."
+    },
+    {
+      "path": "eeg-variance-pain-literature/research/sources/signal-data/gan-eeg-denoising.md",
+      "title": "Denoising EEG Signals for Real-World BCI Applications Using GANs",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10790876/",
+      "capture_date": "2026-10-09",
+      "notes": "PMC full text; signal metrics, downstream classifier comparison and supplement-only data availability."
+    }
+  ]
+}

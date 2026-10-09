@@ -1,0 +1,169 @@
+{
+  "items": [
+    {
+      "title": "EEG frequency band analysis in chronic neuropathic pain: A linear and nonlinear approach to classify pain severity",
+      "authors": "Daniela M. Zolezzi; Luz María Alonso-Valerdi; David I. Ibarra-Zarate",
+      "year": 2023,
+      "doi": "10.1016/j.cmpb.2023.107349",
+      "item_type": "paper",
+      "evidence_scope": "direct pain",
+      "feature_family": "Approximate entropy (ApEn) and absolute EEG band power",
+      "feature_definition": "ApEn (pattern-based signal irregularity) and absolute power estimated in delta, theta, alpha, beta and gamma bands at 22 scalp electrodes, using one-minute segments; chronic neuropathic pain severity grouped from Brief Pain Inventory ratings.",
+      "prediction_rationale": "Authors tested whether nonlinear EEG signal dynamics/strength features separate pain severity groups better than absolute band power. The result is group differentiation rather than a validated out-of-sample pain predictor.",
+      "verified_result_metric": "Paper reports ApEn group differences in most bands and conditions (p <= 0.0001) and notable clustering of pain groups using theta-, alpha- and beta-band ApEn. This is inferential/group-separation evidence, not verified held-out accuracy, correlation or R².",
+      "prediction_target": "Low/moderate/high chronic neuropathic pain severity from Brief Pain Inventory; no prospective prediction endpoint.",
+      "validation_design": "Cross-sectional feature comparison in 36 chronic neuropathic pain participants; 13-person healthy-control EEG database used as reference. Features derived from 10 one-minute observations per patient; Kruskal-Wallis/Dunn tests and unsupervised clustering described. No independent cohort or subject-held-out predictive validation verified.",
+      "article_url": "https://www.sciencedirect.com/science/article/pii/S0169260723000160",
+      "open_access_status": "Open-access article page/full text at ScienceDirect; article page identifies Creative Commons access.",
+      "data_url": "https://data.mendeley.com/datasets/yj52xrfgtz/4",
+      "data_access_status": "public raw EEG verified",
+      "data_evidence": "Paper states its 36-patient database is publicly available; the linked Mendeley v4 page offers a public 529 MB download with individual patient .gdf recordings, demographics/questionnaires and channel labels. The companion data descriptor confirms these are raw electrophysiological recordings (250 Hz, 22 channels) paired with BPI/painDETECT reports. The 13 control participants come from a separate database; do not imply they are all contained in Mendeley dataset yj52xrfgtz.",
+      "relevance_limitations": "Relevant original pain-severity EEG analysis with public raw signals and central C3/Cz/C4 leads. However, its 1-min feature segments, 250-Hz 0.1–100-Hz acquisition and broad montage differ from 5-s, 128-Hz, 1–40-Hz workflows. BPI-derived groups and within-sample clustering do not prove calibrated individual pain prediction. It shares the Zolezzi cohort with the 2024 Ryu and Barbosa papers and the 2023 dataset descriptor; cohort reuse is not independent replication.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/gap-pain-data/zolezzi-2023-primary.md",
+        "eeg-variance-pain-literature/research/sources/gap-pain-data/mendeley-zolezzi-public-files.md"
+      ],
+      "source_urls": [
+        "https://www.sciencedirect.com/science/article/pii/S0169260723000160",
+        "https://data.mendeley.com/datasets/yj52xrfgtz/4",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10050461/"
+      ]
+    },
+    {
+      "title": "Resting-state electroencephalography delta and theta bands as compensatory oscillations in chronic neuropathic pain: a secondary data analysis",
+      "authors": "Sara Pinto Barbosa; Ygor Nascimento Junqueira; Milena Apetito Akamatsu; Lucas Murrins Marques; Adriano Teixeira; Matheus Lobo; Mohamed H Mahmoud; Walid E Omer; Kevin Pacheco-Barrios; Felipe Fregni",
+      "year": 2024,
+      "doi": "10.4103/bnm.bnm_17_24",
+      "item_type": "paper",
+      "evidence_scope": "direct pain",
+      "feature_family": "Relative EEG band power (delta, theta, alpha, beta and sub-bands)",
+      "feature_definition": "Resting eyes-closed relative power calculated with FFT from 5-second windows with 50% overlap; regional central, frontal and parietal power features analyzed against BPI pain intensity and interference outcomes.",
+      "prediction_rationale": "The secondary analysis asks whether resting EEG spectral signal strength relates to pain severity/interference in neuropathic pain. Findings are associations from a small cross-sectional sample, not a validated forecast.",
+      "verified_result_metric": "Authors report no significant multivariate model for pain during EEG or most interference outcomes; the model for average pain intensity over the prior four weeks and a separate mood-interference model were significant. Authors describe central alpha as associated with higher pain and central delta with lower pain. No independent-validation performance metric was verified.",
+      "prediction_target": "Average pain intensity in the previous four weeks and BPI pain-interference outcomes; pain during EEG was also analyzed.",
+      "validation_design": "Secondary cross-sectional analysis of 36 chronic neuropathic-pain participants from Zolezzi et al. 2023. Linear/logistic regression with age and medication consideration; most nonnormal pain/interference outcomes were dichotomized at the median. No independent test sample/external validation.",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11309019/",
+      "open_access_status": "Open-access full text at PMC.",
+      "data_url": "https://data.mendeley.com/datasets/yj52xrfgtz/4",
+      "data_access_status": "public raw EEG verified",
+      "data_evidence": "The article identifies the sample as the public Zolezzi 2023 dataset, states the used data were provided by the original authors and are available in a publicly accessible database, and uses 36 patient EEG/BPI records. Mendeley v4 provides raw patient .gdf EEG and questionnaire files. Same participant cohort as Zolezzi 2023 and Ryu 2024; not a new cohort.",
+      "relevance_limitations": "The paper uses 5-s windows, but these are overlapping derived observations from 36 participants with person-level pain questionnaires; window count does not create independent participants. Its 250-Hz recordings, broad montage and five-minute eyes-closed state differ from three-central-channel recordings. Association and regression are not held-out prediction; regional results and outcome coding need replication.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/gap-pain-data/barbosa-2024-primary.md",
+        "eeg-variance-pain-literature/research/sources/gap-pain-data/mendeley-zolezzi-public-files.md"
+      ],
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11309019/",
+        "https://data.mendeley.com/datasets/yj52xrfgtz/4",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10050461/"
+      ]
+    }
+  ],
+  "conflicts": [
+    "The public Zolezzi Mendeley raw EEG dataset is one 36-patient cohort reused by distinct 2021 proceedings, 2023 feature-analysis, 2024 Barbosa and 2024 Ryu papers; their paper counts must not be summed as independent datasets or participants.",
+    "The 2021 Zolezzi conference proceeding (DOI 10.1109/embc46164.2021.9630101) is a separate 2021 item from Ryu et al.'s 2024 Scientific Reports PAC/asymmetry analysis (DOI 10.1038/s41598-024-71219-3). Preserve the 2021 citation, but do not transfer Ryu's PAC results to it or conflate publication years.",
+    "Han 2026 OSF API requests were 401/auth-required; this is inaccessible/unverified, not a confirmed empty repository and not proof of public data.",
+    "Mari 2023 OSF uqt9z is explicitly public, but the OSF files API returned an empty list (total 0); public project metadata is not public EEG availability.",
+    "Bott 2025 pools eight chronic-pain EEG sets assembled from controlled-access sources. One public OSF dry-electrode BIDS component with raw EEG is visible, but the evidence does not establish that all participants or all pooled inputs are public. Do not mark the complete pooled data as open.",
+    "The 2023 and 2024 Zolezzi cohort reanalyses report in-sample group associations/separation; results are not held-out accuracy, continuous pain prediction, or external replication. P-values and ROC values must not be presented as explained variance."
+  ],
+  "gaps": [
+    "This gap-fill added two qualifying original papers that use publicly downloadable raw Zolezzi EEG and pain questionnaires; both draw on the same 36-person cohort. It does not approach 100 unique eligible papers, and no padding was used.",
+    "Four targeted searches (10 results each) were conducted; most relevant additional hits were already represented dataset descriptors or papers, nonpublic-data studies, or reanalyses of the same cohort. No 30–40 distinct additional open-data papers were verifiable from these searches.",
+    "No distinct qualifying pain EEG reanalysis of the existing Zhao/laser-evoked or Ploner cohorts was verified in this pass. Nine OpenNeuro dataset accessions/participant rows remain dataset constituents, not nine additional papers.",
+    "The Zolezzi data allow 250-Hz raw signal analyses and include central channels, but the 2023 paper uses minute-length ApEn/power summaries and the 2024 secondary analysis uses overlapping 5-s relative-power epochs. Neither directly validates arbitrary 5-s variance/strength predictors or prospective clinical models.",
+    "Han raw-data availability remains unverified due authentication-required OSF responses. Mari's OSF project has a confirmed public zero-file listing. Bott has at least one visible public raw BIDS pain EEG component, but full pooled data availability remains unresolved/partial.",
+    "The 2021 proceedings article is established as a separate citation by Crossref and Ryu's reference, but full text was not verified as openly accessible in this pass; retain as nonqualifying candidate rather than silently replacing it with Ryu 2024."
+  ],
+  "sources": [
+    {
+      "type": "search protocol/results",
+      "path": "eeg-variance-pain-literature/research/sources/gap-pain-data/searches.md",
+      "title": "Four targeted gap-fill web searches",
+      "url": "Searches recorded in evidence file; variants and count included."
+    },
+    {
+      "type": "primary article",
+      "path": "eeg-variance-pain-literature/research/sources/gap-pain-data/zolezzi-2023-primary.md",
+      "title": "Zolezzi et al. 2023 original EEG feature analysis",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0169260723000160"
+    },
+    {
+      "type": "primary article",
+      "path": "eeg-variance-pain-literature/research/sources/gap-pain-data/barbosa-2024-primary.md",
+      "title": "Barbosa et al. 2024 secondary analysis",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11309019/"
+    },
+    {
+      "type": "public raw EEG repository",
+      "path": "eeg-variance-pain-literature/research/sources/gap-pain-data/mendeley-zolezzi-public-files.md",
+      "title": "Zolezzi chronic neuropathic pain raw EEG, Mendeley v4",
+      "url": "https://data.mendeley.com/datasets/yj52xrfgtz/4"
+    },
+    {
+      "type": "OSF API file-list audit",
+      "path": "eeg-variance-pain-literature/research/sources/gap-pain-data/osf-availability-audit.md",
+      "title": "Han 2026 and Mari 2023 repository access checks",
+      "url": "https://api.osf.io/v2/nodes/2mqtb/files/osfstorage/; https://api.osf.io/v2/nodes/uqt9z/files/osfstorage/"
+    },
+    {
+      "type": "primary article and public OSF BIDS component audit",
+      "path": "eeg-variance-pain-literature/research/sources/gap-pain-data/bott-2025-data-audit.md",
+      "title": "Bott 2025 pooled dataset accessibility and OSF component",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12517086/; https://api.osf.io/v2/nodes/m45j2/files/osfstorage/"
+    },
+    {
+      "type": "citation identity check",
+      "path": "eeg-variance-pain-literature/research/sources/gap-pain-data/citation-identity-2021-vs-2024.md",
+      "title": "Distinct Zolezzi 2021 proceedings and Ryu 2024 PAC paper",
+      "url": "https://api.crossref.org/works/10.1109/EMBC46164.2021.9630101; https://www.nature.com/articles/s41598-024-71219-3"
+    }
+  ],
+  "nonqualifying_candidates": [
+    {
+      "title": "Identification of Neuropathic Pain Severity based on Linear and Non-Linear EEG Features",
+      "authors": "Daniela M. Zolezzi; Luz Maria Alonso-Valerdi; Norberto E. Naal-Ruiz; David I. Ibarra-Zarate",
+      "year": 2021,
+      "doi": "10.1109/embc46164.2021.9630101",
+      "article_url": "https://doi.org/10.1109/embc46164.2021.9630101",
+      "data_url": "https://data.mendeley.com/datasets/yj52xrfgtz/4",
+      "status": "Distinct 2021 IEEE EMBC proceedings article confirmed by Crossref (pages 169–173), and Ryu 2024 cites it as prior Zolezzi work. Not counted as a qualifying new row because this pass did not verify accessible full text or link the 2021 proceeding itself to a distinct public-data cohort. It must not be replaced by the separate 2024 Ryu PAC/asymmetry reanalysis; 2021 title concerns linear/nonlinear features and is not evidence for Ryu’s later PAC result."
+    },
+    {
+      "title": "Predicting Pain: Electroencephalography Signatures of Neural Integration During Experimental Tonic Thermal Pain",
+      "authors": "Yiyuan Han; Elia Valentini; Sebastian Halder",
+      "year": 2026,
+      "doi": "10.1002/ejp.70313",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13317760/",
+      "data_url": "https://osf.io/2mqtb/files/osfstorage",
+      "status": "Already present in phase-coupling.json; OSF browser rendered sign-in and public API node/file-list calls returned HTTP 401 Unauthorized. No public raw EEG file listing/download verified; retain unverified rather than infer public access or an empty listing."
+    },
+    {
+      "title": "Exploring electroencephalographic chronic pain biomarkers: a mega-analysis",
+      "authors": "Felix S. Bott et al.",
+      "year": 2025,
+      "doi": "10.1016/j.ebiom.2025.105955",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12517086/",
+      "data_url": "https://osf.io/m45j2/",
+      "status": "Already present in phase-coupling.json. Paper describes controlled-access sources and reports eight pooled sets; public OSF m45j2 exposes a chronic-pain mobile dry-electrode BIDS project with a raw .eeg recording file (sub-001_task-EC_eeg.eeg, 17,832,448 bytes) plus matching .vhdr/.vmrk metadata. This resembles a Munich CGX dry-electrode cohort, but an exact mapping to all eight set labels or public access to the pooled analysis corpus was not verified. Do not mark the full pooled dataset public."
+    },
+    {
+      "title": "External validation of binary machine learning models for pain intensity perception classification from EEG in healthy individuals",
+      "authors": "Tyler Mari; Oda Asgard; Jessica Henderson; et al.",
+      "year": 2023,
+      "doi": "10.1038/s41598-022-27298-1",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9816165/",
+      "data_url": "https://osf.io/uqt9z/",
+      "status": "Already present in spectral-features.json. OSF confirms the project is public, but its file-list API returns data=[] and meta.total=0; public raw EEG not verified and not qualifying as open EEG data."
+    },
+    {
+      "title": "Exploratory pain EEG reanalyses using Hu/Zhao laser-evoked cohorts",
+      "authors": "No additional original reanalysis with a distinct public-data record was verified in this search pass",
+      "year": null,
+      "doi": null,
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12405539/",
+      "data_url": "https://openneuro.org/datasets/ds005292",
+      "status": "The Zhao 2025 descriptor and OpenNeuro pain EEG cohorts already occur in the existing JSON. Search results surfaced the same dataset descriptor and related discovery papers, but no new distinct original reanalysis that met the open-text/public-raw-data criterion was verified. Dataset cohort/run rows were not added as if new papers."
+    }
+  ]
+}

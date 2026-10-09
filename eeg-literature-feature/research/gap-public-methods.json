@@ -1,0 +1,219 @@
+{
+  "items": [
+    {
+      "title": "Test-retest reliability of spectral parameterization by 1/f characterization using SpecParam",
+      "authors": "Daniel J. McKeown, Anna J. Finley, Nicholas J. Kelley, James F. Cavanagh, Hannah A. D. Keage, Oliver Baumann, Victor R. Schinazi, Ahmed A. Moustafa, and Douglas J. Angus",
+      "year": 2023,
+      "doi": "10.1093/cercor/bhad482",
+      "item_type": "paper",
+      "evidence_scope": "transferable EEG",
+      "feature_family": "Test-retest reliability of periodic and aperiodic spectral power features",
+      "feature_definition": "SpecParam/FOOOF parameterization of EEG spectra into periodic peak parameters (power, central frequency, bandwidth) and aperiodic exponent/offset; repeated across resting eyes-open/eyes-closed and cognitive task recordings.",
+      "prediction_rationale": "Inference: a feature family with measurable within-person test-retest stability provides a baseline for expected feature noise and repeatability; this is reliability evidence, not evidence that the feature detects pain or preserves amplitude under denoising.",
+      "verified_result_metric": "Full-text qualitative result extracted: aperiodic exponent and offset were generally reliable; parameterized alpha/beta activity was more reliable than theta, with eyes-open fitting/data-loss limitations. Numeric metrics not copied into this record.",
+      "prediction_target": "Test-retest reliability of EEG periodic/aperiodic spectral parameters; no pain prediction target.",
+      "validation_design": "Secondary analysis of the publicly released 60-person repeated-session OpenNeuro cohort; the paper's analyzed sample was 49 healthy young adults across three sessions (two same-day sessions and a session about one month later), with rest and three cognitive tasks.",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10793580/",
+      "open_access_status": "Open-access full text (PMC; CC BY).",
+      "data_url": "https://openneuro.org/datasets/ds004148/versions/1.0.1",
+      "data_access_status": "Public EEG recordings verified on OpenNeuro; article explicitly identifies the original 60-person dataset. The repository contains BIDS EEG files; this record does not claim the derived SpecParam features themselves are raw EEG.",
+      "data_evidence": "The paper's Data availability section identifies OpenNeuro ds004148 as its original 60-person cohort. OpenNeuro landing page reports 64-channel, 500-Hz recordings and participant files; this is actual recorded EEG, separate from the paper's derived spectral parameters.",
+      "relevance_limitations": "Healthy young adults and resting/cognitive states only; it evaluates spectral reliability, not pain, blink artifact removal, or the reliability of short 5-s C3/C4/Cz time-domain variance. Does not establish pain specificity.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/gap-public-methods/specparam-pmc-study.md",
+        "eeg-variance-pain-literature/research/sources/gap-public-methods/openneuro-ds004148.md"
+      ],
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10793580/",
+        "https://openneuro.org/datasets/ds004148/versions/1.0.1"
+      ]
+    },
+    {
+      "title": "Test-Retest Reliability of Single Spectral Power and Spectral Power Ratios in Relative and Absolute Values",
+      "authors": "Jinwon Chang",
+      "year": 2025,
+      "doi": "10.1002/brb3.71035",
+      "item_type": "paper",
+      "evidence_scope": "transferable EEG",
+      "feature_family": "Absolute/relative band power and band-power ratios; test-retest ICC",
+      "feature_definition": "FFT-derived absolute and relative single-band power and spectral power ratios computed across five scalp regions; alpha/beta ratio singled out for reliability comparison.",
+      "prediction_rationale": "Inference: ratios may provide more repeatable strength features across sessions than absolute or relative single-band power, motivating reliability-first evaluation before clinical or pain prediction; not a denoising result.",
+      "verified_result_metric": "Full text reports absolute alpha/beta ratios in central, parietal, occipital, and temporal regions with ICC > 0.75 in both datasets; the article reports the direction as more reliable than single-band absolute/relative power.",
+      "prediction_target": "Short- and long-term reproducibility of EEG spectral-power features, not pain ratings or pain classification.",
+      "validation_design": "Two independent healthy-adult datasets: Dataset 1, 60 people across three sessions (two same day, one month later); Dataset 2, 74 people with sessions one hour apart. Repeated-measures reliability assessed using ICCs. Dataset 1 overlaps the publicly released ds004148 cohort used by the SpecParam paper; Dataset 2 is an additional OpenNeuro cohort.",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12589806/",
+      "open_access_status": "Open-access full text (PMC; CC BY 4.0).",
+      "data_url": "https://doi.org/10.18112/openneuro.ds004148.v1.0.1 ; https://doi.org/10.18112/openneuro.ds003478.v1.1.0",
+      "data_access_status": "Public OpenNeuro EEG datasets verified by the paper's Data Availability Statement. ds004148 provides the repeated-state 60-person EEG cohort; ds003478 provides EEG records but its README notes some channel interpolation and that raw pre-interpolation data are unavailable, so not all data are pristine original acquisition files.",
+      "data_evidence": "Full paper names OpenNeuro ds004148 and ds003478 in its Data Availability Statement. OpenNeuro pages expose participant-level EEG BIDS files. The ds003478 README explicitly notes that some channels were interpolated and there are no raw data to revert to; thus the dataset is public EEG but includes processing caveats.",
+      "relevance_limitations": "Transferable repeatability evidence only: no pain labels, no pain-validation cohort, and no denoising intervention. Ratio-based spectral features differ from time-domain variance and may not transfer to low-density central-channel pain analyses. Dataset 1 overlaps a cohort in the SpecParam study; Dataset 2 adds a distinct repository/cohort.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/gap-public-methods/chang-2025-spectral-ratio-reliability.md",
+        "eeg-variance-pain-literature/research/sources/gap-public-methods/openneuro-ds004148.md"
+      ],
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12589806/",
+        "https://doi.org/10.18112/openneuro.ds004148.v1.0.1",
+        "https://openneuro.org/datasets/ds003478/versions/1.1.0"
+      ]
+    },
+    {
+      "title": "Artifact-reference multivariate backward regression (ARMBR): a novel method for EEG blink artifact removal with minimal data requirements",
+      "authors": "L. Alkhoury, G. Scanavini, S. Louviot, A. Radanovic, S. A. Shah, and N. J. Hill",
+      "year": 2025,
+      "doi": "10.1088/1741-2552/ade566",
+      "item_type": "paper",
+      "evidence_scope": "transferable EEG",
+      "feature_family": "Blink-denoising reconstruction quality and signal-preservation metrics (SNR, RMSE, correlation, PSD and ERP preservation)",
+      "feature_definition": "Regression of a simplified time-locked blink-reference signal against multichannel EEG, followed by artifact projection; evaluates semi-synthetic ground-truth reconstruction with RMSE/SNR/Pearson correlation, and real-data impacts using normalized correlation, PSD relative error, and preservation of event-related potentials.",
+      "prediction_rationale": "Inference: denoising should be assessed not only by artifact reduction but also by preservation of EEG amplitude/spectral/event-related structure; better signal-quality metrics need not imply improved pain prediction.",
+      "verified_result_metric": "Full text reports qualitatively lower RMSE and higher SNR/correlation than two MNE-native methods on semi-synthetic data; comparable or better performance to ASR/ICA+ICLabel in scenarios; real-data tests report ERP preservation. No numeric effects copied.",
+      "prediction_target": "Blink-artifact suppression and preservation of EEG-derived signal/ERP features; explicitly not a pain target.",
+      "validation_design": "Semi-synthetic blink-contaminated EEG benchmark constructed from real EEG (10 participants), plus real natural-speech EEG evaluation (16 participants analyzed) and an OpenNeuro visual-oddball ERP dataset (42 participants); article describes training/testing splits and supplementary online tests.",
+      "article_url": "https://iopscience.iop.org/article/10.1088/1741-2552/ade566/meta",
+      "open_access_status": "Open-access full text (IOP; CC BY 4.0).",
+      "data_url": "https://osf.io/th2g6/ (semi-synthetic signal files); implementation: https://github.com/S-Shah-Lab/ARMBR",
+      "data_access_status": "Public derived EEG verified: OSF exposes clean and blink-signal MAT files used for semi-synthetic validation. These are EEG-derived benchmark signals, not raw full-session EEG; public code is not counted as data. The paper additionally reports real EEG source corpora, but the linked OSF deposit inspected here is verified for semi-synthetic data only.",
+      "data_evidence": "The paper states the semi-synthetic and real signals are available from its OSF/GitHub resources. OSF API file listings verify files including Sub1_Clean_EEG.mat and Sub1_Blink_Signal.mat under SemiSyntheticData. Those paired files are derived/semi-synthetic signal data. The article describes real natural-language and OpenNeuro ERP recordings separately; this record does not mislabel the OSF pair files as raw recordings.",
+      "relevance_limitations": "Transferable denoising methods only; blink artifacts and 128-channel/event-related designs differ from pain experiments and resting 5-s windows. No pain ratings or pain-label performance. Semi-synthetic source-EEG benchmarks should not be interpreted as entirely raw independent recordings; linked validated pair files are transformed/derived.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/gap-public-methods/armbr-paper-iop.md",
+        "eeg-variance-pain-literature/research/sources/gap-public-methods/armbr-validation-details.md",
+        "eeg-variance-pain-literature/research/sources/gap-public-methods/armbr-osf-eeg-derived-files.md"
+      ],
+      "source_urls": [
+        "https://iopscience.iop.org/article/10.1088/1741-2552/ade566/meta",
+        "https://osf.io/th2g6/",
+        "https://api.osf.io/v2/nodes/th2g6/files/osfstorage/688149174ccbb4e567403929/",
+        "https://github.com/S-Shah-Lab/ARMBR"
+      ]
+    }
+  ],
+  "conflicts": [
+    {
+      "title": "EEGdenoiseNet; DeepSeparator; Denoising EEG Signals for Real-World BCI Applications Using GANs; AnEEG",
+      "status": "Deduplicated—not added",
+      "reason": "Already present in eeg-variance-pain-literature/research/signal-data.json, including the benchmark/software methods and accessible repositories; this gap focuses on different reliability and blink-denoising methods."
+    },
+    {
+      "title": "Test–retest reliability of resting-state EEG in young and older adults",
+      "authors": "Tzvetan Popov et al.",
+      "year": 2023,
+      "doi": "10.1111/psyp.14268",
+      "status": "Checked nonqualifier: open article/code, raw EEG not publicly verified",
+      "reason": "The open text confirms test-retest power metrics and links analysis code to OSF. The OSF project landing page inspected contains code/data folders shown as 0 B and no public raw EEG download was verified. Public code alone does not qualify.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/gap-public-methods/popov-2023-open-text-code-not-eeg.md"
+      ],
+      "source_urls": [
+        "https://onlinelibrary.wiley.com/doi/full/10.1111/psyp.14268",
+        "https://osf.io/a759y/"
+      ]
+    },
+    {
+      "title": "Reproducibility of power spectrum, functional connectivity and network construction in resting-state EEG",
+      "authors": "Wei Duan et al.",
+      "year": 2021,
+      "doi": "10.1016/j.jneumeth.2020.108985",
+      "status": "Checked nonqualifier: relevant public-data tie but full text access not verified",
+      "reason": "Search/fetch returned abstract and article preview with paywall/institution-access barrier; it cannot meet the open-text criterion in this research pass. A dataset paper describes the related OpenNeuro cohort, but the article-to-recording linkage was not verified from open full text.",
+      "source_urls": [
+        "https://doi.org/10.1016/j.jneumeth.2020.108985",
+        "https://doi.org/10.1038/s41597-022-01607-9"
+      ]
+    },
+    {
+      "title": "Automatic Classification of Artifactual ICA-Components for Artifact Removal in EEG Signals",
+      "authors": "Irene Winkler, Stefan Haufe, and Michael Tangermann",
+      "year": 2011,
+      "doi": "10.1186/1744-9081-7-30",
+      "status": "Checked nonqualifier: open text, no public EEG repository verified",
+      "reason": "Full PMC article verifies ICA artifact classification and preservation of motor-imagery discriminant information, but the inspected paper page did not establish public access to its study EEG. It is therefore not counted as a public-data item.",
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC3175453/"
+      ]
+    },
+    {
+      "title": "A test-retest resting, and cognitive state EEG dataset during multiple subject-driven states",
+      "authors": "Yulin Wang et al.",
+      "year": 2022,
+      "doi": "10.1038/s41597-022-01607-9",
+      "status": "Checked adjacent data descriptor; not counted as an original feature-validation study",
+      "reason": "Open article and raw OpenNeuro resource provide a useful public repeated-session cohort, but the paper is primarily a data descriptor. Its downstream analytic reliability results belong to separate studies; avoid counting this dataset row as an independent feature-method study.",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/gap-public-methods/wang-open-eeg-data-descriptor.md"
+      ],
+      "source_urls": [
+        "https://doi.org/10.1038/s41597-022-01607-9",
+        "https://openneuro.org/datasets/ds004148/versions/1.0.1"
+      ]
+    },
+    {
+      "title": "EEG denoising articles returned by targeted searches (including PhysioNet/BCI and dry-electrode candidates)",
+      "status": "Checked, not added without qualifying evidence",
+      "reason": "Search results included software/benchmark duplicates, recent methods without verified public raw EEG, or studies where a repository/full text was not independently checked in this limited pass. No such result is promoted based only on an abstract snippet."
+    }
+  ],
+  "gaps": [
+    "The strict gap fill yielded 3 additional eligible original papers, not 30–40 and not 100. The highest-confidence additions are one open raw-data spectral-parameter reliability study, one cross-dataset band-power-ratio reliability study, and one open semi-synthetic blink-denoising study. Do not represent this as satisfying the requested 100-item overall target.",
+    "No newly verified study in this pass jointly validates denoising or EEG variance features against pain ratings using an open raw pain EEG dataset. The reliability studies are transferable methods evidence only, not pain validation.",
+    "ARMBR's linked OSF files are public transformed/semi-synthetic EEG-derived signal pairs, not public raw full-session EEG. The paper reports additional real-data sources, but the exact raw corpus URL was not verified in this pass.",
+    "Open public raw datasets and open text are not enough to establish feature transfer: the SpecParam and spectral-ratio papers measure spectral feature repeatability in healthy cohorts, while pain specificity, short-window C3/C4/Cz stability, and denoising-related preservation remain untested.",
+    "Targeted search returned candidates that failed data-access checks (open code without EEG, paywalled full text, no confirmed dataset link, or dataset/data-descriptor rather than an original signal analysis). These are recorded under conflicts and are not counted toward the qualifying items."
+  ],
+  "sources": [
+    {
+      "type": "web_search",
+      "purpose": "Targeted search 1: additional open EEG signal-denoising/SNR preservation studies",
+      "query": "Which original EEG signal denoising and SNR/variance-preservation research papers evaluate methods on publicly accessible real EEG datasets such as PhysioNet, BCI, or EEG artifact benchmarks, and provide evidence beyond EEGDenoiseNet, DeepSeparator, GAN EEG denoising, and AnEEG?",
+      "searchQueries": [
+        "EEG denoising benchmark public real EEG SNR study",
+        "EEG artifact removal public dataset signal preservation original paper"
+      ],
+      "count": 10
+    },
+    {
+      "type": "web_search",
+      "purpose": "Targeted search 2: PhysioNet/BCI denoising evidence",
+      "query": "Which original research studies quantify EEG signal quality, SNR, artifact attenuation, or preservation of amplitude variance after denoising using openly downloadable EEG data from PhysioNet or BCI repositories?",
+      "searchQueries": [
+        "PhysioNet EEG denoising SNR public dataset paper",
+        "public BCI EEG artifact removal signal quality benchmark"
+      ],
+      "count": 10
+    },
+    {
+      "type": "web_search",
+      "purpose": "Targeted search 3: reliability/test-retest",
+      "query": "Which original EEG feature reliability or test-retest studies evaluate amplitude, variance, spectral power, or signal quality using openly accessible raw EEG datasets and publish full text and data?",
+      "searchQueries": [
+        "EEG test retest reliability public raw dataset amplitude variance",
+        "EEG feature reliability openly downloadable dataset study"
+      ],
+      "count": 10
+    },
+    {
+      "type": "web_search",
+      "purpose": "Targeted search 4: open-data artifact processing methods",
+      "query": "Which open-data original EEG computational benchmark papers compare ICA, wavelet, regression, or automated artifact removal on real publicly available EEG and report signal reconstruction or downstream feature preservation?",
+      "searchQueries": [
+        "EEG ICA artifact removal public benchmark real data paper",
+        "EEG wavelet denoising open dataset benchmark signal preservation"
+      ],
+      "count": 10
+    },
+    {
+      "type": "primary_sources",
+      "purpose": "Primary article and repository pages inspected; evidence excerpts saved at the paths shown",
+      "source_evidence_paths": [
+        "eeg-variance-pain-literature/research/sources/gap-public-methods/specparam-pmc-study.md",
+        "eeg-variance-pain-literature/research/sources/gap-public-methods/openneuro-ds004148.md",
+        "eeg-variance-pain-literature/research/sources/gap-public-methods/chang-2025-spectral-ratio-reliability.md",
+        "eeg-variance-pain-literature/research/sources/gap-public-methods/armbr-paper-iop.md",
+        "eeg-variance-pain-literature/research/sources/gap-public-methods/armbr-osf-eeg-derived-files.md",
+        "eeg-variance-pain-literature/research/sources/gap-public-methods/popov-2023-open-text-code-not-eeg.md",
+        "eeg-variance-pain-literature/research/sources/gap-public-methods/wang-open-eeg-data-descriptor.md"
+      ]
+    }
+  ]
+}
