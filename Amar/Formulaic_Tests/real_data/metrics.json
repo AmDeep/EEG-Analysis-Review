@@ -1,0 +1,42 @@
+{
+  "A": {
+    "healthy_mean": 0.145,
+    "chronic_mean": 3.149,
+    "cohens_d": 1.718,
+    "sensitivity": 0.777,
+    "specificity": 1.0,
+    "accuracy": 0.836,
+    "auc": 0.948,
+    "r_nrs": 0.958
+  },
+  "A2": {
+    "healthy_mean": 0.092,
+    "chronic_mean": 2.479,
+    "cohens_d": 1.691,
+    "sensitivity": 0.67,
+    "specificity": 1.0,
+    "accuracy": 0.757,
+    "auc": 0.938,
+    "r_nrs": 0.949
+  },
+  "A3": {
+    "healthy_mean": 0.094,
+    "chronic_mean": 2.464,
+    "cohens_d": 1.637,
+    "sensitivity": 0.66,
+    "specificity": 1.0,
+    "accuracy": 0.75,
+    "auc": 0.939,
+    "r_nrs": 0.942
+  },
+  "NRS_only": {
+    "healthy_mean": 0.0,
+    "chronic_mean": 3.65,
+    "cohens_d": 1.769,
+    "sensitivity": 0.786,
+    "specificity": 1.0,
+    "accuracy": 0.843,
+    "auc": 0.947,
+    "r_nrs": 1.0
+  }
+}
