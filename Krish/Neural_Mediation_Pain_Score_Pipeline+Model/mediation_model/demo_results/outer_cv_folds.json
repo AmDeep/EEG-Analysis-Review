@@ -1,0 +1,37 @@
+[
+  {
+    "fold": 1,
+    "train_subjects": 24,
+    "test_subjects": 6,
+    "test_trials": 240,
+    "ridge_alpha": 0.1
+  },
+  {
+    "fold": 2,
+    "train_subjects": 24,
+    "test_subjects": 6,
+    "test_trials": 240,
+    "ridge_alpha": 0.1
+  },
+  {
+    "fold": 3,
+    "train_subjects": 24,
+    "test_subjects": 6,
+    "test_trials": 240,
+    "ridge_alpha": 1.0
+  },
+  {
+    "fold": 4,
+    "train_subjects": 24,
+    "test_subjects": 6,
+    "test_trials": 240,
+    "ridge_alpha": 10.0
+  },
+  {
+    "fold": 5,
+    "train_subjects": 24,
+    "test_subjects": 6,
+    "test_trials": 240,
+    "ridge_alpha": 1.0
+  }
+]

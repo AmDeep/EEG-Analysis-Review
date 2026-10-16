@@ -1,0 +1,14 @@
+EEG PAIN: FROM RAW EEG TO NEURAL MEDIATION SCORE
+
+1. Preprocess event-marked EEG with preprocessing/eeg_pain_features.py
+   (see preprocessing/README.md for dependencies and commands).
+2. Merge subject-level feature CSVs: see mediation_model/README.md.
+3. Train and validate mediation score using mediation_model/neural_mediation.py
+4. Apply saved score using mediation_model/apply_neural_score.py
+
+Synthetic tests:
+  cd mediation_model
+  pip install -r requirements.txt
+  python smoke_tests.py
+
+No downloaded real pain EEG dataset is packaged. Synthetic examples demonstrate code only.

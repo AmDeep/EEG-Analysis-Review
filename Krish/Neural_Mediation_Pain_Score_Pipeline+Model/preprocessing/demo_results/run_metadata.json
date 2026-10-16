@@ -1,0 +1,80 @@
+{
+  "raw_file": "demo_input/synthetic_continuous_raw.fif",
+  "events_file": "demo_input/synthetic_events.tsv",
+  "feature_file": "demo_results/eeg_trial_features.csv",
+  "config": {
+    "pre_start": -2.0,
+    "pre_end": -0.2,
+    "post_start": 0.2,
+    "post_end": 2.0,
+    "highpass_hz": 0.3,
+    "lowpass_hz": 45.0,
+    "mains_hz": 60,
+    "reject_ptp_uv": 150.0,
+    "flat_ptp_uv": 0.5,
+    "eog_reject_ptp_uv": 150.0,
+    "min_eeg_channels": 4,
+    "erp_baseline_start": -0.2,
+    "erp_baseline_end": -0.02,
+    "n2_start": 0.18,
+    "n2_end": 0.35,
+    "p2_start": 0.3,
+    "p2_end": 0.6,
+    "erp_lowpass_hz": 15.0,
+    "n2_p2_channel": "Cz",
+    "envelope_trim_s": 0.2,
+    "use_ica": true,
+    "ica_seed": 17,
+    "max_ica_eog_components": 4
+  },
+  "preprocessing_qc": {
+    "auto_bads": [],
+    "manual_bads": [],
+    "existing_bads": [],
+    "bad_reasons": {},
+    "channel_std_uv": {
+      "F3": 12.295225127271452,
+      "F4": 12.204312685772452,
+      "Fz": 11.917648367965281,
+      "FCz": 11.969965413891046,
+      "C3": 13.103369849626235,
+      "C4": 11.962424032092178,
+      "Cz": 11.983911016349362,
+      "Pz": 11.947814147692544,
+      "O1": 11.914434737868302,
+      "O2": 11.897152532312413
+    },
+    "eog_channels": [
+      "VEOG"
+    ],
+    "ica_attempted": true,
+    "ica_removed": [],
+    "good_eeg_channels": [
+      "F3",
+      "F4",
+      "Fz",
+      "FCz",
+      "C3",
+      "C4",
+      "Cz",
+      "Pz",
+      "O1",
+      "O2"
+    ],
+    "n_good_eeg": 10,
+    "sampling_hz": 256.0
+  },
+  "n_stimulus_events": 18,
+  "n_accepted": 17,
+  "n_rejected": 1,
+  "missing_feature_columns": [],
+  "notes": [
+    "EEG baseline power and post-stimulus power are observed features, not an additive decomposition.",
+    "ERP features require event onset timing accuracy and should be validated with grand-average waveforms.",
+    "Channel-space connectivity may reflect volume conduction; PLI can be biased on short epochs.",
+    "PAF and envelope-CV on 1.8 s windows are exploratory and potentially unstable.",
+    "Automated bad-channel/epoch rejection and ICA require visual QC on real data.",
+    "Trial-wise labels are carried through but never used to calculate EEG features.",
+    "Across-trial subject summary must not be fed to cross-subject ML without leakage-safe computation."
+  ]
+}

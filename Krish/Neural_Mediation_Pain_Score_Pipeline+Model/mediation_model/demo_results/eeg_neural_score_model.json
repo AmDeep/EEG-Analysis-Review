@@ -1,0 +1,73 @@
+{
+  "features": [
+    "delta_sensorimotor_alpha_ln_power",
+    "delta_sensorimotor_beta_ln_power",
+    "delta_global_theta_ln_power",
+    "delta_gamma_central_gamma_ln_power",
+    "delta_sensorimotor_spectral_entropy",
+    "delta_central_c3_c4_alpha_pli",
+    "erp_cz_n2_to_p2_uv"
+  ],
+  "preprocessing": {
+    "median": [
+      0.0249931546724002,
+      0.02855310210037915,
+      -0.0240104374526049,
+      -0.031839171165047295,
+      -0.01797883930796165,
+      -0.0105426371907295,
+      -0.3569673429535951
+    ],
+    "mean": [
+      0.034280776481236626,
+      0.026272116291551708,
+      -0.02055731807426229,
+      -0.031885121598756394,
+      -0.021628159218286674,
+      -0.013094384474298624,
+      -0.5245389574897475
+    ],
+    "sd": [
+      0.4795280001369872,
+      0.3373505329103066,
+      0.3810099387717375,
+      0.6114513428842638,
+      0.29785828869166225,
+      0.20765003903685172,
+      7.7076374292149765
+    ]
+  },
+  "weights": [
+    -0.15414358704925527,
+    -0.07138394112294046,
+    0.11764799752332819,
+    0.08868189038947827,
+    0.16406426398781973,
+    0.16417309491862686,
+    0.09659973311529552
+  ],
+  "score_mean": -1.1842378929335004e-17,
+  "score_sd": 0.7583620411174662,
+  "pain_head_intensity_only": [
+    0.4493893078947052,
+    0.8037035674374762
+  ],
+  "pain_head_intensity_and_eeg": [
+    1.7053532176354682,
+    0.5517549396058294,
+    0.8288626985371128
+  ],
+  "pain_head_eeg_only": [
+    4.455851591570528,
+    1.6841787994814037
+  ],
+  "ridge_alpha": 0.1,
+  "description": "Linear EEG-only index trained on pain residuals conditional on stimulus intensity and subject fixed intercepts. Heads trained on pooled data.",
+  "model_kind": "EEG neural index and separate pain calibration heads",
+  "training_trials": 1200,
+  "training_subjects": 30,
+  "pain_min": 0.0,
+  "pain_max": 10.0,
+  "synthetic_warning": "If fit on synthetic data, all predictions are synthetic demonstrations only.",
+  "source_csv_name": "synthetic_multisubject_features.csv"
+}

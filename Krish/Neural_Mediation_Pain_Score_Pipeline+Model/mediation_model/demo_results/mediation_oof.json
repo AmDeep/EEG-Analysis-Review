@@ -1,0 +1,31 @@
+{
+  "method": "within-subject demeaned linear associations using cross-fitted scores",
+  "point_estimates": {
+    "a_intensity_to_neural": 0.30005211317189584,
+    "b_neural_to_pain_given_intensity": 0.782821740437869,
+    "c_total_intensity_to_pain": 0.7957798638408042,
+    "c_prime_direct_association": 0.5608925463855202,
+    "indirect_product_a_times_b": 0.23488731745528393,
+    "c_minus_c_prime": 0.23488731745528402,
+    "pain_rating_units_per_stimulus_unit": true
+  },
+  "conditional_fixed_score_subject_bootstrap_CI": {
+    "a_intensity_to_neural": {
+      "lower_2_5": 0.2860077822624767,
+      "upper_97_5": 0.3168630860749644
+    },
+    "b_neural_to_pain_given_intensity": {
+      "lower_2_5": 0.7326154902678963,
+      "upper_97_5": 0.844482689664241
+    },
+    "c_prime_direct_association": {
+      "lower_2_5": 0.52899623333887,
+      "upper_97_5": 0.5900130502607864
+    },
+    "indirect_product_a_times_b": {
+      "lower_2_5": 0.21893976254660855,
+      "upper_97_5": 0.25426540234613504
+    }
+  },
+  "limitations": "Exploratory statistical mediation; scores and equations learned from outcome labels; cross-fitting limits in-sample score leakage but does not identify a causal indirect effect. Fixed-score cluster bootstrap CIs omit uncertainty from fitting EEG weights, so do not present as formal mediation significance tests. Unmeasured attention, salience, expectations, and EEG measurement limitations remain."
+}

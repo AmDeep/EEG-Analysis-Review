@@ -1,0 +1,18 @@
+{
+  "trials_read": 1200,
+  "trials_with_labels_and_eeg": 1200,
+  "subjects": 30,
+  "features_used": [
+    "delta_sensorimotor_alpha_ln_power",
+    "delta_sensorimotor_beta_ln_power",
+    "delta_global_theta_ln_power",
+    "delta_gamma_central_gamma_ln_power",
+    "delta_sensorimotor_spectral_entropy",
+    "delta_central_c3_c4_alpha_pli",
+    "erp_cz_n2_to_p2_uv"
+  ],
+  "features_missing": [],
+  "final_ridge_alpha": 0.1,
+  "subject_held_out_validation": true,
+  "caution": "These are candidate EEG-derived pain estimates, not validated objective pain measures."
+}
