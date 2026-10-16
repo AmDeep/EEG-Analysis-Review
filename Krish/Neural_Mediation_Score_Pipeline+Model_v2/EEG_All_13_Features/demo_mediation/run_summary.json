@@ -1,0 +1,38 @@
+{
+  "trials_read": 320,
+  "trials_with_labels_and_eeg": 320,
+  "subjects": 16,
+  "feature_set": "all-adult",
+  "features_used": [
+    "delta_sensorimotor_alpha_ln_power",
+    "delta_sensorimotor_peak_alpha_hz",
+    "delta_sensorimotor_alpha_envelope_cv",
+    "delta_frontal_alpha_asymmetry_ln_f4_over_f3",
+    "delta_sensorimotor_beta_ln_power",
+    "delta_global_theta_ln_power",
+    "delta_frontal_midline_theta_ln_power",
+    "delta_gamma_central_gamma_ln_power",
+    "delta_central_c3_c4_alpha_pli",
+    "delta_sensorimotor_spectral_entropy",
+    "delta_cz_response_temporal_sd_uv",
+    "erp_cz_n2_to_p2_uv"
+  ],
+  "categories_represented": [
+    "Sensorimotor alpha power (8-13 Hz)",
+    "Peak alpha frequency",
+    "Alpha envelope dynamics",
+    "Frontal alpha asymmetry",
+    "Beta power (13-30 Hz)",
+    "Theta power (4-8 Hz)",
+    "Spatially defined midline theta",
+    "Gamma power (>30 Hz, analyzed 30-45 Hz)",
+    "Connectivity and phase synchronization",
+    "Spectral entropy",
+    "Response variability and temporal features",
+    "Vertex N2-P2 amplitude"
+  ],
+  "features_missing": [],
+  "final_ridge_alpha": 10.0,
+  "subject_held_out_validation": true,
+  "caution": "These are candidate EEG-derived pain estimates, not validated objective pain measures."
+}

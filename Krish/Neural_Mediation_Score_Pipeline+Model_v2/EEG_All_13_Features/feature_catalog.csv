@@ -1,0 +1,14 @@
+image_category_number,feature_category,model_column,applicability
+1,Sensorimotor alpha power (8-13 Hz),delta_sensorimotor_alpha_ln_power,adult
+2,Peak alpha frequency,delta_sensorimotor_peak_alpha_hz,adult_exploratory
+3,Alpha envelope dynamics,delta_sensorimotor_alpha_envelope_cv,adult_exploratory
+4,Frontal alpha asymmetry,delta_frontal_alpha_asymmetry_ln_f4_over_f3,adult_exploratory
+5,Beta power (13-30 Hz),delta_sensorimotor_beta_ln_power,adult
+6,Theta power (4-8 Hz),delta_global_theta_ln_power,adult
+7,Spatially defined midline theta,delta_frontal_midline_theta_ln_power,adult_exploratory
+8,"Gamma power (>30 Hz, analyzed 30-45 Hz)",delta_gamma_central_gamma_ln_power,adult
+9,Connectivity and phase synchronization,delta_central_c3_c4_alpha_pli,adult_exploratory
+10,Spectral entropy,delta_sensorimotor_spectral_entropy,adult
+11,Response variability and temporal features,delta_cz_response_temporal_sd_uv,adult_exploratory
+12,Vertex N2-P2 amplitude,erp_cz_n2_to_p2_uv,adult_discrete_stimulus
+13,Infant noxious-evoked EEG template,neonatal_noxious_template_corr,neonatal_template_required

@@ -1,0 +1,10 @@
+EEG-only score (no stimulus or pain labels required at inference):
+  x_std[j] = (impute_median(x[j]) - feature_mean[j]) / feature_sd[j]
+  raw = (-0.105522)*z[delta_sensorimotor_alpha_ln_power] + (0.010184)*z[delta_sensorimotor_peak_alpha_hz] + (0.00263127)*z[delta_sensorimotor_alpha_envelope_cv] + (0.00390028)*z[delta_frontal_alpha_asymmetry_ln_f4_over_f3] + (-0.0931316)*z[delta_sensorimotor_beta_ln_power] + (0.0928419)*z[delta_global_theta_ln_power] + (0.00647018)*z[delta_frontal_midline_theta_ln_power] + (0.0977878)*z[delta_gamma_central_gamma_ln_power] + (0.10448)*z[delta_central_c3_c4_alpha_pli] + (0.0894948)*z[delta_sensorimotor_spectral_entropy] + (0.0127837)*z[delta_cz_response_temporal_sd_uv] + (0.0823943)*z[erp_cz_n2_to_p2_uv]
+  neural_score_z = (raw - (6.93889e-18)) / (0.590853)
+  pred_pain_from_EEG_only = clip(
+      (4.35477) + (1.72719)*neural_score_z,
+      0, 10)
+  score_0_100 = 100*(pred_pain_from_EEG_only - 0)/(10-0)
+See feature_weights.csv for training-set imputation, means and standard deviations.
+This is a fitted predictive index, NOT a clinically validated pain biomarker.
