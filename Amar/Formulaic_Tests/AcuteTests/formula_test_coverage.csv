@@ -1,0 +1,19 @@
+formula_family,actual_test_status,available_input,reason,required_to_finish
+P2-only linear calibration,TESTED aggregate-level,Published P2 group means paired with assigned rating-band midpoints,Only three aggregate points; target midpoints are not individual ratings,Individual trial EEG feature plus NRS rows
+N2-P2 linear calibration,TESTED aggregate-level,Published mean P2 minus mean N2 paired with assigned rating-band midpoints,Only three aggregate points; target midpoints are not individual ratings,Individual trial EEG feature plus NRS rows and N2/P2 extraction
+Absolute-N2 linear calibration,TESTED aggregate-level,Published absolute N2 group mean paired with assigned rating-band midpoints,Only three aggregate points; no subject-level data,Individual trial EEG feature plus NRS rows
+Published external P2 power law,TRANSFER STRESS TEST,Published P2 means plus external P2=8.1*NRS^0.78 equation,Equation originally fit on rating range about 1-5; here evaluated on higher bands,Independent samples overlapping original range and external validation
+Alpha-only sigmoid,NOT TESTABLE,No paired alpha feature values in aggregate table,Required EEG feature absent,Trial-level alpha power or within-person standardized alpha plus NRS
+Ordinal cumulative-link,NOT TESTABLE,Only three group midpoints,Too few aggregate observations to estimate ordinal thresholds,Many trial-level EEG vectors with ordered NRS labels
+Ridge / elastic net multifeature,NOT TESTABLE,No trial-level feature matrix,No paired multifeature observations,Trial-level multi-feature CSV and subject IDs
+GAM / boosted nonlinear model,NOT TESTABLE,No trial-level feature matrix,Would overfit three aggregate points,Trial-level feature matrix and grouped outer CV
+Personalized calibration,NOT TESTABLE,No subject IDs or multiple trials per person,Aggregate means lose subject and time structure,Subject-linked trial rows and enough trials per person
+Temporal EWMA / temporal model,NOT TESTABLE,No trial order or sequences,No time-ordered scores available,Trial order and EEG feature per trial
+Spectral-only model,NOT TESTABLE,No alpha/beta/theta/gamma trial features,Spectral predictors absent,Trial-level band powers and pain ratings
+Connectivity / entropy / frontal alpha asymmetry,NOT TESTABLE,No channel time series or feature values,Required predictors absent,Channel-resolved EEG or traceable feature table
+Mixed-effects model,NOT TESTABLE,No subject-linked observations,Cannot estimate within- and between-person variance,Subject IDs plus multiple trials and EEG features
+Random forest / gradient boosting,NOT TESTABLE,No trial-level design matrix,No training and holdout rows,Trial-level features plus pain ratings
+Trial-level category performance (low/moderate/high),NOT TESTABLE,Only three group-level target midpoints,Nearest-midpoint result 3/3 is aggregate-only and not subject/trial classification,Individual OOF predictions and class-wise confusion matrix
+Participant-held-out prediction,NOT TESTABLE,No subject-level EEG feature rows,Cannot create valid participant-held-out folds,Real trial feature data and subject IDs
+Temporal holdout,NOT TESTABLE,No trial sequence,Chronological generalization unknown,Trial-order feature data
+Cross-dataset validation,NOT TESTABLE,No trial feature matrices locally,No common predictors to transfer,Two harmonized trial-level EEG datasets

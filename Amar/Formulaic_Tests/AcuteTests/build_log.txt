@@ -1,0 +1,42 @@
+{
+  "run_status": "COMPLETED_AGGREGATE_LEVEL_ONLY",
+  "n_aggregate_points": 3,
+  "formula_results": [
+    {
+      "formula_id": "P2_linear",
+      "full_fit_MAE_in_sample": 0.010284205912386213,
+      "leave_one_band_out_MAE": 0.038571624109870285,
+      "leave_one_band_out_RMSE": 0.04008766965186933,
+      "leave_one_band_out_mean_bias": -0.02314462686469169,
+      "feature_spearman_rho_vs_band_midpoint": 1.0,
+      "exact_two_sided_permutation_p": 0.3333333333333333
+    },
+    {
+      "formula_id": "N2P2_linear",
+      "full_fit_MAE_in_sample": 0.013118477019545457,
+      "leave_one_band_out_MAE": 0.04920643658744073,
+      "leave_one_band_out_RMSE": 0.0511427703045134,
+      "leave_one_band_out_mean_bias": -0.029527292202414124,
+      "feature_spearman_rho_vs_band_midpoint": 1.0,
+      "exact_two_sided_permutation_p": 0.3333333333333333
+    },
+    {
+      "formula_id": "absN2_linear",
+      "full_fit_MAE_in_sample": 0.016159835463493682,
+      "leave_one_band_out_MAE": 0.06062209395542754,
+      "leave_one_band_out_RMSE": 0.06301143630549627,
+      "leave_one_band_out_mean_bias": -0.03637966971300344,
+      "feature_spearman_rho_vs_band_midpoint": 1.0,
+      "exact_two_sided_permutation_p": 0.3333333333333333
+    },
+    {
+      "formula_id": "P2_powerlaw_transferred",
+      "full_fit_MAE_in_sample": 3.8074340896186087,
+      "leave_one_band_out_MAE": null,
+      "leave_one_band_out_RMSE": null,
+      "leave_one_band_out_mean_bias": -3.8074340896186087,
+      "feature_spearman_rho_vs_band_midpoint": 1.0,
+      "exact_two_sided_permutation_p": 0.3333333333333333
+    }
+  ]
+}

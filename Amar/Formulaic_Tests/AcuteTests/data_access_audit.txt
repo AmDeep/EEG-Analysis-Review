@@ -1,0 +1,22 @@
+DATA ACCESS AUDIT — prepared 2026-10-26 local date
+
+Goal: apply the developed EEG-only pain score formulas to actual acute-pain trials and test pain-level grouping against the trials' ratings.
+
+Sources checked:
+- Li et al. 2018: https://pmc.ncbi.nlm.nih.gov/articles/PMC5991169/ (published group-average N2/P2 values used for aggregate formula checks).
+- Wager et al. 2006: https://pmc.ncbi.nlm.nih.gov/articles/PMC3735137/ (external power-law formula used for a transfer/stress check).
+- 2025 laser-evoked-potential multi-experiment data paper: https://www.nature.com/articles/s41597-025-05900-1.
+- Supplementary repository: https://github.com/XiangyueZhao/Supplement-Data.
+- OpenNeuro/NEMAR ds005284, ds005285, ds005291, ds005293.
+
+A GitHub browser view of `participants_singletrial_26ByBiosemi.csv` was accessible. It shows 417 lines including header, with 416 trial rows and columns ID, Trial_Num, laser_power, Painrating; pain ratings shown span 0–10. This is an observed trial-level rating/stimulus table, not a paired EEG predictor file. It contains no N2/P2 values or spectral predictors, so the existing EEG formulas cannot be applied to these rows in isolation. See SOURCE_DATA_ACCESS_UPDATE.md and trial_rating_table_source_inventory.csv.
+
+Direct local HTTP attempts:
+- urllib.request.urlopen('https://raw.githubusercontent.com/XiangyueZhao/Supplement-Data/main/README.md', timeout=10) -> URLError: [Errno -3] Temporary failure in name resolution.
+- urllib.request.urlopen('https://github.com/XiangyueZhao/Supplement-Data', timeout=10) -> URLError: [Errno -3] Temporary failure in name resolution.
+
+Consequently no raw EEG binaries, EEG epochs, or paired trial-level EEG feature matrix were downloaded into the local processing runtime. No individual trial score or participant-level validation is claimed.
+
+Completed locally: aggregate-level formulas were applied to real published group-mean N2/P2 signals from three NRS bands (assigned midpoint labels 5, 7, 9); leave-one-band-out checks, monotonicity, exact rank permutation, cross-study power-law transfer check, score dispersion and pairwise standardized descriptive differences were computed. Outputs live in aggregate_formula_results/.
+
+Still not executed: subject-grouped CV on real trials; per-trial prediction and pain-level categorization; real-patient subject scores; individual-level MAE/RMSE, calibration, ordinal metrics, cluster bootstrap, participant-preserving label permutation, temporal holdout, feature ablation and cross-dataset replication. These require row-level EEG features aligned to observed pain labels.

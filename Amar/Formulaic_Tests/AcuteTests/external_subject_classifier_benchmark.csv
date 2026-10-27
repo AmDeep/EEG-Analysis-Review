@@ -1,0 +1,8 @@
+model,features,validation_method,n_initial_subjects,n_analysis_subjects,reported_balanced_accuracy,reported_permutation_p,metric_type,provenance,source_url,not_equivalent_to
+LDA_all_features,7 EEG features,LOOCV,26,26,0.494,,subject-level LOOCV,Reported in third-party repository README,https://github.com/Sai-sasi/eeg-pain-sensitivity-classifier,Trial-level NRS intensity prediction
+SVM_all_features,7 EEG features,LOOCV,26,26,0.450,,subject-level LOOCV,Reported in third-party repository README,https://github.com/Sai-sasi/eeg-pain-sensitivity-classifier,Trial-level NRS intensity prediction
+LDA_all_features_outliers_removed,7 EEG features,LOOCV,26,24,0.571,,subject-level LOOCV,Reported in third-party repository README,https://github.com/Sai-sasi/eeg-pain-sensitivity-classifier,Trial-level NRS intensity prediction
+SVM_all_features_outliers_removed,7 EEG features,LOOCV,26,24,0.486,,subject-level LOOCV,Reported in third-party repository README,https://github.com/Sai-sasi/eeg-pain-sensitivity-classifier,Trial-level NRS intensity prediction
+LDA_selected_features,3 EEG features,LOOCV,26,24,0.521,,subject-level LOOCV,Reported in third-party repository README,https://github.com/Sai-sasi/eeg-pain-sensitivity-classifier,Trial-level NRS intensity prediction
+SVM_selected_features,3 EEG features,LOOCV,26,24,0.586,,subject-level LOOCV,Reported in third-party repository README,https://github.com/Sai-sasi/eeg-pain-sensitivity-classifier,Trial-level NRS intensity prediction
+LDA_P2_latency_only,p2_latency_ms,LOOCV,26,24,0.671,0.032,subject-level LOOCV plus 1000 label permutations,Reported in third-party repository README; not re-run here,https://github.com/Sai-sasi/eeg-pain-sensitivity-classifier,Trial-level NRS intensity prediction
