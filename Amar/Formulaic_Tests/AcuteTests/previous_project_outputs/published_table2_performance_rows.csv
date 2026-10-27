@@ -1,0 +1,17 @@
+training_configuration,testing_configuration,ssm_unsupervised_auc,svm_supervised_auc,svm_peak_accuracy,ssm_minus_svm_auc,source_url,data_status
+Hand #1,Hand #1,0.81,0.74,0.61,0.07000000000000006,https://pmc.ncbi.nlm.nih.gov/articles/PMC7744433/,published rounded model output; not raw EEG
+Hand #1,Back #1,0.61,0.58,0.55,0.030000000000000027,https://pmc.ncbi.nlm.nih.gov/articles/PMC7744433/,published rounded model output; not raw EEG
+Hand #1,Hand #2,0.7,0.5,0.5,0.19999999999999996,https://pmc.ncbi.nlm.nih.gov/articles/PMC7744433/,published rounded model output; not raw EEG
+Hand #1,Back #2,0.73,0.71,0.73,0.020000000000000018,https://pmc.ncbi.nlm.nih.gov/articles/PMC7744433/,published rounded model output; not raw EEG
+Back #1,Hand #1,0.8,0.58,0.7,0.22000000000000008,https://pmc.ncbi.nlm.nih.gov/articles/PMC7744433/,published rounded model output; not raw EEG
+Back #1,Back #1,0.65,0.83,0.66,-0.17999999999999994,https://pmc.ncbi.nlm.nih.gov/articles/PMC7744433/,published rounded model output; not raw EEG
+Back #1,Hand #2,0.7,0.46,0.52,0.23999999999999994,https://pmc.ncbi.nlm.nih.gov/articles/PMC7744433/,published rounded model output; not raw EEG
+Back #1,Back #2,0.73,0.45,0.53,0.27999999999999997,https://pmc.ncbi.nlm.nih.gov/articles/PMC7744433/,published rounded model output; not raw EEG
+Hand #2,Hand #1,0.79,0.62,0.63,0.17000000000000004,https://pmc.ncbi.nlm.nih.gov/articles/PMC7744433/,published rounded model output; not raw EEG
+Hand #2,Back #1,0.6,0.59,0.58,0.010000000000000009,https://pmc.ncbi.nlm.nih.gov/articles/PMC7744433/,published rounded model output; not raw EEG
+Hand #2,Hand #2,0.71,0.77,0.67,-0.06000000000000005,https://pmc.ncbi.nlm.nih.gov/articles/PMC7744433/,published rounded model output; not raw EEG
+Hand #2,Back #2,0.7,0.59,0.62,0.10999999999999999,https://pmc.ncbi.nlm.nih.gov/articles/PMC7744433/,published rounded model output; not raw EEG
+Back #2,Hand #1,0.8,0.68,0.65,0.12,https://pmc.ncbi.nlm.nih.gov/articles/PMC7744433/,published rounded model output; not raw EEG
+Back #2,Back #1,0.61,0.43,0.53,0.18,https://pmc.ncbi.nlm.nih.gov/articles/PMC7744433/,published rounded model output; not raw EEG
+Back #2,Hand #2,0.72,0.57,0.55,0.15000000000000002,https://pmc.ncbi.nlm.nih.gov/articles/PMC7744433/,published rounded model output; not raw EEG
+Back #2,Back #2,0.71,0.73,0.6,-0.020000000000000018,https://pmc.ncbi.nlm.nih.gov/articles/PMC7744433/,published rounded model output; not raw EEG

@@ -1,0 +1,4 @@
+pain_band,target_midpoint_nrs,P2_center_score,P2_score_low_at_mean_minus_1SD,P2_score_high_at_mean_plus_1SD,P2_slope_times_reported_SD_NRS_points,absN2_center_score,absN2_score_low_from_N2_mean_plusminus_1SD,absN2_score_high_from_N2_mean_plusminus_1SD,interpretation
+4 < NRS <= 6,5.0,4.9923760886748685,3.6370646666496698,6.347687510700068,1.3553114220251987,4.988100484795064,3.8742542647991494,6.56309322899311,"sensitivity range from published group SDs, not individual prediction intervals"
+6 < NRS <= 8,7.0,7.01542630886858,5.035349377665911,8.995503240071248,1.9800769312026685,7.02423975319524,4.768169065560202,9.280310440830279,"sensitivity range from published group SDs, not individual prediction intervals"
+8 < NRS <= 10,9.0,8.992197602456553,6.893117717124842,10.0,2.0990798853317103,8.987659762009695,5.646121102021951,10.0,"sensitivity range from published group SDs, not individual prediction intervals"

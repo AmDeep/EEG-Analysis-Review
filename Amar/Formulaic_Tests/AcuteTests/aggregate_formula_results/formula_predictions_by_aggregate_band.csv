@@ -1,0 +1,13 @@
+formula_id,pain_band,target_midpoint_nrs,signal_value_uv,in_sample_predicted_score,leave_one_band_out_predicted_score,absolute_lobo_error,target_category,predicted_category_by_nearest_midpoint,category_correct
+P2_linear,4 < NRS <= 6,5.0,7.14,4.9923760886748685,4.953177257525085,0.046822742474915025,middle band (4 < NRS <= 6),5.0,True
+P2_linear,6 < NRS <= 8,7.0,19.38,7.01542630886858,7.023140495867768,0.023140495867767896,upper-middle band (6 < NRS <= 8),7.0,True
+P2_linear,8 < NRS <= 10,9.0,31.34,8.992197602456553,8.954248366013072,0.04575163398692794,high band (8 < NRS <= 10),9.0,True
+N2P2_linear,4 < NRS <= 6,5.0,14.719999999999999,4.9903063574622415,4.940078158923144,0.059921841076856275,middle band (4 < NRS <= 6),5.0,True
+N2P2_linear,6 < NRS <= 8,7.0,38.44,7.019677715529317,7.02951871657754,0.029518716577539905,upper-middle band (6 < NRS <= 8),7.0,True
+N2P2_linear,8 < NRS <= 10,9.0,61.47,8.99001592700844,8.941821247892074,0.058178752107926,high band (8 < NRS <= 10),9.0,True
+absN2_linear,4 < NRS <= 6,5.0,7.58,4.988100484795064,4.9259259259259265,0.07407407407407351,middle band (4 < NRS <= 6),5.0,True
+absN2_linear,6 < NRS <= 8,7.0,19.06,7.02423975319524,7.036363636363636,0.036363636363636154,upper-middle band (6 < NRS <= 8),7.0,True
+absN2_linear,8 < NRS <= 10,9.0,30.13,8.987659762009695,8.928571428571427,0.07142857142857295,high band (8 < NRS <= 10),9.0,True
+P2_powerlaw_transferred,4 < NRS <= 6,5.0,7.14,0.8506687985248986,N/A (external fixed coefficients),4.149331201475102,middle band (4 < NRS <= 6),5.0,True
+P2_powerlaw_transferred,6 < NRS <= 8,7.0,19.38,3.0600545717893888,N/A (external fixed coefficients),3.9399454282106112,upper-middle band (6 < NRS <= 8),5.0,False
+P2_powerlaw_transferred,8 < NRS <= 10,9.0,31.34,5.6669743608298875,N/A (external fixed coefficients),3.3330256391701125,high band (8 < NRS <= 10),5.0,False

@@ -1,0 +1,4 @@
+pain_band,target_midpoint_nrs,N2_mean_uv,N2_sd_uv,P2_mean_uv,P2_sd_uv,N2P2_source,N2P2_amplitude_uv,absN2_uv,N2_mean_minus_1SD_uv,N2_mean_plus_1SD_uv,P2_mean_minus_1SD_uv,P2_mean_plus_1SD_uv,target_category
+4 < NRS <= 6,5.0,-7.58,8.88,7.14,8.2,published group mean; peak-to-peak derived,14.72,7.58,-16.46,1.3000000000000007,-1.0599999999999996,15.34,middle band (4 < NRS <= 6)
+6 < NRS <= 8,7.0,-19.06,12.72,19.38,11.98,published group mean; peak-to-peak derived,38.44,19.06,-31.78,-6.339999999999998,7.399999999999999,31.36,upper-middle band (6 < NRS <= 8)
+8 < NRS <= 10,9.0,-30.13,18.84,31.34,12.7,published group mean; peak-to-peak derived,61.47,30.13,-48.97,-11.29,18.64,44.04,high band (8 < NRS <= 10)

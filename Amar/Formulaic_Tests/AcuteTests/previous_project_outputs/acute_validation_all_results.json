@@ -1,0 +1,244 @@
+{
+  "status": "PUBLISHED_AGGREGATE_REANALYSIS_ONLY_RAW_TRIAL_EEG_NOT_ACCESSED",
+  "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7744433/",
+  "large_dataset_source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12405539/",
+  "table_rows": 16,
+  "provenance": "All numerical AUC/accuracy values below are transcribed from Table 2 as printed to two decimal places; no raw EEG samples were available to this runtime.",
+  "descriptive": {
+    "ssm_auc": {
+      "n_rows": 16,
+      "mean": 0.7106250000000001,
+      "sample_sd": 0.0680655321485601,
+      "median": 0.71,
+      "min": 0.6,
+      "max": 0.81
+    },
+    "svm_auc": {
+      "n_rows": 16,
+      "mean": 0.614375,
+      "sample_sd": 0.12022028392358199,
+      "median": 0.59,
+      "min": 0.43,
+      "max": 0.83
+    },
+    "svm_peak_accuracy": {
+      "n_rows": 16,
+      "mean": 0.601875,
+      "sample_sd": 0.06872347973339726,
+      "median": 0.605,
+      "min": 0.5,
+      "max": 0.73
+    },
+    "paired_difference_ssm_minus_svm": {
+      "n_rows": 16,
+      "mean": 0.09625,
+      "sample_sd": 0.12360555543070599,
+      "median": 0.11499999999999999,
+      "min": -0.17999999999999994,
+      "max": 0.27999999999999997
+    },
+    "ssm_wins": 13,
+    "svm_wins": 3,
+    "ties": 0,
+    "n_ssm_auc_above_chance": 16,
+    "n_svm_auc_above_chance": 12,
+    "n_svm_auc_equal_chance": 1,
+    "n_svm_auc_below_chance": 3,
+    "naive_mean_difference_t_interval_95": [
+      0.030385248762139508,
+      0.1621147512378605
+    ],
+    "leave_one_row_out_mean_difference_min": 0.08400000000000002,
+    "leave_one_row_out_mean_difference_max": 0.11466666666666668
+  },
+  "exploratory_tests_not_population_valid": {
+    "paired_t_test": {
+      "t": 3.1147467333362155,
+      "df": 15,
+      "p_two_sided": 0.007100060467113813
+    },
+    "wilcoxon_signed_rank_approx": {
+      "W": 18.5,
+      "p_two_sided": 0.01046685759130122
+    },
+    "sign_test_two_sided": {
+      "wins": 13,
+      "losses": 3,
+      "p": 0.021270751953125
+    },
+    "sign_test_one_sided_ssm_greater": {
+      "wins": 13,
+      "losses": 3,
+      "p": 0.0106353759765625
+    },
+    "pearson_correlation_between_methods": {
+      "r": 0.23265099956376792,
+      "p_naive": 0.3858851023248795
+    },
+    "spearman_correlation_between_methods": {
+      "rho": 0.25185433931440054,
+      "p_naive": 0.3467103526038554
+    }
+  },
+  "stratified_descriptive_results": {
+    "within_subject": {
+      "n_configurations": 8,
+      "ssm_mean_auc": 0.71375,
+      "svm_mean_auc": 0.6737499999999998,
+      "mean_auc_difference": 0.04000000000000002,
+      "ssm_wins": 5,
+      "svm_wins": 3,
+      "ties": 0,
+      "all_rows": "dependent rows; descriptive only"
+    },
+    "cross_subject": {
+      "n_configurations": 8,
+      "ssm_mean_auc": 0.7075,
+      "svm_mean_auc": 0.555,
+      "mean_auc_difference": 0.1525,
+      "ssm_wins": 8,
+      "svm_wins": 0,
+      "ties": 0,
+      "all_rows": "dependent rows; descriptive only"
+    },
+    "same_stimulation_site_modality": {
+      "n_configurations": 8,
+      "ssm_mean_auc": 0.7137499999999999,
+      "svm_mean_auc": 0.63375,
+      "mean_auc_difference": 0.08,
+      "ssm_wins": 5,
+      "svm_wins": 3,
+      "ties": 0,
+      "all_rows": "dependent rows; descriptive only"
+    },
+    "cross_stimulation_site_modality": {
+      "n_configurations": 8,
+      "ssm_mean_auc": 0.7075,
+      "svm_mean_auc": 0.595,
+      "mean_auc_difference": 0.1125,
+      "ssm_wins": 8,
+      "svm_wins": 0,
+      "ties": 0,
+      "all_rows": "dependent rows; descriptive only"
+    },
+    "within_subject_and_same_site": {
+      "n_configurations": 4,
+      "ssm_mean_auc": 0.72,
+      "svm_mean_auc": 0.7675,
+      "mean_auc_difference": -0.04749999999999999,
+      "ssm_wins": 1,
+      "svm_wins": 3,
+      "ties": 0,
+      "all_rows": "dependent rows; descriptive only"
+    },
+    "within_subject_cross_site": {
+      "n_configurations": 4,
+      "ssm_mean_auc": 0.7075,
+      "svm_mean_auc": 0.58,
+      "mean_auc_difference": 0.12750000000000003,
+      "ssm_wins": 4,
+      "svm_wins": 0,
+      "ties": 0,
+      "all_rows": "dependent rows; descriptive only"
+    },
+    "cross_subject_same_site": {
+      "n_configurations": 4,
+      "ssm_mean_auc": 0.7074999999999999,
+      "svm_mean_auc": 0.49999999999999994,
+      "mean_auc_difference": 0.20749999999999996,
+      "ssm_wins": 4,
+      "svm_wins": 0,
+      "ties": 0,
+      "all_rows": "dependent rows; descriptive only"
+    },
+    "cross_subject_cross_site": {
+      "n_configurations": 4,
+      "ssm_mean_auc": 0.7075,
+      "svm_mean_auc": 0.61,
+      "mean_auc_difference": 0.09749999999999999,
+      "ssm_wins": 4,
+      "svm_wins": 0,
+      "ties": 0,
+      "all_rows": "dependent rows; descriptive only"
+    }
+  },
+  "published_study_results_not_recomputed_from_raw": {
+    "healthy_volunteer_cohort": {
+      "recruited": 51,
+      "analysed": 50,
+      "intensity_contrast": "Level 3 versus Level 1, 60 laser stimuli in motor condition; this is a binary contrast, not 0-10 rating regression."
+    },
+    "clear_ERP_split": {
+      "group1_no_clear_ERP_n": 18,
+      "group2_clear_ERP_n": 32,
+      "reported_mean_auc_group1": 0.49,
+      "reported_mean_auc_group2": 0.64,
+      "reported_p": "1.9e-5",
+      "direction_caveat": "The Results text describes Group 2 > Group 1, while the figure caption text says Group 1 > Group 2 despite listing means 0.49 vs 0.64. Direction needs resolution from the source figure/data; do not silently reconcile."
+    },
+    "detection_latency": {
+      "level3_median_ms": 180,
+      "level1_median_ms": 202,
+      "difference_ms": -22,
+      "reported_test": "rank-sum",
+      "reported_p": "1.5e-5"
+    },
+    "latency_vs_reaction_time": {
+      "spearman_rho": 0.29,
+      "reported_p": 0.06,
+      "interpretation": "weak, not statistically significant at 0.05"
+    },
+    "cross_subject_ssm": {
+      "tested_subjects_n": 32,
+      "selected_models": 7,
+      "best_model_subjects_with_auc_gt_0_65": 16,
+      "mean_auc": 0.62,
+      "within_subject_baseline_mean_auc": 0.64
+    },
+    "roi_peak_latency_tests_contralateral": {
+      "ACC_vs_M1_p": "1.2e-5",
+      "S1_vs_M1_p": "0.02",
+      "ACC_vs_insula_p": "5e-4",
+      "test": "rank-sum"
+    },
+    "patient_table2": {
+      "patients_n": 2,
+      "reported_ssm_auc_range": [
+        0.6,
+        0.81
+      ],
+      "reported_svm_peak_auc_range": [
+        0.43,
+        0.83
+      ],
+      "paper_reported_signed_rank_p": "0.0113",
+      "meaning": "event detection, not subjective 0-10 pain-intensity prediction"
+    }
+  },
+  "patient_nrs_contrast_summary": {
+    "source": "Table 1, Sun et al. (2020)",
+    "within_patient_site_median_differences_painful_minus_nonpainful": [
+      0.0,
+      0.5,
+      1.0,
+      2.0
+    ],
+    "mean_of_four_aggregate_median_differences": 0.875,
+    "median_of_four_aggregate_median_differences": 0.75,
+    "strictly_positive_contrasts": 3,
+    "ties": 1,
+    "negative_contrasts": 0,
+    "warning": "These are differences between published medians, not individual ratings. Sites are repeated within only two patients; no population inference is defensible."
+  },
+  "raw_data_access": {
+    "attempts": [
+      "OSF project page",
+      "GitHub supplementary code/data repository",
+      "OpenNeuro GitHub dataset"
+    ],
+    "container_fetch_status": "failed: Temporary failure in name resolution",
+    "raw_EEG_files_downloaded": 0,
+    "trial_level_feature_rows_loaded": 0
+  },
+  "conclusion": "This reanalysis validates arithmetic reproduction of selected published benchmark results only. No proposed intensity formula has been fitted or evaluated against raw trial-level EEG and pain ratings."
+}

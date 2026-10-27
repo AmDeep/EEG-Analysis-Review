@@ -1,0 +1,13 @@
+{
+  "python": "3.13.5",
+  "software_unit_tests": "PASS",
+  "tests": [
+    "0-10 score bounds",
+    "EWMA recurrence",
+    "robust z zero-MAD handling",
+    "sigmoid score bounds",
+    "invalid smoothing parameter rejected"
+  ],
+  "participant_data_tests": "NOT RUN until genuine feature CSV is supplied",
+  "data_analysis": "No EEG feature file supplied; no fitted coefficients or empirical performance are claimed."
+}

@@ -1,0 +1,21 @@
+item,value,value_type,scope,source,notes
+Multi-experiment pain-EEG collection participants,678,published dataset metadata,9 experiments,https://pmc.ncbi.nlm.nih.gov/articles/PMC12405539/,Not necessarily non-overlapping across every derivative; do not sum cohorts without checking
+Multi-experiment experiments,9,published dataset metadata,laser-evoked potential collection,https://pmc.ncbi.nlm.nih.gov/articles/PMC12405539/,Protocols and acquisition systems vary
+95 By BP participants,95,published dataset metadata,ds005293,https://nemar.org/dataset/on005293,Not reprocessed in this run
+95 By BP channels,60,published dataset metadata,ds005293,https://nemar.org/dataset/on005293,10-10 montage
+95 By BP planned trials per participant,80,published protocol,ds005293,https://github.com/OpenNeuroDatasets/ds005293,8 conditions x 10 trials; not post-QC trial count
+95 By BP NRS calibration levels,"2;4;6;8",published protocol,ds005293,https://github.com/OpenNeuroDatasets/ds005293,Levels crossed with left/right hand
+29 By ANT participants,29,published dataset metadata,ds005285,https://nemar.org/dataset/on005285,Not reprocessed in this run
+29 By ANT channels,32,published dataset metadata,ds005285,https://nemar.org/dataset/on005285,10-10 montage
+29 By ANT planned trials per participant,160,published protocol,ds005285,https://github.com/OpenNeuroDatasets/ds005285,Four blocks of 40; half low and half high intensity
+29 By ANT rating range,"0-10",published protocol,ds005285,https://github.com/OpenNeuroDatasets/ds005285,Trial-level ratings
+26 By Biosemi participants,26,published dataset metadata,ds005284,https://nemar.org/dataset/on005284,Not reprocessed in this run
+26 By Biosemi channels,64,published dataset metadata,ds005284,https://nemar.org/dataset/on005284,Per dataset record
+26 By Biosemi planned trials per participant,16,published protocol,ds005284,https://nemar.org/dataset/on005284,Fixed intensity after calibration to average rating around 7
+65 By ANT participants,65,published dataset metadata,ds005291,https://nemar.org/dataset/on005291,Not reprocessed in this run
+65 By ANT channels,32,published dataset metadata,ds005291,https://nemar.org/dataset/on005291,Per dataset record
+Published EEG response trend,increasing with stimulus intensity and subjective pain rating,published qualitative technical validation,collection paper,https://pmc.ncbi.nlm.nih.gov/articles/PMC12405539/,No coefficient or predictive accuracy inferred from the statement
+Local raw EEG files downloaded,0,execution status,this execution environment,Not applicable,Code runtime DNS could not resolve external hosts
+Trial-level feature rows analyzed,0,execution status,this execution environment,Not applicable,No participant-level data fit was performed
+Participant-grouped CV,NOT RUN,execution status,this execution environment,Not applicable,Requires genuine EEG-derived feature CSV
+Software boundary tests,PASS,executed software test,this execution environment,Local deterministic tests,Not biological or predictive validation

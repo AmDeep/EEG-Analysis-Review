@@ -1,0 +1,5 @@
+subject,site,painful_pinprick_nrs_median,nonpainful_monofilament_nrs_median,median_difference,painful_iqr_low,nonpainful_iqr_low,interpretation
+Subject #1,Hand,1.0,1.0,0.0,1.0,1.0,Difference of published aggregate medians only; no trial-level paired test.
+Subject #1,Back,1.5,1.0,0.5,1.0,1.0,Difference of published aggregate medians only; no trial-level paired test.
+Subject #2,Hand,3.0,2.0,1.0,2.0,2.0,Difference of published aggregate medians only; no trial-level paired test.
+Subject #2,Back,4.0,2.0,2.0,3.0,3.0,Difference of published aggregate medians only; no trial-level paired test.

@@ -1,0 +1,6 @@
+dataset,participants,channels,trials_per_participant,reported_ratings,design,reported_energy_values,raw_subject_analysis_status,source
+ds005293 / on005293,95,60,80,"calibrated target levels 2,4,6,8; NRS 0-10 rating procedure",4 levels x 2 hand locations; 10 trials/condition,2.0±0.2 J; 2.7±0.3 J; 3.4±0.3 J; 4.1±0.4 J,NOT RUN - raw bytes unavailable in runtime,https://nemar.org/dataset/on005293
+ds005291 / on005291,65,32,30,verbal NRS 0-10,"calibration aimed at mean pain rating 7, then 30 stimuli",not recorded in this registry row,NOT RUN - raw bytes unavailable in runtime,https://nemar.org/dataset/on005291
+ds005285 / on005285,29,32,160,verbal NRS 0-10,4 blocks x 40 trials; 80 low and 80 high intensity,low/high; exact values not recorded in this registry row,NOT RUN - raw bytes unavailable in runtime,https://nemar.org/dataset/on005285
+ds005284 / on005284,26,64,not recorded here,pain EEG laser paradigm; consult dataset event files,Biosemi 64-channel dataset,not recorded in this registry row,NOT RUN - raw bytes unavailable in runtime,https://nemar.org/dataset/on005284
+Zhao et al. 2025 LEP collection,678,high-density; varies by experiment,varies by experiment,single-trial self-reported pain ratings,9 experiments; laser stimuli 2.5-4.5 J,2.5-4.5 J,paper-level evidence only; not an independent model validation,https://pmc.ncbi.nlm.nih.gov/articles/PMC12405539/

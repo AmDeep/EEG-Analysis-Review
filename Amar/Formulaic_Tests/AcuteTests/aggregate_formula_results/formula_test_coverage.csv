@@ -1,0 +1,11 @@
+formula_family,required_input,status,reason
+alpha_sigmoid,alpha band power / within-person standardized alpha,NOT TESTABLE HERE,No alpha-feature values paired with these pain-band group means.
+ordinal_cumulative_link,trial-level EEG predictors + individual ordinal NRS,NOT TESTABLE HERE,Three group midpoints cannot support ordinal model fitting or validation.
+ridge_elasticnet,multivariate trial-level EEG features + individual NRS,NOT TESTABLE HERE,No paired multifeature trial-level rows; n=3 aggregates is inadequate.
+GAM_or_gradient_boosting,trial-level features and individual NRS,NOT TESTABLE HERE,Would grossly overfit three aggregate observations.
+within_person_calibration,multiple time-ordered trials per subject,NOT TESTABLE HERE,Group means contain no subject or trial structure.
+temporal_EWMA,ordered trial predictions within subject,NOT TESTABLE HERE,No temporal sequence available.
+spectral_only,alpha/beta/theta/gamma power by trial,NOT TESTABLE HERE,Spectral values absent from available signal table.
+connectivity_entropy,connectivity and entropy metrics by trial,NOT TESTABLE HERE,Features absent; no channel time series available.
+mixed_effects,subject ID + trial-level EEG + NRS,NOT TESTABLE HERE,No subject-linked raw rows in available source table.
+random_forest_hgb,trial-level EEG matrix + NRS,NOT TESTABLE HERE,No training rows; no valid held-out evaluation possible.

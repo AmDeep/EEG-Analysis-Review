@@ -1,0 +1,241 @@
+{
+  "analysis_status": "REPRODUCED_AGGREGATE_TABLE_REANALYSIS_ONLY",
+  "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7744433/",
+  "dataset_source_for_first_cohort": "https://osf.io/bsv86/",
+  "table": "Sun et al. (2020), Table 2; 16 rows transcribed as printed to 2 decimal places",
+  "sample_context": {
+    "healthy_volunteers_used_for_main_analysis": 50,
+    "original_public_dataset_recruited": 51,
+    "chronic_pain_patients_in_second_dataset": 2,
+    "notes": "Table 2 entries are multiple train/test modality configurations from two patients, not 16 independent people or independent experiments."
+  },
+  "descriptive_results": {
+    "ssm_unsupervised_auc": {
+      "n_table_rows": 16,
+      "mean": 0.7106250000000001,
+      "sd_sample": 0.0680655321485601,
+      "median": 0.71,
+      "min": 0.6,
+      "max": 0.81,
+      "count_gt_0_5": 16,
+      "count_eq_0_5": 0,
+      "count_lt_0_5": 0
+    },
+    "svm_supervised_auc": {
+      "n_table_rows": 16,
+      "mean": 0.614375,
+      "sd_sample": 0.12022028392358199,
+      "median": 0.59,
+      "min": 0.43,
+      "max": 0.83,
+      "count_gt_0_5": 12,
+      "count_eq_0_5": 1,
+      "count_lt_0_5": 3
+    },
+    "svm_peak_accuracy": {
+      "n_table_rows": 16,
+      "mean": 0.601875,
+      "sd_sample": 0.06872347973339726,
+      "median": 0.605,
+      "min": 0.5,
+      "max": 0.73,
+      "count_gt_0_5": 15,
+      "count_eq_0_5": 1,
+      "count_lt_0_5": 0
+    },
+    "paired_auc_difference_ssm_minus_svm": {
+      "n_table_rows": 16,
+      "mean": 0.09625,
+      "sd_sample": 0.12360555543070599,
+      "median": 0.11499999999999999,
+      "min": -0.17999999999999994,
+      "max": 0.27999999999999997,
+      "count_gt_0_5": 0,
+      "count_eq_0_5": 0,
+      "count_lt_0_5": 16
+    },
+    "ssm_win_count": 13,
+    "svm_win_count": 3,
+    "ties": 0,
+    "mean_auc_difference_nominal_t_95ci": [
+      0.030385248762139508,
+      0.1621147512378605
+    ],
+    "paired_standardized_effect_dz": 0.7786866833340539,
+    "cross-row_pearson_ssm_auc_vs_svm_auc": {
+      "r": 0.23265099956376792,
+      "p_naive": 0.3858851023248795
+    },
+    "cross-row_spearman_ssm_auc_vs_svm_auc": {
+      "rho": 0.25185433931440054,
+      "p_naive": 0.3467103526038554
+    }
+  },
+  "exploratory_row_level_tests_not_valid_as_population_inference": {
+    "paired_t_test_ssm_vs_svm_auc": {
+      "t": 3.1147467333362155,
+      "df": 15,
+      "p_two_sided": 0.007100060467113813
+    },
+    "wilcoxon_signed_rank_ssm_vs_svm_auc": {
+      "statistic": 18.5,
+      "p_two_sided_approx": 0.01046685759130122,
+      "continuity_correction": false
+    },
+    "exact_sign_test_two_sided": {
+      "positive": 13,
+      "negative": 3,
+      "p": 0.021270751953125
+    },
+    "exact_sign_test_ssm_greater": {
+      "positive": 13,
+      "negative": 3,
+      "p": 0.0106353759765625
+    },
+    "one_sample_t_ssm_auc_vs_chance_0_5": {
+      "t": 12.377777318498831,
+      "p": 2.8267122767211316e-09
+    },
+    "one_sample_t_svm_auc_vs_chance_0_5": {
+      "t": 3.8055142199698175,
+      "p": 0.0017236878420585537
+    },
+    "one_sample_t_svm_accuracy_vs_0_5": {
+      "t": 5.9295600511038895,
+      "p": 2.76367358191253e-05
+    },
+    "caveat": "These tests quantify the reported table values, but repeated train/test configurations are dependent. Treat p-values and CI as illustrative checks only; they must not be used as confirmatory claims about new subjects."
+  },
+  "published_original_findings_not_recomputed": {
+    "main_cohort_subjects_analysed": 50,
+    "group_with_clear_evoked_potentials_n": 32,
+    "group_without_clear_evoked_potentials_n": 18,
+    "ssm_auc_group_difference_rank_sum_p": 1.9e-05,
+    "high_vs_low_stimulus_detection_latency_median_ms": [
+      180,
+      202
+    ],
+    "high_vs_low_latency_rank_sum_p": 1.5e-05,
+    "detection_latency_vs_reaction_time_spearman_rho": 0.29,
+    "detection_latency_vs_reaction_time_p": 0.06,
+    "cross_subject_ssm_auc_mean": 0.62,
+    "best_single_subject_unsupervised_auc": 0.79,
+    "best_single_subject_supervised_auc": 0.95,
+    "warning": "These are values reported by the authors; without raw trial data, they were not independently recomputed."
+  },
+  "formula_validation_status": {
+    "proposed_project_0_10_pain_intensity_formulae_applied_to_raw_trials": false,
+    "reason": "The local runtime cannot resolve external dataset hosts and no raw EEG/sample-level feature file is present in the project directory. The published article table provides detection metrics, not EEG predictors or individual pain-score predictions.",
+    "what_this_analysis_does": "Recomputes descriptive summaries and exploratory paired tests from the published Table 2 metric rows; reports independent paper-level results separately.",
+    "not_claimed": [
+      "raw EEG feature extraction",
+      "fitted coefficient estimates for the proposed 0-10 scales",
+      "new subject-level prediction scores",
+      "clinical validation"
+    ]
+  },
+  "leave_one_row_out_sensitivity": [
+    {
+      "omitted_row_1_based": 1,
+      "mean_difference": 0.09800000000000002,
+      "ssm_wins": 12,
+      "svm_wins": 3
+    },
+    {
+      "omitted_row_1_based": 2,
+      "mean_difference": 0.10066666666666668,
+      "ssm_wins": 12,
+      "svm_wins": 3
+    },
+    {
+      "omitted_row_1_based": 3,
+      "mean_difference": 0.08933333333333335,
+      "ssm_wins": 12,
+      "svm_wins": 3
+    },
+    {
+      "omitted_row_1_based": 4,
+      "mean_difference": 0.10133333333333336,
+      "ssm_wins": 12,
+      "svm_wins": 3
+    },
+    {
+      "omitted_row_1_based": 5,
+      "mean_difference": 0.088,
+      "ssm_wins": 12,
+      "svm_wins": 3
+    },
+    {
+      "omitted_row_1_based": 6,
+      "mean_difference": 0.11466666666666668,
+      "ssm_wins": 13,
+      "svm_wins": 2
+    },
+    {
+      "omitted_row_1_based": 7,
+      "mean_difference": 0.08666666666666668,
+      "ssm_wins": 12,
+      "svm_wins": 3
+    },
+    {
+      "omitted_row_1_based": 8,
+      "mean_difference": 0.08400000000000002,
+      "ssm_wins": 12,
+      "svm_wins": 3
+    },
+    {
+      "omitted_row_1_based": 9,
+      "mean_difference": 0.09133333333333334,
+      "ssm_wins": 12,
+      "svm_wins": 3
+    },
+    {
+      "omitted_row_1_based": 10,
+      "mean_difference": 0.10200000000000002,
+      "ssm_wins": 12,
+      "svm_wins": 3
+    },
+    {
+      "omitted_row_1_based": 11,
+      "mean_difference": 0.1066666666666667,
+      "ssm_wins": 13,
+      "svm_wins": 2
+    },
+    {
+      "omitted_row_1_based": 12,
+      "mean_difference": 0.09533333333333334,
+      "ssm_wins": 12,
+      "svm_wins": 3
+    },
+    {
+      "omitted_row_1_based": 13,
+      "mean_difference": 0.09466666666666669,
+      "ssm_wins": 12,
+      "svm_wins": 3
+    },
+    {
+      "omitted_row_1_based": 14,
+      "mean_difference": 0.09066666666666669,
+      "ssm_wins": 12,
+      "svm_wins": 3
+    },
+    {
+      "omitted_row_1_based": 15,
+      "mean_difference": 0.09266666666666669,
+      "ssm_wins": 12,
+      "svm_wins": 3
+    },
+    {
+      "omitted_row_1_based": 16,
+      "mean_difference": 0.10400000000000004,
+      "ssm_wins": 13,
+      "svm_wins": 2
+    }
+  ],
+  "runtime": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0"
+  }
+}

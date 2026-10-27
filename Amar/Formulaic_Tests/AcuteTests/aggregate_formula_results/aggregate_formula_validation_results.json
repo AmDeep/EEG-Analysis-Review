@@ -1,0 +1,133 @@
+{
+  "run_status": "COMPLETED_AGGREGATE_LEVEL_ONLY",
+  "run_timestamp_utc": "2026-10-27",
+  "python_version": "3.13.5",
+  "source": "Li et al. 2018, published group-average N2/P2 amplitudes by NRS band; source URL https://pmc.ncbi.nlm.nih.gov/articles/PMC7744433/",
+  "observations_used": 3,
+  "observations_unit": "published pain-band group means, not individual subjects/trials",
+  "target_values": [
+    5,
+    7,
+    9
+  ],
+  "target_caveat": "rating-band midpoints assigned as representative targets, not observed per-trial ratings",
+  "results": [
+    {
+      "formula_id": "P2_linear",
+      "predictor_definition": "P2 amplitude, microvolts",
+      "n_aggregate_bands": 3,
+      "full_fit_intercept": 3.812263460228537,
+      "full_fit_slope_per_uv": 0.16528188073478034,
+      "full_fit_R2_in_sample": 0.9999553784454215,
+      "full_fit_MAE_in_sample": 0.010284205912386213,
+      "full_fit_RMSE_in_sample": 0.010908290984816571,
+      "leave_one_band_out_predictions": [
+        4.953177257525085,
+        7.023140495867768,
+        8.954248366013072
+      ],
+      "leave_one_band_out_MAE": 0.038571624109870285,
+      "leave_one_band_out_RMSE": 0.04008766965186933,
+      "leave_one_band_out_mean_bias": -0.02314462686469169,
+      "leave_one_band_out_category_accuracy_nearest_midpoint": 1.0,
+      "feature_spearman_rho_vs_band_midpoint": 1.0,
+      "exact_two_sided_permutation_p": 0.3333333333333333,
+      "permutations": 6,
+      "feature_strictly_increases_across_group_means": true,
+      "interpretation": "aggregate-level only; three group means; not subject/trial validation"
+    },
+    {
+      "formula_id": "N2P2_linear",
+      "predictor_definition": "P2 minus N2 amplitude, microvolts",
+      "n_aggregate_bands": 3,
+      "full_fit_intercept": 3.730932563585877,
+      "full_fit_slope_per_uv": 0.0855552849100791,
+      "full_fit_R2_in_sample": 0.9999273923865496,
+      "full_fit_MAE_in_sample": 0.013118477019545457,
+      "full_fit_RMSE_in_sample": 0.013914751256650685,
+      "leave_one_band_out_predictions": [
+        4.940078158923144,
+        7.02951871657754,
+        8.941821247892074
+      ],
+      "leave_one_band_out_MAE": 0.04920643658744073,
+      "leave_one_band_out_RMSE": 0.0511427703045134,
+      "leave_one_band_out_mean_bias": -0.029527292202414124,
+      "leave_one_band_out_category_accuracy_nearest_midpoint": 1.0,
+      "feature_spearman_rho_vs_band_midpoint": 1.0,
+      "exact_two_sided_permutation_p": 0.3333333333333333,
+      "permutations": 6,
+      "feature_strictly_increases_across_group_means": true,
+      "interpretation": "aggregate-level only; three group means; not subject/trial validation"
+    },
+    {
+      "formula_id": "absN2_linear",
+      "predictor_definition": "absolute N2 peak amplitude, microvolts",
+      "n_aggregate_bands": 3,
+      "full_fit_intercept": 3.643681002698084,
+      "full_fit_slope_per_uv": 0.1773640477700502,
+      "full_fit_R2_in_sample": 0.999889819303658,
+      "full_fit_MAE_in_sample": 0.016159835463493682,
+      "full_fit_RMSE_in_sample": 0.017141038190417176,
+      "leave_one_band_out_predictions": [
+        4.9259259259259265,
+        7.036363636363636,
+        8.928571428571427
+      ],
+      "leave_one_band_out_MAE": 0.06062209395542754,
+      "leave_one_band_out_RMSE": 0.06301143630549627,
+      "leave_one_band_out_mean_bias": -0.03637966971300344,
+      "leave_one_band_out_category_accuracy_nearest_midpoint": 1.0,
+      "feature_spearman_rho_vs_band_midpoint": 1.0,
+      "exact_two_sided_permutation_p": 0.3333333333333333,
+      "permutations": 6,
+      "feature_strictly_increases_across_group_means": true,
+      "interpretation": "aggregate-level only; three group means; not subject/trial validation"
+    },
+    {
+      "formula_id": "P2_powerlaw_transferred",
+      "predictor_definition": "inverse of a published external power law: NRS=(P2/8.1)^(1/0.78)",
+      "n_aggregate_bands": 3,
+      "full_fit_intercept": null,
+      "full_fit_slope_per_uv": null,
+      "full_fit_R2_in_sample": -4.48114741352223,
+      "full_fit_MAE_in_sample": 3.8074340896186087,
+      "full_fit_RMSE_in_sample": 3.8231391686317076,
+      "leave_one_band_out_predictions": null,
+      "leave_one_band_out_MAE": null,
+      "leave_one_band_out_RMSE": null,
+      "leave_one_band_out_mean_bias": -3.8074340896186087,
+      "leave_one_band_out_category_accuracy_nearest_midpoint": 0.3333333333333333,
+      "feature_spearman_rho_vs_band_midpoint": 1.0,
+      "exact_two_sided_permutation_p": 0.3333333333333333,
+      "permutations": 6,
+      "feature_strictly_increases_across_group_means": true,
+      "interpretation": "cross-study transfer test; severe under-calibration in these 3 aggregate points; not fair clinical validation"
+    }
+  ],
+  "tests_completed": [
+    "fitted simple linear calibration on all 3 aggregate points",
+    "leave-one-aggregate-band-out linear prediction",
+    "MAE/RMSE/bias/R2 on aggregate points",
+    "nearest-midpoint category agreement",
+    "Spearman rank ordering",
+    "exact two-sided rank permutation test across all 3! = 6 permutations",
+    "P2 mean +/- 1SD descriptive dispersion check",
+    "external power-law transfer check",
+    "formula input coverage audit"
+  ],
+  "tests_not_possible": [
+    "participant-held-out CV",
+    "trial-level rating regression/classification",
+    "clustered confidence intervals",
+    "subject-preserving permutation test",
+    "temporal holdout",
+    "cross-dataset trial-level evaluation",
+    "calibration on unobserved trials",
+    "multiple-feature model ranking",
+    "clinical acute-pain patient test"
+  ],
+  "why_not_possible": "Raw or trial-level EEG feature rows were not locally accessible. GitHub/OpenNeuro host requests from this runtime failed with DNS resolution errors; source documents provide aggregate means and not paired individual data in this run.",
+  "statistical_conclusion": "Not enough independent observations for population inference. Exact Spearman permutation p=0.333 for strict monotonic ordering with n=3. The very small aggregate LOBO errors are not evidence of subject-level predictive performance.",
+  "no_synthetic_data_used": true
+}

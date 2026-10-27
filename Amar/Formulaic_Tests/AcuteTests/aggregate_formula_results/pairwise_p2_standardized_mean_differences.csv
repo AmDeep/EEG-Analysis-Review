@@ -1,0 +1,4 @@
+band_1,band_2,P2_mean_difference_uv,root_mean_average_variance_uv,descriptive_standardized_mean_difference,interpretation
+4 < NRS <= 6,6 < NRS <= 8,12.239999999999998,10.265485862831822,1.192344927804858,descriptive standardized group mean difference; no inferential interval/p-value
+6 < NRS <= 8,8 < NRS <= 10,11.96,12.34525009872218,0.9687936578326545,descriptive standardized group mean difference; no inferential interval/p-value
+4 < NRS <= 6,8 < NRS <= 10,24.2,10.689480810591316,2.263907894948671,descriptive standardized group mean difference; no inferential interval/p-value

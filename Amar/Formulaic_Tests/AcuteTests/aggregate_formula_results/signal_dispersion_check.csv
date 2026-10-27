@@ -1,0 +1,4 @@
+pain_band,N2_mean_uv,N2_SD_uv,N2_mean_minus_1SD_uv,N2_mean_plus_1SD_uv,P2_mean_uv,P2_SD_uv,P2_mean_minus_1SD_uv,P2_mean_plus_1SD_uv,meaning
+4 < NRS <= 6,-7.58,8.88,-16.46,1.3000000000000007,7.14,8.2,-1.0599999999999996,15.34,descriptive mean +/- 1 SD; not a prediction interval
+6 < NRS <= 8,-19.06,12.72,-31.78,-6.339999999999998,19.38,11.98,7.399999999999999,31.36,descriptive mean +/- 1 SD; not a prediction interval
+8 < NRS <= 10,-30.13,18.84,-48.97,-11.29,31.34,12.7,18.64,44.04,descriptive mean +/- 1 SD; not a prediction interval

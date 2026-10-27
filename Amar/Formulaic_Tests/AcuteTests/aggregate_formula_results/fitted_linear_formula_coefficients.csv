@@ -1,0 +1,4 @@
+formula_id,intercept,slope_per_uv,units,trained_on,not_for_clinical_use
+P2_linear,3.812263460228537,0.16528188073478034,NRS midpoint per microvolt,same 3 published aggregate points used for in-sample metrics,True
+N2P2_linear,3.730932563585877,0.0855552849100791,NRS midpoint per microvolt,same 3 published aggregate points used for in-sample metrics,True
+absN2_linear,3.643681002698084,0.1773640477700502,NRS midpoint per microvolt,same 3 published aggregate points used for in-sample metrics,True

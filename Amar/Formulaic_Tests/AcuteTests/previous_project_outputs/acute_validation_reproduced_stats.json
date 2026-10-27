@@ -1,0 +1,42 @@
+{
+  "analysis_status": "PUBLISHED_AGGREGATE_REANALYSIS_NOT_RAW_EEG_VALIDATION",
+  "n_rows": 16,
+  "ssm_auc": {
+    "mean": 0.7106250000000001,
+    "sd_sample": 0.0680655321485601,
+    "median": 0.71,
+    "min": 0.6,
+    "max": 0.81
+  },
+  "svm_auc": {
+    "mean": 0.614375,
+    "sd_sample": 0.12022028392358199,
+    "median": 0.59,
+    "min": 0.43,
+    "max": 0.83
+  },
+  "ssm_minus_svm": {
+    "mean": 0.09625,
+    "sd_sample": 0.12360555543070599,
+    "wins": 13,
+    "losses": 3,
+    "ties": 0
+  },
+  "paired_t_test": {
+    "t": 3.1147467333362155,
+    "p": 0.007100060467113813,
+    "status": "exploratory only; dependent rows"
+  },
+  "wilcoxon_approx": {
+    "W": 18.5,
+    "p": 0.01046685759130122,
+    "status": "rounded table values; dependent rows"
+  },
+  "exact_sign_test_two_sided": {
+    "p": 0.021270751953125,
+    "status": "exploratory only"
+  },
+  "raw_trial_level_eeg_processed": false,
+  "pain_intensity_formula_fit": false,
+  "valid_population_inference_from_table_rows": false
+}
